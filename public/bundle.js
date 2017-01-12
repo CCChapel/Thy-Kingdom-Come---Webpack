@@ -22208,7 +22208,7 @@
 	                ),
 	                _react2.default.createElement(
 	                    _section2.default,
-	                    { className: '[ bg-clouds bg-cover ] [ justify-content-center ] [ overflow-x-hidden ]' },
+	                    { className: '[ bg-clouds bg-cover ] [ justify--content-center ] [ overflow-x-hidden ]' },
 	                    _react2.default.createElement(_logo2.default, null)
 	                ),
 	                _react2.default.createElement(
@@ -22817,9 +22817,13 @@
 	                'div',
 	                null,
 	                _react2.default.createElement(
-	                    'h1',
-	                    null,
-	                    (0, _htmlReactParser2.default)(this.props.information.name),
+	                    'div',
+	                    { className: 'flex wrap' },
+	                    _react2.default.createElement(
+	                        'h1',
+	                        null,
+	                        (0, _htmlReactParser2.default)(this.props.information.name)
+	                    ),
 	                    _react2.default.createElement(
 	                        'span',
 	                        { className: 'sans-serif text-medium-blue text-smaller' },
@@ -22828,6 +22832,7 @@
 	                            { href: this.props.information.website },
 	                            'Visit their site'
 	                        ),
+	                        ' ',
 	                        _react2.default.createElement('i', { className: 'fa fa-angle-right' })
 	                    )
 	                ),

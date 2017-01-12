@@ -45,7 +45,7 @@ export default class Page extends React.Component {
                     {this.state.modalContent}
                 </Modal>
 
-                <Section className="[ bg-clouds bg-cover ] [ justify-content-center ] [ overflow-x-hidden ]">
+                <Section className="[ bg-clouds bg-cover ] [ justify--content-center ] [ overflow-x-hidden ]">
                     <Logo />
                 </Section>
 
