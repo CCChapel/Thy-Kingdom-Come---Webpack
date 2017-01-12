@@ -73,7 +73,7 @@ export default class MinistryPartnersTable extends React.Component {
         });
 
         return (
-            <div className="flex wrap align-items-stretch">
+            <div className="flex wrap align-items--stretch">
                 {rows}
             </div>
         )

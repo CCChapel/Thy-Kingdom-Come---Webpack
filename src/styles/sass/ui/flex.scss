@@ -8,8 +8,10 @@
     height: 100%;
     width: 100%;
 
-    &.align-content-top {
-        @include align-content(flex-start);
+    &.align-content {
+        &--top {
+            @include align-content(flex-start);
+        }
     }
 
     &.justify-content {
@@ -22,8 +24,10 @@
         }
     }
 
-    &.align-items-stretch {
-        @include align-items(stretch);
+    &.align-items {
+        &--stretch {
+            @include align-items(stretch);
+        }
     }
 
     &:not(.vertical) > * {

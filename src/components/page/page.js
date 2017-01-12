@@ -120,7 +120,7 @@ export default class Page extends React.Component {
                     </div>
                 </Section>
 
-                <Section className="bg-charcoal align-content-top auto-min-height text-white">
+                <Section className="bg-charcoal align-content--top auto-min-height text-white">
                     <div className="content-wrapper">
                         &copy; Copyright 2017 | <a href="https://ccchapel.com" target="_blank">Christ Community Chapel</a>
                     </div>

@@ -22307,7 +22307,7 @@
 	                ),
 	                _react2.default.createElement(
 	                    _section2.default,
-	                    { className: 'bg-charcoal align-content-top auto-min-height text-white' },
+	                    { className: 'bg-charcoal align-content--top auto-min-height text-white' },
 	                    _react2.default.createElement(
 	                        'div',
 	                        { className: 'content-wrapper' },
@@ -22663,7 +22663,7 @@
 
 	            return _react2.default.createElement(
 	                'div',
-	                { className: 'flex wrap align-items-stretch' },
+	                { className: 'flex wrap align-items--stretch' },
 	                rows
 	            );
 	        }

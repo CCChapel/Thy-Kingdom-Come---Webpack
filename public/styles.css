@@ -479,7 +479,7 @@ a {
   align-content: stretch;
   height: 100%;
   width: 100%; }
-  .flex.align-content-top {
+  .flex.align-content--top {
     -webkit-align-content: flex-start;
     -moz-align-content: flex-start;
     -ms-flex-line-pack: start;
@@ -496,7 +496,7 @@ a {
     -webkit-justify-content: center;
     -moz-justify-content: center;
     justify-content: center; }
-  .flex.align-items-stretch {
+  .flex.align-items--stretch {
     -webkit-box-align: stretch;
     -ms-flex-align: stretch;
     -webkit-align-items: stretch;
