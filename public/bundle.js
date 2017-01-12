@@ -78,25 +78,6 @@
 
 	_reactDom2.default.render(_react2.default.createElement(_page2.default, null), document.getElementById('root'));
 
-	//import Components from './components/index.js';
-	// import VimeoVideo from './embeds/vimeoVideo';
-
-	// import ContactForm from './forms/contact';
-
-	// import Clock from './images/clock';
-	// import Logo from './images/logo';
-
-	// import MinistryPartnersTable from './ministryPartners/ministryPartnersTable';
-	// import MinistryPartnerRow from './ministryPartners/ministryPartnerRow';
-	// import MinistryPartnerInformation from './ministryPartners/ministryPartnerInformation';
-
-	// import CTA from './page/cta';
-	// import Modal from './page/modal';
-	// import Section from './page/section';
-
-
-	//import Page from './components/page/page';
-
 /***/ },
 /* 1 */
 /***/ function(module, exports, __webpack_require__) {

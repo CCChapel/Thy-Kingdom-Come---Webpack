@@ -1,7 +1,7 @@
 {
-  "name": "react-for-beginners",
+  "name": "Thy-Kingdom-Come",
   "version": "1.0.0",
-  "description": "",
+  "description": "Microsite for Christ Community Chapel's 2017 vision series.",
   "main": "index.js",
   "scripts": {
     "webpack-watch": "webpack -w",
@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ericrovtar/react-for-beginners.git"
+    "url": "git+https://github.com/CCChapel/Thy-Kingdom-Come---Webpack.git"
   },
   "author": "Eric Rovtar <eric.rovtar@me.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ericrovtar/react-for-beginners/issues"
+    "url": "https://github.com/CCChapel/Thy-Kingdom-Come---Webpack/issues"
   },
-  "homepage": "https://github.com/ericrovtar/react-for-beginners#readme",
+  "homepage": "https://github.com/CCChapel/Thy-Kingdom-Come---Webpack#readme",
   "dependencies": {
     "babel-loader": "^6.2.10",
     "babel-plugin-transform-class-properties": "^6.19.0",
