@@ -22,7 +22,7 @@ export default class MinistryPartnerInformation extends React.Component {
 
         return (
             <div>
-                <div className="flex wrap">
+                <div className="flex wrap justify-content--flex-start">
                     <h1>
                         { Parser(this.props.information.name) }
                     </h1>

@@ -22208,7 +22208,7 @@
 	                ),
 	                _react2.default.createElement(
 	                    _section2.default,
-	                    { className: '[ bg-clouds bg-cover ] [ justify--content-center ] [ overflow-x-hidden ]' },
+	                    { className: '[ bg-clouds bg-cover ] [ justify-content--center ] [ overflow-x-hidden ]' },
 	                    _react2.default.createElement(_logo2.default, null)
 	                ),
 	                _react2.default.createElement(
@@ -22818,7 +22818,7 @@
 	                null,
 	                _react2.default.createElement(
 	                    'div',
-	                    { className: 'flex wrap' },
+	                    { className: 'flex wrap justify-content--flex-start' },
 	                    _react2.default.createElement(
 	                        'h1',
 	                        null,
