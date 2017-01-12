@@ -1,12 +1,7 @@
 import React from 'react';
 import { Component } from 'react';
 
-function breakLine(text) {
-    var regex = /(<br \/>)/g;
-    return text.split(regex).map(function(line) {
-        return line.match(regex) ? React.createElement('br') : line;
-    });
-}
+import Parser from 'html-react-parser';
 
 /**
  * Displays the ministry partner information
@@ -18,9 +13,9 @@ export default class MinistryPartnerInformation extends React.Component {
 
         this.props.information.options.forEach((option, index) => {
             options.push(
-                <div className="add-bottom-margin">
+                <div className="add-bottom-margin" key={index}>
                     <h3 className="no-bottom-margin">{option.name}</h3>
-                    <div>{breakLine(option.details)}</div>
+                    <div>{ Parser(option.details) }</div>
                 </div>
             );
         });
