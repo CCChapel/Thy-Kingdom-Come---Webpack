@@ -600,6 +600,9 @@ a {
 .add-padding {
   padding: 1rem 20px; }
 
+.add-right-margin {
+  margin-right: 20px; }
+
 .add-bottom-margin {
   margin-bottom: 24px;
   margin-bottom: 1.5rem; }

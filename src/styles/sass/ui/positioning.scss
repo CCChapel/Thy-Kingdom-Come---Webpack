@@ -39,6 +39,10 @@
     padding: 1rem $gutter;
 }
 
+.add-right-margin {
+    margin-right: $gutter;
+}
+
 .add-bottom-margin {
     // margin-bottom: 2em;
     margin-bottom: $typecsset-magic-number;
