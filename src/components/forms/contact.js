@@ -1,8 +1,6 @@
 import React from 'react';
 import { Component } from 'react';
 
-import CTA from '../page/cta';
-
 /**
  * Displays the Contact Form
  * 

@@ -5,8 +5,6 @@ import Modal from './modal';
 import Section from './section';
 import CTA from './cta';
 
-import ContactForm from '../forms/contact'; 
-
 import MinistryPartnersTable from '../ministryPartners/ministryPartnersTable';
 
 import Logo from '../images/logo';
