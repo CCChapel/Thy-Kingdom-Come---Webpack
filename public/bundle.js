@@ -22694,6 +22694,10 @@
 
 	var _ministryPartnerInformation2 = _interopRequireDefault(_ministryPartnerInformation);
 
+	var _htmlReactParser = __webpack_require__(312);
+
+	var _htmlReactParser2 = _interopRequireDefault(_htmlReactParser);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -22729,6 +22733,8 @@
 	        value: function render() {
 	            var _this2 = this;
 
+	            var name = (0, _htmlReactParser2.default)(this.props.partner.name);
+
 	            return _react2.default.createElement(
 	                'div',
 	                {
@@ -22736,7 +22742,7 @@
 	                    onClick: function onClick() {
 	                        return _this2.handleClick(_react2.default.createElement(_ministryPartnerInformation2.default, { information: _this2.props.partner }));
 	                    } },
-	                this.props.partner.name
+	                name
 	            );
 	        }
 	    }]);
@@ -23156,6 +23162,750 @@
 	}(_react2.default.Component);
 
 	exports.default = VimeoVideo;
+
+/***/ },
+/* 193 */,
+/* 194 */,
+/* 195 */,
+/* 196 */,
+/* 197 */,
+/* 198 */,
+/* 199 */,
+/* 200 */,
+/* 201 */,
+/* 202 */,
+/* 203 */,
+/* 204 */,
+/* 205 */,
+/* 206 */,
+/* 207 */,
+/* 208 */,
+/* 209 */,
+/* 210 */,
+/* 211 */,
+/* 212 */,
+/* 213 */,
+/* 214 */,
+/* 215 */,
+/* 216 */,
+/* 217 */,
+/* 218 */,
+/* 219 */,
+/* 220 */,
+/* 221 */,
+/* 222 */,
+/* 223 */,
+/* 224 */,
+/* 225 */,
+/* 226 */,
+/* 227 */,
+/* 228 */,
+/* 229 */,
+/* 230 */,
+/* 231 */,
+/* 232 */,
+/* 233 */,
+/* 234 */,
+/* 235 */,
+/* 236 */,
+/* 237 */,
+/* 238 */,
+/* 239 */,
+/* 240 */,
+/* 241 */,
+/* 242 */,
+/* 243 */,
+/* 244 */,
+/* 245 */,
+/* 246 */,
+/* 247 */,
+/* 248 */,
+/* 249 */,
+/* 250 */,
+/* 251 */,
+/* 252 */,
+/* 253 */,
+/* 254 */,
+/* 255 */,
+/* 256 */,
+/* 257 */,
+/* 258 */,
+/* 259 */,
+/* 260 */,
+/* 261 */,
+/* 262 */,
+/* 263 */,
+/* 264 */,
+/* 265 */,
+/* 266 */,
+/* 267 */,
+/* 268 */,
+/* 269 */,
+/* 270 */,
+/* 271 */,
+/* 272 */,
+/* 273 */,
+/* 274 */,
+/* 275 */,
+/* 276 */,
+/* 277 */,
+/* 278 */,
+/* 279 */,
+/* 280 */,
+/* 281 */,
+/* 282 */,
+/* 283 */,
+/* 284 */,
+/* 285 */,
+/* 286 */,
+/* 287 */,
+/* 288 */,
+/* 289 */,
+/* 290 */,
+/* 291 */,
+/* 292 */,
+/* 293 */,
+/* 294 */,
+/* 295 */,
+/* 296 */,
+/* 297 */,
+/* 298 */,
+/* 299 */,
+/* 300 */,
+/* 301 */,
+/* 302 */,
+/* 303 */,
+/* 304 */,
+/* 305 */,
+/* 306 */,
+/* 307 */,
+/* 308 */,
+/* 309 */,
+/* 310 */,
+/* 311 */,
+/* 312 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	/**
+	 * Module dependencies.
+	 */
+	var domToReact = __webpack_require__(313);
+	var htmlToDOM = __webpack_require__(317);
+
+	/**
+	 * Convert HTML string to React elements.
+	 *
+	 * @param  {String}   html              - The HTML string.
+	 * @param  {Object}   [options]         - The additional options.
+	 * @param  {Function} [options.replace] - The replace method.
+	 * @return {ReactElement|Array}
+	 */
+	function HTMLReactParser(html, options) {
+	    if (typeof html !== 'string') {
+	        throw new TypeError('First argument must be a string');
+	    }
+	    return domToReact(htmlToDOM(html), options);
+	}
+
+	/**
+	 * Export HTML to React parser.
+	 */
+	module.exports = HTMLReactParser;
+
+
+/***/ },
+/* 313 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	/**
+	 * Module dependencies.
+	 */
+	var React = __webpack_require__(1);
+	var attributesToProps = __webpack_require__(314);
+
+	/**
+	 * Convert DOM nodes to React elements.
+	 *
+	 * @param  {Array}    nodes             - The DOM nodes.
+	 * @param  {Object}   [options]         - The additional options.
+	 * @param  {Function} [options.replace] - The replace method.
+	 * @return {ReactElement|Array}
+	 */
+	function domToReact(nodes, options) {
+	    options = options || {};
+	    var result = [];
+	    var node;
+	    var isReplacePresent = typeof options.replace === 'function';
+	    var replacement;
+	    var props;
+	    var children;
+
+	    for (var i = 0, len = nodes.length; i < len; i++) {
+	        node = nodes[i];
+
+	        // replace with custom React element (if applicable)
+	        if (isReplacePresent) {
+	            replacement = options.replace(node);
+
+	            if (React.isValidElement(replacement)) {
+	                // specify a "key" prop if element has siblings
+	                // https://fb.me/react-warning-keys
+	                if (len > 1) {
+	                    replacement = React.cloneElement(replacement, { key: i });
+	                }
+	                result.push(replacement);
+	                continue;
+	            }
+	        }
+
+	        if (node.type === 'text') {
+	            result.push(node.data);
+	            continue;
+	        }
+
+	        // update values
+	        props = attributesToProps(node.attribs);
+	        children = null;
+
+	        // node type for <script> is "script"
+	        // node type for <style> is "style"
+	        if (node.type === 'script' || node.type === 'style') {
+	            // prevent text in <script> or <style> from being escaped
+	            // https://facebook.github.io/react/tips/dangerously-set-inner-html.html
+	            if (node.children[0]) {
+	                props.dangerouslySetInnerHTML = {
+	                    __html: node.children[0].data
+	                };
+	            }
+
+	        } else if (node.type === 'tag') {
+	            // setting textarea value in children is an antipattern in React
+	            // https://facebook.github.io/react/docs/forms.html#why-textarea-value
+	            if (node.name === 'textarea' && node.children[0]) {
+	                props.defaultValue = node.children[0].data;
+
+	            // continue recursion of creating React elements (if applicable)
+	            } else if (node.children && node.children.length) {
+	                children = domToReact(node.children, options);
+	            }
+
+	        // skip all other cases (e.g., comment)
+	        } else {
+	            continue;
+	        }
+
+	        // specify a "key" prop if element has siblings
+	        // https://fb.me/react-warning-keys
+	        if (len > 1) {
+	            props.key = i;
+	        }
+
+	        result.push(
+	            React.createElement(node.name, props, children)
+	        );
+	    }
+
+	    if (result.length === 1) {
+	        return result[0];
+	    } else {
+	        return result;
+	    }
+	}
+
+	/**
+	 * Export DOM to React parser.
+	 */
+	module.exports = domToReact;
+
+
+/***/ },
+/* 314 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	/**
+	 * Module dependencies.
+	 */
+	var utilities = __webpack_require__(315);
+	var propertyConfig = __webpack_require__(316);
+	var config = propertyConfig.config;
+	var isCustomAttribute = propertyConfig.HTMLDOMPropertyConfig.isCustomAttribute;
+
+	/**
+	 * Make attributes compatible with React props.
+	 *
+	 * @param  {Object} attributes - The attributes.
+	 * @return {Object}            - The props.
+	 */
+	function attributesToProps(attributes) {
+	    attributes = attributes || {};
+	    var props = {};
+	    var propertyName;
+	    var propertyValue;
+	    var reactProperty;
+
+	    for (propertyName in attributes) {
+	        propertyValue = attributes[propertyName];
+
+	        // custom attributes (`data-` and `aria-`)
+	        if (isCustomAttribute(propertyName)) {
+	            props[propertyName] = propertyValue;
+	            continue;
+	        }
+
+	        // make HTML DOM attribute/property consistent with React attribute/property
+	        reactProperty = config.html[propertyName.toLowerCase()];
+	        if (reactProperty) {
+	            props[reactProperty] = propertyValue;
+	            continue;
+	        }
+
+	        // make SVG DOM attribute/property consistent with React attribute/property
+	        reactProperty = config.svg[propertyName];
+	        if (reactProperty) {
+	            props[reactProperty] = propertyValue;
+	        }
+	    }
+
+	    // convert inline style to object
+	    if (attributes.style) {
+	        props.style = cssToJs(attributes.style);
+	    }
+
+	    return props;
+	}
+
+	/**
+	 * Convert CSS style string to JS style object.
+	 *
+	 * @param  {String} style - The CSS style.
+	 * @return {Object}       - The JS style object.
+	 */
+	function cssToJs(style) {
+	    if (typeof style !== 'string') {
+	        throw new Error('`cssToJs`: first argument must be a string. ');
+	    }
+
+	    var result = {};
+	    // e.g., `color: #f00`
+	    var declarations = style.split(';');
+	    // css property itemized as key and value
+	    var properties;
+	    var j;
+	    var propertiesLen;
+
+	    for (var i = 0, declarationsLen = declarations.length; i < declarationsLen; i++) {
+	        properties = declarations[i].trim().split(':');
+
+	        // skip if not a css property
+	        if (properties.length !== 2) { continue; }
+
+	        // css property name
+	        properties[0] = properties[0].trim();
+	        // css property value
+	        properties[1] = properties[1].trim();
+
+	        if (properties[0] && properties[1]) {
+	            for (j = 0, propertiesLen = properties.length; j < propertiesLen; j++) {
+	                result[utilities.camelCase(properties[0])] = properties[1];
+	            }
+	        }
+	    }
+
+	    return result;
+	}
+
+	/**
+	 * Export attributes to props helper.
+	 */
+	module.exports = attributesToProps;
+
+
+/***/ },
+/* 315 */
+/***/ function(module, exports) {
+
+	'use strict';
+
+	/**
+	 * Convert a string to camel case.
+	 *
+	 * @param  {String} string - The string.
+	 * @return {String}
+	 */
+	function camelCase(string) {
+	    if (typeof string !== 'string') {
+	        throw new TypeError('First argument must be a string');
+	    }
+
+	    // hyphen found after first character
+	    if (string.indexOf('-') > 0) {
+	        var strings = string.toLowerCase().split('-');
+
+	        // capitalize starting from the second string item
+	        for (var i = 1, len = strings.length; i < len; i++) {
+	            strings[i] = strings[i].charAt(0).toUpperCase() + strings[i].slice(1);
+	        }
+
+	        return strings.join('');
+	    }
+
+	    return string;
+	}
+
+	/**
+	 * Swap key with value in an object.
+	 *
+	 * @param  {Object}   obj        - The object.
+	 * @param  {Function} [override] - The override method.
+	 * @return {Object}              - The inverted object.
+	 */
+	function invertObject(obj, override) {
+	    if (typeof obj !== 'object' || !obj) { // null is an object
+	        throw new TypeError('First argument must be an object');
+	    }
+
+	    var key;
+	    var value;
+	    var isOverridePresent = typeof override === 'function';
+	    var overrides = {};
+	    var result = {};
+
+	    for (key in obj) {
+	        value = obj[key];
+
+	        if (isOverridePresent) {
+	            overrides = override(key, value);
+	            if (overrides && overrides.length === 2) {
+	                result[overrides[0]] = overrides[1];
+	                continue;
+	            }
+	        }
+
+	        if (typeof value === 'string') {
+	            result[value] = key;
+	        }
+	    }
+
+	    return result;
+	}
+
+	/**
+	 * Export utilties.
+	 */
+	module.exports = {
+	    camelCase: camelCase,
+	    invertObject: invertObject
+	};
+
+
+/***/ },
+/* 316 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	/**
+	 * Module dependencies.
+	 */
+	var utilities = __webpack_require__(315);
+
+	// HTML and SVG DOM Property Configs
+	var HTMLDOMPropertyConfig = __webpack_require__(78);
+	var SVGDOMPropertyConfig = __webpack_require__(153);
+
+	var config = {
+	    html: {},
+	    svg: {}
+	};
+
+	var propertyName;
+
+	/**
+	 * HTML DOM property config.
+	 */
+
+	// first map out the HTML DOM attribute names
+	// e.g., { className: 'class' } => { 'class': 'className' }
+	// https://github.com/facebook/react/blob/master/src/renderers/dom/shared/HTMLDOMPropertyConfig.js#L204
+	config.html = utilities.invertObject(
+	    HTMLDOMPropertyConfig.DOMAttributeNames
+	);
+
+	// then map out the rest of the HTML DOM properties
+	// e.g., { charSet: 0 } => { charset: 'charSet' }
+	// https://github.com/facebook/react/blob/master/src/renderers/dom/shared/HTMLDOMPropertyConfig.js#L28
+	for (propertyName in HTMLDOMPropertyConfig.Properties) {
+	    // lowercase to make matching property names easier
+	    config.html[propertyName.toLowerCase()] = propertyName;
+	}
+
+	/**
+	 * SVG DOM property config.
+	 */
+
+	// first map out the SVG DOM attribute names
+	// e.g., { fontSize: 'font-size' } => { 'font-size': 'fontSize' }
+	// https://github.com/facebook/react/blob/master/src/renderers/dom/shared/SVGDOMPropertyConfig.js#L36
+	config.svg = utilities.invertObject(
+	    SVGDOMPropertyConfig.DOMAttributeNames
+	);
+
+	// then map out the rest of the SVG DOM properties
+	// e.g., { preserveAlpha: 0 } => { preserveAlpha: 'preserveAlpha' }
+	// https://github.com/facebook/react/blob/master/src/renderers/dom/shared/HTMLDOMPropertyConfig.js#L28
+	for (propertyName in SVGDOMPropertyConfig.Properties) {
+	    // do not lowercase as some svg properties are camel cased
+	    config.html[propertyName] = propertyName;
+	}
+
+	/**
+	 * Export React property configs.
+	 */
+	module.exports = {
+	    config: config,
+	    HTMLDOMPropertyConfig: HTMLDOMPropertyConfig,
+	    SVGDOMPropertyConfig: SVGDOMPropertyConfig
+	};
+
+
+/***/ },
+/* 317 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	/**
+	 * Module dependencies.
+	 */
+	var utilities = __webpack_require__(318);
+	var formatDOM = utilities.formatDOM;
+
+	/**
+	 * Parse HTML string to DOM nodes.
+	 * This uses the browser DOM API.
+	 *
+	 * @param  {String} html - The HTML.
+	 * @return {Object}      - The DOM nodes.
+	 */
+	function parseDOM(html) {
+	    if (typeof html !== 'string') {
+	        throw new TypeError('First argument must be a string.');
+	    }
+
+	    // try to match the tags
+	    var match = html.match(/<[^\/](.+?)>/g);
+	    var nodes;
+
+	    if (match && match.length) {
+	        var tagMatch = match[0];
+
+	        // directive matched
+	        if (/<![^-]/.test(tagMatch)) {
+	            var directive = (
+	                // remove angle brackets
+	                tagMatch
+	                    .substring(1, tagMatch.length - 1)
+	                    .trim()
+	            );
+
+	            // tag name can no longer be first match item
+	            tagMatch = match[1];
+
+	            // remove directive from html
+	            html = html.substring(html.indexOf('>') + 1);
+	        }
+
+	        // first tag name matched
+	        if (tagMatch) {
+	            var tagName = (
+	                // keep only tag name
+	                tagMatch
+	                    .substring(1, tagMatch.indexOf(' '))
+	                    .trim()
+	                    .toLowerCase()
+	            )
+	        }
+	    }
+
+	    // create html document to parse top-level nodes
+	    if (['html', 'head', 'body'].indexOf(tagName) > -1) {
+	        var doc;
+
+	        // `new DOMParser().parseFromString()`
+	        // https://developer.mozilla.org/en-US/docs/Web/API/DOMParser#Parsing_an_SVG_or_HTML_document
+	        if (window.DOMParser) {
+	            doc = new window.DOMParser().parseFromString(html, 'text/html');
+
+	        // `DOMImplementation.createHTMLDocument()`
+	        // https://developer.mozilla.org/en-US/docs/Web/API/DOMImplementation/createHTMLDocument
+	        } else if (document.implementation.createHTMLDocument) {
+	            doc = document.implementation.createHTMLDocument();
+	            doc.documentElement.innerHTML = html;
+	            doc.removeChild(doc.childNodes[0]); // remove doctype
+	        }
+
+	        // html
+	        if (tagName === 'html') {
+	            nodes = doc.childNodes;
+	        // head and body
+	        } else {
+	            nodes = (
+	                // do this so attributes are kept
+	                // but there may be an extra head/body node
+	                doc.getElementsByTagName(tagName)[0]
+	                    .parentNode
+	                    .childNodes
+	            );
+	        }
+
+	    // `innerHTML` approach
+	    } else {
+	        var container = document.createElement('body');
+	        container.innerHTML = html;
+	        nodes = container.childNodes;
+	    }
+
+	    return formatDOM(nodes, null, directive);
+	}
+
+	/**
+	 * Export HTML to DOM parser (client).
+	 */
+	module.exports = parseDOM;
+
+
+/***/ },
+/* 318 */
+/***/ function(module, exports) {
+
+	'use strict';
+
+	/**
+	 * Format DOM attributes to an associative array.
+	 *
+	 * @param  {NamedNodeMap} - The list of attributes.
+	 * @return {Object}       - The object of attributes.
+	 */
+	function formatAttributes(attributes) {
+	    var result = {};
+	    var attribute;
+
+	    // NamedNodeMap is array-like
+	    for (var i = 0, len = attributes.length; i < len; i++) {
+	        attribute = attributes[i];
+	        result[attribute.name] = attribute.value;
+	    }
+
+	    return result;
+	}
+
+	/**
+	 * Format the browser DOM nodes to mimic the output of `htmlparser2.parseDOM()`.
+	 *
+	 * @param  {NodeList} nodes        - The DOM nodes.
+	 * @param  {Object}   [parentObj]  - The formatted parent node.
+	 * @param  {String}   [directive]  - The directive.
+	 * @return {Object}                - The formatted DOM object.
+	 */
+	function formatDOM(nodes, parentObj, directive) {
+	    parentObj = parentObj || null;
+
+	    var result = [];
+	    var node;
+	    var prevNode;
+	    var nodeObj;
+
+	    // NodeList is array-like
+	    for (var i = 0, len = nodes.length; i < len; i++) {
+	        node = nodes[i];
+	        // reset
+	        nodeObj = {
+	            next: null,
+	            prev: result[i - 1] || null,
+	            parent: parentObj
+	        };
+
+	        // set the next node for the previous node (if applicable)
+	        prevNode = result[i - 1];
+	        if (prevNode) {
+	            prevNode.next = nodeObj;
+	        }
+
+	        // set the node name if it's not "#text" or "#comment"
+	        // e.g., "div"
+	        if (node.nodeName.indexOf('#') !== 0) {
+	            nodeObj.name = node.nodeName.toLowerCase();
+
+	            // also, nodes of type "tag" have "attribs"
+	            nodeObj.attribs = {}; // default
+	            if (node.attributes && node.attributes.length) {
+	                nodeObj.attribs = formatAttributes(node.attributes);
+	            }
+	        }
+
+	        // set the node type
+	        // e.g., "tag"
+	        switch (node.nodeType) {
+	            // 1 = element
+	            case 1:
+	                if (nodeObj.name === 'script' || nodeObj.name === 'style') {
+	                    nodeObj.type = nodeObj.name;
+	                } else {
+	                    nodeObj.type = 'tag';
+	                }
+	                // recursively format the children
+	                nodeObj.children = formatDOM(node.childNodes, nodeObj);
+	                break;
+	                // 2 = attribute
+	                // 3 = text
+	            case 3:
+	                nodeObj.type = 'text';
+	                nodeObj.data = node.nodeValue;
+	                break;
+	                // 8 = comment
+	            case 8:
+	                nodeObj.type = 'comment';
+	                nodeObj.data = node.nodeValue;
+	                break;
+	            default:
+	                break;
+	        }
+
+	        result.push(nodeObj);
+	    }
+
+	    if (directive) {
+	        result.unshift({
+	            name: directive.substring(0, directive.indexOf(' ')).toLowerCase(),
+	            data: directive,
+	            type: 'directive',
+	            next: result[0] ? result[0] : null,
+	            prev: null,
+	            parent: parentObj
+	        });
+
+	        if (result[1]) {
+	            result[1].prev = result[0];
+	        }
+	    }
+
+	    return result;
+	}
+
+	/**
+	 * Export utilities.
+	 */
+	module.exports = {
+	    formatAttributes: formatAttributes,
+	    formatDOM: formatDOM
+	};
+
 
 /***/ }
 /******/ ]);
