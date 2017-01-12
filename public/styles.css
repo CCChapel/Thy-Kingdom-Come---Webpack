@@ -502,6 +502,12 @@ a {
     -webkit-align-items: stretch;
     -moz-align-items: stretch;
     align-items: stretch; }
+  .flex.align-items--flex-end {
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    -webkit-align-items: flex-end;
+    -moz-align-items: flex-end;
+    align-items: flex-end; }
   .flex:not(.vertical) > * {
     margin-right: 20px; }
     .flex:not(.vertical) > *:last-child {

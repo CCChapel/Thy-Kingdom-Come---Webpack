@@ -28,6 +28,10 @@
         &--stretch {
             @include align-items(stretch);
         }
+
+        &--flex-end {
+            @include align-items(flex-end);
+        }
     }
 
     &:not(.vertical) > * {
