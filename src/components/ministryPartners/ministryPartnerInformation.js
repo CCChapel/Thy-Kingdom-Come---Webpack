@@ -22,8 +22,8 @@ export default class MinistryPartnerInformation extends React.Component {
 
         return (
             <div>
-                <div className="[ add-bottom-margin ][ flex wrap justify-content--flex-start align-content--flex-end ]">
-                    <h1 className="portable--one-whole no-bottom-margin">
+                <div className="[ add-bottom-margin ][ flex wrap justify-content--flex-start align-items--flex-end ]">
+                    <h1 className="portable--one-whole [ no-bottom-margin add-right-margin ]">
                         { Parser(this.props.information.name) }
                     </h1>
                     
