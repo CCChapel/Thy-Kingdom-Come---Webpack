@@ -2,7 +2,7 @@ import React from 'react';
 import { Component } from 'react';
 
 /**
- * 
+ * Inserts a graphical checkbox that can be checked and unchecked with a mouse click
  */
 export default class Checkbox extends React.Component {
     constructor(props) {
