@@ -22774,6 +22774,10 @@
 
 	var _cta2 = _interopRequireDefault(_cta);
 
+	var _checkbox = __webpack_require__(319);
+
+	var _checkbox2 = _interopRequireDefault(_checkbox);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -22818,7 +22822,7 @@
 	                    _react2.default.createElement(
 	                        'div',
 	                        { className: '[ text-bigger bold ]' },
-	                        _react2.default.createElement('i', { className: '[ fa fa-square-o ] cursor-point' }),
+	                        _react2.default.createElement(_checkbox2.default, null),
 	                        ' ',
 	                        (0, _htmlReactParser2.default)(option.name)
 	                    ),
@@ -23929,6 +23933,74 @@
 	    formatDOM: formatDOM
 	};
 
+
+/***/ },
+/* 319 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	/**
+	 * 
+	 */
+	var Checkbox = function (_React$Component) {
+	    _inherits(Checkbox, _React$Component);
+
+	    function Checkbox(props) {
+	        _classCallCheck(this, Checkbox);
+
+	        var _this = _possibleConstructorReturn(this, (Checkbox.__proto__ || Object.getPrototypeOf(Checkbox)).call(this, props));
+
+	        _this.state = {
+	            isChecked: false
+	        };
+
+	        _this.onClick = _this.onClick.bind(_this);
+	        return _this;
+	    }
+
+	    _createClass(Checkbox, [{
+	        key: 'onClick',
+	        value: function onClick() {
+	            this.setState({ isChecked: !this.state.isChecked });
+	        }
+	    }, {
+	        key: 'render',
+	        value: function render() {
+	            var boxClass = "fa-square-o";
+	            if (this.state.isChecked === true) {
+	                console.log('box is checked');
+	                boxClass = "fa-check-square-o";
+	            }
+
+	            var className = String.format("[ fa {0} ] cursor-point", [boxClass]);
+
+	            return _react2.default.createElement('i', { className: className, onClick: this.onClick });
+	        }
+	    }]);
+
+	    return Checkbox;
+	}(_react2.default.Component);
+
+	exports.default = Checkbox;
 
 /***/ }
 /******/ ]);

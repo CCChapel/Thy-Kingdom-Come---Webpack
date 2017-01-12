@@ -4,6 +4,7 @@ import { Component } from 'react';
 import Parser from 'html-react-parser';
 
 import CTA from '../page/cta';
+import Checkbox from '../page/checkbox';
 
 /**
  * Displays the ministry partner information
@@ -24,7 +25,7 @@ export default class MinistryPartnerInformation extends React.Component {
         this.props.information.options.forEach((option, index) => {
             options.push(
                 <div className="add-bottom-margin [ one-third portable--one-whole ]" key={index}>
-                    <div className="[ text-bigger bold ]"><i className="[ fa fa-square-o ] cursor-point"></i> { Parser(option.name) }</div>
+                    <div className="[ text-bigger bold ]"><Checkbox /> { Parser(option.name) }</div>
                     <div className="indent">{ Parser(option.details) }</div>
                 </div>
             );
