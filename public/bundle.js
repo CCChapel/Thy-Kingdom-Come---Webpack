@@ -22818,10 +22818,10 @@
 	                null,
 	                _react2.default.createElement(
 	                    'div',
-	                    { className: 'flex wrap justify-content--flex-start' },
+	                    { className: '[ add-bottom-margin ][ flex wrap justify-content--flex-start ]' },
 	                    _react2.default.createElement(
 	                        'h1',
-	                        null,
+	                        { className: 'portable--one-whole no-bottom-margin' },
 	                        (0, _htmlReactParser2.default)(this.props.information.name)
 	                    ),
 	                    _react2.default.createElement(
