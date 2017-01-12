@@ -22733,8 +22733,6 @@
 	        value: function render() {
 	            var _this2 = this;
 
-	            var name = (0, _htmlReactParser2.default)(this.props.partner.name);
-
 	            return _react2.default.createElement(
 	                'div',
 	                {
@@ -22742,7 +22740,7 @@
 	                    onClick: function onClick() {
 	                        return _this2.handleClick(_react2.default.createElement(_ministryPartnerInformation2.default, { information: _this2.props.partner }));
 	                    } },
-	                name
+	                (0, _htmlReactParser2.default)(this.props.partner.name)
 	            );
 	        }
 	    }]);
