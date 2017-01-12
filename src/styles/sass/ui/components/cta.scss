@@ -1,0 +1,53 @@
+.cta {
+    &--wrapper {
+        cursor: pointer;
+        
+        //height: 60px;
+        //margin: 0 auto;
+        position: relative;
+        //top: 50%;
+        //transform: translateY(-50%);
+        //width: 320px;
+
+    }
+
+    &--shape {
+        fill: transparent;
+        stroke-dasharray: 140 540;
+        stroke-dashoffset: -474;
+        stroke-width: 8px;
+        //stroke: currentColor;
+        stroke: $dark-blue;
+    }
+
+    &--text {
+        //color: currentColor;
+        color: currentColor;
+        font-family: $serif;
+        font-size: 22px;
+        letter-spacing: 8px;
+        //line-height: 32px;
+        position: relative;
+        //top: -48px;
+        top: -3.2rem;
+    }
+
+    
+    &--wrapper:hover &--shape {
+        animation: 0.5s cta--draw linear forwards;
+    }
+}
+
+@keyframes cta--draw {
+  0% {
+    stroke-dasharray: 140 540;
+    stroke-dashoffset: -474;
+    stroke-width: 8px;
+  }
+  100% {
+    stroke-dasharray: 760;
+    stroke-dashoffset: 0;
+    stroke-width: 8px;
+    //stroke-width: 2px;
+  }
+}

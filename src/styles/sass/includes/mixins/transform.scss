@@ -1,0 +1,33 @@
+@mixin transform($value: none) {
+    -webkit-transform: $value;
+	-o-transform: $value;
+    -moz-transform: $value;
+	-ms-transform: $value;
+    transform: $value;
+}
+
+@mixin perspective($value: none) {
+    -webkit-perspective: $value;
+	-moz-perspective: $value;
+	-ms-perspective: $value;
+	perspective: $value;
+}
+
+@mixin transform-style($value: flat) {
+    -moz-transform-style: $value;
+	-ms-transform-style: $value;
+	transform-style: $value;
+}
+
+@mixin backface-visibility($value: visible) {
+    -webkit-backface-visibility: $value;
+	-moz-backface-visibility: $value;
+	-ms-backface-visibility: $value;
+	backface-visibility: $value;
+}
+
+@mixin transform-origin($value: 50% 50% 0) {
+    -ms-transform-origin: $value; /* IE 9 */
+    -webkit-transform-origin: $value; /* Chrome, Safari, Opera */
+    transform-origin: $value;
+}

@@ -1,0 +1,36 @@
+.fx-bottom-border {
+    @include transform(translateZ(0));
+    @include backface-visibility(hidden);
+    
+    &:before {
+        content: "";
+
+        position: absolute;
+        z-index: -1;
+
+        left: 0;
+        right: 100%;
+        bottom: 0;
+        
+        background: currentColor;
+        
+        height: 4px;
+        
+        @include transition(right .3s ease-out);
+    }
+    &.fx-light-blue:before {
+        color: $light-blue;
+    }
+    &.fx-medium-blue:before {
+        color: $medium-blue;
+    }
+    &.fx-dark-blue:before {
+        color: $dark-blue;
+    }
+
+    &:hover:before,
+    &:focus:before,
+    &:active:before {
+        right: 0;
+    }
+}

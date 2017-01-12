@@ -1,0 +1,47 @@
+%clock-hand-base {
+    stroke-width: 8;
+    stroke-linecap: round;
+
+    // @include transform-origin(center center);
+    @include transform-origin(125px 125px);
+}
+
+.clock {
+    display: block;
+    
+    &__face {
+        stroke: $black;
+        stroke-width: 16;
+        fill: transparent;
+    }
+
+    &__second-hand {
+        @extend %clock-hand-base;
+
+        stroke: $red;
+        stroke-width: 1;
+
+        animation: rotate 60s infinite linear;
+    }
+
+    &__minute-hand {
+        @extend %clock-hand-base;
+
+        stroke: $black;
+
+        animation: rotate 3600s infinite ease;
+    }
+
+    &__hour-hand {
+        @extend %clock-hand-base;
+
+        stroke: $black;
+
+        animation: rotate 86400s infinite ease;
+    }
+}
+
+@keyframes rotate {
+    0%   {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}

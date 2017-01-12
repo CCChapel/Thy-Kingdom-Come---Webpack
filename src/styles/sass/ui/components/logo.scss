@@ -1,0 +1,83 @@
+.cls-1,
+.cls-2,
+.cls-3,
+.cls-4,
+.cls-5 {
+    fill: none;
+}
+
+.cls-2,
+.cls-3,
+.cls-4,
+.cls-5 {
+    stroke: #000;
+    stroke-miterlimit: 10;
+}
+
+.cls-3 {
+    stroke-width: 2px;
+}
+
+.cls-4 {
+    stroke-width: 0.5px;
+}
+
+.cls-5 {
+    stroke-width: 3px;
+}
+
+@keyframes test {
+    0%   {transform: translateY(0);}
+    50%  {transform: translateY(10px);}
+    100% {transform: translateY(0);}
+}
+
+$default-distance-x: 20px;
+$default-distance-y: 11px;
+$default-duration: 5s;
+$default-timing-function: linear;
+
+@keyframes down-up {
+    0%   {transform: translate(0, 0);}
+    25%  {transform: translate(-$default-distance-x, $default-distance-y);}
+    50%  {transform: translate(0, 0);}
+    75%  {transform: translate($default-distance-x, -$default-distance-y);}
+    100% {transform: translate(0, 0);}
+}
+
+@keyframes up-down {
+    0%   {transform: translate(0, 0);}
+    25%  {transform: translate($default-distance-x, -$default-distance-y);}
+    50%  {transform: translate(0, 0);}
+    75%  {transform: translate(-$default-distance-x, $default-distance-y);}
+}
+
+.fx-down-up {
+    animation: down-up $default-duration infinite $default-timing-function;
+}
+
+.fx-up-down {
+    animation: up-down $default-duration infinite $default-timing-function;
+}
+
+@keyframes shimmer {
+    0%   { opacity: 1; }
+    50%  { opacity: .25; }
+    100% { opacity: 1; }
+}
+
+.fx-shimmer {
+    animation: shimmer 2s infinite ease alternate;
+
+    &.short-delay {
+        animation-delay: .5s;
+    }
+
+    &.medium-delay {
+        animation-delay: 1s;
+    }
+
+    &.long-delay {
+        animation-delay: 1.5s;
+    }
+}

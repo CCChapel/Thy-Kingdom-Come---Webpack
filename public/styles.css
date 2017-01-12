@@ -1,0 +1,751 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/*------------------------------------*\
+#BOX-SIZING
+\*------------------------------------*/
+/**
+* Set the global `box-sizing` state to `border-box`.
+*
+* css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice
+* paulirish.com/2012/box-sizing-border-box-ftw
+*/
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit; }
+
+/**
+ * Typecsset
+ *
+ * Typecsset is a small, unopinionated library for creating beautifully set type
+ * on the web. Typecsset gives perfect vertical rhythm at any configurable font
+ * size, as well as many other typographical niceties.
+ */
+/*------------------------------------*\
+    #SHARED
+\*------------------------------------*/
+/**
+ * A lot of elements in Typecsset need to share some declarations (mainly for
+ * vertical rhythm), so we `@extend` some silent classes.
+ */
+h1, h2, h3, h4, h5, h6, ul, ol, dd, p, address, pre, blockquote, table {
+  margin: 0;
+  padding: 0; }
+
+h1, h2, h3, h4, h5, h6, ul, ol, dd, p, address, pre, blockquote, table {
+  margin-bottom: 24px;
+  margin-bottom: 1.5rem; }
+
+/*------------------------------------*\
+    #BASE
+\*------------------------------------*/
+/**
+ * 1. Set the base elementΓÇÖs `font-size` to the value of your choosing. Set in
+ *    ems, assuming a browser default of 16px.
+ * 2. Work out the unitless `line-height` for your project based around your
+ *    desired `line-height` (defined previously in pixels), and your projectΓÇÖs
+ *    base font size.
+ */
+html {
+  font-size: 1em;
+  /* [1] */
+  line-height: 1.5;
+  /* [2] */ }
+
+body {
+  margin: 0; }
+
+/*------------------------------------*\
+    #HEADINGS
+\*------------------------------------*/
+h1 {
+  font-size: 48px;
+  font-size: 3rem;
+  line-height: 1; }
+
+h2 {
+  font-size: 36px;
+  font-size: 2.25rem;
+  line-height: 1.33333; }
+
+h3 {
+  font-size: 30px;
+  font-size: 1.875rem;
+  line-height: 1.6; }
+
+h4 {
+  font-size: 24px;
+  font-size: 1.5rem;
+  line-height: 1; }
+
+h5 {
+  font-size: 20px;
+  font-size: 1.25rem;
+  line-height: 1.2; }
+
+h6 {
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 1.33333; }
+
+/*------------------------------------*\
+    #LISTS
+\*------------------------------------*/
+ul, ol, dd {
+  margin-left: 48px;
+  margin-left: 3rem; }
+
+li > ul,
+li > ol {
+  margin-bottom: 0; }
+
+/*------------------------------------*\
+    #PARAGRAPHS
+\*------------------------------------*/
+/**
+ * Not strictly a paragraph, but probably doesnΓÇÖt need its own section.
+ */
+/*------------------------------------*\
+    #CODE
+\*------------------------------------*/
+/**
+ * 1. Fix an odd quirk whereby, without this, code blocks are rendered at a
+ *    font-size smaller than 1em.
+ */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  /* [1] */ }
+
+/*------------------------------------*\
+    #QUOTES
+\*------------------------------------*/
+/**
+ * 1. Hang the opening quote of the blockquote.
+ */
+blockquote {
+  text-indent: -0.41em;
+  /* [1] */ }
+
+/**
+ * Set up quote marks on quoting elements. This is very English-based, so we are
+ * using ΓÇ£, ΓÇ¥, ΓÇÿ, and ΓÇÖ quotes.
+ */
+blockquote {
+  quotes: "ΓÇ£" "ΓÇ¥";
+  margin-left: 48px;
+  margin-left: 3rem; }
+  blockquote p:before {
+    content: "ΓÇ£";
+    content: open-quote; }
+  blockquote p:after {
+    content: "";
+    content: no-close-quote; }
+  blockquote p:last-of-type:after {
+    content: "ΓÇ¥";
+    content: close-quote; }
+
+q {
+  quotes: "ΓÇÿ" "ΓÇÖ" "ΓÇ£" "ΓÇ¥";
+  /**
+   * If an element opens with an inline quote, letΓÇÖs hang that.
+   */ }
+  q:before {
+    content: "ΓÇÿ";
+    content: open-quote; }
+  q:after {
+    content: "ΓÇÖ";
+    content: close-quote; }
+  q q:before {
+    content: "ΓÇ£";
+    content: open-quote; }
+  q q:after {
+    content: "ΓÇ¥";
+    content: close-quote; }
+  q:first-child {
+    display: inline-block;
+    text-indent: -0.22em; }
+
+/*------------------------------------*\
+    #TABLES
+\*------------------------------------*/
+/**
+ * Crude table styles; tables are very difficult to keep on the baseline.
+ */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+th,
+td {
+  padding: 12px; }
+
+/*------------------------------------*\
+Taken from CSS Wizardry Grids
+csswizardry.com
+\*------------------------------------*/
+/**
+* Define your breakpoints. The first value is the prefix that shall be used for
+* your classes (e.g. `.palm--one-half`), the second value is the media query
+* that the breakpoint fires at.
+*/
+/**
+* These mixins are for the library to use only, you should not need to modify
+* them at all.
+*
+* Enclose a block of code with a media query as named in `$breakpoints`.
+*/
+body {
+  font-family: "proxima-nova", "freight-sans-pro", Verdana, Arial, sans-serif;
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 1.33333;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+h1, h2, h3, h4, h5, h6,
+.header {
+  font-family: "freight-big-pro", "Franklin Gothic Book", serif;
+  letter-spacing: 2px; }
+
+p {
+  font-weight: 300; }
+
+ol {
+  list-style: decimal;
+  margin-left: 1rem; }
+
+a {
+  color: currentColor;
+  text-decoration: none; }
+  a:hover, a:active {
+    text-decoration: underline; }
+
+.serif {
+  font-family: "freight-big-pro", "Franklin Gothic Book", serif;
+  letter-spacing: 2px; }
+
+.sans-serif {
+  font-family: "proxima-nova", "freight-sans-pro", Verdana, Arial, sans-serif; }
+
+.text-white {
+  color: #FFF; }
+.text-light-blue {
+  color: #a2ccdd; }
+.text-medium-blue {
+  color: #69a7c2; }
+.text-dark-blue {
+  color: #467284; }
+.text-black {
+  color: #333; }
+.text-smaller {
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 1.71429; }
+.text-bigger {
+  font-size: 24px;
+  font-size: 1.5rem;
+  line-height: 1; }
+
+.center {
+  text-align: center; }
+
+.cursor-point {
+  cursor: pointer; }
+
+.cls-1,
+.cls-2,
+.cls-3,
+.cls-4,
+.cls-5 {
+  fill: none; }
+
+.cls-2,
+.cls-3,
+.cls-4,
+.cls-5 {
+  stroke: #000;
+  stroke-miterlimit: 10; }
+
+.cls-3 {
+  stroke-width: 2px; }
+
+.cls-4 {
+  stroke-width: 0.5px; }
+
+.cls-5 {
+  stroke-width: 3px; }
+
+@keyframes test {
+  0% {
+    transform: translateY(0); }
+  50% {
+    transform: translateY(10px); }
+  100% {
+    transform: translateY(0); } }
+@keyframes down-up {
+  0% {
+    transform: translate(0, 0); }
+  25% {
+    transform: translate(-20px, 11px); }
+  50% {
+    transform: translate(0, 0); }
+  75% {
+    transform: translate(20px, -11px); }
+  100% {
+    transform: translate(0, 0); } }
+@keyframes up-down {
+  0% {
+    transform: translate(0, 0); }
+  25% {
+    transform: translate(20px, -11px); }
+  50% {
+    transform: translate(0, 0); }
+  75% {
+    transform: translate(-20px, 11px); } }
+.fx-down-up {
+  animation: down-up 5s infinite linear; }
+
+.fx-up-down {
+  animation: up-down 5s infinite linear; }
+
+@keyframes shimmer {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: .25; }
+  100% {
+    opacity: 1; } }
+.fx-shimmer {
+  animation: shimmer 2s infinite ease alternate; }
+  .fx-shimmer.short-delay {
+    animation-delay: .5s; }
+  .fx-shimmer.medium-delay {
+    animation-delay: 1s; }
+  .fx-shimmer.long-delay {
+    animation-delay: 1.5s; }
+
+.clock__second-hand, .clock__minute-hand, .clock__hour-hand {
+  stroke-width: 8;
+  stroke-linecap: round;
+  -ms-transform-origin: 125px 125px;
+  /* IE 9 */
+  -webkit-transform-origin: 125px 125px;
+  /* Chrome, Safari, Opera */
+  transform-origin: 125px 125px; }
+
+.clock {
+  display: block; }
+  .clock__face {
+    stroke: #333;
+    stroke-width: 16;
+    fill: transparent; }
+  .clock__second-hand {
+    stroke: #cc0000;
+    stroke-width: 1;
+    animation: rotate 60s infinite linear; }
+  .clock__minute-hand {
+    stroke: #333;
+    animation: rotate 3600s infinite ease; }
+  .clock__hour-hand {
+    stroke: #333;
+    animation: rotate 86400s infinite ease; }
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
+.cta--wrapper {
+  cursor: pointer;
+  position: relative; }
+.cta--shape {
+  fill: transparent;
+  stroke-dasharray: 140 540;
+  stroke-dashoffset: -474;
+  stroke-width: 8px;
+  stroke: #467284; }
+.cta--text {
+  color: currentColor;
+  font-family: "freight-big-pro", "Franklin Gothic Book", serif;
+  font-size: 22px;
+  letter-spacing: 8px;
+  position: relative;
+  top: -3.2rem; }
+.cta--wrapper:hover .cta--shape {
+  animation: 0.5s cta--draw linear forwards; }
+
+@keyframes cta--draw {
+  0% {
+    stroke-dasharray: 140 540;
+    stroke-dashoffset: -474;
+    stroke-width: 8px; }
+  100% {
+    stroke-dasharray: 760;
+    stroke-dashoffset: 0;
+    stroke-width: 8px; } }
+.js-video {
+  height: 0;
+  padding-top: 25px;
+  padding-bottom: 67.5%;
+  margin-bottom: 10px;
+  position: relative;
+  overflow: hidden; }
+  .js-video.widescreen {
+    padding-bottom: 56.34%; }
+  .js-video.vimeo {
+    padding-top: 0; }
+  .js-video embed, .js-video iframe, .js-video object, .js-video video {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute; }
+
+.flex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row nowrap;
+  -moz-flex-flow: row nowrap;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  align-items: center;
+  -webkit-align-content: stretch;
+  -moz-align-content: stretch;
+  -ms-flex-line-pack: stretch;
+  align-content: stretch;
+  height: 100%;
+  width: 100%; }
+  .flex.align-content-top {
+    -webkit-align-content: flex-start;
+    -moz-align-content: flex-start;
+    -ms-flex-line-pack: start;
+    align-content: flex-start; }
+  .flex.justify-content-center {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    justify-content: center; }
+  .flex.align-items-stretch {
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    -webkit-align-items: stretch;
+    -moz-align-items: stretch;
+    align-items: stretch; }
+  .flex:not(.vertical) > * {
+    margin-right: 20px; }
+    .flex:not(.vertical) > *:last-child {
+      margin-right: 0; }
+  .flex.no-gutter > * {
+    margin-right: 0; }
+  .flex.wrap {
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+    .flex.wrap > * {
+      margin-right: 0; }
+  .flex.vertical {
+    -webkit-flex-flow: column nowrap;
+    -moz-flex-flow: column nowrap;
+    -ms-flex-flow: column nowrap;
+    flex-flow: column nowrap; }
+    .flex.vertical.center {
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      -moz-justify-content: center;
+      justify-content: center; }
+  @media only screen and (max-width: 1023px) {
+    .flex.palm--stack {
+      -webkit-box-direction: normal;
+      -webkit-box-orient: vertical;
+      -webkit-flex-direction: column;
+      -moz-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column; }
+      .flex.palm--stack.reverse {
+        -webkit-box-direction: reverse;
+        -webkit-box-orient: vertical;
+        -webkit-flex-direction: column-reverse;
+        -moz-flex-direction: column-reverse;
+        -ms-flex-direction: column-reverse;
+        flex-direction: column-reverse; }
+      .flex.palm--stack > * {
+        margin-right: 0; } }
+
+.modal {
+  background: rgba(0, 0, 0, 0.85);
+  color: #FFF;
+  position: fixed;
+  z-index: 1000;
+  height: 100vh;
+  width: 100vw;
+  animation: modal-open .5s 1; }
+
+.modal-close {
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 20px; }
+
+@keyframes modal-open {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+.background-cover {
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.static-image {
+  position: absolute;
+  top: 0;
+  z-index: -1; }
+
+.object-cover {
+  object-fit: cover;
+  object-position: top center;
+  height: 100%;
+  width: 100%; }
+
+.content-wrapper {
+  padding: 4rem;
+  width: 100%; }
+  @media only screen and (max-width: 480px) {
+    .content-wrapper {
+      padding: 3rem 10px;
+      max-width: 100vw;
+      overflow-x: hidden; } }
+  .content-wrapper.lock-width, .content-wrapper .lock-width {
+    max-width: 60rem; }
+
+.add-padding {
+  padding: 1rem 20px; }
+
+.add-bottom-margin {
+  margin-bottom: 24px;
+  margin-bottom: 1.5rem; }
+
+.no-bottom-margin {
+  margin-bottom: 0; }
+
+.center-by-margin {
+  margin-left: auto !important;
+  margin-right: auto !important; }
+
+.fill-screen-height {
+  min-height: 100vh; }
+
+.full-height {
+  height: 100%; }
+
+.half-height {
+  height: 50%; }
+
+.one-whole {
+  width: 100%; }
+
+.nine-tenths {
+  width: 90%; }
+
+.two-thirds {
+  width: 66%; }
+
+.one-half {
+  width: 50%; }
+
+.one-third {
+  width: 33%; }
+
+.one-quarter {
+  width: 25%; }
+
+@media only screen and (max-width: 1023px) {
+  .portable--one-whole {
+    width: 100%; }
+  .portable-nine-tenths {
+    width: 90%; }
+  .portable--two-thirds {
+    width: 66%; }
+  .portable--one-half {
+    width: 50%; }
+  .portable--one-third {
+    width: 33%; }
+  .portable--one-quarter {
+    width: 25%; } }
+@media only screen and (max-width: 480px) {
+  .palm--one-whole {
+    width: 100%; }
+  .palm--nine-tenths {
+    width: 90%; }
+  .palm--two-thirds {
+    width: 66%; }
+  .palm--one-half {
+    width: 50%; }
+  .palm--one-third {
+    width: 33%; }
+  .palm--one-quarter {
+    width: 25%; } }
+.overflow-x-hidden {
+  overflow-x: hidden; }
+
+.bg-light-blue {
+  background-color: #a2ccdd; }
+.bg-medium-blue {
+  background-color: #69a7c2; }
+.bg-dark-blue {
+  background-color: #467284; }
+.bg-charcoal {
+  background-color: #333333; }
+.bg-clouds {
+  background-image: url(../images/clouds.jpg); }
+.bg-cover {
+  background-size: cover; }
+
+input[type="text"],
+input[type="email"], textarea {
+  background: transparent;
+  border: none;
+  border-bottom: 4px solid #69a7c2;
+  border-radius: 0;
+  margin-bottom: 1em;
+  padding: 0 1em;
+  width: 100%;
+  font-family: "proxima-nova", "freight-sans-pro", Verdana, Arial, sans-serif;
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 1.33333;
+  color: white;
+  transition: border .5s; }
+  input[type="text"]:focus,
+  input[type="email"]:focus, textarea:focus {
+    border-bottom-color: #FFF;
+    outline: none; }
+  input[type="text"]:invalid,
+  input[type="email"]:invalid, textarea:invalid {
+    box-shadow: none; }
+
+input[type="text"],
+input[type="email"] {
+  height: 3rem; }
+  input[type="text"]:not([value=""]):not(:focus):invalid,
+  input[type="email"]:not([value=""]):not(:focus):invalid {
+    border-bottom-color: #cc0000; }
+
+textarea {
+  height: 9rem;
+  resize: none; }
+  textarea:not(:empty):invalid {
+    border-bottom-color: #cc0000; }
+
+.form--error {
+  background: #cc0000;
+  padding: 1em;
+  color: #FFF; }
+
+.hidden {
+  display: none; }
+
+.auto-min-height {
+  min-height: auto; }
+
+.fx-bottom-border {
+  -webkit-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  backface-visibility: hidden; }
+  .fx-bottom-border:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 100%;
+    bottom: 0;
+    background: currentColor;
+    height: 4px;
+    -webkit-transition: right 0.3s ease-out;
+    -moz-transition: right 0.3s ease-out;
+    -o-transition: right 0.3s ease-out;
+    -ms-transition: right 0.3s ease-out;
+    transition: right 0.3s ease-out; }
+  .fx-bottom-border.fx-light-blue:before {
+    color: #a2ccdd; }
+  .fx-bottom-border.fx-medium-blue:before {
+    color: #69a7c2; }
+  .fx-bottom-border.fx-dark-blue:before {
+    color: #467284; }
+  .fx-bottom-border:hover:before, .fx-bottom-border:focus:before, .fx-bottom-border:active:before {
+    right: 0; }
+
+/*# sourceMappingURL=styles.css.map */
