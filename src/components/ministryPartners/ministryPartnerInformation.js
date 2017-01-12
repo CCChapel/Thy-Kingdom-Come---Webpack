@@ -5,7 +5,7 @@ import Parser from 'html-react-parser';
 
 import CTA from '../page/cta';
 import Checkbox from '../page/checkbox';
-
+ 
 /**
  * Displays the ministry partner information
  * @information = Partner Information to display
