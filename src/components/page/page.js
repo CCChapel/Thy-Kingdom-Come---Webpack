@@ -10,6 +10,7 @@ import MinistryPartnersTable from '../ministryPartners/ministryPartnersTable';
 import Logo from '../images/logo';
 import Clock from '../images/clock';
 import VimeoVideo from '../embeds/vimeoVideo';
+import ContactForm from '../forms/contact';
 
 /**
  * Defines the base page

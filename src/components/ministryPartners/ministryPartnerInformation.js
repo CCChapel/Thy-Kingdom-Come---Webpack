@@ -24,7 +24,7 @@ export default class MinistryPartnerInformation extends React.Component {
         let options = new Array();
         this.props.information.options.forEach((option, index) => {
             options.push(
-                <div className="add-bottom-margin [ one-third portable--one-whole ]" key={index}>
+                <div className="add-bottom-margin" key={index}>
                     <div className="[ text-bigger bold ]"><Checkbox /> { Parser(option.name) }</div>
                     <div className="indent">{ Parser(option.details) }</div>
                 </div>
@@ -32,29 +32,40 @@ export default class MinistryPartnerInformation extends React.Component {
         });
 
         return (
-            <div>
-                <h1 className="center">
-                    { Parser(this.props.information.name) }
-                </h1>
+            <div className="flex">
+                <div className="lock-width center-by-margin">
+                    <h1 className="center">
+                        { Parser(this.props.information.name) }
+                    </h1>
 
-                <p className="center center-by-margin lock-width">
-                    { Parser(this.props.information.description) }
-                </p>
+                    <div className="flex portable--stack align-items--flex-start">
+                        <div className="one-half portable--one-whole add-right-margin--double">
+                            <h2 className="no-bottom-margin">What They&rsquo;re About</h2>
+                            
+                            <p>
+                                { Parser(this.props.information.description) }
+                            </p>
+                        </div>
 
-                <div className="add-bottom-margin">
-                    <h2 className="center">Options</h2>
-                    <div className="desk-gutter--3-by-3 [ flex wrap justify-content--center align-items--flex-start ]">
-                        {options}
+                        <div className="one-half portable--one-whole">
+                            <div className="add-bottom-margin">
+                                <h2 className="no-bottom-margin">Spree Options</h2>
+
+                                <div>
+                                    {options}
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                
-                <div className="flex wrap justify-content--center">
-                    <div className="portable--one-whole">
-                        {siteLink}
-                    </div>
 
-                    <div className="portable--one-whole">
-                        <CTA text="Questions?" />
+                    <div className="center center-by-margin lock-width">
+                        <div>
+                            {siteLink}
+                        </div>
+
+                        <div>
+                            <CTA text="Questions?" />
+                        </div>
                     </div>
                 </div>
             </div>

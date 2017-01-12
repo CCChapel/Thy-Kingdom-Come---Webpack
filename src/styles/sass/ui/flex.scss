@@ -83,7 +83,7 @@
     }
         
     @include media-query("portable") {
-        &.palm--stack {
+        &.portable--stack {
             @include flex-direction(column);
 
             &.reverse {

@@ -41,6 +41,10 @@
 
 .add-right-margin {
     margin-right: $gutter !important;
+
+    &--double {
+        margin-right: $gutter * 2 !important;
+    }
 }
 
 .add-bottom-margin {

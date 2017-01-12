@@ -22151,6 +22151,10 @@
 
 	var _vimeoVideo2 = _interopRequireDefault(_vimeoVideo);
 
+	var _contact = __webpack_require__(200);
+
+	var _contact2 = _interopRequireDefault(_contact);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -22239,7 +22243,7 @@
 	                            { className: 'center' },
 	                            _react2.default.createElement(_cta2.default, { text: 'Questions',
 	                                onClick: function onClick() {
-	                                    return _this2.showModal(_react2.default.createElement(ContactForm, { className: 'content-wrapper lock-width center-by-margin',
+	                                    return _this2.showModal(_react2.default.createElement(_contact2.default, { className: 'content-wrapper lock-width center-by-margin',
 	                                        onComplete: _this2.hideModal }));
 	                                } })
 	                        )
@@ -22817,7 +22821,7 @@
 	            this.props.information.options.forEach(function (option, index) {
 	                options.push(_react2.default.createElement(
 	                    'div',
-	                    { className: 'add-bottom-margin [ one-third portable--one-whole ]', key: index },
+	                    { className: 'add-bottom-margin', key: index },
 	                    _react2.default.createElement(
 	                        'div',
 	                        { className: '[ text-bigger bold ]' },
@@ -22835,43 +22839,64 @@
 
 	            return _react2.default.createElement(
 	                'div',
-	                null,
-	                _react2.default.createElement(
-	                    'h1',
-	                    { className: 'center' },
-	                    (0, _htmlReactParser2.default)(this.props.information.name)
-	                ),
-	                _react2.default.createElement(
-	                    'p',
-	                    { className: 'center center-by-margin lock-width' },
-	                    (0, _htmlReactParser2.default)(this.props.information.description)
-	                ),
+	                { className: 'flex' },
 	                _react2.default.createElement(
 	                    'div',
-	                    { className: 'add-bottom-margin' },
+	                    { className: 'lock-width center-by-margin' },
 	                    _react2.default.createElement(
-	                        'h2',
+	                        'h1',
 	                        { className: 'center' },
-	                        'Options'
+	                        (0, _htmlReactParser2.default)(this.props.information.name)
 	                    ),
 	                    _react2.default.createElement(
 	                        'div',
-	                        { className: 'desk-gutter--3-by-3 [ flex wrap justify-content--center align-items--flex-start ]' },
-	                        options
-	                    )
-	                ),
-	                _react2.default.createElement(
-	                    'div',
-	                    { className: 'flex wrap justify-content--center' },
-	                    _react2.default.createElement(
-	                        'div',
-	                        { className: 'portable--one-whole' },
-	                        siteLink
+	                        { className: 'flex portable--stack align-items--flex-start' },
+	                        _react2.default.createElement(
+	                            'div',
+	                            { className: 'one-half portable--one-whole add-right-margin--double' },
+	                            _react2.default.createElement(
+	                                'h2',
+	                                { className: 'no-bottom-margin' },
+	                                'What They\u2019re About'
+	                            ),
+	                            _react2.default.createElement(
+	                                'p',
+	                                null,
+	                                (0, _htmlReactParser2.default)(this.props.information.description)
+	                            )
+	                        ),
+	                        _react2.default.createElement(
+	                            'div',
+	                            { className: 'one-half portable--one-whole' },
+	                            _react2.default.createElement(
+	                                'div',
+	                                { className: 'add-bottom-margin' },
+	                                _react2.default.createElement(
+	                                    'h2',
+	                                    { className: 'no-bottom-margin' },
+	                                    'Spree Options'
+	                                ),
+	                                _react2.default.createElement(
+	                                    'div',
+	                                    null,
+	                                    options
+	                                )
+	                            )
+	                        )
 	                    ),
 	                    _react2.default.createElement(
 	                        'div',
-	                        { className: 'portable--one-whole' },
-	                        _react2.default.createElement(_cta2.default, { text: 'Questions?' })
+	                        { className: 'center center-by-margin lock-width' },
+	                        _react2.default.createElement(
+	                            'div',
+	                            null,
+	                            siteLink
+	                        ),
+	                        _react2.default.createElement(
+	                            'div',
+	                            null,
+	                            _react2.default.createElement(_cta2.default, { text: 'Questions?' })
+	                        )
 	                    )
 	                )
 	            );
@@ -23881,6 +23906,314 @@
 	}(_react2.default.Component);
 
 	exports.default = VimeoVideo;
+
+/***/ },
+/* 200 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _cta = __webpack_require__(185);
+
+	var _cta2 = _interopRequireDefault(_cta);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	/**
+	 * Displays the Contact Form
+	 * 
+	 * @className = Class Names to apply to root form element
+	 * @onComplete = Function to call when form completes submission
+	 */
+	var ContactForm = function (_React$Component) {
+	    _inherits(ContactForm, _React$Component);
+
+	    function ContactForm(props) {
+	        _classCallCheck(this, ContactForm);
+
+	        var _this = _possibleConstructorReturn(this, (ContactForm.__proto__ || Object.getPrototypeOf(ContactForm)).call(this, props));
+
+	        _this.state = {
+	            showError: false,
+	            errorMessage: '',
+	            showForm: true,
+	            showConfirmation: false,
+	            data: {
+	                field_48610311: '',
+	                field_48610314: '',
+	                field_48610320: '',
+	                field_48610323: ''
+	            }
+	        };
+
+	        _this.showError = _this.showError.bind(_this);
+	        _this.hideError = _this.hideError.bind(_this);
+	        _this.showForm = _this.showForm.bind(_this);
+	        _this.hideForm = _this.hideForm.bind(_this);
+	        _this.showConfirmation = _this.showConfirmation.bind(_this);
+	        _this.hideConfirmation = _this.hideConfirmation.bind(_this);
+	        _this.onNameChange = _this.onNameChange.bind(_this);
+	        _this.onEmailChange = _this.onEmailChange.bind(_this);
+	        _this.onSubjectChange = _this.onSubjectChange.bind(_this);
+	        _this.onMessageChange = _this.onMessageChange.bind(_this);
+	        _this.handleSubmit = _this.handleSubmit.bind(_this);
+	        return _this;
+	    }
+
+	    _createClass(ContactForm, [{
+	        key: 'showError',
+	        value: function showError(message) {
+	            this.setState({
+	                showError: true,
+	                errorMessage: message
+	            });
+	        }
+	    }, {
+	        key: 'hideError',
+	        value: function hideError() {
+	            this.setState({
+	                showError: false,
+	                errorMessage: ''
+	            });
+	        }
+	    }, {
+	        key: 'showForm',
+	        value: function showForm(e) {
+	            this.setState({
+	                showForm: true
+	            });
+	        }
+	    }, {
+	        key: 'hideForm',
+	        value: function hideForm(e) {
+	            this.setState({
+	                showForm: false
+	            });
+	        }
+	    }, {
+	        key: 'showConfirmation',
+	        value: function showConfirmation(e) {
+	            this.setState({
+	                showConfirmation: true
+	            });
+	        }
+	    }, {
+	        key: 'hideConfirmation',
+	        value: function hideConfirmation(e) {
+	            this.setState({
+	                showConfirmation: false
+	            });
+	        }
+	    }, {
+	        key: 'onNameChange',
+	        value: function onNameChange(e) {
+	            this.setState({
+	                data: {
+	                    field_48610311: e.target.value,
+	                    field_48610314: this.state.data.field_48610314,
+	                    field_48610320: this.state.data.field_48610320,
+	                    field_48610323: this.state.data.field_48610323
+	                }
+	            });
+	        }
+	    }, {
+	        key: 'onEmailChange',
+	        value: function onEmailChange(e) {
+	            this.setState({
+	                data: {
+	                    field_48610311: this.state.data.field_48610311,
+	                    field_48610314: e.target.value,
+	                    field_48610320: this.state.data.field_48610320,
+	                    field_48610323: this.state.data.field_48610323
+	                }
+	            });
+	        }
+	    }, {
+	        key: 'onSubjectChange',
+	        value: function onSubjectChange(e) {
+	            this.setState({
+	                data: {
+	                    field_48610311: this.state.data.field_48610311,
+	                    field_48610314: this.state.data.field_48610314,
+	                    field_48610320: e.target.value,
+	                    field_48610323: this.state.data.field_48610323
+	                }
+	            });
+	        }
+	    }, {
+	        key: 'onMessageChange',
+	        value: function onMessageChange(e) {
+	            this.setState({
+	                data: {
+	                    field_48610311: this.state.data.field_48610311,
+	                    field_48610314: this.state.data.field_48610314,
+	                    field_48610320: this.state.data.field_48610320,
+	                    field_48610323: e.target.value
+	                }
+	            });
+	        }
+	    }, {
+	        key: 'isFormValid',
+	        value: function isFormValid() {
+	            var form = document.getElementById("contactForm");
+
+	            return form.checkValidity();
+	        }
+	    }, {
+	        key: 'handleSubmit',
+	        value: function handleSubmit(e) {
+	            //Hide error
+	            this.hideError();
+
+	            //Check Form Validity
+	            if (this.isFormValid()) {
+	                //Valid Form -> Submit
+	                var url = 'https://www.formstack.com/api/v2/form/2569143/submission.json?oauth_token=68529bb9523b67cff3c735d2e5f9176a';
+
+	                var request = new Request(url, {
+	                    method: 'post',
+	                    mode: "no-cors",
+	                    body: JSON.toQueryString(this.state.data) //this.serializeData()
+	                });
+
+	                //Store hideForm, showConfirmation, onComplete locally because .then won't be able to access `this`
+	                var hideForm = this.hideForm;
+	                var showConfirmation = this.showConfirmation;
+	                var onComplete = this.props.onComplete;
+	                var showError = this.showError;
+
+	                fetch(request).then(function (response) {
+	                    //Hide the form
+	                    hideForm();
+
+	                    //Show Confirmation Message
+	                    showConfirmation();
+
+	                    //Delay 5 seconds, then call onComplete
+	                    setTimeout(onComplete, 5000);
+	                }).catch(function (err) {
+	                    //Log the error
+	                    console.log(err);
+	                    showError('Hmm\u2026 Something didn\u2019t go quite as planned. Please try again.');
+	                });
+
+	                //TO DO: Figure out why we're not getting event
+	                //e.preventDefault();
+	            } else {
+	                //Invalid form -> Show error
+	                this.showError('Oops\u2026 Something\u2019s not quite right. Take another look.');
+	            }
+	        }
+	    }, {
+	        key: 'render',
+	        value: function render() {
+	            var _this2 = this;
+
+	            //var formId = '2569143';
+	            //var token = '68529bb9523b67cff3c735d2e5f9176a';
+	            //var url = 'package.json';
+
+	            var error = '';
+	            if (this.state.showError === true) {
+	                error = _react2.default.createElement(
+	                    'div',
+	                    { className: 'form--error add-bottom-margin' },
+	                    this.state.errorMessage
+	                );
+	            }
+
+	            if (this.state.showForm === true) {
+	                return _react2.default.createElement(
+	                    'form',
+	                    { id: 'contactForm', className: this.props.className },
+	                    _react2.default.createElement(
+	                        'div',
+	                        null,
+	                        _react2.default.createElement('input', { name: 'field_48610311',
+	                            type: 'text',
+	                            placeholder: 'Name',
+	                            required: true,
+	                            value: this.state.data.field_48610311,
+	                            onChange: this.onNameChange })
+	                    ),
+	                    _react2.default.createElement(
+	                        'div',
+	                        null,
+	                        _react2.default.createElement('input', { name: 'field_48610314',
+	                            type: 'text',
+	                            placeholder: 'Email',
+	                            required: true,
+	                            pattern: '[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,3}$',
+	                            value: this.state.data.field_48610314,
+	                            onChange: this.onEmailChange })
+	                    ),
+	                    _react2.default.createElement(
+	                        'div',
+	                        null,
+	                        _react2.default.createElement('input', { name: 'field_48610320',
+	                            type: 'text',
+	                            placeholder: 'Subject',
+	                            required: true,
+	                            value: this.state.data.field_48610320,
+	                            onChange: this.onSubjectChange })
+	                    ),
+	                    _react2.default.createElement(
+	                        'div',
+	                        null,
+	                        _react2.default.createElement('textarea', { name: 'field_48610323',
+	                            placeholder: 'Message',
+	                            height: '5em',
+	                            required: true,
+	                            value: this.state.data.field_48610323,
+	                            onChange: this.onMessageChange })
+	                    ),
+	                    error,
+	                    _react2.default.createElement(
+	                        'div',
+	                        { className: 'center' },
+	                        _react2.default.createElement(_cta2.default, { text: 'Submit', onClick: function onClick(e) {
+	                                return _this2.handleSubmit(e);
+	                            } })
+	                    )
+	                );
+	            }
+
+	            if (this.state.showConfirmation === true) {
+	                return _react2.default.createElement(
+	                    'div',
+	                    { className: this.props.className },
+	                    _react2.default.createElement(
+	                        'h1',
+	                        { className: 'center' },
+	                        'Thanks for submitting your message! Someone will be in touch.'
+	                    )
+	                );
+	            }
+
+	            return null;
+	        }
+	    }]);
+
+	    return ContactForm;
+	}(_react2.default.Component);
+
+	exports.default = ContactForm;
 
 /***/ }
 /******/ ]);
