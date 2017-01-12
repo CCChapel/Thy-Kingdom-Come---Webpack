@@ -664,7 +664,7 @@ a {
 .bg-charcoal {
   background-color: #333333; }
 .bg-clouds {
-  background-image: url(../images/clouds.jpg); }
+  background-image: url(./images/clouds.jpg); }
 .bg-cover {
   background-size: cover; }
 
