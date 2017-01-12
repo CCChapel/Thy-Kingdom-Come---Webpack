@@ -22135,19 +22135,19 @@
 
 	var _cta2 = _interopRequireDefault(_cta);
 
-	var _ministryPartnersTable = __webpack_require__(186);
+	var _ministryPartnersTable = __webpack_require__(187);
 
 	var _ministryPartnersTable2 = _interopRequireDefault(_ministryPartnersTable);
 
-	var _logo = __webpack_require__(189);
+	var _logo = __webpack_require__(190);
 
 	var _logo2 = _interopRequireDefault(_logo);
 
-	var _clock = __webpack_require__(190);
+	var _clock = __webpack_require__(191);
 
 	var _clock2 = _interopRequireDefault(_clock);
 
-	var _vimeoVideo = __webpack_require__(191);
+	var _vimeoVideo = __webpack_require__(192);
 
 	var _vimeoVideo2 = _interopRequireDefault(_vimeoVideo);
 
@@ -22557,7 +22557,8 @@
 	exports.default = CTA;
 
 /***/ },
-/* 186 */
+/* 186 */,
+/* 187 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -22572,7 +22573,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _ministryPartnerRow = __webpack_require__(187);
+	var _ministryPartnerRow = __webpack_require__(188);
 
 	var _ministryPartnerRow2 = _interopRequireDefault(_ministryPartnerRow);
 
@@ -22674,7 +22675,7 @@
 	exports.default = MinistryPartnersTable;
 
 /***/ },
-/* 187 */
+/* 188 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -22689,7 +22690,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _ministryPartnerInformation = __webpack_require__(188);
+	var _ministryPartnerInformation = __webpack_require__(189);
 
 	var _ministryPartnerInformation2 = _interopRequireDefault(_ministryPartnerInformation);
 
@@ -22746,7 +22747,7 @@
 	exports.default = MinistryPartnerRow;
 
 /***/ },
-/* 188 */
+/* 189 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -22851,7 +22852,7 @@
 	exports.default = MinistryPartnerInformation;
 
 /***/ },
-/* 189 */
+/* 190 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -22969,7 +22970,7 @@
 	exports.default = Logo;
 
 /***/ },
-/* 190 */
+/* 191 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -23091,7 +23092,7 @@
 	exports.default = Clock;
 
 /***/ },
-/* 191 */
+/* 192 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
