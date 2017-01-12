@@ -9,8 +9,17 @@ import Parser from 'html-react-parser';
  */
 export default class MinistryPartnerInformation extends React.Component {
     render() {
-        var options = [];
-
+        //Setup External Link
+        let siteLink = null;
+        if (this.props.information.website !== '') {
+            siteLink = 
+                <span className="sans-serif text-smaller">
+                    <a href={this.props.information.website}>Visit their site <i className="fa fa-angle-right"></i></a> 
+                </span>;
+        }
+        
+        //Setup Options
+        let options = new Array();
         this.props.information.options.forEach((option, index) => {
             options.push(
                 <div className="add-bottom-margin" key={index}>
@@ -27,9 +36,7 @@ export default class MinistryPartnerInformation extends React.Component {
                         { Parser(this.props.information.name) }
                     </h1>
                     
-                    <span className="sans-serif text-smaller">
-                        <a href={this.props.information.website}>Visit their site <i className="fa fa-angle-right"></i></a> 
-                    </span>
+                    {siteLink}
                 </div>
 
                 <div className="add-bottom-margin">

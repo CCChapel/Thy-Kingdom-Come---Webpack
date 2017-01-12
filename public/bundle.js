@@ -22794,8 +22794,23 @@
 	    _createClass(MinistryPartnerInformation, [{
 	        key: 'render',
 	        value: function render() {
-	            var options = [];
+	            //Setup External Link
+	            var siteLink = null;
+	            if (this.props.information.website !== '') {
+	                siteLink = _react2.default.createElement(
+	                    'span',
+	                    { className: 'sans-serif text-smaller' },
+	                    _react2.default.createElement(
+	                        'a',
+	                        { href: this.props.information.website },
+	                        'Visit their site ',
+	                        _react2.default.createElement('i', { className: 'fa fa-angle-right' })
+	                    )
+	                );
+	            }
 
+	            //Setup Options
+	            var options = new Array();
 	            this.props.information.options.forEach(function (option, index) {
 	                options.push(_react2.default.createElement(
 	                    'div',
@@ -22824,16 +22839,7 @@
 	                        { className: 'portable--one-whole [ no-bottom-margin add-right-margin ]' },
 	                        (0, _htmlReactParser2.default)(this.props.information.name)
 	                    ),
-	                    _react2.default.createElement(
-	                        'span',
-	                        { className: 'sans-serif text-smaller' },
-	                        _react2.default.createElement(
-	                            'a',
-	                            { href: this.props.information.website },
-	                            'Visit their site ',
-	                            _react2.default.createElement('i', { className: 'fa fa-angle-right' })
-	                        )
-	                    )
+	                    siteLink
 	                ),
 	                _react2.default.createElement(
 	                    'div',
