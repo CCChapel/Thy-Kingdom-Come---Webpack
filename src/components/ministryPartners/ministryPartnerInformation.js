@@ -14,7 +14,7 @@ export default class MinistryPartnerInformation extends React.Component {
         this.props.information.options.forEach((option, index) => {
             options.push(
                 <div className="add-bottom-margin" key={index}>
-                    <h3 className="no-bottom-margin">{option.name}</h3>
+                    <h3 className="no-bottom-margin">{ Parser(option.name) }</h3>
                     <div>{ Parser(option.details) }</div>
                 </div>
             );
@@ -28,7 +28,7 @@ export default class MinistryPartnerInformation extends React.Component {
                     </h1>
                     
                     <span className="sans-serif text-smaller">
-                        <a href={this.props.information.website}>Visit their site</a> <i className="fa fa-angle-right"></i>
+                        <a href={this.props.information.website}>Visit their site <i className="fa fa-angle-right"></i></a> 
                     </span>
                 </div>
 

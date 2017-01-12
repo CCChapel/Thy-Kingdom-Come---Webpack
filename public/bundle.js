@@ -22803,7 +22803,7 @@
 	                    _react2.default.createElement(
 	                        'h3',
 	                        { className: 'no-bottom-margin' },
-	                        option.name
+	                        (0, _htmlReactParser2.default)(option.name)
 	                    ),
 	                    _react2.default.createElement(
 	                        'div',
@@ -22830,10 +22830,9 @@
 	                        _react2.default.createElement(
 	                            'a',
 	                            { href: this.props.information.website },
-	                            'Visit their site'
-	                        ),
-	                        ' ',
-	                        _react2.default.createElement('i', { className: 'fa fa-angle-right' })
+	                            'Visit their site ',
+	                            _react2.default.createElement('i', { className: 'fa fa-angle-right' })
+	                        )
 	                    )
 	                ),
 	                _react2.default.createElement(
