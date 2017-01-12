@@ -9,6 +9,10 @@
     width: 100vw;
 
     animation: modal-open .5s 1;
+
+    a {
+        color: $medium-blue;
+    }
 }
 
 .modal-close {

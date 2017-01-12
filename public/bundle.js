@@ -22826,7 +22826,7 @@
 	                    ),
 	                    _react2.default.createElement(
 	                        'span',
-	                        { className: 'sans-serif text-medium-blue text-smaller' },
+	                        { className: 'sans-serif text-smaller' },
 	                        _react2.default.createElement(
 	                            'a',
 	                            { href: this.props.information.website },

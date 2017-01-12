@@ -558,6 +558,8 @@ a {
   height: 100vh;
   width: 100vw;
   animation: modal-open .5s 1; }
+  .modal a {
+    color: #69a7c2; }
 
 .modal-close {
   cursor: pointer;

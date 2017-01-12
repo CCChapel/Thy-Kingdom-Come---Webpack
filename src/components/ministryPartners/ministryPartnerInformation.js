@@ -27,7 +27,7 @@ export default class MinistryPartnerInformation extends React.Component {
                         { Parser(this.props.information.name) }
                     </h1>
                     
-                    <span className="sans-serif text-medium-blue text-smaller">
+                    <span className="sans-serif text-smaller">
                         <a href={this.props.information.website}>Visit their site</a> <i className="fa fa-angle-right"></i>
                     </span>
                 </div>
