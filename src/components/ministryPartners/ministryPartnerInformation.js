@@ -23,7 +23,7 @@ export default class MinistryPartnerInformation extends React.Component {
         return (
             <div>
                 <h1>
-                    {this.props.information.name}
+                    { Parser(this.props.information.name) }
                     
                     <span className="sans-serif text-medium-blue text-smaller">
                         <a href={this.props.information.website}>Visit their site</a>
@@ -32,7 +32,7 @@ export default class MinistryPartnerInformation extends React.Component {
                 </h1>
 
                 <div className="add-bottom-margin">
-                    {this.props.information.description}
+                    { Parser(this.props.information.description) }
                 </div>
 
                 <h2 className="no-bottom-margin">Options</h2>

@@ -22819,7 +22819,7 @@
 	                _react2.default.createElement(
 	                    'h1',
 	                    null,
-	                    this.props.information.name,
+	                    (0, _htmlReactParser2.default)(this.props.information.name),
 	                    _react2.default.createElement(
 	                        'span',
 	                        { className: 'sans-serif text-medium-blue text-smaller' },
@@ -22834,7 +22834,7 @@
 	                _react2.default.createElement(
 	                    'div',
 	                    { className: 'add-bottom-margin' },
-	                    this.props.information.description
+	                    (0, _htmlReactParser2.default)(this.props.information.description)
 	                ),
 	                _react2.default.createElement(
 	                    'h2',
