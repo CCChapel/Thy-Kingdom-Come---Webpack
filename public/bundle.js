@@ -22770,6 +22770,10 @@
 
 	var _htmlReactParser2 = _interopRequireDefault(_htmlReactParser);
 
+	var _cta = __webpack_require__(185);
+
+	var _cta2 = _interopRequireDefault(_cta);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -22794,19 +22798,15 @@
 	    _createClass(MinistryPartnerInformation, [{
 	        key: 'render',
 	        value: function render() {
+	            var _this2 = this;
+
 	            //Setup External Link
 	            var siteLink = null;
 	            if (this.props.information.website !== '') {
-	                siteLink = _react2.default.createElement(
-	                    'span',
-	                    { className: 'sans-serif text-smaller' },
-	                    _react2.default.createElement(
-	                        'a',
-	                        { href: this.props.information.website },
-	                        'Visit their site ',
-	                        _react2.default.createElement('i', { className: 'fa fa-angle-right' })
-	                    )
-	                );
+	                siteLink = _react2.default.createElement(_cta2.default, { text: 'Visit their Site',
+	                    onClick: function onClick() {
+	                        window.location = _this2.props.information.website;
+	                    } });
 	            }
 
 	            //Setup Options
@@ -22814,7 +22814,7 @@
 	            this.props.information.options.forEach(function (option, index) {
 	                options.push(_react2.default.createElement(
 	                    'div',
-	                    { className: 'add-bottom-margin', key: index },
+	                    { className: 'add-bottom-margin [ one-third portable--one-whole ]', key: index },
 	                    _react2.default.createElement(
 	                        'h3',
 	                        { className: 'no-bottom-margin' },
@@ -22832,26 +22832,43 @@
 	                'div',
 	                null,
 	                _react2.default.createElement(
-	                    'div',
-	                    { className: '[ add-bottom-margin ][ flex wrap justify-content--flex-start align-items--flex-end ]' },
-	                    _react2.default.createElement(
-	                        'h1',
-	                        { className: 'portable--one-whole [ no-bottom-margin add-right-margin ]' },
-	                        (0, _htmlReactParser2.default)(this.props.information.name)
-	                    ),
-	                    siteLink
+	                    'h1',
+	                    { className: 'center' },
+	                    (0, _htmlReactParser2.default)(this.props.information.name)
+	                ),
+	                _react2.default.createElement(
+	                    'p',
+	                    { className: 'center center-by-margin lock-width' },
+	                    (0, _htmlReactParser2.default)(this.props.information.description)
 	                ),
 	                _react2.default.createElement(
 	                    'div',
 	                    { className: 'add-bottom-margin' },
-	                    (0, _htmlReactParser2.default)(this.props.information.description)
+	                    _react2.default.createElement(
+	                        'h2',
+	                        { className: 'center no-bottom-margin' },
+	                        'Options'
+	                    ),
+	                    _react2.default.createElement(
+	                        'div',
+	                        { className: 'flex wrap justify-content--center align-items--flex-start' },
+	                        options
+	                    )
 	                ),
 	                _react2.default.createElement(
-	                    'h2',
-	                    { className: 'no-bottom-margin' },
-	                    'Options'
-	                ),
-	                options
+	                    'div',
+	                    { className: 'flex wrap justify-content--center' },
+	                    _react2.default.createElement(
+	                        'div',
+	                        { className: 'portable--one-whole' },
+	                        siteLink
+	                    ),
+	                    _react2.default.createElement(
+	                        'div',
+	                        { className: 'portable--one-whole' },
+	                        _react2.default.createElement(_cta2.default, { text: 'Questions?' })
+	                    )
+	                )
 	            );
 	        }
 	    }]);

@@ -409,7 +409,8 @@ a {
     transform: rotate(360deg); } }
 .cta--wrapper {
   cursor: pointer;
-  position: relative; }
+  position: relative;
+  text-align: center; }
 .cta--shape {
   fill: transparent;
   stroke-dasharray: 140 540;
@@ -496,6 +497,12 @@ a {
     -webkit-justify-content: center;
     -moz-justify-content: center;
     justify-content: center; }
+  .flex.align-items--flex-start {
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    -webkit-align-items: flex-start;
+    -moz-align-items: flex-start;
+    align-items: flex-start; }
   .flex.align-items--stretch {
     -webkit-box-align: stretch;
     -ms-flex-align: stretch;
