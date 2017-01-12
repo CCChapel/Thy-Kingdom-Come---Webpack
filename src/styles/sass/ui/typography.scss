@@ -1,6 +1,6 @@
 body {
     font-family: $sans-serif;
-    @include typecsset-font-size(18px);
+    @include typecsset-font-size($base-font-size);
 
     -webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
@@ -66,12 +66,16 @@ a {
     }
 
     &-normal {
-        @include typecsset-font-size(18px);
+        @include typecsset-font-size($base-font-size);
     }
 
     &-bigger {
         @include typecsset-font-size(24px);
     }
+}
+
+.bold {
+    font-weight: 700;
 }
 
 .center {

@@ -22736,7 +22736,7 @@
 	            return _react2.default.createElement(
 	                'div',
 	                {
-	                    className: '[ one-third portable--one-whole ] [ bg-light-blue ] [ text-bigger cursor-point ] [ add-bottom-margin add-padding ] [ fx-bottom-border fx-dark-blue ]',
+	                    className: '[ one-third portable--one-whole ] [ bg-light-blue ] [ cursor-point ] [ add-bottom-margin add-padding ] [ fx-bottom-border fx-dark-blue ]',
 	                    onClick: function onClick() {
 	                        return _this2.handleClick(_react2.default.createElement(_ministryPartnerInformation2.default, { information: _this2.props.partner }));
 	                    } },
@@ -22816,8 +22816,8 @@
 	                    'div',
 	                    { className: 'add-bottom-margin [ one-third portable--one-whole ]', key: index },
 	                    _react2.default.createElement(
-	                        'h3',
-	                        { className: 'no-bottom-margin' },
+	                        'div',
+	                        { className: '[ text-bigger bold ]' },
 	                        (0, _htmlReactParser2.default)(option.name)
 	                    ),
 	                    _react2.default.createElement(
