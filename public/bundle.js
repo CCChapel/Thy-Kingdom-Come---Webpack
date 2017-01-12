@@ -23586,7 +23586,6 @@
 	        value: function render() {
 	            var boxClass = "fa-square-o";
 	            if (this.state.isChecked === true) {
-	                console.log('box is checked');
 	                boxClass = "fa-check-square-o";
 	            }
 
