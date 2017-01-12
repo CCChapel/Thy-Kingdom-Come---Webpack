@@ -41,8 +41,8 @@ export default class MinistryPartnerInformation extends React.Component {
                 </p>
 
                 <div className="add-bottom-margin">
-                    <h2 className="center no-bottom-margin">Options</h2>
-                    <div className="flex wrap justify-content--center align-items--flex-start">
+                    <h2 className="center">Options</h2>
+                    <div className="desk-gutter--3-by-3 [ flex wrap justify-content--center align-items--flex-start ]">
                         {options}
                     </div>
                 </div>

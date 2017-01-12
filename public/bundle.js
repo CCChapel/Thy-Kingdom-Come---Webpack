@@ -22846,12 +22846,12 @@
 	                    { className: 'add-bottom-margin' },
 	                    _react2.default.createElement(
 	                        'h2',
-	                        { className: 'center no-bottom-margin' },
+	                        { className: 'center' },
 	                        'Options'
 	                    ),
 	                    _react2.default.createElement(
 	                        'div',
-	                        { className: 'flex wrap justify-content--center align-items--flex-start' },
+	                        { className: 'desk-gutter--3-by-3 [ flex wrap justify-content--center align-items--flex-start ]' },
 	                        options
 	                    )
 	                ),
