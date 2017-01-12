@@ -22818,11 +22818,13 @@
 	                    _react2.default.createElement(
 	                        'div',
 	                        { className: '[ text-bigger bold ]' },
+	                        _react2.default.createElement('i', { className: '[ fa fa-square-o ] cursor-point' }),
+	                        ' ',
 	                        (0, _htmlReactParser2.default)(option.name)
 	                    ),
 	                    _react2.default.createElement(
 	                        'div',
-	                        null,
+	                        { className: 'indent' },
 	                        (0, _htmlReactParser2.default)(option.details)
 	                    )
 	                ));

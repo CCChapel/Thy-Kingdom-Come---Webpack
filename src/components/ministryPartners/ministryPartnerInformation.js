@@ -24,8 +24,8 @@ export default class MinistryPartnerInformation extends React.Component {
         this.props.information.options.forEach((option, index) => {
             options.push(
                 <div className="add-bottom-margin [ one-third portable--one-whole ]" key={index}>
-                    <div className="[ text-bigger bold ]">{ Parser(option.name) }</div>
-                    <div>{ Parser(option.details) }</div>
+                    <div className="[ text-bigger bold ]"><i className="[ fa fa-square-o ] cursor-point"></i> { Parser(option.name) }</div>
+                    <div className="indent">{ Parser(option.details) }</div>
                 </div>
             );
         });

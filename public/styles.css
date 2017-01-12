@@ -302,6 +302,9 @@ a {
   font-size: 1.5rem;
   line-height: 1; }
 
+.indent {
+  margin-left: 1.5em; }
+
 .bold {
   font-weight: 700; }
 
