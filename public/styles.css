@@ -293,6 +293,10 @@ a {
   font-size: 14px;
   font-size: 0.875rem;
   line-height: 1.71429; }
+.text-normal {
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 1.33333; }
 .text-bigger {
   font-size: 24px;
   font-size: 1.5rem;

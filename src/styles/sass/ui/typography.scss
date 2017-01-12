@@ -65,6 +65,10 @@ a {
         @include typecsset-font-size(14px);
     }
 
+    &-normal {
+        @include typecsset-font-size(18px);
+    }
+
     &-bigger {
         @include typecsset-font-size(24px);
     }
