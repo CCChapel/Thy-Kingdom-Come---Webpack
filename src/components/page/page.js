@@ -54,8 +54,7 @@ export default class Page extends React.Component {
                     <Logo />
                 </Section>
 
-                <a id="intro"></a>
-                <Section className="bg-light-blue">
+                <Section id="intro" className="bg-light-blue">
                     <div className="content-wrapper lock-width center-by-margin">
                         <h1 className="center">Thy Will Be Done</h1>
 
@@ -85,8 +84,7 @@ export default class Page extends React.Component {
                     </div>
                 </Section>
 
-                <a id="spree"></a>
-                <Section className="bg-medium-blue">
+                <Section id="spree" className="bg-medium-blue">
                     <div className="content-wrapper">
                         <div className="lock-width center-by-margin">
                             <h1 className="center">Local Outreach Spree</h1>
@@ -113,8 +111,7 @@ export default class Page extends React.Component {
                     </div>
                 </Section>
 
-                <a id="assignments"></a>
-                <Section className="bg-dark-blue text-white">
+                <Section id="assignments" className="bg-dark-blue text-white">
                     <div className="content-wrapper">
                         <h1 className="center">Assignments</h1>
 

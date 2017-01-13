@@ -22225,10 +22225,9 @@
 	                    { className: '[ bg-clouds bg-cover ] [ justify-content--center ] [ overflow-x-hidden ]' },
 	                    _react2.default.createElement(_logo2.default, null)
 	                ),
-	                _react2.default.createElement('a', { id: 'intro' }),
 	                _react2.default.createElement(
 	                    _section2.default,
-	                    { className: 'bg-light-blue' },
+	                    { id: 'intro', className: 'bg-light-blue' },
 	                    _react2.default.createElement(
 	                        'div',
 	                        { className: 'content-wrapper lock-width center-by-margin' },
@@ -22260,10 +22259,9 @@
 	                        )
 	                    )
 	                ),
-	                _react2.default.createElement('a', { id: 'spree' }),
 	                _react2.default.createElement(
 	                    _section2.default,
-	                    { className: 'bg-medium-blue' },
+	                    { id: 'spree', className: 'bg-medium-blue' },
 	                    _react2.default.createElement(
 	                        'div',
 	                        { className: 'content-wrapper' },
@@ -22298,10 +22296,9 @@
 	                        _react2.default.createElement(_ministryPartnersTable2.default, { showModal: this.showModal })
 	                    )
 	                ),
-	                _react2.default.createElement('a', { id: 'assignments' }),
 	                _react2.default.createElement(
 	                    _section2.default,
-	                    { className: 'bg-dark-blue text-white' },
+	                    { id: 'assignments', className: 'bg-dark-blue text-white' },
 	                    _react2.default.createElement(
 	                        'div',
 	                        { className: 'content-wrapper' },
@@ -22443,6 +22440,7 @@
 	 * Defines a section on the page
 	 * @backgroundColor = background color
 	 * @backgroundImage = image to display in the background
+	 * @id = id of the base div
 	 */
 	var Section = function (_React$Component) {
 	    _inherits(Section, _React$Component);
@@ -22469,7 +22467,7 @@
 
 	            return _react2.default.createElement(
 	                'div',
-	                { className: className, style: divStyle },
+	                { id: this.props.id, className: className, style: divStyle },
 	                this.props.children
 	            );
 	        }

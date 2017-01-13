@@ -5,6 +5,7 @@ import { Component } from 'react';
  * Defines a section on the page
  * @backgroundColor = background color
  * @backgroundImage = image to display in the background
+ * @id = id of the base div
  */
 export default class Section extends React.Component {
     render() {
@@ -20,7 +21,7 @@ export default class Section extends React.Component {
         }
 
         return (
-            <div className={className} style={divStyle}>
+            <div id={this.props.id} className={className} style={divStyle}>
                 {this.props.children}
             </div>
         );
