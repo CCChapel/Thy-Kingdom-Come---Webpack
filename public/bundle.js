@@ -24294,7 +24294,7 @@
 	                _react2.default.createElement('input', { id: 'menu__button', type: 'checkbox', checked: this.state.isChecked, onClick: this.onCheckedChange }),
 	                _react2.default.createElement(
 	                    'a',
-	                    { className: 'menu__item', href: '#' },
+	                    { className: 'menu__item scroll', href: '#intro' },
 	                    _react2.default.createElement(
 	                        'span',
 	                        { className: 'menu__item-title' },
@@ -24303,7 +24303,7 @@
 	                ),
 	                _react2.default.createElement(
 	                    'a',
-	                    { className: 'menu__item', href: '#' },
+	                    { className: 'menu__item scroll', href: '#spree' },
 	                    _react2.default.createElement(
 	                        'span',
 	                        { className: 'menu__item-title' },
@@ -24312,7 +24312,7 @@
 	                ),
 	                _react2.default.createElement(
 	                    'a',
-	                    { className: 'menu__item', href: '#' },
+	                    { className: 'menu__item scroll', href: '#assignments' },
 	                    _react2.default.createElement(
 	                        'span',
 	                        { className: 'menu__item-title' },
@@ -24321,7 +24321,7 @@
 	                ),
 	                _react2.default.createElement(
 	                    'a',
-	                    { className: 'menu__item', href: '#' },
+	                    { className: 'menu__item scroll', href: '#questions' },
 	                    _react2.default.createElement(
 	                        'span',
 	                        { className: 'menu__item-title' },
