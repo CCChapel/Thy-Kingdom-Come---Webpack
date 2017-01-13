@@ -70,11 +70,11 @@
 
 	var _fetch3 = _interopRequireDefault(_fetch2);
 
-	var _scroll2 = __webpack_require__(202);
+	var _scroll2 = __webpack_require__(182);
 
 	var _scroll3 = _interopRequireDefault(_scroll2);
 
-	var _page = __webpack_require__(182);
+	var _page = __webpack_require__(183);
 
 	var _page2 = _interopRequireDefault(_page);
 
@@ -22113,6 +22113,43 @@
 
 /***/ },
 /* 182 */
+/***/ function(module, exports) {
+
+	"use strict";
+
+	document.addEventListener("DOMContentLoaded", function () {
+	  var e = function () {
+	    if ("scrollingElement" in document) return document.scrollingElement;var a = document.documentElement,
+	        b = a.scrollTop;a.scrollTop = b + 1;var c = a.scrollTop;a.scrollTop = b;return c > b ? a : document.body;
+	  }(),
+	      h = function h(a) {
+	    var b = e.scrollTop;if (2 > a.length) a = -b;else if (a = document.querySelector(a)) {
+	      a = a.getBoundingClientRect().top;var c = e.scrollHeight - window.innerHeight;a = b + a < c ? a : c - b;
+	    } else a = void 0;if (a) return new Map([["start", b], ["delta", a]]);
+	  },
+	      m = function m(a) {
+	    var b = a.getAttribute("href"),
+	        c = h(b);if (c) {
+	      var d = new Map([["duration", 800]]),
+	          k = performance.now();requestAnimationFrame(function l(a) {
+	        d.set("elapsed", a - k);a = d.get("duration");var f = d.get("elapsed"),
+	            g = c.get("start"),
+	            h = c.get("delta");e.scrollTop = Math.round(h * (-Math.pow(2, -10 * f / a) + 1) + g);d.get("elapsed") < d.get("duration") ? requestAnimationFrame(l) : (history.pushState(null, null, b), e.scrollTop = c.get("start") + c.get("delta"));
+	      });
+	    }
+	  },
+	      n = function b(c, d) {
+	    var e = c.item(d);e.addEventListener("click", function (b) {
+	      b.preventDefault();
+	      m(e);
+	    });if (d) return b(c, d - 1);
+	  },
+	      f = document.querySelectorAll("a.scroll"),
+	      g = f.length - 1;0 > g || n(f, g);
+	});
+
+/***/ },
+/* 183 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -22127,39 +22164,39 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _modal = __webpack_require__(183);
+	var _modal = __webpack_require__(184);
 
 	var _modal2 = _interopRequireDefault(_modal);
 
-	var _navigation = __webpack_require__(201);
+	var _navigation = __webpack_require__(185);
 
 	var _navigation2 = _interopRequireDefault(_navigation);
 
-	var _section = __webpack_require__(184);
+	var _section = __webpack_require__(186);
 
 	var _section2 = _interopRequireDefault(_section);
 
-	var _cta = __webpack_require__(185);
+	var _cta = __webpack_require__(187);
 
 	var _cta2 = _interopRequireDefault(_cta);
 
-	var _ministryPartnersTable = __webpack_require__(186);
+	var _ministryPartnersTable = __webpack_require__(188);
 
 	var _ministryPartnersTable2 = _interopRequireDefault(_ministryPartnersTable);
 
-	var _logo = __webpack_require__(197);
+	var _logo = __webpack_require__(199);
 
 	var _logo2 = _interopRequireDefault(_logo);
 
-	var _clock = __webpack_require__(198);
+	var _clock = __webpack_require__(200);
 
 	var _clock2 = _interopRequireDefault(_clock);
 
-	var _vimeoVideo = __webpack_require__(199);
+	var _vimeoVideo = __webpack_require__(201);
 
 	var _vimeoVideo2 = _interopRequireDefault(_vimeoVideo);
 
-	var _contact = __webpack_require__(200);
+	var _contact = __webpack_require__(202);
 
 	var _contact2 = _interopRequireDefault(_contact);
 
@@ -22250,7 +22287,7 @@
 	                        ),
 	                        _react2.default.createElement(
 	                            'p',
-	                            { className: 'center' },
+	                            { id: 'questions', className: 'center' },
 	                            _react2.default.createElement(_cta2.default, { text: 'Questions',
 	                                onClick: function onClick() {
 	                                    return _this2.showModal(_react2.default.createElement(_contact2.default, { className: 'content-wrapper lock-width center-by-margin',
@@ -22343,7 +22380,7 @@
 	exports.default = Page;
 
 /***/ },
-/* 183 */
+/* 184 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -22413,7 +22450,126 @@
 	exports.default = Modal;
 
 /***/ },
-/* 184 */
+/* 185 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	/**
+	 * Add a Navigation Component
+	 * 
+	 * Based on Triangular Mobile Navigation by MoKev
+	 * http://codepen.io/MoKev/pen/htrgC
+	 */
+	var Navigation = function (_React$Component) {
+	    _inherits(Navigation, _React$Component);
+
+	    function Navigation(props) {
+	        _classCallCheck(this, Navigation);
+
+	        var _this = _possibleConstructorReturn(this, (Navigation.__proto__ || Object.getPrototypeOf(Navigation)).call(this, props));
+
+	        _this.state = {
+	            isChecked: true
+	        };
+
+	        _this.onCheckedChange = _this.onCheckedChange.bind(_this);
+	        return _this;
+	    }
+
+	    _createClass(Navigation, [{
+	        key: 'onCheckedChange',
+	        value: function onCheckedChange() {
+	            console.log('clicked');
+	            this.setState({ isChecked: !this.state.isChecked });
+	            console.log(this.state.isChecked);
+	        }
+	    }, {
+	        key: 'render',
+	        value: function render() {
+	            var faIcon = "fa fa-times";
+	            if (this.state.isChecked === true) {
+	                faIcon = "fa fa-bars";
+	            }
+
+	            return _react2.default.createElement(
+	                'nav',
+	                { className: 'menu' },
+	                _react2.default.createElement('input', { id: 'menu__button', type: 'checkbox', checked: this.state.isChecked, onClick: this.onCheckedChange }),
+	                _react2.default.createElement(
+	                    'a',
+	                    { className: 'menu__item scroll', href: '#intro' },
+	                    _react2.default.createElement(
+	                        'span',
+	                        { className: 'menu__item-title' },
+	                        'Introduction'
+	                    )
+	                ),
+	                _react2.default.createElement(
+	                    'a',
+	                    { className: 'menu__item scroll', href: '#spree' },
+	                    _react2.default.createElement(
+	                        'span',
+	                        { className: 'menu__item-title' },
+	                        'Local Outreach Spree'
+	                    )
+	                ),
+	                _react2.default.createElement(
+	                    'a',
+	                    { className: 'menu__item scroll', href: '#assignments' },
+	                    _react2.default.createElement(
+	                        'span',
+	                        { className: 'menu__item-title' },
+	                        'Kingdom Assignments'
+	                    )
+	                ),
+	                _react2.default.createElement(
+	                    'a',
+	                    { className: 'menu__item scroll', href: '#questions' },
+	                    _react2.default.createElement(
+	                        'span',
+	                        { className: 'menu__item-title' },
+	                        'Questions'
+	                    )
+	                ),
+	                _react2.default.createElement(
+	                    'label',
+	                    { className: 'menu__close', 'for': 'menu__button', onClick: this.onCheckedChange },
+	                    _react2.default.createElement(
+	                        'span',
+	                        { className: 'menu__close-icon' },
+	                        _react2.default.createElement('i', { className: faIcon })
+	                    )
+	                )
+	            );
+	        }
+	    }]);
+
+	    return Navigation;
+	}(_react2.default.Component);
+
+	exports.default = Navigation;
+
+/***/ },
+/* 186 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -22479,7 +22635,7 @@
 	exports.default = Section;
 
 /***/ },
-/* 185 */
+/* 187 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -22572,7 +22728,7 @@
 	exports.default = CTA;
 
 /***/ },
-/* 186 */
+/* 188 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -22587,7 +22743,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _ministryPartnerRow = __webpack_require__(187);
+	var _ministryPartnerRow = __webpack_require__(189);
 
 	var _ministryPartnerRow2 = _interopRequireDefault(_ministryPartnerRow);
 
@@ -22689,7 +22845,7 @@
 	exports.default = MinistryPartnersTable;
 
 /***/ },
-/* 187 */
+/* 189 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -22704,11 +22860,11 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _ministryPartnerInformation = __webpack_require__(188);
+	var _ministryPartnerInformation = __webpack_require__(190);
 
 	var _ministryPartnerInformation2 = _interopRequireDefault(_ministryPartnerInformation);
 
-	var _htmlReactParser = __webpack_require__(189);
+	var _htmlReactParser = __webpack_require__(191);
 
 	var _htmlReactParser2 = _interopRequireDefault(_htmlReactParser);
 
@@ -22765,7 +22921,7 @@
 	exports.default = MinistryPartnerRow;
 
 /***/ },
-/* 188 */
+/* 190 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -22780,15 +22936,15 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _htmlReactParser = __webpack_require__(189);
+	var _htmlReactParser = __webpack_require__(191);
 
 	var _htmlReactParser2 = _interopRequireDefault(_htmlReactParser);
 
-	var _cta = __webpack_require__(185);
+	var _cta = __webpack_require__(187);
 
 	var _cta2 = _interopRequireDefault(_cta);
 
-	var _checkbox = __webpack_require__(196);
+	var _checkbox = __webpack_require__(198);
 
 	var _checkbox2 = _interopRequireDefault(_checkbox);
 
@@ -22920,7 +23076,7 @@
 	exports.default = MinistryPartnerInformation;
 
 /***/ },
-/* 189 */
+/* 191 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -22928,8 +23084,8 @@
 	/**
 	 * Module dependencies.
 	 */
-	var domToReact = __webpack_require__(190);
-	var htmlToDOM = __webpack_require__(194);
+	var domToReact = __webpack_require__(192);
+	var htmlToDOM = __webpack_require__(196);
 
 	/**
 	 * Convert HTML string to React elements.
@@ -22953,7 +23109,7 @@
 
 
 /***/ },
-/* 190 */
+/* 192 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -22962,7 +23118,7 @@
 	 * Module dependencies.
 	 */
 	var React = __webpack_require__(1);
-	var attributesToProps = __webpack_require__(191);
+	var attributesToProps = __webpack_require__(193);
 
 	/**
 	 * Convert DOM nodes to React elements.
@@ -23060,7 +23216,7 @@
 
 
 /***/ },
-/* 191 */
+/* 193 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -23068,8 +23224,8 @@
 	/**
 	 * Module dependencies.
 	 */
-	var utilities = __webpack_require__(192);
-	var propertyConfig = __webpack_require__(193);
+	var utilities = __webpack_require__(194);
+	var propertyConfig = __webpack_require__(195);
 	var config = propertyConfig.config;
 	var isCustomAttribute = propertyConfig.HTMLDOMPropertyConfig.isCustomAttribute;
 
@@ -23164,7 +23320,7 @@
 
 
 /***/ },
-/* 192 */
+/* 194 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -23242,7 +23398,7 @@
 
 
 /***/ },
-/* 193 */
+/* 195 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -23250,7 +23406,7 @@
 	/**
 	 * Module dependencies.
 	 */
-	var utilities = __webpack_require__(192);
+	var utilities = __webpack_require__(194);
 
 	// HTML and SVG DOM Property Configs
 	var HTMLDOMPropertyConfig = __webpack_require__(78);
@@ -23312,7 +23468,7 @@
 
 
 /***/ },
-/* 194 */
+/* 196 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -23320,7 +23476,7 @@
 	/**
 	 * Module dependencies.
 	 */
-	var utilities = __webpack_require__(195);
+	var utilities = __webpack_require__(197);
 	var formatDOM = utilities.formatDOM;
 
 	/**
@@ -23418,7 +23574,7 @@
 
 
 /***/ },
-/* 195 */
+/* 197 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -23545,7 +23701,7 @@
 
 
 /***/ },
-/* 196 */
+/* 198 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -23612,7 +23768,7 @@
 	exports.default = Checkbox;
 
 /***/ },
-/* 197 */
+/* 199 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -23730,7 +23886,7 @@
 	exports.default = Logo;
 
 /***/ },
-/* 198 */
+/* 200 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -23852,7 +24008,7 @@
 	exports.default = Clock;
 
 /***/ },
-/* 199 */
+/* 201 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -23918,7 +24074,7 @@
 	exports.default = VimeoVideo;
 
 /***/ },
-/* 200 */
+/* 202 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -23933,7 +24089,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _cta = __webpack_require__(185);
+	var _cta = __webpack_require__(187);
 
 	var _cta2 = _interopRequireDefault(_cta);
 
@@ -24224,162 +24380,6 @@
 	}(_react2.default.Component);
 
 	exports.default = ContactForm;
-
-/***/ },
-/* 201 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	    value: true
-	});
-
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-	var _react = __webpack_require__(1);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-	/**
-	 * Add a Navigation Component
-	 * 
-	 * Based on Triangular Mobile Navigation by MoKev
-	 * http://codepen.io/MoKev/pen/htrgC
-	 */
-	var Navigation = function (_React$Component) {
-	    _inherits(Navigation, _React$Component);
-
-	    function Navigation(props) {
-	        _classCallCheck(this, Navigation);
-
-	        var _this = _possibleConstructorReturn(this, (Navigation.__proto__ || Object.getPrototypeOf(Navigation)).call(this, props));
-
-	        _this.state = {
-	            isChecked: true
-	        };
-
-	        _this.onCheckedChange = _this.onCheckedChange.bind(_this);
-	        return _this;
-	    }
-
-	    _createClass(Navigation, [{
-	        key: 'onCheckedChange',
-	        value: function onCheckedChange() {
-	            console.log('clicked');
-	            this.setState({ isChecked: !this.state.isChecked });
-	            console.log(this.state.isChecked);
-	        }
-	    }, {
-	        key: 'render',
-	        value: function render() {
-	            var faIcon = "fa fa-times";
-	            if (this.state.isChecked === true) {
-	                faIcon = "fa fa-bars";
-	            }
-
-	            return _react2.default.createElement(
-	                'nav',
-	                { className: 'menu' },
-	                _react2.default.createElement('input', { id: 'menu__button', type: 'checkbox', checked: this.state.isChecked, onClick: this.onCheckedChange }),
-	                _react2.default.createElement(
-	                    'a',
-	                    { className: 'menu__item scroll', href: '#intro' },
-	                    _react2.default.createElement(
-	                        'span',
-	                        { className: 'menu__item-title' },
-	                        'Introduction'
-	                    )
-	                ),
-	                _react2.default.createElement(
-	                    'a',
-	                    { className: 'menu__item scroll', href: '#spree' },
-	                    _react2.default.createElement(
-	                        'span',
-	                        { className: 'menu__item-title' },
-	                        'Local Outreach Spree'
-	                    )
-	                ),
-	                _react2.default.createElement(
-	                    'a',
-	                    { className: 'menu__item scroll', href: '#assignments' },
-	                    _react2.default.createElement(
-	                        'span',
-	                        { className: 'menu__item-title' },
-	                        'Kingdom Assignments'
-	                    )
-	                ),
-	                _react2.default.createElement(
-	                    'a',
-	                    { className: 'menu__item scroll', href: '#questions' },
-	                    _react2.default.createElement(
-	                        'span',
-	                        { className: 'menu__item-title' },
-	                        'Questions'
-	                    )
-	                ),
-	                _react2.default.createElement(
-	                    'label',
-	                    { className: 'menu__close', 'for': 'menu__button', onClick: this.onCheckedChange },
-	                    _react2.default.createElement(
-	                        'span',
-	                        { className: 'menu__close-icon' },
-	                        _react2.default.createElement('i', { className: faIcon })
-	                    )
-	                )
-	            );
-	        }
-	    }]);
-
-	    return Navigation;
-	}(_react2.default.Component);
-
-	exports.default = Navigation;
-
-/***/ },
-/* 202 */
-/***/ function(module, exports) {
-
-	"use strict";
-
-	document.addEventListener("DOMContentLoaded", function () {
-	  var e = function () {
-	    if ("scrollingElement" in document) return document.scrollingElement;var a = document.documentElement,
-	        b = a.scrollTop;a.scrollTop = b + 1;var c = a.scrollTop;a.scrollTop = b;return c > b ? a : document.body;
-	  }(),
-	      h = function h(a) {
-	    var b = e.scrollTop;if (2 > a.length) a = -b;else if (a = document.querySelector(a)) {
-	      a = a.getBoundingClientRect().top;var c = e.scrollHeight - window.innerHeight;a = b + a < c ? a : c - b;
-	    } else a = void 0;if (a) return new Map([["start", b], ["delta", a]]);
-	  },
-	      m = function m(a) {
-	    var b = a.getAttribute("href"),
-	        c = h(b);if (c) {
-	      var d = new Map([["duration", 800]]),
-	          k = performance.now();requestAnimationFrame(function l(a) {
-	        d.set("elapsed", a - k);a = d.get("duration");var f = d.get("elapsed"),
-	            g = c.get("start"),
-	            h = c.get("delta");e.scrollTop = Math.round(h * (-Math.pow(2, -10 * f / a) + 1) + g);d.get("elapsed") < d.get("duration") ? requestAnimationFrame(l) : (history.pushState(null, null, b), e.scrollTop = c.get("start") + c.get("delta"));
-	      });
-	    }
-	  },
-	      n = function b(c, d) {
-	    var e = c.item(d);e.addEventListener("click", function (b) {
-	      b.preventDefault();
-	      m(e);
-	    });if (d) return b(c, d - 1);
-	  },
-	      f = document.querySelectorAll("a.scroll"),
-	      g = f.length - 1;0 > g || n(f, g);
-	});
 
 /***/ }
 /******/ ]);

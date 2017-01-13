@@ -73,7 +73,7 @@ export default class Page extends React.Component {
                                 height="360px" />
                         </p>
 
-                        <p className="center">
+                        <p id="questions" className="center">
                             <CTA text="Questions" 
                                 onClick={() => 
                                     this.showModal(
