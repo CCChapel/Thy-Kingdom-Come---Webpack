@@ -22213,7 +22213,7 @@
 	            return _react2.default.createElement(
 	                'div',
 	                null,
-	                _react2.default.createElement('a', { name: 'top' }),
+	                _react2.default.createElement('a', { id: 'top' }),
 	                _react2.default.createElement(
 	                    _modal2.default,
 	                    { show: this.state.showModal, hide: this.hideModal },
@@ -22225,7 +22225,7 @@
 	                    { className: '[ bg-clouds bg-cover ] [ justify-content--center ] [ overflow-x-hidden ]' },
 	                    _react2.default.createElement(_logo2.default, null)
 	                ),
-	                _react2.default.createElement('a', { name: 'intro' }),
+	                _react2.default.createElement('a', { id: 'intro' }),
 	                _react2.default.createElement(
 	                    _section2.default,
 	                    { className: 'bg-light-blue' },
@@ -22260,7 +22260,7 @@
 	                        )
 	                    )
 	                ),
-	                _react2.default.createElement('a', { name: 'spree' }),
+	                _react2.default.createElement('a', { id: 'spree' }),
 	                _react2.default.createElement(
 	                    _section2.default,
 	                    { className: 'bg-medium-blue' },
@@ -22298,7 +22298,7 @@
 	                        _react2.default.createElement(_ministryPartnersTable2.default, { showModal: this.showModal })
 	                    )
 	                ),
-	                _react2.default.createElement('a', { name: 'assignments' }),
+	                _react2.default.createElement('a', { id: 'assignments' }),
 	                _react2.default.createElement(
 	                    _section2.default,
 	                    { className: 'bg-dark-blue text-white' },

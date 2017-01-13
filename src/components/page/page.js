@@ -43,7 +43,7 @@ export default class Page extends React.Component {
     render() {
         return (
             <div>
-                <a name="top"></a>
+                <a id="top"></a>
                 <Modal show={this.state.showModal} hide={this.hideModal}>
                     {this.state.modalContent}
                 </Modal>
@@ -54,7 +54,7 @@ export default class Page extends React.Component {
                     <Logo />
                 </Section>
 
-                <a name="intro"></a>
+                <a id="intro"></a>
                 <Section className="bg-light-blue">
                     <div className="content-wrapper lock-width center-by-margin">
                         <h1 className="center">Thy Will Be Done</h1>
@@ -85,7 +85,7 @@ export default class Page extends React.Component {
                     </div>
                 </Section>
 
-                <a name="spree"></a>
+                <a id="spree"></a>
                 <Section className="bg-medium-blue">
                     <div className="content-wrapper">
                         <div className="lock-width center-by-margin">
@@ -113,7 +113,7 @@ export default class Page extends React.Component {
                     </div>
                 </Section>
 
-                <a name="assignments"></a>
+                <a id="assignments"></a>
                 <Section className="bg-dark-blue text-white">
                     <div className="content-wrapper">
                         <h1 className="center">Assignments</h1>
