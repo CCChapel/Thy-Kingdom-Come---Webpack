@@ -14,7 +14,7 @@ export default class MinistryPartnerInformation extends React.Component {
     render() {
         //Setup External Link
         let siteLink = null;
-        if (this.props.information.website !== '') {
+        if (this.props.information.website !== '' && this.props.information.website !== undefined) {
             siteLink = 
                 <CTA text="Visit their Site" 
                         onClick={ () => {window.location = this.props.information.website} } />;
@@ -22,14 +22,28 @@ export default class MinistryPartnerInformation extends React.Component {
 
         //Setup Options
         let options = new Array();
-        this.props.information.options.forEach((option, index) => {
-            options.push(
-                <div className="add-bottom-margin" key={index}>
-                    <div className="[ text-bigger bold ]"><Checkbox /> { Parser(option.name) }</div>
-                    <div className="indent">{ Parser(option.details) }</div>
-                </div>
-            );
-        });
+        let optionsContent = null;
+        if (this.props.information.options !== undefined) {
+            this.props.information.options.forEach((option, index) => {
+                options.push(
+                    <div className="add-bottom-margin" key={index}>
+                        <div className="[ text-bigger bold ]"><Checkbox /> { Parser(option.name) }</div>
+                        <div className="indent">{ Parser(option.details) }</div>
+                    </div>
+                );
+            });
+
+            optionsContent = 
+                <div className="one-half portable--one-whole">
+                    <div className="add-bottom-margin">
+                        <h2 className="no-bottom-margin">Spree Options</h2>
+
+                        <div>
+                            {options}
+                        </div>
+                    </div>
+                </div>;
+        }
 
         return (
             <div className="flex">
@@ -47,15 +61,7 @@ export default class MinistryPartnerInformation extends React.Component {
                             </p>
                         </div>
 
-                        <div className="one-half portable--one-whole">
-                            <div className="add-bottom-margin">
-                                <h2 className="no-bottom-margin">Spree Options</h2>
-
-                                <div>
-                                    {options}
-                                </div>
-                            </div>
-                        </div>
+                        {optionsContent}
                     </div>
 
                     <div className="center center-by-margin lock-width">

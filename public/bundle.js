@@ -22976,7 +22976,7 @@
 
 	            //Setup External Link
 	            var siteLink = null;
-	            if (this.props.information.website !== '') {
+	            if (this.props.information.website !== '' && this.props.information.website !== undefined) {
 	                siteLink = _react2.default.createElement(_cta2.default, { text: 'Visit their Site',
 	                    onClick: function onClick() {
 	                        window.location = _this2.props.information.website;
@@ -22985,24 +22985,46 @@
 
 	            //Setup Options
 	            var options = new Array();
-	            this.props.information.options.forEach(function (option, index) {
-	                options.push(_react2.default.createElement(
+	            var optionsContent = null;
+	            if (this.props.information.options !== undefined) {
+	                this.props.information.options.forEach(function (option, index) {
+	                    options.push(_react2.default.createElement(
+	                        'div',
+	                        { className: 'add-bottom-margin', key: index },
+	                        _react2.default.createElement(
+	                            'div',
+	                            { className: '[ text-bigger bold ]' },
+	                            _react2.default.createElement(_checkbox2.default, null),
+	                            ' ',
+	                            (0, _htmlReactParser2.default)(option.name)
+	                        ),
+	                        _react2.default.createElement(
+	                            'div',
+	                            { className: 'indent' },
+	                            (0, _htmlReactParser2.default)(option.details)
+	                        )
+	                    ));
+	                });
+
+	                optionsContent = _react2.default.createElement(
 	                    'div',
-	                    { className: 'add-bottom-margin', key: index },
+	                    { className: 'one-half portable--one-whole' },
 	                    _react2.default.createElement(
 	                        'div',
-	                        { className: '[ text-bigger bold ]' },
-	                        _react2.default.createElement(_checkbox2.default, null),
-	                        ' ',
-	                        (0, _htmlReactParser2.default)(option.name)
-	                    ),
-	                    _react2.default.createElement(
-	                        'div',
-	                        { className: 'indent' },
-	                        (0, _htmlReactParser2.default)(option.details)
+	                        { className: 'add-bottom-margin' },
+	                        _react2.default.createElement(
+	                            'h2',
+	                            { className: 'no-bottom-margin' },
+	                            'Spree Options'
+	                        ),
+	                        _react2.default.createElement(
+	                            'div',
+	                            null,
+	                            options
+	                        )
 	                    )
-	                ));
-	            });
+	                );
+	            }
 
 	            return _react2.default.createElement(
 	                'div',
@@ -23032,24 +23054,7 @@
 	                                (0, _htmlReactParser2.default)(this.props.information.description)
 	                            )
 	                        ),
-	                        _react2.default.createElement(
-	                            'div',
-	                            { className: 'one-half portable--one-whole' },
-	                            _react2.default.createElement(
-	                                'div',
-	                                { className: 'add-bottom-margin' },
-	                                _react2.default.createElement(
-	                                    'h2',
-	                                    { className: 'no-bottom-margin' },
-	                                    'Spree Options'
-	                                ),
-	                                _react2.default.createElement(
-	                                    'div',
-	                                    null,
-	                                    options
-	                                )
-	                            )
-	                        )
+	                        optionsContent
 	                    ),
 	                    _react2.default.createElement(
 	                        'div',
