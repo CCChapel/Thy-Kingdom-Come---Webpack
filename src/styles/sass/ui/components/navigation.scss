@@ -1,0 +1,178 @@
+$defaultSkew: -60deg;
+
+.menu {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    &__item {
+        background-color: $charcoal;
+
+        position: relative;
+        display: flex;
+        justify-content: center;
+        padding: 0.5rem;
+        transform: translateX(calc(-100% -   2.4rem))
+                   skewX($defaultSkew);
+        transition: background-color 0.2s;
+
+        color: #FFF;
+        
+        &-title {
+            transform: skewX(-$defaultSkew);
+            width: 100%;
+        }
+
+        &::before {
+            background-color: $charcoal;
+
+            position: absolute;
+            top: 0;
+            left: 0;
+
+            content: '';
+
+            height: 100%;
+            width: 25%;
+
+            transform: skewX(-$defaultSkew);
+        }
+
+        &:nth-child(2) {
+            width: 185%;
+        }
+
+        &:nth-child(3) {
+            width: 149%;
+        }
+        
+        &:nth-child(4) {
+            width: 112%;
+        }
+        
+        &:nth-child(5) {
+            width: 75%;
+        }
+
+        &:hover,
+        &:hover::before {
+            background-color: $dark-blue;
+        }
+    }
+
+}
+
+.menu__close {
+    position: relative;
+    color: #fff;
+    width: 25%;
+    height: 4.8rem;
+    cursor: pointer;
+    transform: translateX(-100%);
+
+    &-icon {
+        position: absolute;
+        padding-top: 20%;
+        z-index: 1;
+
+        height: auto;
+        width: 100%;
+
+        text-align: center;
+    }
+    &::after {
+        position: absolute;
+        content: '';
+        width: 200%;
+        height: 100%;
+        left: -112%;
+        transform: skewX($defaultSkew);        
+    }
+    &:hover {
+        & .menu__close-icon,
+        &::after {
+            background: $charcoal;
+        }
+    }
+}
+
+.menu input[type=checkbox] {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+
+    &:checked {
+        & ~ .menu__item {
+            &::after {
+                background: none;
+            }
+
+            &:nth-child(2) {
+                transition: transform 0.2s 0.3s;
+                transform: translateX(calc(-100% -   2.4rem)) !important;
+            }
+            &:nth-child(3) {
+                transition: transform 0.2s 0.2s;
+                transform: translateX(calc(-100% -   2.4rem)) !important;
+            }
+            &:nth-child(4) {
+                transition: transform 0.2s 0.1s;
+                transform: translateX(calc(-100% -   2.4rem)) !important;
+            }
+            &:nth-child(5) {
+                transition: transform 0.2s 0s, background-color 0.2s;
+                transform: translateX(calc(-100% -   2.4rem)) !important;
+            }
+        }
+
+        & ~ .menu__close {
+            transition: transform 0.2s 0.3s;
+            transform: translateY(-10rem)!important;
+        }
+    }
+
+    &:not(:checked) {
+        & ~ .menu__item {
+            &:nth-child(2) {
+                transition: transform 0.2s 0.1s;
+                transform: translateX(0)
+                           skewX($defaultSkew) !important;
+            }
+            &:nth-child(3) {
+                transition: transform 0.2s 0.2s;
+                transform: translateX(0)
+                           skewX($defaultSkew) !important;
+            }
+            &:nth-child(4) {
+                transition: transform 0.2s 0.3s;
+                transform: translateX(0)
+                           skewX($defaultSkew) !important;
+            }
+            &:nth-child(5) {
+                transition: transform 0.2s 0.4s;
+                transform: translateX(0)
+                           skewX($defaultSkew) !important;
+            }
+        }
+
+        & ~ .menu__close {
+            transition: transform 0.2s 0.1s;
+            transform: translateY(0)!important;
+
+            & .menu__close-icon,
+            &::after {
+                background: $charcoal;        
+            }
+
+            &:hover {
+                & .menu__close-icon,
+                &::after {
+                    background: $dark-blue;
+                }
+            }
+        }
+    }
+}

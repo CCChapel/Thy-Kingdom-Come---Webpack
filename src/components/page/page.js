@@ -2,6 +2,7 @@ import React from 'react';
 import { Component } from 'react';
 
 import Modal from './modal';
+import Navigation from './navigation';
 import Section from './section';
 import CTA from './cta';
 
@@ -45,6 +46,8 @@ export default class Page extends React.Component {
                 <Modal show={this.state.showModal} hide={this.hideModal}>
                     {this.state.modalContent}
                 </Modal>
+
+                <Navigation />
 
                 <Section className="[ bg-clouds bg-cover ] [ justify-content--center ] [ overflow-x-hidden ]">
                     <Logo />

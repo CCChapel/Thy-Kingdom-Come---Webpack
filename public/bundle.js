@@ -22127,6 +22127,10 @@
 
 	var _modal2 = _interopRequireDefault(_modal);
 
+	var _navigation = __webpack_require__(201);
+
+	var _navigation2 = _interopRequireDefault(_navigation);
+
 	var _section = __webpack_require__(184);
 
 	var _section2 = _interopRequireDefault(_section);
@@ -22210,6 +22214,7 @@
 	                    { show: this.state.showModal, hide: this.hideModal },
 	                    this.state.modalContent
 	                ),
+	                _react2.default.createElement(_navigation2.default, null),
 	                _react2.default.createElement(
 	                    _section2.default,
 	                    { className: '[ bg-clouds bg-cover ] [ justify-content--center ] [ overflow-x-hidden ]' },
@@ -24213,6 +24218,125 @@
 	}(_react2.default.Component);
 
 	exports.default = ContactForm;
+
+/***/ },
+/* 201 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	/**
+	 * Add a Navigation Component
+	 * 
+	 * Based on Triangular Mobile Navigation by MoKev
+	 * http://codepen.io/MoKev/pen/htrgC
+	 */
+	var Navigation = function (_React$Component) {
+	    _inherits(Navigation, _React$Component);
+
+	    function Navigation(props) {
+	        _classCallCheck(this, Navigation);
+
+	        var _this = _possibleConstructorReturn(this, (Navigation.__proto__ || Object.getPrototypeOf(Navigation)).call(this, props));
+
+	        _this.state = {
+	            isChecked: true
+	        };
+
+	        _this.onCheckedChange = _this.onCheckedChange.bind(_this);
+	        return _this;
+	    }
+
+	    _createClass(Navigation, [{
+	        key: 'onCheckedChange',
+	        value: function onCheckedChange() {
+	            console.log('clicked');
+	            this.setState({ isChecked: !this.state.isChecked });
+	            console.log(this.state.isChecked);
+	        }
+	    }, {
+	        key: 'render',
+	        value: function render() {
+	            var faIcon = "fa fa-times";
+	            if (this.state.isChecked === true) {
+	                faIcon = "fa fa-bars";
+	            }
+
+	            return _react2.default.createElement(
+	                'nav',
+	                { className: 'menu' },
+	                _react2.default.createElement('input', { id: 'menu__button', type: 'checkbox', checked: this.state.isChecked, onClick: this.onCheckedChange }),
+	                _react2.default.createElement(
+	                    'a',
+	                    { className: 'menu__item', href: '#' },
+	                    _react2.default.createElement(
+	                        'span',
+	                        { className: 'menu__item-title' },
+	                        'Introduction'
+	                    )
+	                ),
+	                _react2.default.createElement(
+	                    'a',
+	                    { className: 'menu__item', href: '#' },
+	                    _react2.default.createElement(
+	                        'span',
+	                        { className: 'menu__item-title' },
+	                        'Local Outreach Spree'
+	                    )
+	                ),
+	                _react2.default.createElement(
+	                    'a',
+	                    { className: 'menu__item', href: '#' },
+	                    _react2.default.createElement(
+	                        'span',
+	                        { className: 'menu__item-title' },
+	                        'Kingdom Assignments'
+	                    )
+	                ),
+	                _react2.default.createElement(
+	                    'a',
+	                    { className: 'menu__item', href: '#' },
+	                    _react2.default.createElement(
+	                        'span',
+	                        { className: 'menu__item-title' },
+	                        'Questions'
+	                    )
+	                ),
+	                _react2.default.createElement(
+	                    'label',
+	                    { className: 'menu__close', 'for': 'menu__button', onClick: this.onCheckedChange },
+	                    _react2.default.createElement(
+	                        'span',
+	                        { className: 'menu__close-icon' },
+	                        _react2.default.createElement('i', { className: faIcon })
+	                    )
+	                )
+	            );
+	        }
+	    }]);
+
+	    return Navigation;
+	}(_react2.default.Component);
+
+	exports.default = Navigation;
 
 /***/ }
 /******/ ]);
