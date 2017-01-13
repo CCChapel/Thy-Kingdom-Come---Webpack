@@ -1,12 +1,16 @@
 $defaultSkew: -60deg;
 
 .menu {
-    position: absolute;
-    left: 0;
-    top: 0;
+    position: fixed;
+
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+
+    z-index: 99;
+    
+    left: 0;
+    top: 0;
 
     &__item {
         background-color: $charcoal;
