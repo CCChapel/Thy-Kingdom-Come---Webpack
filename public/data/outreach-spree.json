@@ -2,6 +2,7 @@
     {
         "name": "Blessings",
         "website": "http://blessingsspc.com",
+        "contactEmail": "rfasnacht@gmail.com",
         "description": "Blessings provides financial assistance to young, single, pregnant women for daycare and scholastic accountability so they can graduate from high school. They are connected with a Christian mentor and participate in life skills and parenting classes and are required to attend a Christ-centered church weekly.",
         "options": [
             {
@@ -16,7 +17,8 @@
     },
     {
         "name": "Broken Chains",
-        "website": "",
+        "website": "http://www.brokenchainsministry.org/",
+        "contactEmail": "Barbara.Ammirati@ccchapel.com",
         "description": "Broken Chains Ministry is a faith-based, non-profit headquartered in the Summit County Jail in Akron. The mission is to engage former offenders for the purpose of reintegration back into the community, thereby lowering recidivism rates in Akron and increasing public safety. Introducing these former offenders to Jesus Christ is the primary and most important thing this ministry works to accomplish.",
         "options": [
             {
@@ -35,7 +37,8 @@
     },
     {
         "name": "Faithful Servants",
-        "website": "",
+        "website": "http://faithfulservantscarecenter.org/",
+        "contactEmail": "kbertolini@gmail.com",
         "description": "Faithful Servants is a Christian-based health care organization committed to providing urgent care to the uninsured with an income below 200% of the Federal Poverty Level in the greater Akron area. Services are provided at no cost to the patient by professional, licensed physicians and clinicians who volunteer their time and talents to serve those in need.",
         "options": [
             {
@@ -50,7 +53,8 @@
     },
     {
         "name": "First Glance",
-        "website": "",
+        "website": "http://www.firstglance.org/",
+        "contactEmail": "melnawn@gmail.com",
         "description": "First Glance is a student center in the Kenmore community of Akron that is open most evenings of the week with the mission of connecting students to Christ and the church through real, loving and non-threating avenues.",
         "options": [
             {
@@ -66,6 +70,7 @@
     {
         "name": "Haven of Rest",
         "website": "http://havenofrest.org",
+        "contactEmail": "duncanothen@hotmail.com",
         "description": "Haven of Rest provides Christ-centered programs and services that respond to the physical, spiritual and emotional needs of homeless and poor men, women and children in the Akron area.",
         "options": [
             {
@@ -84,7 +89,8 @@
     },
     {
         "name": "Legacies of Success",
-        "website": "",
+        "website": "http://legaciesofsuccess.org/home/",
+        "contactEmail": "Barbara.Ammirati@ccchapel.com",
         "description": "Legacies of Success (LOS) exists to revitalize the North Hill community by transforming the neighborhood one house at a time. LOS efforts are invested in improving the lives of the current residents and helping them to benefit from the improvements in the neighborhood. Changing the lives of the current residents and introducing them to Christ is the top priority.",
         "options": [
             {
@@ -96,6 +102,7 @@
     {
         "name": "Mobility Worldwide",
         "website": "",
+        "contactEmail": "Barbara.Ammirati@ccchapel.com",
         "description": "Mobility Worldwide is a faith-based, volunteer-driven non-profit that manufactures and distributes mobility carts so that recipients may &ldquo;in the name of Jesus Christ, arise and walk.&rdquo; (Acts 3:6)",
         "options": [
             {
@@ -110,7 +117,8 @@
     },
     {
         "name": "Pregnancy Solutions &amp; Services",
-        "website": "",
+        "website": "http://www.pregsolutions.org/",
+        "contactEmail": "kcistone6@gmail.com",
         "description": "The Pregnancy Solutions and Services (PSS) ultra-sound van travels to shopping areas, clinics, inner-city and rural locations providing a safe, clean environment where a registered sonographer reveals the clients' options and ties them to the truth of the gospel. PSS is committed to training prospective parents how to care for their babies and provides items they will need for the child's physical needs.",
         "options": [
             {
@@ -128,8 +136,9 @@
         ]
     },
     {
-        "name": "Rahab",
+        "name": "Rahab Ministries",
         "website": "http://rahab-ministries.org",
+        "contactEmail": "Jacque481@aol.com",
         "description": "Rahab is a non-profit Christian ministry of volunteers devoted to rescuing and restoring women who are trafficked into prostitution in Northeast Ohio.",
         "options": [
             {
@@ -148,7 +157,8 @@
     },
     {
         "name": "South Street Ministries",
-        "website": "",
+        "website": "http://southstreetministries.org/",
+        "contactEmail": "bammons@cyberacc.com",
         "description": "South Street Ministries was founded and modeled after the philosophies of the Christian Community Development Association (CCDA). The backbone of the CCDA's ministry philosophy is the three R's: relocation, racial reconciliation and redistribution. Work includes jail, youth, women's ministries, after-school programs, bike shops, an urban garden and other community outreaches.",
         "options": [
             {
@@ -162,8 +172,9 @@
         ]
     },
     {
-        "name": "True North",
+        "name": "True North Ministry",
         "website": "http://truenorthministry.org",
+        "contactEmail": "duncanothen@hotmail.com",
         "description": "Every year, True North Ministry reaches more than 2,200 imprisoned youth with Christ-centered programming via 130 volunteer missionaries. The mission of this ministry, &ldquo;to liberate imprisoned youth,&rdquo; permeates all aspects of the organization and reflects the youth they serve.",
         "options": [
             {
@@ -179,6 +190,7 @@
     {
         "name": "Truly Reaching You",
         "website": "http://trulyreachingyou.com",
+        "contactEmail": "Barbara.Ammirati@ccchapel.com",
         "description": "Truly Reaching You Ministries (TRY) is a relationship-based reentry organization that reaches out to men and women who have served their sentence and are returning to their communities. Through relationships, mentorships, training and education, TRY provides a healthy support system for those who have made the commitment to surrender their old lifestyle. Pointing the men and women to Christ is the number one priority for this ministry.",
         "options": [
             {
@@ -194,6 +206,7 @@
     {
         "name": "Urban Vision",
         "website": "http://urbanvisionministry.org",
+        "contactEmail": "Barbara.Ammirati@ccchapel.com",
         "description": "Urban Vision reaches the North Akron Community by demonstrating the redemptive love of Jesus Christ through Christ-centered programs focusing on the needs of the people in their community by restoring lives one child and family at a time. ",
         "options": [
             {
@@ -212,7 +225,7 @@
     },
     {
         "name": "Restoration Chapel",
-        "website": "",
+        "contactEmail": "Richard.White@ccchapel.com",
         "description": "Restoration Chapel is a ministry of Christ Community Chapel located at the Cuyahoga Hills Youth Detention Center. Weekly service includes worship, a message and time to interact with the young men who attend. 25-75 young men from the facility that houses 160 young men from the age of 12-18 attend weekly. We also hold bible studies, skills classes and participates in the weekly orientation intake process.",
         "options": [
             {
@@ -223,7 +236,8 @@
     },
     {
         "name": "Nursing Home Ministry",
-        "website": "We view the nursing homes listed below as venues of Christ Community Chapel. Volunteers lead a full worship service at each location to take authentic worship to those who are unable to get out and attend at one of our campuses. Your company is greatly appreciated by those attending and those who are leading the weekly services!",
+        "contactEmail": "Richard.White@ccchapel.com",
+        "description": "We view the nursing homes listed below as venues of Christ Community Chapel. Volunteers lead a full worship service at each location to take authentic worship to those who are unable to get out and attend at one of our campuses. Your company is greatly appreciated by those attending and those who are leading the weekly services!",
         "options": [
             {
                 "name": "Portage Trail Village",
