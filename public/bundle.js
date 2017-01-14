@@ -23075,6 +23075,17 @@
 	                    } });
 	            }
 
+	            //Setup Questions
+	            var questionsLink = null;
+	            if (this.props.information.contactEmail !== '' && this.props.information.contactEmail !== undefined) {
+	                var href = String.format("mailto:{0}", [this.props.information.contactEmail]);
+
+	                questionsLink = _react2.default.createElement(_cta2.default, { text: 'Questions',
+	                    onClick: function onClick() {
+	                        window.location = href;
+	                    } });
+	            }
+
 	            //Setup Options
 	            var options = new Array();
 	            var optionsContent = null;
@@ -23159,7 +23170,7 @@
 	                        _react2.default.createElement(
 	                            'div',
 	                            null,
-	                            _react2.default.createElement(_cta2.default, { text: 'Questions?' })
+	                            questionsLink
 	                        )
 	                    )
 	                )

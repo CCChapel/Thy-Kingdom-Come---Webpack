@@ -17,7 +17,17 @@ export default class MinistryPartnerInformation extends React.Component {
         if (this.props.information.website !== '' && this.props.information.website !== undefined) {
             siteLink = 
                 <CTA text="Visit their Site" 
-                        onClick={ () => {window.location = this.props.information.website} } />;
+                     onClick={ () => {window.location = this.props.information.website} } />;
+        }
+
+        //Setup Questions
+        let questionsLink = null;
+        if (this.props.information.contactEmail !== '' && this.props.information.contactEmail !== undefined) {
+            var href = String.format("mailto:{0}", [ this.props.information.contactEmail ]);
+
+            questionsLink =
+                <CTA text="Questions"
+                     onClick={ () => {window.location = href}} />;
         }
 
         //Setup Options
@@ -70,7 +80,7 @@ export default class MinistryPartnerInformation extends React.Component {
                         </div>
 
                         <div>
-                            <CTA text="Questions?" />
+                            {questionsLink}
                         </div>
                     </div>
                 </div>
