@@ -108,6 +108,76 @@ export default class Page extends React.Component {
                         </div>
 
                         <MinistryPartnersTable showModal={this.showModal} />
+
+                        <p>
+                            <CTA text="FAQs"
+                                onClick={() =>
+                                    this.showModal(
+                                        <div style={{ overflow: 'scroll', maxHeight: '100vh' }}>
+                                            <h1>Frequently Asked Questions</h1>
+                                            
+                                            <div className="[ text-bigger bold ]">
+                                                When does the spree begin?
+                                            </div>
+                                            <p>
+                                                You can begin anytime!
+                                            </p>
+
+                                            <div className="[ text-bigger bold ]">
+                                                Can I serve with others in my family or community group?
+                                            </div>  
+                                            <p>
+                                                Yes! Each person should complete their own local outreach spree card.
+                                            </p> 
+
+                                            <div className="[ text-bigger bold ]">
+                                                What should I do if I forget to have someone initial my card?
+                                            </div>  
+                                            <p>
+                                                Just stop by the Hudson Campus bookstore or front desk and our staff will be happy 
+                                                to initial it for you. (At Aurora and Highland Square, go to the Welcome Center.)
+                                            </p>
+
+                                            <div className="[ text-bigger bold ]">
+                                                Can I do more than one serving opportunity with the same ministry?
+                                            </div>     
+                                            <p>
+                                                Sure, just use your wild card.
+                                            </p>
+
+                                            <div className="[ text-bigger bold ]">
+                                                Can I do all eight of my serve opportunities with the same ministry?
+                                            </div>    
+                                            <p>
+                                                We&rsquo;re glad you’ve found a ministry you love to serve, but the purpose of 
+                                                the spree is to step outside your comfort zone to experience all that our 
+                                                local outreach partners have to offer.
+                                            </p>
+                                             
+                                            <div className="[ text-bigger bold ]">
+                                                Can children participate in the spree?
+                                            </div>    
+                                            <p>
+                                                Yes. While some activities are marked for adults only, we&rsquo;re offering many 
+                                                opportunities that enable families to serve together.
+                                            </p>
+
+                                            <div className="[ text-bigger bold ]">
+                                                When I finish all eight activities, where do I return my form?
+                                            </div>    
+                                            <p>
+                                                Just bring your completed, initialed form to the Hudson campus bookstore 
+                                                (located next to Café 6:8) or the Library. They&rsquo;ll give you a card for eight 
+                                                free drinks from Café 6:8 along with your choice of a free mug or drink cup.
+                                            </p>
+
+                                            <p>
+                                                If you&rsquo;re at Aurora or Highland Square, just take your completed form 
+                                                to the Welcome Center.
+                                            </p>
+                                        </div>
+                                    )} />
+                        </p>
                     </div>
                 </Section>
 

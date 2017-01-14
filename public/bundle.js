@@ -22330,7 +22330,99 @@
 	                                )
 	                            )
 	                        ),
-	                        _react2.default.createElement(_ministryPartnersTable2.default, { showModal: this.showModal })
+	                        _react2.default.createElement(_ministryPartnersTable2.default, { showModal: this.showModal }),
+	                        _react2.default.createElement(
+	                            'p',
+	                            null,
+	                            _react2.default.createElement(_cta2.default, { text: 'FAQs',
+	                                onClick: function onClick() {
+	                                    return _this2.showModal(_react2.default.createElement(
+	                                        'div',
+	                                        { style: { overflow: 'scroll', maxHeight: '100vh' } },
+	                                        _react2.default.createElement(
+	                                            'h1',
+	                                            null,
+	                                            'Frequently Asked Questions'
+	                                        ),
+	                                        _react2.default.createElement(
+	                                            'div',
+	                                            { className: '[ text-bigger bold ]' },
+	                                            'When does the spree begin?'
+	                                        ),
+	                                        _react2.default.createElement(
+	                                            'p',
+	                                            null,
+	                                            'You can begin anytime!'
+	                                        ),
+	                                        _react2.default.createElement(
+	                                            'div',
+	                                            { className: '[ text-bigger bold ]' },
+	                                            'Can I serve with others in my family or community group?'
+	                                        ),
+	                                        _react2.default.createElement(
+	                                            'p',
+	                                            null,
+	                                            'Yes! Each person should complete their own local outreach spree card.'
+	                                        ),
+	                                        _react2.default.createElement(
+	                                            'div',
+	                                            { className: '[ text-bigger bold ]' },
+	                                            'What should I do if I forget to have someone initial my card?'
+	                                        ),
+	                                        _react2.default.createElement(
+	                                            'p',
+	                                            null,
+	                                            'Just stop by the Hudson Campus bookstore or front desk and our staff will be happy to initial it for you. (At Aurora and Highland Square, go to the Welcome Center.)'
+	                                        ),
+	                                        _react2.default.createElement(
+	                                            'div',
+	                                            { className: '[ text-bigger bold ]' },
+	                                            'Can I do more than one serving opportunity with the same ministry?'
+	                                        ),
+	                                        _react2.default.createElement(
+	                                            'p',
+	                                            null,
+	                                            'Sure, just use your wild card.'
+	                                        ),
+	                                        _react2.default.createElement(
+	                                            'div',
+	                                            { className: '[ text-bigger bold ]' },
+	                                            'Can I do all eight of my serve opportunities with the same ministry?'
+	                                        ),
+	                                        _react2.default.createElement(
+	                                            'p',
+	                                            null,
+	                                            'We\u2019re glad you\u2019ve found a ministry you love to serve, but the purpose of the spree is to step outside your comfort zone to experience all that our local outreach partners have to offer.'
+	                                        ),
+	                                        '\xA0',
+	                                        _react2.default.createElement(
+	                                            'div',
+	                                            { className: '[ text-bigger bold ]' },
+	                                            'Can children participate in the spree?'
+	                                        ),
+	                                        _react2.default.createElement(
+	                                            'p',
+	                                            null,
+	                                            'Yes. While some activities are marked for adults only, we\u2019re offering many opportunities that enable families to serve together.'
+	                                        ),
+	                                        _react2.default.createElement(
+	                                            'div',
+	                                            { className: '[ text-bigger bold ]' },
+	                                            'When I finish all eight activities, where do I return my form?'
+	                                        ),
+	                                        _react2.default.createElement(
+	                                            'p',
+	                                            null,
+	                                            'Just bring your completed, initialed form to the Hudson campus bookstore (located next to Caf\xE9 6:8) or the Library. They\u2019ll give you a card for eight free drinks from Caf\xE9 6:8 along with your choice of a free mug or drink cup.'
+	                                        ),
+	                                        _react2.default.createElement(
+	                                            'p',
+	                                            null,
+	                                            'If you\u2019re at Aurora or Highland Square, just take your completed form to the Welcome Center.'
+	                                        )
+	                                    ));
+	                                } })
+	                        )
 	                    )
 	                ),
 	                _react2.default.createElement(
