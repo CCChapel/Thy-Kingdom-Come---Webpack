@@ -22616,7 +22616,7 @@
 	                    _react2.default.createElement(
 	                        'span',
 	                        { className: 'menu__item-title' },
-	                        'Introduction'
+	                        'What\u2019s This About?'
 	                    )
 	                ),
 	                _react2.default.createElement(

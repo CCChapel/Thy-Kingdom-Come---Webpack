@@ -34,7 +34,7 @@ export default class Navigation extends React.Component {
             <nav className="menu">
                 <input id="menu__button" type="checkbox" checked={this.state.isChecked} onClick={this.onCheckedChange} />
                 <a className="menu__item scroll" href="#intro">
-                    <span className="menu__item-title">Introduction</span>
+                    <span className="menu__item-title">What&rsquo;s This About?</span>
                 </a>
                 <a className="menu__item scroll" href="#spree">
                     <span className="menu__item-title">Local Outreach Spree</span>
