@@ -711,7 +711,7 @@ a {
     top: 20px;
     right: 20px; }
   .modal-content {
-    max-height: 90vh;
+    max-height: 100%;
     overflow-y: scroll; }
 
 @keyframes modal-open {
