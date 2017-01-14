@@ -3,12 +3,9 @@ $defaultSkew: -60deg;
 .menu {
     position: fixed;
 
-    //display: flex;
     @include flexbox;
     @include flex-direction(column);
     @include align-items(flex-start);
-    // flex-direction: column;
-    // align-items: flex-start;
 
     z-index: 99;
 
@@ -19,8 +16,6 @@ $defaultSkew: -60deg;
         background-color: $charcoal;
 
         position: relative;
-        // display: flex;
-        // justify-content: center;
         @include flexbox;
         @include justify-content(center);
         padding: 0.5rem;
@@ -29,41 +24,29 @@ $defaultSkew: -60deg;
         transition: background-color 0.2s;
 
         color: #FFF;
+
+        left: -35px;
+        padding-left: 45px;
         
         &-title {
             transform: skewX(-$defaultSkew);
             width: 100%;
         }
 
-        &::before {
-            background-color: $charcoal;
-
-            position: absolute;
-            top: 0;
-            left: 0;
-
-            content: '';
-
-            height: 100%;
-            width: 25%;
-
-            transform: skewX(-$defaultSkew);
-        }
-
         &:nth-child(2) {
-            width: 185%;
+            width: calc(100% + 160px)
         }
 
         &:nth-child(3) {
-            width: 148.5%;
+            width: calc(100% + 91px);
         }
         
         &:nth-child(4) {
-            width: 112%;
+            width: calc(100% + 21px)
         }
         
         &:nth-child(5) {
-            width: 75.5%;
+            width: 178px;
         }
 
         &:hover,
@@ -80,32 +63,29 @@ $defaultSkew: -60deg;
     width: 25%;
     height: 4.8rem;
     cursor: pointer;
-    transform: translateX(-100%);
+    transform: translateX(-100%)
+               skewX($defaultSkew) !important;
+    padding-left: 112px;
+    margin-left: -70px;
+
+    &:hover {
+        background: $dark-blue;
+    }
 
     &-icon {
         position: absolute;
-        padding-top: 20%;
+        padding-top: 10px;
         z-index: 1;
+        left: 70px;
 
-        height: auto;
-        width: 100%;
+        // height: auto;
+        height: 4.8rem;
+        width: 50%;
 
         font-size: 1.2rem;
         text-align: center;
-    }
-    &::after {
-        position: absolute;
-        content: '';
-        width: 200%;
-        height: 100%;
-        left: -112%;
-        transform: skewX($defaultSkew);        
-    }
-    &:hover {
-        & .menu__close-icon,
-        &::after {
-            background: $charcoal;
-        }
+
+        transform: skew(60deg);
     }
 }
 
@@ -140,7 +120,8 @@ $defaultSkew: -60deg;
 
         & ~ .menu__close {
             transition: transform 0.2s 0.3s;
-            transform: translateY(-10rem)!important;
+            transform: translateY(-10rem)
+               skewX($defaultSkew) !important;
         }
     }
 
@@ -170,19 +151,10 @@ $defaultSkew: -60deg;
 
         & ~ .menu__close {
             transition: transform 0.2s 0.1s;
-            transform: translateY(0)!important;
-
-            & .menu__close-icon,
-            &::after {
-                background: $charcoal;        
-            }
-
-            &:hover {
-                & .menu__close-icon,
-                &::after {
-                    background: $dark-blue;
-                }
-            }
+            transform: translateY(0)
+               skewX($defaultSkew) !important;;
+            
+            background: $charcoal;
         }
     }
 }
