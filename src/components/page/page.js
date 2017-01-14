@@ -89,7 +89,8 @@ export default class Page extends React.Component {
                 <Section id="spree" className="bg-medium-blue">
                     <div className="content-wrapper">
                         <div className="lock-width center-by-margin">
-                            <h1 className="center">Local Outreach Spree</h1>
+                            <h1 className="center no-bottom-margin">Local Outreach Spree</h1>
+                            <h3 className="center">A Kingdom Assignment</h3>
 
                             <ol>
                                 <li>
@@ -102,7 +103,7 @@ export default class Page extends React.Component {
                                 </li>
 
                                 <li>
-                                    Return this form to the bookstore (Hudson) or the Welcome Center 
+                                    Return this form to the bookstore or library (Hudson) or the Welcome Center 
                                     (Aurora/Highland Square) or to the church office during business hours to 
                                     receive your free Caf&eacute; 6:8 drink vouchers and cup or mug.
                                 </li>
@@ -136,7 +137,7 @@ export default class Page extends React.Component {
                                                 What should I do if I forget to have someone initial my card?
                                             </div>  
                                             <p>
-                                                Just stop by the Hudson Campus bookstore or front desk and our staff will be happy 
+                                                Just stop by the Hudson Campus bookstore, library or front desk and our staff will be happy 
                                                 to initial it for you. (At Aurora and Highland Square, go to the Welcome Center.)
                                             </p>
 
@@ -155,7 +156,7 @@ export default class Page extends React.Component {
                                                 the spree is to step outside your comfort zone to experience all that our 
                                                 local outreach partners have to offer.
                                             </p>
-                                             
+                                            
                                             <div className="[ text-bigger bold ]">
                                                 Can children participate in the spree?
                                             </div>    

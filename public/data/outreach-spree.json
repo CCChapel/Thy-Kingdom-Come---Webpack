@@ -11,7 +11,7 @@
             },
             {
                 "name": "Annual Walk/Bike Event",
-                "details": "Walk or bike to support Blessings at their annual fundraiser at Stow-Munroe Falls High School Sat., May 13 from 10 a.m. &ndash; noon. More details available in April."
+                "details": "<div class='italic'>Sat., May 13 from 10 a.m. &ndash; noon.</div>Walk or bike to support Blessings at their annual fundraiser at Stow-Munroe Falls High School. More details available in April."
             }
         ]
     },
@@ -23,7 +23,7 @@
         "options": [
             {
                 "name": "Visit Urbean Caf\u00e9",
-                "details": "631 S Broadway St., Metro Transit Center, Akron, OH 44311<br />Mon. – Fri. from 7 a.m. - 7 p.m. and Sat. from 9 a.m. - 3 p.m."
+                "details": "<div class='italic'>Mon. &ndash; Fri. from 7 a.m. &ndash; 7 p.m.<br/>Sat. from 9 a.m. &ndash; 3 p.m.</div>631 S Broadway St., Metro Transit Center, Akron, OH 44311<br />"
             },
             {
                 "name": "Annual Bike for Mike Event",
@@ -31,7 +31,7 @@
             },
             {
                 "name": "Urbean Caf\u00e9 Open House",
-                "details": "Sat., Mar. 4 at 10 a.m.<br />631 S Broadway St., Metro Transit Center, Akron, OH 44311 "
+                "details": "<div class='italic'>Sat., Mar. 4 at 10 a.m.</div>631 S Broadway St., Metro Transit Center, Akron, OH 44311 "
             }
         ]
     },
@@ -43,7 +43,7 @@
         "options": [
             {
                 "name": "Volunteers&rsquo; Meal ",
-                "details": "Prepare and deliver a ready-to-eat meal to our six-eight volunteer doctors and nurses before they being their shift, many of whom come straight from work to serve. To reserve an evening, email <a href='mailto:kbertolini@gmail.com'>Kathi</a>."
+                "details": "Prepare and deliver a ready-to-eat meal to our eight to ten volunteer doctors and nurses before they being their shift, many of whom come straight from work to serve. To reserve an evening, email <a href='mailto:kbertolini@gmail.com'>Kathi</a>."
             },
             {
                 "name": "Visit the Clinic",
@@ -59,11 +59,11 @@
         "options": [
             {
                 "name": "Visit the Skate Park",
-                "details": "For those looking for a more adventurous opportunity, visit and use the indoor skate park at the First Glance Ministry Center.<br />943 Kenmore Blvd., Akron, OH 44314<br />Mondays, Tuesdays, Thursdays, Fridays 4-10 p.m.<br />$5 fee per person. Free on Tuesdays"
+                "details": "<div class='italic'>Mon., Tue., Thu. &amp; Fri. 4-10 p.m.</div>943 Kenmore Blvd., Akron, OH 44314<br />For those looking for a more adventurous opportunity, visit and use the indoor skate park at the First Glance Ministry Center.<br />$5 fee per person. Free on Tuesdays"
             },
             {
                 "name": "Open House",
-                "details": "Sun., March 19 from 12-2 p.m.<br />943 Kenmore Blvd. Akron, OH 44314"
+                "details": "<div class='italic'>Sun., Mar. 19 from 12-2 p.m.</div>943 Kenmore Blvd. Akron, OH 44314"
             }
         ]
     },
@@ -75,11 +75,11 @@
         "options": [
             {
                 "name": "Open House",
-                "details": "Nov. 9 from 2-7 p.m.<br />175 E Market St, Akron, OH 44308"
+                "details": "<div class='italic'>Nov. 9 from 2-7 p.m.</div>175 E Market St, Akron, OH 44308"
             },
             {
                 "name": "Clothes/Food",
-                "details": "Drop off food and gently used clothing to the Client Services Center at Haven of Rest.<br />207 East Market Street, Akron, OH 44308"
+                "details": "<div class='italic'>Mon. &ndash; Fri. from 8 a.m. &ndash; 6 p.m.<br />Sat. from 9 a.m. &ndash; 5 p.m.</div>207 East Market Street, Akron, OH 44308<br />Drop off food and gently used clothing to the Client Services Center at Haven of Rest."
             },
             {
                 "name": "Work in the Kitchen",
@@ -101,29 +101,29 @@
     },
     {
         "name": "Mobility Worldwide",
-        "website": "",
+        "website": "http://mobilityworldwide.org",
         "contactEmail": "Barbara.Ammirati@ccchapel.com",
         "description": "Mobility Worldwide is a faith-based, volunteer-driven non-profit that manufactures and distributes mobility carts so that recipients may &ldquo;in the name of Jesus Christ, arise and walk.&rdquo; (Acts 3:6)",
         "options": [
             {
                 "name": "Production Facility Tour Drop-In",
-                "details": "1445 Commerce Dr., Stow, OH 44224<br />Tue. - Thu. from 9:30 a.m. - 12 p.m. "
+                "details": "<div class='italic'>Tue. &ndash; Thu. from 9:30 a.m. &ndash; 12 p.m.</div>1445 Commerce Dr., Stow, OH 44224"
             },
             {
                 "name": "Open House",
-                "details": "Sun., May 21 from 12-4 p.m."
+                "details": "<div class='italic'>Sun., May 21 from 12-4 p.m.</div>"
             }
         ]
     },
     {
         "name": "Pregnancy Solutions &amp; Services",
-        "website": "http://www.pregsolutions.org/",
+        "website": "http://pssfriends.org",
         "contactEmail": "kcistone6@gmail.com",
         "description": "The Pregnancy Solutions and Services (PSS) ultra-sound van travels to shopping areas, clinics, inner-city and rural locations providing a safe, clean environment where a registered sonographer reveals the clients' options and ties them to the truth of the gospel. PSS is committed to training prospective parents how to care for their babies and provides items they will need for the child's physical needs.",
         "options": [
             {
                 "name": "Tour Ministry Center",
-                "details": "Mon. – Fri. from 9 a.m. to 4:30 p.m.<br />3136 Manchester Rd, Akron, OH 44319"
+                "details": "<div class='italic'>Mon. &ndash; Fri. from 9 a.m. to 4:30 p.m.</div>3136 Manchester Rd, Akron, OH 44319"
             },
             {
                 "name": "Donate an Item",
@@ -143,15 +143,15 @@
         "options": [
             {
                 "name": "Visit Rahab House",
-                "details": "Visit the Rahab House during weekly programming (varying hours, Mon. – Fri. between 10 a.m. - 5 p.m.). There's availability for two-four men, women and children each day. One week's notice requested. Email <a href='mailto:Leann.Embaugh@gmail.com'>Leann</a> to schedule your visit."
+                "details": "Visit the Rahab House during weekly programming (varying hours, Mon. &ndash; Fri. between 10 a.m. &ndash; 5 p.m.). There's availability for two-four men, women and children each day. One week's notice requested. Email <a href='mailto:Leann.Embaugh@gmail.com'>Leann</a> to schedule your visit."
             },
             {
                 "name": "Deliver a Donation",
-                "details": "Make or collect and deliver food, clothing or personal hygiene items.<br />450 Matthews Street, Akron, Ohio 44306"
+                "details": "450 Matthews Street, Akron, Ohio 44306<br />Make or collect and deliver food, clothing or personal hygiene items."
             },
             {
                 "name": "Administrative Support",
-                "details": "Help with administrative tasks in the Rahab office Mon. – Fri. from 9 a.m. - 5 p.m. for a two-hour time block. One week’s notice is requested. Email <a href='mailto:beth@rahab-ministries.org'>Beth</a> to schedule. "
+                "details": "<div class='italic'>Mon. &ndash; Fri. from 9 a.m. &ndash; 5 p.m.</div>Help with administrative tasks in the Rahab office for a two-hour time block. One week’s notice is requested. Email <a href='mailto:beth@rahab-ministries.org'>Beth</a> to schedule."
             }
         ]
     },
@@ -162,11 +162,11 @@
         "description": "South Street Ministries was founded and modeled after the philosophies of the Christian Community Development Association (CCDA). The backbone of the CCDA's ministry philosophy is the three R's: relocation, racial reconciliation and redistribution. Work includes jail, youth, women's ministries, after-school programs, bike shops, an urban garden and other community outreaches.",
         "options": [
             {
-                "name": "Visit Front Porch Cafe",
-                "details": "798 Grant Street, Akron, OH 44311<br />Mon. – Fri. from 7 a.m. - 3 p.m."
+                "name": "Visit Front Porch Caf&eacute;",
+                "details": "<div class='italic'>Mon. &ndash; Fri. from 7 a.m. &ndash; 3 p.m.</div>798 Grant Street, Akron, OH 44311"
             },
             {
-                "name": "Annual Rails to Trails Event",
+                "name": "Annual Rails to Trails Bike Event",
                 "details": "Details available in April."
             }
         ]
@@ -179,7 +179,7 @@
         "options": [
             {
                 "name": "Visit the Farm",
-                "details": "Visit six young men working on the farm Mon., Wed., Thu. and Fri. from 10 a.m. - 4 p.m. and bring them lunch. Email <a href='mailto:Dave@truenorthministry.org'>Dave</a> or call 330.896.2700 to plan your visit."
+                "details": "<div class='italic'>Mon., Wed., Thu. &amp; Fri. from 10 a.m. &ndash; 4 p.m.</div>Visit six young men working on the farm and bring them lunch. Email <a href='mailto:Dave@truenorthministry.org'>Dave</a> or call 330.896.2700 to plan your visit."
             },
             {
                 "name": "Dusty Donkey Festival",
@@ -199,7 +199,7 @@
             },
             {
                 "name": "Ministry Center Tour",
-                "details": "To schedule your tour or ask a question, email <a href='mailto:sherrie@trulyreachingyou.com'>Sherrie</a>.<br />Mon., Wed., Thu. and Fri. from 9:30 a.m. - 3:30 pm.<br />587 Baird St, Akron, OH 44311"
+                "details": "<div class='italic'>Mon., Wed., Thu. &amp; Fri. from 9:30 a.m. &ndash; 3:30 pm.</div>587 Baird St, Akron, OH 44311<br />To schedule your tour or ask a question, email <a href='mailto:sherrie@trulyreachingyou.com'>Sherrie</a>."
             }
         ]
     },
@@ -211,26 +211,26 @@
         "options": [
             {
                 "name": "Attend a Class",
-                "details": "Life Skills Class: Mondays from 3:30-4 p.m.<br />Jr. Achievement Class: Tuesdays from 3:30-4 p.m.<br /><br />Email <a href='mailto:regina@urbanvisionministry.org'>Regina</a> to let her know to you plan to attend at least 24 hours before these two classes. You will receive a quick tour of the ministry center 15 - 20 minutes before class."
+                "details": "Life Skills Class: Mon. from 3:30-4 p.m.<br />Jr. Achievement Class: Tue. from 3:30-4 p.m.<br /><br />Email <a href='mailto:regina@urbanvisionministry.org'>Regina</a> to let her know to you plan to attend at least 24 hours before these two classes. You will receive a quick tour of the ministry center 15 &ndash; 20 minutes before class."
             },
             {
                 "name": "English as a Foreign Language (EFL) Class",
-                "details": "Tuesdays and Thursdays from 6-8 p.m. Classes can accommodate five visitors where refugees learn English. Email <a href='mailto:bena.paisley@ccchapel.com'>Bena</a> to reserve a spot."
+                "details": "<div class='italic'>Tue. &amp; Thu. from 6-8 p.m.</div>Classes can accommodate five visitors where refugees learn English. Email <a href='mailto:bena.paisley@ccchapel.com'>Bena</a> to reserve a spot."
             },
             {
                 "name": "Attend 20-Year Anniversary Celebration",
-                "details": "Mon., Sep. 25 at Christ Community Chapel - Hudson Campus.<br />Details available soon."
+                "details": "<div class='italic'>Mon., Sep. 25 at Christ Community Chapel &ndash; Hudson Campus.</div>Details available soon."
             }
         ]
     },
     {
         "name": "Restoration Chapel",
         "contactEmail": "Richard.White@ccchapel.com",
-        "description": "Restoration Chapel is a ministry of Christ Community Chapel located at the Cuyahoga Hills Youth Detention Center. Weekly service includes worship, a message and time to interact with the young men who attend. 25-75 young men from the facility that houses 160 young men from the age of 12-18 attend weekly. We also hold bible studies, skills classes and participates in the weekly orientation intake process.",
+        "description": "Restoration Chapel is a ministry of Christ Community Chapel located at the Cuyahoga Hills Youth Detention Center. Weekly service includes worship, a message and time to interact with the young men who attend. 25-75 young men from the facility that houses 160 young men from the age of 12-18 attend weekly. We also hold bible studies, skills classes and participate in the weekly orientation intake process.",
         "options": [
             {
                 "name": "Attend a Service",
-                "details": "Men and women 18 and older are able to enter the facility as a guest. Email <a href='mailto:Richard.White@ccchapel.com'>Richard White</a> at least 24 hours in advance so he can obtain a gate pass.<br />Wednesdays from 6:30-8 p.m.<br />4321 Green Rd, Highland Hills, OH 44122"
+                "details": "<div class='italic'>Wed. from 6:30-8 p.m.</div>4321 Green Rd, Highland Hills, OH 44122<br />Men and women 18 and older are able to enter the facility as a guest. Email <a href='mailto:Richard.White@ccchapel.com'>Richard White</a> at least 24 hours in advance so he can obtain a gate pass."
             }
         ]
     },
@@ -241,24 +241,24 @@
         "options": [
             {
                 "name": "Portage Trail Village",
-                "details": "45 Cathedral Lane<br />Cuyahoga Falls, OH 44223<br />First and third Monday<br />10:15-11:15 a.m."
+                "details": "<div class='italic'>1st &amp; 3rd Monday from 10:15-11:15 a.m.</div>45 Cathedral Lane, Cuyahoga Falls, OH 44223<br />"
             },
             {
                 "name": "Gables of Hudson",
-                "details": "5400 Darrow Rd.<br />Hudson, OH 44236<br />Second Friday<br />10:30-11:30 a.m."
+                "details": "<div class='italic'>2nd Friday from 10:30-11:30 a.m.</div>5400 Darrow Rd.<br />Hudson, OH 44236"
             },
             {
                 "name": "Heritage of Hudson",
-                "details": "1212 W. Barlow Rd.<br />Hudson, OH 44236<br />Third Friday<br />10:30-11:30 a.m."
+                "details": "<div class='italic'>3rd Friday from 10:30-11:30 a.m.</div>1212 W. Barlow Rd.<br />Hudson, OH 44236"
             },
             {
                 "name": "Gardens of Western Reserve",
-                "details": "9975 Greentree Parkway<br />Streetsboro, OH 44241<br />Third Sunday<br />2:30-3:30 p.m."
+                "details": "<div class='italic'>3rd Sunday from 2:30-3:30 p.m.</div>9975 Greentree Parkway<br />Streetsboro, OH 44241"
             }
         ]
     },
     {
-        "name": "Wild Card",
+        "name": "Wild Card Option",
         "description": "As a wild card option, you can choose a second opportunity at a ministry and count it as one of your eight activities. For example, you can visit the ministry center at PSS and then participate in the bike-a-thon.  Or you could visit the Front Porch Café and then return with your community group to do a project at the Front Porch at South Street as a wild card activity."
     }
 ]

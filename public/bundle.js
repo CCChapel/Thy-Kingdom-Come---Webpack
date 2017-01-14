@@ -22311,8 +22311,13 @@
 	                            { className: 'lock-width center-by-margin' },
 	                            _react2.default.createElement(
 	                                'h1',
-	                                { className: 'center' },
+	                                { className: 'center no-bottom-margin' },
 	                                'Local Outreach Spree'
+	                            ),
+	                            _react2.default.createElement(
+	                                'h3',
+	                                { className: 'center' },
+	                                'A Kingdom Assignment'
 	                            ),
 	                            _react2.default.createElement(
 	                                'ol',
@@ -22330,7 +22335,7 @@
 	                                _react2.default.createElement(
 	                                    'li',
 	                                    null,
-	                                    'Return this form to the bookstore (Hudson) or the Welcome Center (Aurora/Highland Square) or to the church office during business hours to receive your free Caf\xE9 6:8 drink vouchers and cup or mug.'
+	                                    'Return this form to the bookstore or library (Hudson) or the Welcome Center (Aurora/Highland Square) or to the church office during business hours to receive your free Caf\xE9 6:8 drink vouchers and cup or mug.'
 	                                )
 	                            )
 	                        ),
@@ -22376,7 +22381,7 @@
 	                                        _react2.default.createElement(
 	                                            'p',
 	                                            null,
-	                                            'Just stop by the Hudson Campus bookstore or front desk and our staff will be happy to initial it for you. (At Aurora and Highland Square, go to the Welcome Center.)'
+	                                            'Just stop by the Hudson Campus bookstore, library or front desk and our staff will be happy to initial it for you. (At Aurora and Highland Square, go to the Welcome Center.)'
 	                                        ),
 	                                        _react2.default.createElement(
 	                                            'div',
@@ -22398,7 +22403,6 @@
 	                                            null,
 	                                            'We\u2019re glad you\u2019ve found a ministry you love to serve, but the purpose of the spree is to step outside your comfort zone to experience all that our local outreach partners have to offer.'
 	                                        ),
-	                                        '\xA0',
 	                                        _react2.default.createElement(
 	                                            'div',
 	                                            { className: '[ text-bigger bold ]' },
