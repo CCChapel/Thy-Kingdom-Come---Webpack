@@ -264,7 +264,7 @@ p {
 
 ol {
   list-style: decimal;
-  margin-left: 1rem; }
+  margin-left: 1em; }
 
 a {
   color: currentColor;
