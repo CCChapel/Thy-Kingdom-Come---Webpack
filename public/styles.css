@@ -420,6 +420,7 @@ a {
 .cta--wrapper {
   cursor: pointer;
   position: relative;
+  display: inline-block;
   text-align: center; }
 .cta--shape {
   fill: transparent;
