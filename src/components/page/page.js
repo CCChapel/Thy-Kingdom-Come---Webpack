@@ -149,7 +149,7 @@ export default class Page extends React.Component {
                                                 Can I do all eight of my serve opportunities with the same ministry?
                                             </div>    
                                             <p>
-                                                We&rsquo;re glad you’ve found a ministry you love to serve, but the purpose of 
+                                                We&rsquo;re glad you&rsquo;ve found a ministry you love to serve, but the purpose of 
                                                 the spree is to step outside your comfort zone to experience all that our 
                                                 local outreach partners have to offer.
                                             </p>
