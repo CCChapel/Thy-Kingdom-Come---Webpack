@@ -51,7 +51,9 @@ export default class Page extends React.Component {
                 <Navigation />
 
                 <Section className="[ bg-clouds bg-cover ] [ justify-content--center ] [ overflow-x-hidden ]">
-                    <Logo />
+                    <a className="scroll" href="#intro">
+                        <Logo />
+                    </a>
                 </Section>
 
                 <Section id="intro" className="bg-light-blue">

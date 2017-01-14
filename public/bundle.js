@@ -22260,7 +22260,11 @@
 	                _react2.default.createElement(
 	                    _section2.default,
 	                    { className: '[ bg-clouds bg-cover ] [ justify-content--center ] [ overflow-x-hidden ]' },
-	                    _react2.default.createElement(_logo2.default, null)
+	                    _react2.default.createElement(
+	                        'a',
+	                        { className: 'scroll', href: '#intro' },
+	                        _react2.default.createElement(_logo2.default, null)
+	                    )
 	                ),
 	                _react2.default.createElement(
 	                    _section2.default,
