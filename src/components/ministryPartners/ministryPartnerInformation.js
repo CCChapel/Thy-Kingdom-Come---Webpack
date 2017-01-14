@@ -77,9 +77,7 @@ export default class MinistryPartnerInformation extends React.Component {
                     <div className="center center-by-margin lock-width">
                         <div>
                             {siteLink}
-                        </div>
 
-                        <div>
                             {questionsLink}
                         </div>
                     </div>

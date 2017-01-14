@@ -23165,11 +23165,7 @@
 	                        _react2.default.createElement(
 	                            'div',
 	                            null,
-	                            siteLink
-	                        ),
-	                        _react2.default.createElement(
-	                            'div',
-	                            null,
+	                            siteLink,
 	                            questionsLink
 	                        )
 	                    )
