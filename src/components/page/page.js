@@ -109,7 +109,7 @@ export default class Page extends React.Component {
 
                         <MinistryPartnersTable showModal={this.showModal} />
 
-                        <p>
+                        <p className="center">
                             <CTA text="FAQs"
                                 onClick={() =>
                                     this.showModal(

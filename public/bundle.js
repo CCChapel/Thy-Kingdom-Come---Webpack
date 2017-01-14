@@ -22333,7 +22333,7 @@
 	                        _react2.default.createElement(_ministryPartnersTable2.default, { showModal: this.showModal }),
 	                        _react2.default.createElement(
 	                            'p',
-	                            null,
+	                            { className: 'center' },
 	                            _react2.default.createElement(_cta2.default, { text: 'FAQs',
 	                                onClick: function onClick() {
 	                                    return _this2.showModal(_react2.default.createElement(
