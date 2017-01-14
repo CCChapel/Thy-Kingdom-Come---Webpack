@@ -183,7 +183,7 @@ export default class Page extends React.Component {
 
                 <Section id="assignments" className="bg-dark-blue text-white">
                     <div className="content-wrapper">
-                        <h1 className="center">Assignments</h1>
+                        <h1 className="center">Kingdom Assignments</h1>
 
                         <p>
                             <Clock className="center-by-margin" height="250" width="250" />

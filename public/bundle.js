@@ -22434,7 +22434,7 @@
 	                        _react2.default.createElement(
 	                            'h1',
 	                            { className: 'center' },
-	                            'Assignments'
+	                            'Kingdom Assignments'
 	                        ),
 	                        _react2.default.createElement(
 	                            'p',
