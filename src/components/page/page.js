@@ -113,7 +113,7 @@ export default class Page extends React.Component {
                             <CTA text="FAQs"
                                 onClick={() =>
                                     this.showModal(
-                                        <div style={{ overflow: 'scroll', maxHeight: '100vh' }}>
+                                        <div>
                                             <h1>Frequently Asked Questions</h1>
                                             
                                             <div className="[ text-bigger bold ]">

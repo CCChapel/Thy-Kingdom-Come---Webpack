@@ -22338,7 +22338,7 @@
 	                                onClick: function onClick() {
 	                                    return _this2.showModal(_react2.default.createElement(
 	                                        'div',
-	                                        { style: { overflow: 'scroll', maxHeight: '100vh' } },
+	                                        null,
 	                                        _react2.default.createElement(
 	                                            'h1',
 	                                            null,
