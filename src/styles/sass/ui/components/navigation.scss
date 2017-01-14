@@ -8,6 +8,7 @@ $defaultSkew: -60deg;
     @include align-items(flex-start);
 
     z-index: 99;
+    pointer-events: none;
 
     left: 0;
     top: 0;
@@ -23,10 +24,12 @@ $defaultSkew: -60deg;
                    skewX($defaultSkew);
         transition: background-color 0.2s;
 
-        color: #FFF;
+        pointer-events: auto;
 
         left: -35px;
         padding-left: 45px;
+
+        color: #FFF;
         
         &-title {
             transform: skewX(-$defaultSkew);
@@ -59,14 +62,19 @@ $defaultSkew: -60deg;
 
 .menu__close {
     position: relative;
-    color: #fff;
-    width: 25%;
-    height: 4.8rem;
-    cursor: pointer;
-    transform: translateX(-100%)
-               skewX($defaultSkew) !important;
     padding-left: 112px;
     margin-left: -70px;
+
+    cursor: pointer;
+    pointer-events: auto;
+
+    width: 25%;
+    height: 4.8rem;
+    
+    color: #fff;
+
+    transform: translateX(-100%)
+               skewX($defaultSkew) !important;
 
     &:hover {
         background: $dark-blue;
@@ -95,9 +103,7 @@ $defaultSkew: -60deg;
 
     &:checked {
         & ~ .menu__item {
-            &::after {
-                background: none;
-            }
+
 
             &:nth-child(2) {
                 transition: transform 0.2s 0.3s;
@@ -126,6 +132,8 @@ $defaultSkew: -60deg;
 
     &:not(:checked) {
         & ~ .menu__item {
+            transform: translateY(0);
+
             &:nth-child(2) {
                 transition: transform 0.2s 0.1s;
                 transform: translateX(0)

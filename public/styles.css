@@ -484,6 +484,7 @@ a {
   -moz-align-items: flex-start;
   align-items: flex-start;
   z-index: 99;
+  pointer-events: none;
   left: 0;
   top: 0; }
   .menu__item {
@@ -502,9 +503,10 @@ a {
     padding: 0.5rem;
     transform: translateX(calc(-100% -   2.4rem)) skewX(-60deg);
     transition: background-color 0.2s;
-    color: #FFF;
+    pointer-events: auto;
     left: -35px;
-    padding-left: 45px; }
+    padding-left: 45px;
+    color: #FFF; }
     .menu__item-title {
       transform: skewX(60deg);
       width: 100%; }
@@ -521,13 +523,14 @@ a {
 
 .menu__close {
   position: relative;
-  color: #fff;
+  padding-left: 112px;
+  margin-left: -70px;
+  cursor: pointer;
+  pointer-events: auto;
   width: 25%;
   height: 4.8rem;
-  cursor: pointer;
-  transform: translateX(-100%) skewX(-60deg) !important;
-  padding-left: 112px;
-  margin-left: -70px; }
+  color: #fff;
+  transform: translateX(-100%) skewX(-60deg) !important; }
   .menu__close:hover {
     background: #467284; }
   .menu__close-icon {
@@ -545,8 +548,6 @@ a {
   position: absolute;
   top: -9999px;
   left: -9999px; }
-  .menu input[type=checkbox]:checked ~ .menu__item::after {
-    background: none; }
   .menu input[type=checkbox]:checked ~ .menu__item:nth-child(2) {
     transition: transform 0.2s 0.3s;
     transform: translateX(calc(-100% -   2.4rem)) !important; }
@@ -562,18 +563,20 @@ a {
   .menu input[type=checkbox]:checked ~ .menu__close {
     transition: transform 0.2s 0.3s;
     transform: translateY(-10rem) skewX(-60deg) !important; }
-  .menu input[type=checkbox]:not(:checked) ~ .menu__item:nth-child(2) {
-    transition: transform 0.2s 0.1s;
-    transform: translateX(0) skewX(-60deg) !important; }
-  .menu input[type=checkbox]:not(:checked) ~ .menu__item:nth-child(3) {
-    transition: transform 0.2s 0.2s;
-    transform: translateX(0) skewX(-60deg) !important; }
-  .menu input[type=checkbox]:not(:checked) ~ .menu__item:nth-child(4) {
-    transition: transform 0.2s 0.3s;
-    transform: translateX(0) skewX(-60deg) !important; }
-  .menu input[type=checkbox]:not(:checked) ~ .menu__item:nth-child(5) {
-    transition: transform 0.2s 0.4s;
-    transform: translateX(0) skewX(-60deg) !important; }
+  .menu input[type=checkbox]:not(:checked) ~ .menu__item {
+    transform: translateY(0); }
+    .menu input[type=checkbox]:not(:checked) ~ .menu__item:nth-child(2) {
+      transition: transform 0.2s 0.1s;
+      transform: translateX(0) skewX(-60deg) !important; }
+    .menu input[type=checkbox]:not(:checked) ~ .menu__item:nth-child(3) {
+      transition: transform 0.2s 0.2s;
+      transform: translateX(0) skewX(-60deg) !important; }
+    .menu input[type=checkbox]:not(:checked) ~ .menu__item:nth-child(4) {
+      transition: transform 0.2s 0.3s;
+      transform: translateX(0) skewX(-60deg) !important; }
+    .menu input[type=checkbox]:not(:checked) ~ .menu__item:nth-child(5) {
+      transition: transform 0.2s 0.4s;
+      transform: translateX(0) skewX(-60deg) !important; }
   .menu input[type=checkbox]:not(:checked) ~ .menu__close {
     transition: transform 0.2s 0.1s;
     transform: translateY(0) skewX(-60deg) !important;
