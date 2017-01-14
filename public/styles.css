@@ -704,12 +704,14 @@ a {
   animation: modal-open .5s 1; }
   .modal a {
     color: #69a7c2; }
-
-.modal-close {
-  cursor: pointer;
-  position: absolute;
-  top: 20px;
-  right: 20px; }
+  .modal-close {
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px; }
+  .modal-content {
+    max-height: 90vh;
+    overflow-y: scroll; }
 
 @keyframes modal-open {
   from {

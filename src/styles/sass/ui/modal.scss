@@ -13,15 +13,21 @@
     a {
         color: $medium-blue;
     }
+
+    &-close {
+        cursor: pointer;
+
+        position: absolute;
+        top: $gutter;
+        right: $gutter;
+    }
+
+    &-content {
+        max-height: 90vh;
+        overflow-y: scroll;
+    }
 }
 
-.modal-close {
-    cursor: pointer;
-
-    position: absolute;
-    top: $gutter;
-    right: $gutter;
-}
 
 @keyframes modal-open {
     from { opacity: 0 };

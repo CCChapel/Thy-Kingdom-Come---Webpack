@@ -18,10 +18,12 @@ export default class Modal extends React.Component {
     render() {
         if (this.props.show === true) {
             return (
-                <div className="modal content-wrapper">
+                <div className="modal">
                     <div className="modal-close text-dark-blue" onClick={this.hide}><i className="fa fa-3x fa-close" aria-hidden="true"></i></div>
 
-                    {this.props.children}
+                    <div className="modal-content content-wrapper">
+                        {this.props.children}
+                    </div>
                 </div>
             );
         }

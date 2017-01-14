@@ -22522,13 +22522,17 @@
 	            if (this.props.show === true) {
 	                return _react2.default.createElement(
 	                    'div',
-	                    { className: 'modal content-wrapper' },
+	                    { className: 'modal' },
 	                    _react2.default.createElement(
 	                        'div',
 	                        { className: 'modal-close text-dark-blue', onClick: this.hide },
 	                        _react2.default.createElement('i', { className: 'fa fa-3x fa-close', 'aria-hidden': 'true' })
 	                    ),
-	                    this.props.children
+	                    _react2.default.createElement(
+	                        'div',
+	                        { className: 'modal-content content-wrapper' },
+	                        this.props.children
+	                    )
 	                );
 	            } else {
 	                return null;
