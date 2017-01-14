@@ -578,6 +578,8 @@ a {
     transition: transform 0.2s 0.1s;
     transform: translateY(0) skewX(-60deg) !important;
     background: #333333; }
+    .menu input[type=checkbox]:not(:checked) ~ .menu__close:hover {
+      background: #467284; }
 
 .flex {
   display: -webkit-box;
