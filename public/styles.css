@@ -368,10 +368,10 @@ a {
   75% {
     transform: translate(-20px, 11px); } }
 .fx-down-up {
-  animation: down-up 5s infinite linear; }
+  animation: down-up 10s infinite linear; }
 
 .fx-up-down {
-  animation: up-down 5s infinite linear; }
+  animation: up-down 10s infinite linear; }
 
 @keyframes shimmer {
   0% {
