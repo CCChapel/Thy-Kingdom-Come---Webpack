@@ -1,4 +1,4 @@
-$defaultSkew: -60deg;
+$defaultSkew: -61.25deg;
 
 .menu {
     position: fixed;
@@ -20,14 +20,14 @@ $defaultSkew: -60deg;
         @include flexbox;
         @include justify-content(center);
         padding: 0.5rem;
-        transform: translateX(calc(-100% -   2.4rem))
+        transform: translateX(calc(-100% - 2.4rem))
                    skewX($defaultSkew);
         transition: background-color 0.2s;
 
         pointer-events: auto;
 
-        left: -35px;
-        padding-left: 45px;
+        left: -36px;
+        padding-left: 46px;
 
         color: #FFF;
         
@@ -37,19 +37,19 @@ $defaultSkew: -60deg;
         }
 
         &:nth-child(2) {
-            width: calc(100% + 160px)
+            width: calc(100% + 171px)
         }
 
         &:nth-child(3) {
-            width: calc(100% + 91px);
+            width: calc(100% + 98px);
         }
         
         &:nth-child(4) {
-            width: calc(100% + 21px)
+            width: calc(100% + 25px)
         }
         
         &:nth-child(5) {
-            width: 178px;
+            width: 179px;
         }
 
         &:hover,
@@ -63,7 +63,7 @@ $defaultSkew: -60deg;
 .menu__close {
     position: relative;
     padding-left: 112px;
-    margin-left: -70px;
+    margin-left: -75px;
 
     cursor: pointer;
     pointer-events: auto;
@@ -92,7 +92,7 @@ $defaultSkew: -60deg;
         font-size: 1.5rem;
         text-align: center;
 
-        transform: skew(60deg);
+        transform: skew(-$defaultSkew);
     }
 }
 
@@ -103,23 +103,21 @@ $defaultSkew: -60deg;
 
     &:checked {
         & ~ .menu__item {
-
-
             &:nth-child(2) {
                 transition: transform 0.2s 0.3s;
-                transform: translateX(calc(-100% -   2.4rem)) !important;
+                transform: translateX(calc(-100% - 2.4rem)) !important;
             }
             &:nth-child(3) {
                 transition: transform 0.2s 0.2s;
-                transform: translateX(calc(-100% -   2.4rem)) !important;
+                transform: translateX(calc(-100% - 2.4rem)) !important;
             }
             &:nth-child(4) {
                 transition: transform 0.2s 0.1s;
-                transform: translateX(calc(-100% -   2.4rem)) !important;
+                transform: translateX(calc(-100% - 2.4rem)) !important;
             }
             &:nth-child(5) {
                 transition: transform 0.2s 0s, background-color 0.2s;
-                transform: translateX(calc(-100% -   2.4rem)) !important;
+                transform: translateX(calc(-100% - 2.4rem)) !important;
             }
         }
 
