@@ -19,7 +19,9 @@ export default class MinistryPartnerInformation extends React.Component {
         this.setCookie = this.setCookie.bind(this);
     }
 
-    setCookie(ministry, id) {
+    setCookie(ministry, id, isChecked) {
+        console.log(isChecked);
+        
         //Get checked list
         var checked = Cookies.getJSON('ccc');
 
@@ -75,7 +77,7 @@ export default class MinistryPartnerInformation extends React.Component {
             this.props.information.options.forEach((option, index) => {
                 options.push(
                     <div className="add-bottom-margin" key={index}>
-                        <div className="[ text-bigger bold ]"><Checkbox onClick={() => { this.setCookie(this.props.information.name, option.id) } } /> { Parser(option.name) }</div>
+                        <div className="[ text-bigger bold ]"><Checkbox onClick={(isChecked) => { this.setCookie(this.props.information.name, option.id, isChecked) } } /> { Parser(option.name) }</div>
                         <div className="indent">{ Parser(option.details) }</div>
                     </div>
                 );

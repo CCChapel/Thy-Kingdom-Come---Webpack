@@ -23086,7 +23086,9 @@
 
 	    _createClass(MinistryPartnerInformation, [{
 	        key: 'setCookie',
-	        value: function setCookie(ministry, id) {
+	        value: function setCookie(ministry, id, isChecked) {
+	            console.log(isChecked);
+
 	            //Get checked list
 	            var checked = _js2.default.getJSON('ccc');
 
@@ -23151,8 +23153,8 @@
 	                        _react2.default.createElement(
 	                            'div',
 	                            { className: '[ text-bigger bold ]' },
-	                            _react2.default.createElement(_checkbox2.default, { onClick: function onClick() {
-	                                    _this2.setCookie(_this2.props.information.name, option.id);
+	                            _react2.default.createElement(_checkbox2.default, { onClick: function onClick(isChecked) {
+	                                    _this2.setCookie(_this2.props.information.name, option.id, isChecked);
 	                                } }),
 	                            ' ',
 	                            (0, _htmlReactParser2.default)(option.name)
@@ -23909,7 +23911,7 @@
 	            this.setState({ isChecked: !this.state.isChecked });
 
 	            if (this.props.onClick !== undefined) {
-	                this.props.onClick();
+	                this.props.onClick(!this.state.isChecked);
 	            }
 	        }
 	    }, {
