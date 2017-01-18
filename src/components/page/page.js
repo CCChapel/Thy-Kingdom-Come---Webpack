@@ -13,6 +13,9 @@ import Clock from '../images/clock';
 import VimeoVideo from '../embeds/vimeoVideo';
 import ContactForm from '../forms/contact';
 
+import Cookies from '../../includes/third-party/js.cookie';
+
+
 /**
  * Defines the base page
  */

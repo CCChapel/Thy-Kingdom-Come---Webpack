@@ -5,12 +5,50 @@ import Parser from 'html-react-parser';
 
 import CTA from '../page/cta';
 import Checkbox from '../page/checkbox';
+
+import Cookies from '../../includes/third-party/js.cookie';
  
 /**
  * Displays the ministry partner information
  * @information = Partner Information to display
  */
 export default class MinistryPartnerInformation extends React.Component {
+    constructor(props) {
+        super(props);
+
+        this.setCookie = this.setCookie.bind(this);
+    }
+
+    setCookie(ministry, id) {
+        //Get checked list
+        var checked = Cookies.getJSON('ccc');
+
+        //Check if we have data from cookie
+        if (checked === undefined) {
+            //Create an empty object
+            checked = {};
+        }
+
+        //Check if we have data from this ministry
+        if (checked[ministry] === undefined) {
+            //Add checked value
+            checked[ministry] = new Array();
+        }
+
+        //Check if this option is already in array
+        if (checked[ministry].indexOf(id) > 0) {
+            //Option already exists, remove option
+            // checked[ministry] = checked[ministry].filter((id) => {
+            //     if 
+            // });
+        }
+        checked[ministry].push(id);
+        
+        Cookies.set('ccc', checked, { expires: 7 });
+
+        console.log(Cookies.get());
+    }
+
     render() {
         //Setup External Link
         let siteLink = null;
@@ -37,7 +75,7 @@ export default class MinistryPartnerInformation extends React.Component {
             this.props.information.options.forEach((option, index) => {
                 options.push(
                     <div className="add-bottom-margin" key={index}>
-                        <div className="[ text-bigger bold ]"><Checkbox /> { Parser(option.name) }</div>
+                        <div className="[ text-bigger bold ]"><Checkbox onClick={() => { this.setCookie(this.props.information.name, option.id) } } /> { Parser(option.name) }</div>
                         <div className="indent">{ Parser(option.details) }</div>
                     </div>
                 );

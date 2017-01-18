@@ -74,10 +74,6 @@
 
 	var _scroll3 = _interopRequireDefault(_scroll2);
 
-	var _js = __webpack_require__(203);
-
-	var _js2 = _interopRequireDefault(_js);
-
 	var _page = __webpack_require__(183);
 
 	var _page2 = _interopRequireDefault(_page);
@@ -22204,6 +22200,10 @@
 
 	var _contact2 = _interopRequireDefault(_contact);
 
+	var _js = __webpack_require__(203);
+
+	var _js2 = _interopRequireDefault(_js);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -23056,6 +23056,10 @@
 
 	var _checkbox2 = _interopRequireDefault(_checkbox);
 
+	var _js = __webpack_require__(203);
+
+	var _js2 = _interopRequireDefault(_js);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -23071,13 +23075,47 @@
 	var MinistryPartnerInformation = function (_React$Component) {
 	    _inherits(MinistryPartnerInformation, _React$Component);
 
-	    function MinistryPartnerInformation() {
+	    function MinistryPartnerInformation(props) {
 	        _classCallCheck(this, MinistryPartnerInformation);
 
-	        return _possibleConstructorReturn(this, (MinistryPartnerInformation.__proto__ || Object.getPrototypeOf(MinistryPartnerInformation)).apply(this, arguments));
+	        var _this = _possibleConstructorReturn(this, (MinistryPartnerInformation.__proto__ || Object.getPrototypeOf(MinistryPartnerInformation)).call(this, props));
+
+	        _this.setCookie = _this.setCookie.bind(_this);
+	        return _this;
 	    }
 
 	    _createClass(MinistryPartnerInformation, [{
+	        key: 'setCookie',
+	        value: function setCookie(ministry, id) {
+	            //Get checked list
+	            var checked = _js2.default.getJSON('ccc');
+
+	            //Check if we have data from cookie
+	            if (checked === undefined) {
+	                //Create an empty object
+	                checked = {};
+	            }
+
+	            //Check if we have data from this ministry
+	            if (checked[ministry] === undefined) {
+	                //Add checked value
+	                checked[ministry] = new Array();
+	            }
+
+	            //Check if this option is already in array
+	            if (checked[ministry].indexOf(id) > 0) {
+	                //Option already exists, remove option
+	                // checked[ministry] = checked[ministry].filter((id) => {
+	                //     if 
+	                // });
+	            }
+	            checked[ministry].push(id);
+
+	            _js2.default.set('ccc', checked, { expires: 7 });
+
+	            console.log(_js2.default.get());
+	        }
+	    }, {
 	        key: 'render',
 	        value: function render() {
 	            var _this2 = this;
@@ -23113,7 +23151,9 @@
 	                        _react2.default.createElement(
 	                            'div',
 	                            { className: '[ text-bigger bold ]' },
-	                            _react2.default.createElement(_checkbox2.default, null),
+	                            _react2.default.createElement(_checkbox2.default, { onClick: function onClick() {
+	                                    _this2.setCookie(_this2.props.information.name, option.id);
+	                                } }),
 	                            ' ',
 	                            (0, _htmlReactParser2.default)(option.name)
 	                        ),
@@ -23867,6 +23907,10 @@
 	        key: 'onClick',
 	        value: function onClick() {
 	            this.setState({ isChecked: !this.state.isChecked });
+
+	            if (this.props.onClick !== undefined) {
+	                this.props.onClick();
+	            }
 	        }
 	    }, {
 	        key: 'render',
