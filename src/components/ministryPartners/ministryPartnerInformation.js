@@ -17,11 +17,11 @@ export default class MinistryPartnerInformation extends React.Component {
         super(props);
 
         this.setCookie = this.setCookie.bind(this);
+        this.storeCheck = this.storeCheck.bind(this);
+        this.removeCheck = this.removeCheck.bind(this);
     }
 
-    setCookie(ministry, id, isChecked) {
-        console.log(isChecked);
-        
+    storeCheck(ministry, id) {
         //Get checked list
         var checked = Cookies.getJSON('ccc');
 
@@ -38,17 +38,57 @@ export default class MinistryPartnerInformation extends React.Component {
         }
 
         //Check if this option is already in array
-        if (checked[ministry].indexOf(id) > 0) {
-            //Option already exists, remove option
-            // checked[ministry] = checked[ministry].filter((id) => {
-            //     if 
-            // });
+        if (checked[ministry].indexOf(id) < 0) {
+            //It's not, so add it
+            checked[ministry].push(id);        
         }
-        checked[ministry].push(id);
         
+        //Set cookies
         Cookies.set('ccc', checked, { expires: 7 });
+    }
 
-        console.log(Cookies.get());
+    removeCheck(ministry, id) {
+        //Get checked list
+        var checked = Cookies.getJSON('ccc');
+
+        //Check and see if there's anything to remove
+        if (checked === undefined) {
+            //None, then do nothing
+            return;
+        }
+
+        //Check if we have data from this ministry
+        if (checked[ministry] === undefined) {
+            //Nothing here? Do nothing
+            return;
+        }
+
+        //Check if this value even
+        var index = checked[ministry].indexOf(id);
+
+        if (index < 0) {
+            //Nothing to remove
+            return;
+        }
+
+        checked[ministry].splice(index, 1);
+
+        Cookies.set('ccc', checked, { expires: 7 });
+    }
+
+    setCookie(ministry, id, isChecked) {
+        //console.log(isChecked);
+
+        if (isChecked === true) {
+            this.storeCheck(ministry, id);
+        }
+        else {
+            this.removeCheck(ministry, id);
+        }
+        
+        //Cookies.set('ccc', checked, { expires: 7 });
+
+        //console.log(Cookies.get());
     }
 
     render() {

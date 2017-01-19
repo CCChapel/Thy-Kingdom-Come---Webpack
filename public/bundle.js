@@ -22251,6 +22251,9 @@
 	        value: function render() {
 	            var _this2 = this;
 
+	            console.log("***Removing cookie...");
+	            _js2.default.remove('ccc');
+
 	            return _react2.default.createElement(
 	                'div',
 	                null,
@@ -23081,14 +23084,14 @@
 	        var _this = _possibleConstructorReturn(this, (MinistryPartnerInformation.__proto__ || Object.getPrototypeOf(MinistryPartnerInformation)).call(this, props));
 
 	        _this.setCookie = _this.setCookie.bind(_this);
+	        _this.storeCheck = _this.storeCheck.bind(_this);
+	        _this.removeCheck = _this.removeCheck.bind(_this);
 	        return _this;
 	    }
 
 	    _createClass(MinistryPartnerInformation, [{
-	        key: 'setCookie',
-	        value: function setCookie(ministry, id, isChecked) {
-	            console.log(isChecked);
-
+	        key: 'storeCheck',
+	        value: function storeCheck(ministry, id) {
 	            //Get checked list
 	            var checked = _js2.default.getJSON('ccc');
 
@@ -23105,17 +23108,58 @@
 	            }
 
 	            //Check if this option is already in array
-	            if (checked[ministry].indexOf(id) > 0) {
-	                //Option already exists, remove option
-	                // checked[ministry] = checked[ministry].filter((id) => {
-	                //     if 
-	                // });
+	            if (checked[ministry].indexOf(id) < 0) {
+	                //It's not, so add it
+	                checked[ministry].push(id);
 	            }
-	            checked[ministry].push(id);
+
+	            //Set cookies
+	            _js2.default.set('ccc', checked, { expires: 7 });
+	        }
+	    }, {
+	        key: 'removeCheck',
+	        value: function removeCheck(ministry, id) {
+	            //Get checked list
+	            var checked = _js2.default.getJSON('ccc');
+
+	            //Check and see if there's anything to remove
+	            if (checked === undefined) {
+	                //None, then do nothing
+	                return;
+	            }
+
+	            //Check if we have data from this ministry
+	            if (checked[ministry] === undefined) {
+	                //Nothing here? Do nothing
+	                return;
+	            }
+
+	            //Check if this value even
+	            var index = checked[ministry].indexOf(id);
+
+	            if (index < 0) {
+	                //Nothing to remove
+	                return;
+	            }
+
+	            checked[ministry].splice(index, 1);
 
 	            _js2.default.set('ccc', checked, { expires: 7 });
+	        }
+	    }, {
+	        key: 'setCookie',
+	        value: function setCookie(ministry, id, isChecked) {
+	            //console.log(isChecked);
 
-	            console.log(_js2.default.get());
+	            if (isChecked === true) {
+	                this.storeCheck(ministry, id);
+	            } else {
+	                this.removeCheck(ministry, id);
+	            }
+
+	            //Cookies.set('ccc', checked, { expires: 7 });
+
+	            //console.log(Cookies.get());
 	        }
 	    }, {
 	        key: 'render',
@@ -23908,10 +23952,12 @@
 	    _createClass(Checkbox, [{
 	        key: 'onClick',
 	        value: function onClick() {
-	            this.setState({ isChecked: !this.state.isChecked });
+	            var newState = !this.state.isChecked;
+
+	            this.setState({ isChecked: newState });
 
 	            if (this.props.onClick !== undefined) {
-	                this.props.onClick(!this.state.isChecked);
+	                this.props.onClick(newState);
 	            }
 	        }
 	    }, {

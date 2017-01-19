@@ -16,10 +16,12 @@ export default class Checkbox extends React.Component {
     }
 
     onClick() {
-        this.setState({ isChecked: !this.state.isChecked });
+        var newState = !this.state.isChecked;
+
+        this.setState({ isChecked: newState });
 
         if (this.props.onClick !== undefined) {
-            this.props.onClick(!this.state.isChecked);
+            this.props.onClick(newState);
         }
     }
 
