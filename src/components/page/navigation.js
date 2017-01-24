@@ -19,9 +19,7 @@ export default class Navigation extends React.Component {
     }
 
     onCheckedChange() {
-        console.log('clicked');
         this.setState({ isChecked: !this.state.isChecked });
-        console.log(this.state.isChecked);
     }
 
     render() {
