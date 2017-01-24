@@ -22290,14 +22290,14 @@
 	                            'When his original students, the disciples, asked him how to pray, he said \u201CPray like this: \u2018Our father, who art in Heaven\u2026 thy kingdom come, thy will be done, on earth, as it is in Heaven.\u2019\xA0\u201D If you are a student and follower of Jesus, God is your father who has a will and a kingdom. This year, our church-wide vision is to pray vigilantly and work diligently to bring this prayer to fruition; to bring our father\u2019s will and kingdom here to earth.'
 	                        ),
 	                        _react2.default.createElement(
-	                            'p',
+	                            'div',
 	                            { className: 'center-by-margin nine-tenths' },
 	                            _react2.default.createElement(_vimeoVideo2.default, { vimeoId: '198552260',
 	                                width: '640px',
 	                                height: '360px' })
 	                        ),
 	                        _react2.default.createElement(
-	                            'p',
+	                            'div',
 	                            { id: 'questions', className: 'center' },
 	                            _react2.default.createElement(_cta2.default, { text: 'Questions',
 	                                onClick: function onClick() {
@@ -22348,7 +22348,7 @@
 	                        ),
 	                        _react2.default.createElement(_ministryPartnersTable2.default, { showModal: this.showModal }),
 	                        _react2.default.createElement(
-	                            'p',
+	                            'div',
 	                            { className: 'center' },
 	                            _react2.default.createElement(_cta2.default, { text: 'FAQs',
 	                                onClick: function onClick() {
@@ -22609,9 +22609,7 @@
 	    _createClass(Navigation, [{
 	        key: 'onCheckedChange',
 	        value: function onCheckedChange() {
-	            console.log('clicked');
 	            this.setState({ isChecked: !this.state.isChecked });
-	            console.log(this.state.isChecked);
 	        }
 	    }, {
 	        key: 'render',
@@ -22624,7 +22622,7 @@
 	            return _react2.default.createElement(
 	                'nav',
 	                { className: 'menu' },
-	                _react2.default.createElement('input', { id: 'menu__button', type: 'checkbox', checked: this.state.isChecked, onClick: this.onCheckedChange }),
+	                _react2.default.createElement('input', { id: 'menu__button', type: 'checkbox', defaultChecked: this.state.isChecked, onClick: this.onCheckedChange }),
 	                _react2.default.createElement(
 	                    'a',
 	                    { className: 'menu__item scroll', href: '#intro' },
@@ -22663,7 +22661,7 @@
 	                ),
 	                _react2.default.createElement(
 	                    'label',
-	                    { className: 'menu__close', 'for': 'menu__button', onClick: this.onCheckedChange },
+	                    { className: 'menu__close', htmlFor: 'menu__button', onClick: this.onCheckedChange },
 	                    _react2.default.createElement(
 	                        'span',
 	                        { className: 'menu__close-icon' },
@@ -23212,11 +23210,11 @@
 	                    var ministry = _this3.props.information.name;
 
 	                    console.log(option);
-	                    if (option.isChecked !== undefined) {
+	                    if (option.isChecked === true) {
 	                        console.log(option.name + " has isChecked prop set to " + option.isChecked);
 	                        isChecked = option.isChecked;
 	                    } else {
-	                        console.log(option["isChecked"]);
+	                        console.log(option.isChecked);
 	                    }
 
 	                    options.push(_react2.default.createElement(

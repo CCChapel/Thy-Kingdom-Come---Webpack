@@ -25,7 +25,7 @@ export default class Navigation extends React.Component {
     render() {
         let faIcon = "fa fa-times";
         if (this.state.isChecked === true) {
-            faIcon = "fa fa-bars";
+            faIcon = "fa fa-bars"; 
         }
 
         return (
