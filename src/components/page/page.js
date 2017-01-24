@@ -44,8 +44,8 @@ export default class Page extends React.Component {
     }
 
     render() {
-        console.log("***Removing cookie...");
-        Cookies.remove('ccc');
+        // console.log("***Removing cookie...");
+        // Cookies.remove('ccc');
 
         return (
             <div>

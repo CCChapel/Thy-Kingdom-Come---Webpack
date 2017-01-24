@@ -9,7 +9,7 @@ export default class Checkbox extends React.Component {
         super(props);
 
         this.state = {
-            isChecked: false
+            isChecked: props.isChecked
         };
 
         this.onClick = this.onClick.bind(this);

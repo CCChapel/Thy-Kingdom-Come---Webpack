@@ -21,74 +21,85 @@ export default class MinistryPartnerInformation extends React.Component {
         this.removeCheck = this.removeCheck.bind(this);
     }
 
-    storeCheck(ministry, id) {
-        //Get checked list
-        var checked = Cookies.getJSON('ccc');
+    componentDidMount() {
+        //Retrieve information stored in cookie
+        this.cookieInformation = Cookies.getJSON('ccc');
 
-        //Check if we have data from cookie
-        if (checked === undefined) {
+        //Define cookie, if it doesn't exist
+        if (this.cookieInformation === undefined) {
             //Create an empty object
-            checked = {};
+            this.cookieInformation = {};
         }
 
+        //Let's check some data
+        for (var ministry in this.cookieInformation) {
+            //console.log(this.cookieInformation[ministry]);
+
+            //See if the cookies have data for this ministry
+            if (this.props.information.name === ministry) {
+                //Iterate through selected choices
+                this.cookieInformation[ministry].forEach((optionId, index) => {
+                    //Add checked value
+                    this.props.information.options[optionId].isChecked = true;
+                    //console.log(this.props.information.options[optionId]);
+                });
+                //console.log(this.props.information.options);
+            }
+        }
+
+        // console.log(this.cookieInformation);
+        // console.log(Cookies.getJSON('ccc'));
+    }
+
+    storeCheck(ministry, id) {
         //Check if we have data from this ministry
-        if (checked[ministry] === undefined) {
+        if (this.cookieInformation[ministry] === undefined) {
             //Add checked value
-            checked[ministry] = new Array();
+            this.cookieInformation[ministry] = new Array();
         }
 
         //Check if this option is already in array
-        if (checked[ministry].indexOf(id) < 0) {
+        if (this.cookieInformation[ministry].indexOf(id) < 0) {
             //It's not, so add it
-            checked[ministry].push(id);        
+            this.cookieInformation[ministry].push(id);        
         }
-        
-        //Set cookies
-        Cookies.set('ccc', checked, { expires: 7 });
     }
 
     removeCheck(ministry, id) {
-        //Get checked list
-        var checked = Cookies.getJSON('ccc');
-
-        //Check and see if there's anything to remove
-        if (checked === undefined) {
-            //None, then do nothing
-            return;
-        }
+        // //Check and see if there's anything to remove
+        // if (this.cookieInformation === undefined) {
+        //     //None, then do nothing
+        //     return;
+        // }
 
         //Check if we have data from this ministry
-        if (checked[ministry] === undefined) {
+        if (this.cookieInformation[ministry] === undefined) {
             //Nothing here? Do nothing
             return;
         }
 
         //Check if this value even
-        var index = checked[ministry].indexOf(id);
+        var index = this.cookieInformation[ministry].indexOf(id);
 
         if (index < 0) {
             //Nothing to remove
             return;
         }
 
-        checked[ministry].splice(index, 1);
-
-        Cookies.set('ccc', checked, { expires: 7 });
+        //Remove id of unchecked item
+        this.cookieInformation[ministry].splice(index, 1);
     }
 
     setCookie(ministry, id, isChecked) {
-        //console.log(isChecked);
-
         if (isChecked === true) {
             this.storeCheck(ministry, id);
         }
         else {
             this.removeCheck(ministry, id);
         }
-        
-        //Cookies.set('ccc', checked, { expires: 7 });
 
-        //console.log(Cookies.get());
+        //Set cookies
+        Cookies.set('ccc', this.cookieInformation, { expires: 365 });
     }
 
     render() {
@@ -111,13 +122,28 @@ export default class MinistryPartnerInformation extends React.Component {
         }
 
         //Setup Options
+        let isChecked = false;
         let options = new Array();
         let optionsContent = null;
+
+        //Check if we have any options
         if (this.props.information.options !== undefined) {
             this.props.information.options.forEach((option, index) => {
+                //Check if it should be checked
+                var ministry = this.props.information.name;
+
+                console.log(option);
+                if (option.isChecked === true) {
+                    console.log(option.name + " has isChecked prop set to " + option.isChecked);
+                    isChecked = option.isChecked;
+                }
+                else {
+                    console.log(option.isChecked);
+                }
+
                 options.push(
                     <div className="add-bottom-margin" key={index}>
-                        <div className="[ text-bigger bold ]"><Checkbox onClick={(isChecked) => { this.setCookie(this.props.information.name, option.id, isChecked) } } /> { Parser(option.name) }</div>
+                        <div className="[ text-bigger bold ]"><Checkbox isChecked={isChecked} onClick={(isChecked) => { this.setCookie(ministry, option.id, isChecked) } } /> { Parser(option.name) }</div>
                         <div className="indent">{ Parser(option.details) }</div>
                     </div>
                 );

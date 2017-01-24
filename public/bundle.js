@@ -22184,23 +22184,23 @@
 
 	var _ministryPartnersTable2 = _interopRequireDefault(_ministryPartnersTable);
 
-	var _logo = __webpack_require__(199);
+	var _logo = __webpack_require__(200);
 
 	var _logo2 = _interopRequireDefault(_logo);
 
-	var _clock = __webpack_require__(200);
+	var _clock = __webpack_require__(201);
 
 	var _clock2 = _interopRequireDefault(_clock);
 
-	var _vimeoVideo = __webpack_require__(201);
+	var _vimeoVideo = __webpack_require__(202);
 
 	var _vimeoVideo2 = _interopRequireDefault(_vimeoVideo);
 
-	var _contact = __webpack_require__(202);
+	var _contact = __webpack_require__(203);
 
 	var _contact2 = _interopRequireDefault(_contact);
 
-	var _js = __webpack_require__(203);
+	var _js = __webpack_require__(199);
 
 	var _js2 = _interopRequireDefault(_js);
 
@@ -22251,8 +22251,8 @@
 	        value: function render() {
 	            var _this2 = this;
 
-	            console.log("***Removing cookie...");
-	            _js2.default.remove('ccc');
+	            // console.log("***Removing cookie...");
+	            // Cookies.remove('ccc');
 
 	            return _react2.default.createElement(
 	                'div',
@@ -23059,7 +23059,7 @@
 
 	var _checkbox2 = _interopRequireDefault(_checkbox);
 
-	var _js = __webpack_require__(203);
+	var _js = __webpack_require__(199);
 
 	var _js2 = _interopRequireDefault(_js);
 
@@ -23090,88 +23090,102 @@
 	    }
 
 	    _createClass(MinistryPartnerInformation, [{
-	        key: 'storeCheck',
-	        value: function storeCheck(ministry, id) {
-	            //Get checked list
-	            var checked = _js2.default.getJSON('ccc');
+	        key: 'componentDidMount',
+	        value: function componentDidMount() {
+	            var _this2 = this;
 
-	            //Check if we have data from cookie
-	            if (checked === undefined) {
+	            //Retrieve information stored in cookie
+	            this.cookieInformation = _js2.default.getJSON('ccc');
+
+	            //Define cookie, if it doesn't exist
+	            if (this.cookieInformation === undefined) {
 	                //Create an empty object
-	                checked = {};
+	                this.cookieInformation = {};
 	            }
 
+	            //Let's check some data
+	            for (var ministry in this.cookieInformation) {
+	                //console.log(this.cookieInformation[ministry]);
+
+	                //See if the cookies have data for this ministry
+	                if (this.props.information.name === ministry) {
+	                    //Iterate through selected choices
+	                    this.cookieInformation[ministry].forEach(function (optionId, index) {
+	                        //Add checked value
+	                        _this2.props.information.options[optionId].isChecked = true;
+	                        //console.log(this.props.information.options[optionId]);
+	                    });
+	                    //console.log(this.props.information.options);
+	                }
+	            }
+
+	            // console.log(this.cookieInformation);
+	            // console.log(Cookies.getJSON('ccc'));
+	        }
+	    }, {
+	        key: 'storeCheck',
+	        value: function storeCheck(ministry, id) {
 	            //Check if we have data from this ministry
-	            if (checked[ministry] === undefined) {
+	            if (this.cookieInformation[ministry] === undefined) {
 	                //Add checked value
-	                checked[ministry] = new Array();
+	                this.cookieInformation[ministry] = new Array();
 	            }
 
 	            //Check if this option is already in array
-	            if (checked[ministry].indexOf(id) < 0) {
+	            if (this.cookieInformation[ministry].indexOf(id) < 0) {
 	                //It's not, so add it
-	                checked[ministry].push(id);
+	                this.cookieInformation[ministry].push(id);
 	            }
-
-	            //Set cookies
-	            _js2.default.set('ccc', checked, { expires: 7 });
 	        }
 	    }, {
 	        key: 'removeCheck',
 	        value: function removeCheck(ministry, id) {
-	            //Get checked list
-	            var checked = _js2.default.getJSON('ccc');
-
-	            //Check and see if there's anything to remove
-	            if (checked === undefined) {
-	                //None, then do nothing
-	                return;
-	            }
+	            // //Check and see if there's anything to remove
+	            // if (this.cookieInformation === undefined) {
+	            //     //None, then do nothing
+	            //     return;
+	            // }
 
 	            //Check if we have data from this ministry
-	            if (checked[ministry] === undefined) {
+	            if (this.cookieInformation[ministry] === undefined) {
 	                //Nothing here? Do nothing
 	                return;
 	            }
 
 	            //Check if this value even
-	            var index = checked[ministry].indexOf(id);
+	            var index = this.cookieInformation[ministry].indexOf(id);
 
 	            if (index < 0) {
 	                //Nothing to remove
 	                return;
 	            }
 
-	            checked[ministry].splice(index, 1);
-
-	            _js2.default.set('ccc', checked, { expires: 7 });
+	            //Remove id of unchecked item
+	            this.cookieInformation[ministry].splice(index, 1);
 	        }
 	    }, {
 	        key: 'setCookie',
 	        value: function setCookie(ministry, id, isChecked) {
-	            //console.log(isChecked);
-
 	            if (isChecked === true) {
 	                this.storeCheck(ministry, id);
 	            } else {
 	                this.removeCheck(ministry, id);
 	            }
 
-	            //Cookies.set('ccc', checked, { expires: 7 });
-
-	            //console.log(Cookies.get());
+	            //Set cookies
+	            _js2.default.set('ccc', this.cookieInformation, { expires: 365 });
 	        }
 	    }, {
 	        key: 'render',
 	        value: function render() {
-	            var _this2 = this;
+	            var _this3 = this;
 
 	            //Setup External Link
 	            var siteLink = null;
 	            if (this.props.information.website !== '' && this.props.information.website !== undefined) {
 	                siteLink = _react2.default.createElement(_cta2.default, { text: 'Visit their Site',
 	                    onClick: function onClick() {
-	                        window.location = _this2.props.information.website;
+	                        window.location = _this3.props.information.website;
 	                    } });
 	            }
 
@@ -23187,18 +23201,32 @@
 	            }
 
 	            //Setup Options
+	            var isChecked = false;
 	            var options = new Array();
 	            var optionsContent = null;
+
+	            //Check if we have any options
 	            if (this.props.information.options !== undefined) {
 	                this.props.information.options.forEach(function (option, index) {
+	                    //Check if it should be checked
+	                    var ministry = _this3.props.information.name;
+
+	                    console.log(option);
+	                    if (option.isChecked !== undefined) {
+	                        console.log(option.name + " has isChecked prop set to " + option.isChecked);
+	                        isChecked = option.isChecked;
+	                    } else {
+	                        console.log(option["isChecked"]);
+	                    }
+
 	                    options.push(_react2.default.createElement(
 	                        'div',
 	                        { className: 'add-bottom-margin', key: index },
 	                        _react2.default.createElement(
 	                            'div',
 	                            { className: '[ text-bigger bold ]' },
-	                            _react2.default.createElement(_checkbox2.default, { onClick: function onClick(isChecked) {
-	                                    _this2.setCookie(_this2.props.information.name, option.id, isChecked);
+	                            _react2.default.createElement(_checkbox2.default, { isChecked: isChecked, onClick: function onClick(isChecked) {
+	                                    _this3.setCookie(ministry, option.id, isChecked);
 	                                } }),
 	                            ' ',
 	                            (0, _htmlReactParser2.default)(option.name)
@@ -23942,7 +23970,7 @@
 	        var _this = _possibleConstructorReturn(this, (Checkbox.__proto__ || Object.getPrototypeOf(Checkbox)).call(this, props));
 
 	        _this.state = {
-	            isChecked: false
+	            isChecked: props.isChecked
 	        };
 
 	        _this.onClick = _this.onClick.bind(_this);
@@ -23981,6 +24009,163 @@
 
 /***/ },
 /* 199 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;'use strict';
+
+	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+
+	/*!
+	 * JavaScript Cookie v2.1.3
+	 * https://github.com/js-cookie/js-cookie
+	 *
+	 * Copyright 2006, 2015 Klaus Hartl & Fagner Brack
+	 * Released under the MIT license
+	 */
+	;(function (factory) {
+		var registeredInModuleLoader = false;
+		if (true) {
+			!(__WEBPACK_AMD_DEFINE_FACTORY__ = (factory), __WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ? (__WEBPACK_AMD_DEFINE_FACTORY__.call(exports, __webpack_require__, exports, module)) : __WEBPACK_AMD_DEFINE_FACTORY__), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+			registeredInModuleLoader = true;
+		}
+		if (( false ? 'undefined' : _typeof(exports)) === 'object') {
+			module.exports = factory();
+			registeredInModuleLoader = true;
+		}
+		if (!registeredInModuleLoader) {
+			var OldCookies = window.Cookies;
+			var api = window.Cookies = factory();
+			api.noConflict = function () {
+				window.Cookies = OldCookies;
+				return api;
+			};
+		}
+	})(function () {
+		function extend() {
+			var i = 0;
+			var result = {};
+			for (; i < arguments.length; i++) {
+				var attributes = arguments[i];
+				for (var key in attributes) {
+					result[key] = attributes[key];
+				}
+			}
+			return result;
+		}
+
+		function init(converter) {
+			function api(key, value, attributes) {
+				var result;
+				if (typeof document === 'undefined') {
+					return;
+				}
+
+				// Write
+
+				if (arguments.length > 1) {
+					attributes = extend({
+						path: '/'
+					}, api.defaults, attributes);
+
+					if (typeof attributes.expires === 'number') {
+						var expires = new Date();
+						expires.setMilliseconds(expires.getMilliseconds() + attributes.expires * 864e+5);
+						attributes.expires = expires;
+					}
+
+					try {
+						result = JSON.stringify(value);
+						if (/^[\{\[]/.test(result)) {
+							value = result;
+						}
+					} catch (e) {}
+
+					if (!converter.write) {
+						value = encodeURIComponent(String(value)).replace(/%(23|24|26|2B|3A|3C|3E|3D|2F|3F|40|5B|5D|5E|60|7B|7D|7C)/g, decodeURIComponent);
+					} else {
+						value = converter.write(value, key);
+					}
+
+					key = encodeURIComponent(String(key));
+					key = key.replace(/%(23|24|26|2B|5E|60|7C)/g, decodeURIComponent);
+					key = key.replace(/[\(\)]/g, escape);
+
+					return document.cookie = [key, '=', value, attributes.expires ? '; expires=' + attributes.expires.toUTCString() : '', // use expires attribute, max-age is not supported by IE
+					attributes.path ? '; path=' + attributes.path : '', attributes.domain ? '; domain=' + attributes.domain : '', attributes.secure ? '; secure' : ''].join('');
+				}
+
+				// Read
+
+				if (!key) {
+					result = {};
+				}
+
+				// To prevent the for loop in the first place assign an empty array
+				// in case there are no cookies at all. Also prevents odd result when
+				// calling "get()"
+				var cookies = document.cookie ? document.cookie.split('; ') : [];
+				var rdecode = /(%[0-9A-Z]{2})+/g;
+				var i = 0;
+
+				for (; i < cookies.length; i++) {
+					var parts = cookies[i].split('=');
+					var cookie = parts.slice(1).join('=');
+
+					if (cookie.charAt(0) === '"') {
+						cookie = cookie.slice(1, -1);
+					}
+
+					try {
+						var name = parts[0].replace(rdecode, decodeURIComponent);
+						cookie = converter.read ? converter.read(cookie, name) : converter(cookie, name) || cookie.replace(rdecode, decodeURIComponent);
+
+						if (this.json) {
+							try {
+								cookie = JSON.parse(cookie);
+							} catch (e) {}
+						}
+
+						if (key === name) {
+							result = cookie;
+							break;
+						}
+
+						if (!key) {
+							result[name] = cookie;
+						}
+					} catch (e) {}
+				}
+
+				return result;
+			}
+
+			api.set = api;
+			api.get = function (key) {
+				return api.call(api, key);
+			};
+			api.getJSON = function () {
+				return api.apply({
+					json: true
+				}, [].slice.call(arguments));
+			};
+			api.defaults = {};
+
+			api.remove = function (key, attributes) {
+				api(key, '', extend(attributes, {
+					expires: -1
+				}));
+			};
+
+			api.withConverter = init;
+
+			return api;
+		}
+
+		return init(function () {});
+	});
+
+/***/ },
+/* 200 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -24098,7 +24283,7 @@
 	exports.default = Logo;
 
 /***/ },
-/* 200 */
+/* 201 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -24220,7 +24405,7 @@
 	exports.default = Clock;
 
 /***/ },
-/* 201 */
+/* 202 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -24286,7 +24471,7 @@
 	exports.default = VimeoVideo;
 
 /***/ },
-/* 202 */
+/* 203 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -24592,163 +24777,6 @@
 	}(_react2.default.Component);
 
 	exports.default = ContactForm;
-
-/***/ },
-/* 203 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;'use strict';
-
-	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
-
-	/*!
-	 * JavaScript Cookie v2.1.3
-	 * https://github.com/js-cookie/js-cookie
-	 *
-	 * Copyright 2006, 2015 Klaus Hartl & Fagner Brack
-	 * Released under the MIT license
-	 */
-	;(function (factory) {
-		var registeredInModuleLoader = false;
-		if (true) {
-			!(__WEBPACK_AMD_DEFINE_FACTORY__ = (factory), __WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ? (__WEBPACK_AMD_DEFINE_FACTORY__.call(exports, __webpack_require__, exports, module)) : __WEBPACK_AMD_DEFINE_FACTORY__), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
-			registeredInModuleLoader = true;
-		}
-		if (( false ? 'undefined' : _typeof(exports)) === 'object') {
-			module.exports = factory();
-			registeredInModuleLoader = true;
-		}
-		if (!registeredInModuleLoader) {
-			var OldCookies = window.Cookies;
-			var api = window.Cookies = factory();
-			api.noConflict = function () {
-				window.Cookies = OldCookies;
-				return api;
-			};
-		}
-	})(function () {
-		function extend() {
-			var i = 0;
-			var result = {};
-			for (; i < arguments.length; i++) {
-				var attributes = arguments[i];
-				for (var key in attributes) {
-					result[key] = attributes[key];
-				}
-			}
-			return result;
-		}
-
-		function init(converter) {
-			function api(key, value, attributes) {
-				var result;
-				if (typeof document === 'undefined') {
-					return;
-				}
-
-				// Write
-
-				if (arguments.length > 1) {
-					attributes = extend({
-						path: '/'
-					}, api.defaults, attributes);
-
-					if (typeof attributes.expires === 'number') {
-						var expires = new Date();
-						expires.setMilliseconds(expires.getMilliseconds() + attributes.expires * 864e+5);
-						attributes.expires = expires;
-					}
-
-					try {
-						result = JSON.stringify(value);
-						if (/^[\{\[]/.test(result)) {
-							value = result;
-						}
-					} catch (e) {}
-
-					if (!converter.write) {
-						value = encodeURIComponent(String(value)).replace(/%(23|24|26|2B|3A|3C|3E|3D|2F|3F|40|5B|5D|5E|60|7B|7D|7C)/g, decodeURIComponent);
-					} else {
-						value = converter.write(value, key);
-					}
-
-					key = encodeURIComponent(String(key));
-					key = key.replace(/%(23|24|26|2B|5E|60|7C)/g, decodeURIComponent);
-					key = key.replace(/[\(\)]/g, escape);
-
-					return document.cookie = [key, '=', value, attributes.expires ? '; expires=' + attributes.expires.toUTCString() : '', // use expires attribute, max-age is not supported by IE
-					attributes.path ? '; path=' + attributes.path : '', attributes.domain ? '; domain=' + attributes.domain : '', attributes.secure ? '; secure' : ''].join('');
-				}
-
-				// Read
-
-				if (!key) {
-					result = {};
-				}
-
-				// To prevent the for loop in the first place assign an empty array
-				// in case there are no cookies at all. Also prevents odd result when
-				// calling "get()"
-				var cookies = document.cookie ? document.cookie.split('; ') : [];
-				var rdecode = /(%[0-9A-Z]{2})+/g;
-				var i = 0;
-
-				for (; i < cookies.length; i++) {
-					var parts = cookies[i].split('=');
-					var cookie = parts.slice(1).join('=');
-
-					if (cookie.charAt(0) === '"') {
-						cookie = cookie.slice(1, -1);
-					}
-
-					try {
-						var name = parts[0].replace(rdecode, decodeURIComponent);
-						cookie = converter.read ? converter.read(cookie, name) : converter(cookie, name) || cookie.replace(rdecode, decodeURIComponent);
-
-						if (this.json) {
-							try {
-								cookie = JSON.parse(cookie);
-							} catch (e) {}
-						}
-
-						if (key === name) {
-							result = cookie;
-							break;
-						}
-
-						if (!key) {
-							result[name] = cookie;
-						}
-					} catch (e) {}
-				}
-
-				return result;
-			}
-
-			api.set = api;
-			api.get = function (key) {
-				return api.call(api, key);
-			};
-			api.getJSON = function () {
-				return api.apply({
-					json: true
-				}, [].slice.call(arguments));
-			};
-			api.defaults = {};
-
-			api.remove = function (key, attributes) {
-				api(key, '', extend(attributes, {
-					expires: -1
-				}));
-			};
-
-			api.withConverter = init;
-
-			return api;
-		}
-
-		return init(function () {});
-	});
 
 /***/ }
 /******/ ]);
