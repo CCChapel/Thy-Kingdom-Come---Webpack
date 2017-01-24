@@ -75,20 +75,20 @@ export default class Page extends React.Component {
                             to bring our father&rsquo;s will and kingdom here to earth.
                         </p>
 
-                        <p className="center-by-margin nine-tenths">
+                        <div className="center-by-margin nine-tenths">
                             <VimeoVideo vimeoId="198552260"
                                 width="640px"
                                 height="360px" />
-                        </p>
+                        </div>
 
-                        <p id="questions" className="center">
+                        <div id="questions" className="center">
                             <CTA text="Questions" 
                                 onClick={() => 
                                     this.showModal(
                                         <ContactForm className="content-wrapper lock-width center-by-margin"
                                             onComplete={this.hideModal} />
                                     )} />
-                        </p>
+                        </div>
                     </div>
                 </Section>
 
@@ -118,7 +118,7 @@ export default class Page extends React.Component {
 
                         <MinistryPartnersTable showModal={this.showModal} />
 
-                        <p className="center">
+                        <div className="center">
                             <CTA text="FAQs"
                                 onClick={() =>
                                     this.showModal(
@@ -186,7 +186,7 @@ export default class Page extends React.Component {
                                             </p>
                                         </div>
                                     )} />
-                        </p>
+                        </div>
                     </div>
                 </Section>
 

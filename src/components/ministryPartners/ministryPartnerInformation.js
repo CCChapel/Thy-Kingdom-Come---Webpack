@@ -40,7 +40,7 @@ export default class MinistryPartnerInformation extends React.Component {
                 //Iterate through selected choices
                 this.cookieInformation[ministry].forEach((optionId, index) => {
                     //Add checked value
-                    this.props.information.options[optionId].isChecked = true;
+                    this.props.information.options[optionId]["isChecked"] = true;
                     //console.log(this.props.information.options[optionId]);
                 });
                 //console.log(this.props.information.options);

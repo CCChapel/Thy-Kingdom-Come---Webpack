@@ -43,7 +43,7 @@ export default class Navigation extends React.Component {
                 <a className="menu__item scroll" href="#questions">
                     <span className="menu__item-title">Questions</span>
                 </a>
-                <label className="menu__close" for="menu__button" onClick={this.onCheckedChange}>
+                <label className="menu__close" htmlFor="menu__button" onClick={this.onCheckedChange}>
                     <span className="menu__close-icon"><i className={faIcon}></i></span>
                 </label>
             </nav>
