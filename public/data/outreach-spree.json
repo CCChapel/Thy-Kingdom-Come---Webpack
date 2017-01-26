@@ -72,7 +72,12 @@
             {
                 "id": 1,                
                 "name": "Open House",
-                "details": "<div class='italic'>Sun., Mar. 19 from 12-2 p.m.</div>943 Kenmore Blvd. Akron, OH 44314"
+                "details": "<div class='italic'>Sun., Mar. 19 from 12-2 p.m.</div>943 Kenmore Blvd. Akron, OH 44314<br />Come to meet Noelle Beck, First Glance director, and enjoy a light lunch and tour of the ministry center to find out more about First Glance&rsquo;s influence on the city of Akron. There will be donation boxes, but there is no obligation to give."
+            },
+            {
+                "id": 2,
+                "name": "Ministry Building Maintenance",
+                "details": "Are you handy? Opportunities are available for a variety of skill levels and dates and times. Email <a href='mailto:bill@firstglance.org'>Bill</a>."
             }
         ]
     },
@@ -134,7 +139,7 @@
         "name": "Pregnancy Solutions &amp; Services",
         "website": "http://pssfriends.org",
         "contactEmail": "kcistone6@gmail.com",
-        "description": "The Pregnancy Solutions and Services (PSS) ultra-sound van travels to shopping areas, clinics, inner-city and rural locations providing a safe, clean environment where a registered sonographer reveals the clients' options and ties them to the truth of the gospel. PSS is committed to training prospective parents how to care for their babies and provides items they will need for the child's physical needs.",
+        "description": "Pregnancy Solutions & Servies (PSS) is a pregnancy medical center that seeks to empower and educate people in pregnancy-related decisions. Through the use of free pregnancy tests, ultrasounds and options counseling, they hold out truth with the hope to save babies from abortion and lead men and women to a relationship with Jesus. They have a center in Portage Lakes and a medical mobile unit that travels throughout the community.",
         "options": [
             {
                 "id": 0,                
