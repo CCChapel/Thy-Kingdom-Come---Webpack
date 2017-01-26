@@ -9,13 +9,12 @@ import { Component } from 'react';
  */
 export default class Section extends React.Component {
     render() {
-        // var background = <Background color="black" />;
         const divStyle = {
             backgroundColor: this.props.backgroundColor,
             backgroundImage: this.props.backgroundImage,
         };
 
-        var className = "section flex fill-screen-height ";
+        let className = "section flex fill-screen-height ";
         if (this.props.className !== undefined) {
             className += this.props.className;
         }

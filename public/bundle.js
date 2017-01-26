@@ -22719,7 +22719,6 @@
 	    _createClass(Section, [{
 	        key: 'render',
 	        value: function render() {
-	            // var background = <Background color="black" />;
 	            var divStyle = {
 	                backgroundColor: this.props.backgroundColor,
 	                backgroundImage: this.props.backgroundImage
