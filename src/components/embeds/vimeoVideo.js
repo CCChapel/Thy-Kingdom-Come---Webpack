@@ -11,7 +11,7 @@ import { Component } from 'react';
  */
 export default class VimeoVideo extends React.Component {
     render() {
-        var src = String.format(
+        let src = String.format(
             "https://player.vimeo.com/video/{0}?color=28708a&title=0&byline=0&portrait=0",
             [ this.props.vimeoId ]);
 
