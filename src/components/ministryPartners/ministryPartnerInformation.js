@@ -32,7 +32,7 @@ export default class MinistryPartnerInformation extends React.Component {
         }
 
         //Let's check some data
-        for (var ministry in this.cookieInformation) {
+        for (let ministry in this.cookieInformation) {
             //console.log(this.cookieInformation[ministry]);
 
             //See if the cookies have data for this ministry
@@ -79,7 +79,7 @@ export default class MinistryPartnerInformation extends React.Component {
         }
 
         //Check if this value even
-        var index = this.cookieInformation[ministry].indexOf(id);
+        let index = this.cookieInformation[ministry].indexOf(id);
 
         if (index < 0) {
             //Nothing to remove
@@ -114,7 +114,7 @@ export default class MinistryPartnerInformation extends React.Component {
         //Setup Questions
         let questionsLink = null;
         if (this.props.information.contactEmail !== '' && this.props.information.contactEmail !== undefined) {
-            var href = String.format("mailto:{0}", [ this.props.information.contactEmail ]);
+            let href = String.format("mailto:{0}", [ this.props.information.contactEmail ]);
 
             questionsLink =
                 <CTA text="Questions"
@@ -130,7 +130,7 @@ export default class MinistryPartnerInformation extends React.Component {
         if (this.props.information.options !== undefined) {
             this.props.information.options.forEach((option, index) => {
                 //Check if it should be checked
-                var ministry = this.props.information.name;
+                let ministry = this.props.information.name;
 
                 console.log(option);
                 if (option.isChecked === true) {

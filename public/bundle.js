@@ -23190,12 +23190,14 @@
 	            //Setup Questions
 	            var questionsLink = null;
 	            if (this.props.information.contactEmail !== '' && this.props.information.contactEmail !== undefined) {
-	                var href = String.format("mailto:{0}", [this.props.information.contactEmail]);
+	                (function () {
+	                    var href = String.format("mailto:{0}", [_this3.props.information.contactEmail]);
 
-	                questionsLink = _react2.default.createElement(_cta2.default, { text: 'Questions',
-	                    onClick: function onClick() {
-	                        window.location = href;
-	                    } });
+	                    questionsLink = _react2.default.createElement(_cta2.default, { text: 'Questions',
+	                        onClick: function onClick() {
+	                            window.location = href;
+	                        } });
+	                })();
 	            }
 
 	            //Setup Options
