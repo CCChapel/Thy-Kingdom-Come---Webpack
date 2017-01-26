@@ -6,7 +6,7 @@ import { Component } from 'react';
  */
 export default class Logo extends React.Component {
     render() {
-        var styles = {
+        const styles = {
             minWidth: '800px',
             maxWidth: '1080px',
             marginLeft: '-3%'
