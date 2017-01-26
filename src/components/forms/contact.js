@@ -130,19 +130,19 @@ export default class ContactForm extends React.Component {
         //Check Form Validity
         if (this.isFormValid()) {
             //Valid Form -> Submit
-            var url = 'https://www.formstack.com/api/v2/form/2569143/submission.json?oauth_token=68529bb9523b67cff3c735d2e5f9176a';
+            const url = 'https://www.formstack.com/api/v2/form/2569143/submission.json?oauth_token=68529bb9523b67cff3c735d2e5f9176a';
 
-            var request = new Request(url, {
+            const request = new Request(url, {
                 method: 'post',
                 mode: "no-cors",
                 body: JSON.toQueryString(this.state.data) //this.serializeData()
             });
 
             //Store hideForm, showConfirmation, onComplete locally because .then won't be able to access `this`
-            var hideForm = this.hideForm;
-            var showConfirmation = this.showConfirmation;
-            var onComplete = this.props.onComplete;
-            var showError = this.showError;
+            const hideForm = this.hideForm;
+            const showConfirmation = this.showConfirmation;
+            const onComplete = this.props.onComplete;
+            const showError = this.showError;
 
             fetch(request)
                 .then(function(response) {
@@ -175,7 +175,7 @@ export default class ContactForm extends React.Component {
         //var token = '68529bb9523b67cff3c735d2e5f9176a';
         //var url = 'package.json';
 
-        var error = '';
+        let error = '';
         if (this.state.showError === true) {
             error = <div className="form--error add-bottom-margin">{this.state.errorMessage}</div>
         }

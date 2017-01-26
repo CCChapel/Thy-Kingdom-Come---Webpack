@@ -24641,43 +24641,47 @@
 	    }, {
 	        key: 'handleSubmit',
 	        value: function handleSubmit(e) {
+	            var _this2 = this;
+
 	            //Hide error
 	            this.hideError();
 
 	            //Check Form Validity
 	            if (this.isFormValid()) {
-	                //Valid Form -> Submit
-	                var url = 'https://www.formstack.com/api/v2/form/2569143/submission.json?oauth_token=68529bb9523b67cff3c735d2e5f9176a';
+	                (function () {
+	                    //Valid Form -> Submit
+	                    var url = 'https://www.formstack.com/api/v2/form/2569143/submission.json?oauth_token=68529bb9523b67cff3c735d2e5f9176a';
 
-	                var request = new Request(url, {
-	                    method: 'post',
-	                    mode: "no-cors",
-	                    body: JSON.toQueryString(this.state.data) //this.serializeData()
-	                });
+	                    var request = new Request(url, {
+	                        method: 'post',
+	                        mode: "no-cors",
+	                        body: JSON.toQueryString(_this2.state.data) //this.serializeData()
+	                    });
 
-	                //Store hideForm, showConfirmation, onComplete locally because .then won't be able to access `this`
-	                var hideForm = this.hideForm;
-	                var showConfirmation = this.showConfirmation;
-	                var onComplete = this.props.onComplete;
-	                var showError = this.showError;
+	                    //Store hideForm, showConfirmation, onComplete locally because .then won't be able to access `this`
+	                    var hideForm = _this2.hideForm;
+	                    var showConfirmation = _this2.showConfirmation;
+	                    var onComplete = _this2.props.onComplete;
+	                    var showError = _this2.showError;
 
-	                fetch(request).then(function (response) {
-	                    //Hide the form
-	                    hideForm();
+	                    fetch(request).then(function (response) {
+	                        //Hide the form
+	                        hideForm();
 
-	                    //Show Confirmation Message
-	                    showConfirmation();
+	                        //Show Confirmation Message
+	                        showConfirmation();
 
-	                    //Delay 5 seconds, then call onComplete
-	                    setTimeout(onComplete, 5000);
-	                }).catch(function (err) {
-	                    //Log the error
-	                    console.log(err);
-	                    showError('Hmm\u2026 Something didn\u2019t go quite as planned. Please try again.');
-	                });
+	                        //Delay 5 seconds, then call onComplete
+	                        setTimeout(onComplete, 5000);
+	                    }).catch(function (err) {
+	                        //Log the error
+	                        console.log(err);
+	                        showError('Hmm\u2026 Something didn\u2019t go quite as planned. Please try again.');
+	                    });
 
-	                //TO DO: Figure out why we're not getting event
-	                //e.preventDefault();
+	                    //TO DO: Figure out why we're not getting event
+	                    //e.preventDefault();
+	                })();
 	            } else {
 	                //Invalid form -> Show error
 	                this.showError('Oops\u2026 Something\u2019s not quite right. Take another look.');
@@ -24686,7 +24690,7 @@
 	    }, {
 	        key: 'render',
 	        value: function render() {
-	            var _this2 = this;
+	            var _this3 = this;
 
 	            //var formId = '2569143';
 	            //var token = '68529bb9523b67cff3c735d2e5f9176a';
@@ -24751,7 +24755,7 @@
 	                        'div',
 	                        { className: 'center' },
 	                        _react2.default.createElement(_cta2.default, { text: 'Submit', onClick: function onClick(e) {
-	                                return _this2.handleSubmit(e);
+	                                return _this3.handleSubmit(e);
 	                            } })
 	                    )
 	                );
