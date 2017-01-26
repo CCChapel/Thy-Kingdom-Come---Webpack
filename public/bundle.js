@@ -22918,21 +22918,6 @@
 	            var rows = [];
 
 	            //Loop through each partner to create row
-	            // this.state.ministryPartners.map(function(partner, index) {
-	            //     rows.push(
-	            //         <MinistryPartnerRow
-	            //             key={index}
-	            //             partner={partner}
-	            //             handleClick={this.handleClick} />
-	            //     )
-	            // });
-	            // for (var partner in this.state.ministryPartners) {
-	            //     rows.push(
-	            //         <MinistryPartnerRow
-	            //             partner={this.state.ministryPartners[partner]} 
-	            //             handleClick={this.handleClick} />
-	            //     );
-	            // }
 	            this.state.ministryPartners.forEach(function (partner, index) {
 	                rows.push(_react2.default.createElement(_ministryPartnerRow2.default, {
 	                    key: index,

@@ -19,13 +19,13 @@ export default class MinistryPartnersTable extends React.Component {
 
     componentDidMount() {
         //Load Ministry Partners
-        var _this = this;       //Make this available in fetch
-        var url = "./data/outreach-spree.json";
-        var request = new Request(url, {
+        const _this = this;       //Make this available in fetch
+        const url = "./data/outreach-spree.json";
+        const request = new Request(url, {
                 method: 'get',
                 mode: 'no-cors'
             });
-        var loadMinistryPartners = this.loadMinistryPartners;
+        const loadMinistryPartners = this.loadMinistryPartners;
         
         fetch(request)
             .then(function json(response) {  
@@ -45,24 +45,9 @@ export default class MinistryPartnersTable extends React.Component {
 
     render() {
         //Create container for rows
-        var rows = [];
+        const rows = [];
 
         //Loop through each partner to create row
-        // this.state.ministryPartners.map(function(partner, index) {
-        //     rows.push(
-        //         <MinistryPartnerRow
-        //             key={index}
-        //             partner={partner}
-        //             handleClick={this.handleClick} />
-        //     )
-        // });
-        // for (var partner in this.state.ministryPartners) {
-        //     rows.push(
-        //         <MinistryPartnerRow
-        //             partner={this.state.ministryPartners[partner]} 
-        //             handleClick={this.handleClick} />
-        //     );
-        // }
         this.state.ministryPartners.forEach((partner, index) => {
             rows.push(
                 <MinistryPartnerRow
