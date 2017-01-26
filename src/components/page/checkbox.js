@@ -16,7 +16,7 @@ export default class Checkbox extends React.Component {
     }
 
     onClick() {
-        var newState = !this.state.isChecked;
+        let newState = !this.state.isChecked;
 
         this.setState({ isChecked: newState });
 
@@ -31,7 +31,7 @@ export default class Checkbox extends React.Component {
             boxClass = "fa-check-square-o";
         }
 
-        var className = String.format("[ fa {0} ] cursor-point", [ boxClass ]);
+        let className = String.format("[ fa {0} ] cursor-point", [ boxClass ]);
 
         return (
             <i className={className} onClick={this.onClick}></i>

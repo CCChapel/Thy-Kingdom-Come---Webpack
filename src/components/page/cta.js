@@ -21,14 +21,14 @@ export default class CTA extends React.Component {
 
     render() {
         //Check defaults
-        var color = {
+        const color = {
             color: ''
         };
         if (this.props.color !== undefined) {
             color.color = this.props.color;
         }
 
-        var stroke = {
+        const stroke = {
             stroke: ''
         };
         if (this.props.strokeColor !== undefined) {
