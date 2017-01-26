@@ -289,6 +289,11 @@
                 "id": 3,                
                 "name": "Gardens of Western Reserve",
                 "details": "<div class='italic'>3rd Sunday from 2:30-3:30 p.m.</div>9975 Greentree Parkway<br />Streetsboro, OH 44241"
+            },
+            {
+                "id": 4,
+                "name": "Anna Maria of Aurora",
+                "details": "889 N. Aurora Road<br />Aurora, OH 44202<br />Email <a href='mailto:marycourtney1@me.com'>Mary</a> for info about Bible studies, services and opportunities to serve."
             }
         ]
     },
