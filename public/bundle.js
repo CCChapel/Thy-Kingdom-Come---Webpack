@@ -23066,20 +23066,23 @@
 	        var _this = _possibleConstructorReturn(this, (MinistryPartnerInformation.__proto__ || Object.getPrototypeOf(MinistryPartnerInformation)).call(this, props));
 
 	        _this.information = props.information;
+	        _this.cookieInformation = _js2.default.getJSON('ccc');
 
 	        _this.setCookie = _this.setCookie.bind(_this);
 	        _this.storeCheck = _this.storeCheck.bind(_this);
 	        _this.removeCheck = _this.removeCheck.bind(_this);
+
+	        _this.loadCookieInformation();
 	        return _this;
 	    }
 
 	    _createClass(MinistryPartnerInformation, [{
-	        key: 'componentDidMount',
-	        value: function componentDidMount() {
+	        key: 'loadCookieInformation',
+	        value: function loadCookieInformation() {
 	            var _this2 = this;
 
 	            //Retrieve information stored in cookie
-	            this.cookieInformation = _js2.default.getJSON('ccc');
+	            console.log(_js2.default.getJSON('ccc'));
 
 	            //Define cookie, if it doesn't exist
 	            if (this.cookieInformation === undefined) {

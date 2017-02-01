@@ -17,15 +17,18 @@ export default class MinistryPartnerInformation extends React.Component {
         super(props);
 
         this.information = props.information;
+        this.cookieInformation = Cookies.getJSON('ccc');
 
         this.setCookie = this.setCookie.bind(this);
         this.storeCheck = this.storeCheck.bind(this);
         this.removeCheck = this.removeCheck.bind(this);
+
+        this.loadCookieInformation();
     }
 
-    componentDidMount() {
+    loadCookieInformation() {
         //Retrieve information stored in cookie
-        this.cookieInformation = Cookies.getJSON('ccc');
+        console.log(Cookies.getJSON('ccc'));
 
         //Define cookie, if it doesn't exist
         if (this.cookieInformation === undefined) {
