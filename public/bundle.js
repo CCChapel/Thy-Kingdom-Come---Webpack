@@ -23144,7 +23144,6 @@
 	                    //Check if it should be checked
 	                    var ministry = _this3.information.name;
 
-	                    console.log(option);
 	                    if (option.isChecked === true) {
 	                        isChecked = option.isChecked;
 	                    } else {

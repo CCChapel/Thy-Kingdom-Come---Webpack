@@ -129,7 +129,6 @@ export default class MinistryPartnerInformation extends React.Component {
                 //Check if it should be checked
                 let ministry = this.information.name;
 
-                console.log(option);
                 if (option.isChecked === true) {
                     isChecked = option.isChecked;
                 }
