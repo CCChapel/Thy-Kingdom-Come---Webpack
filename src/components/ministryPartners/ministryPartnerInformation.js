@@ -110,7 +110,8 @@ export default class MinistryPartnerInformation extends React.Component {
         //Setup Questions
         let questionsLink = null;
         if (this.information.contactEmail !== '' && this.information.contactEmail !== undefined) {
-            let href = String.format("mailto:{0}", [ this.information.contactEmail ]);
+            // let href = String.format("mailto:{0}", [ this.information.contactEmail ]);
+            let href = `mailto:${this.information.contactEmail}`;
 
             questionsLink =
                 <CTA text="Questions"

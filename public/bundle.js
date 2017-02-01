@@ -23168,7 +23168,8 @@
 	            var questionsLink = null;
 	            if (this.information.contactEmail !== '' && this.information.contactEmail !== undefined) {
 	                (function () {
-	                    var href = String.format("mailto:{0}", [_this3.information.contactEmail]);
+	                    // let href = String.format("mailto:{0}", [ this.information.contactEmail ]);
+	                    var href = 'mailto:' + _this3.information.contactEmail;
 
 	                    questionsLink = _react2.default.createElement(_cta2.default, { text: 'Questions',
 	                        onClick: function onClick() {
