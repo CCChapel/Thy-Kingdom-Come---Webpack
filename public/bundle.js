@@ -58,10 +58,6 @@
 
 	var _math3 = _interopRequireDefault(_math2);
 
-	var _string2 = __webpack_require__(179);
-
-	var _string3 = _interopRequireDefault(_string2);
-
 	var _json2 = __webpack_require__(180);
 
 	var _json3 = _interopRequireDefault(_json2);
@@ -80,6 +76,7 @@
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+	// import _string from './includes/string.js';
 	_reactDom2.default.render(_react2.default.createElement(_page2.default, null), document.getElementById('root'));
 
 /***/ },
@@ -21570,49 +21567,7 @@
 	};
 
 /***/ },
-/* 179 */
-/***/ function(module, exports) {
-
-	"use strict";
-
-	/**
-	 * Mimics .Net's String.Format feature.
-	 * 
-	 * Adapted from AspDotNetDev's code at
-	 * https://www.codeproject.com/tips/201899/string-format-in-javascript
-	 * 
-	 * @args = Array of strings to insert into the base string.
-	 */
-	String.prototype.format = function (args) {
-	    var str = this;
-	    return str.replace(String.prototype.format.regex, function (item) {
-	        var intVal = parseInt(item.substring(1, item.length - 1));
-	        var replace;
-	        if (intVal >= 0) {
-	            replace = args[intVal];
-	        } else if (intVal === -1) {
-	            replace = "{";
-	        } else if (intVal === -2) {
-	            replace = "}";
-	        } else {
-	            replace = "";
-	        }
-	        return replace;
-	    });
-	};
-	String.prototype.format.regex = new RegExp("{-?[0-9]+}", "g");
-
-	/**
-	 * Mimics .Net's String.Format feature.
-	 * 
-	 * @str = String to insert args into
-	 * @args = Array of strings to insert into str
-	 */
-	String.format = function (str, args) {
-	    return str.format(args);
-	};
-
-/***/ },
+/* 179 */,
 /* 180 */
 /***/ function(module, exports) {
 
