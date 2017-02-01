@@ -24426,7 +24426,11 @@
 	    _createClass(VimeoVideo, [{
 	        key: 'render',
 	        value: function render() {
-	            var src = String.format("https://player.vimeo.com/video/{0}?color=28708a&title=0&byline=0&portrait=0", [this.props.vimeoId]);
+	            // let src = String.format(
+	            //     "https://player.vimeo.com/video/{0}?color=28708a&title=0&byline=0&portrait=0",
+	            //     [ this.props.vimeoId ]);
+
+	            var src = 'https://player.vimeo.com/video/' + this.props.vimeoId + '?color=28708a&title=0&byline=0&portrait=0';
 
 	            return _react2.default.createElement(
 	                'div',
