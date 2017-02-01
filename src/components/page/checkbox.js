@@ -31,7 +31,8 @@ export default class Checkbox extends React.Component {
             boxClass = "fa-check-square-o";
         }
 
-        let className = String.format("[ fa {0} ] cursor-point", [ boxClass ]);
+        //let className = String.format("[ fa {0} ] cursor-point", [ boxClass ]);
+        let className = `[ fa ${boxClass} ] cursor-point`;
 
         return (
             <i className={className} onClick={this.onClick}></i>

@@ -23972,7 +23972,8 @@
 	                boxClass = "fa-check-square-o";
 	            }
 
-	            var className = String.format("[ fa {0} ] cursor-point", [boxClass]);
+	            //let className = String.format("[ fa {0} ] cursor-point", [ boxClass ]);
+	            var className = '[ fa ' + boxClass + ' ] cursor-point';
 
 	            return _react2.default.createElement('i', { className: className, onClick: this.onClick });
 	        }
