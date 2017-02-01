@@ -22251,9 +22251,6 @@
 	        value: function render() {
 	            var _this2 = this;
 
-	            // console.log("***Removing cookie...");
-	            // Cookies.remove('ccc');
-
 	            return _react2.default.createElement(
 	                'div',
 	                null,

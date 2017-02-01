@@ -44,9 +44,6 @@ export default class Page extends React.Component {
     }
 
     render() {
-        // console.log("***Removing cookie...");
-        // Cookies.remove('ccc');
-
         return (
             <div>
                 <a id="top"></a>
