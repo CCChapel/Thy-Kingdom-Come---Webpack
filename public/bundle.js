@@ -23065,6 +23065,8 @@
 
 	        var _this = _possibleConstructorReturn(this, (MinistryPartnerInformation.__proto__ || Object.getPrototypeOf(MinistryPartnerInformation)).call(this, props));
 
+	        _this.information = props.information;
+
 	        _this.setCookie = _this.setCookie.bind(_this);
 	        _this.storeCheck = _this.storeCheck.bind(_this);
 	        _this.removeCheck = _this.removeCheck.bind(_this);
@@ -23087,22 +23089,15 @@
 
 	            //Let's check some data
 	            for (var ministry in this.cookieInformation) {
-	                //console.log(this.cookieInformation[ministry]);
-
 	                //See if the cookies have data for this ministry
-	                if (this.props.information.name === ministry) {
+	                if (this.information.name === ministry) {
 	                    //Iterate through selected choices
 	                    this.cookieInformation[ministry].forEach(function (optionId, index) {
 	                        //Add checked value
-	                        _this2.props.information.options[optionId].isChecked = true;
-	                        //console.log(this.props.information.options[optionId]);
+	                        _this2.information.options[optionId].isChecked = true;
 	                    });
-	                    //console.log(this.props.information.options);
 	                }
 	            }
-
-	            // console.log(this.cookieInformation);
-	            // console.log(Cookies.getJSON('ccc'));
 	        }
 	    }, {
 	        key: 'storeCheck',
@@ -23118,23 +23113,20 @@
 	                //It's not, so add it
 	                this.cookieInformation[ministry].push(id);
 	            }
+
+	            //Update JSON data
+	            this.information.options[id].isChecked = true;
 	        }
 	    }, {
 	        key: 'removeCheck',
 	        value: function removeCheck(ministry, id) {
-	            // //Check and see if there's anything to remove
-	            // if (this.cookieInformation === undefined) {
-	            //     //None, then do nothing
-	            //     return;
-	            // }
-
 	            //Check if we have data from this ministry
 	            if (this.cookieInformation[ministry] === undefined) {
 	                //Nothing here? Do nothing
 	                return;
 	            }
 
-	            //Check if this value even
+	            //Check if this value even exists
 	            var index = this.cookieInformation[ministry].indexOf(id);
 
 	            if (index < 0) {
@@ -23143,7 +23135,10 @@
 	            }
 
 	            //Remove id of unchecked item
-	            this.cookieInformation[ministry].splice(index, 1);
+	            this.cookieInformation[ministry] = this.cookieInformation[ministry].splice(index, 1);
+
+	            //Update JSON data
+	            this.information.options[id].isChecked = false;
 	        }
 	    }, {
 	        key: 'setCookie',
@@ -23164,18 +23159,18 @@
 
 	            //Setup External Link
 	            var siteLink = null;
-	            if (this.props.information.website !== '' && this.props.information.website !== undefined) {
+	            if (this.information.website !== '' && this.information.website !== undefined) {
 	                siteLink = _react2.default.createElement(_cta2.default, { text: 'Visit their Site',
 	                    onClick: function onClick() {
-	                        window.location = _this3.props.information.website;
+	                        window.location = _this3.information.website;
 	                    } });
 	            }
 
 	            //Setup Questions
 	            var questionsLink = null;
-	            if (this.props.information.contactEmail !== '' && this.props.information.contactEmail !== undefined) {
+	            if (this.information.contactEmail !== '' && this.information.contactEmail !== undefined) {
 	                (function () {
-	                    var href = String.format("mailto:{0}", [_this3.props.information.contactEmail]);
+	                    var href = String.format("mailto:{0}", [_this3.information.contactEmail]);
 
 	                    questionsLink = _react2.default.createElement(_cta2.default, { text: 'Questions',
 	                        onClick: function onClick() {
@@ -23190,17 +23185,16 @@
 	            var optionsContent = null;
 
 	            //Check if we have any options
-	            if (this.props.information.options !== undefined) {
-	                this.props.information.options.forEach(function (option, index) {
+	            if (this.information.options !== undefined) {
+	                this.information.options.forEach(function (option, index) {
 	                    //Check if it should be checked
-	                    var ministry = _this3.props.information.name;
+	                    var ministry = _this3.information.name;
 
 	                    console.log(option);
 	                    if (option.isChecked === true) {
-	                        console.log(option.name + " has isChecked prop set to " + option.isChecked);
 	                        isChecked = option.isChecked;
 	                    } else {
-	                        console.log(option.isChecked);
+	                        isChecked = false;
 	                    }
 
 	                    options.push(_react2.default.createElement(
@@ -23252,7 +23246,7 @@
 	                    _react2.default.createElement(
 	                        'h1',
 	                        { className: 'center' },
-	                        (0, _htmlReactParser2.default)(this.props.information.name)
+	                        (0, _htmlReactParser2.default)(this.information.name)
 	                    ),
 	                    _react2.default.createElement(
 	                        'div',
@@ -23268,7 +23262,7 @@
 	                            _react2.default.createElement(
 	                                'p',
 	                                null,
-	                                (0, _htmlReactParser2.default)(this.props.information.description)
+	                                (0, _htmlReactParser2.default)(this.information.description)
 	                            )
 	                        ),
 	                        optionsContent

@@ -16,6 +16,8 @@ export default class MinistryPartnerInformation extends React.Component {
     constructor(props) {
         super(props);
 
+        this.information = props.information;
+
         this.setCookie = this.setCookie.bind(this);
         this.storeCheck = this.storeCheck.bind(this);
         this.removeCheck = this.removeCheck.bind(this);
@@ -33,22 +35,15 @@ export default class MinistryPartnerInformation extends React.Component {
 
         //Let's check some data
         for (let ministry in this.cookieInformation) {
-            //console.log(this.cookieInformation[ministry]);
-
             //See if the cookies have data for this ministry
-            if (this.props.information.name === ministry) {
+            if (this.information.name === ministry) {
                 //Iterate through selected choices
                 this.cookieInformation[ministry].forEach((optionId, index) => {
                     //Add checked value
-                    this.props.information.options[optionId].isChecked = true;
-                    //console.log(this.props.information.options[optionId]);
+                    this.information.options[optionId].isChecked = true;
                 });
-                //console.log(this.props.information.options);
             }
         }
-
-        // console.log(this.cookieInformation);
-        // console.log(Cookies.getJSON('ccc'));
     }
 
     storeCheck(ministry, id) {
@@ -63,22 +58,19 @@ export default class MinistryPartnerInformation extends React.Component {
             //It's not, so add it
             this.cookieInformation[ministry].push(id);        
         }
+
+        //Update JSON data
+        this.information.options[id].isChecked = true;
     }
 
     removeCheck(ministry, id) {
-        // //Check and see if there's anything to remove
-        // if (this.cookieInformation === undefined) {
-        //     //None, then do nothing
-        //     return;
-        // }
-
         //Check if we have data from this ministry
         if (this.cookieInformation[ministry] === undefined) {
             //Nothing here? Do nothing
             return;
         }
 
-        //Check if this value even
+        //Check if this value even exists
         let index = this.cookieInformation[ministry].indexOf(id);
 
         if (index < 0) {
@@ -87,7 +79,10 @@ export default class MinistryPartnerInformation extends React.Component {
         }
 
         //Remove id of unchecked item
-        this.cookieInformation[ministry].splice(index, 1);
+        this.cookieInformation[ministry] = this.cookieInformation[ministry].splice(index, 1);
+
+        //Update JSON data
+        this.information.options[id].isChecked = false;
     }
 
     setCookie(ministry, id, isChecked) {
@@ -105,20 +100,20 @@ export default class MinistryPartnerInformation extends React.Component {
     render() {
         //Setup External Link
         let siteLink = null;
-        if (this.props.information.website !== '' && this.props.information.website !== undefined) {
+        if (this.information.website !== '' && this.information.website !== undefined) {
             siteLink = 
                 <CTA text="Visit their Site" 
-                     onClick={ () => {window.location = this.props.information.website} } />;
+                     onClick={ () => {window.location = this.information.website} } />;
         }
 
         //Setup Questions
         let questionsLink = null;
-        if (this.props.information.contactEmail !== '' && this.props.information.contactEmail !== undefined) {
-            let href = String.format("mailto:{0}", [ this.props.information.contactEmail ]);
+        if (this.information.contactEmail !== '' && this.information.contactEmail !== undefined) {
+            let href = String.format("mailto:{0}", [ this.information.contactEmail ]);
 
             questionsLink =
                 <CTA text="Questions"
-                     onClick={ () => {window.location = href}} />;
+                     onClick={ () => {window.location = href} } />;
         }
 
         //Setup Options
@@ -127,18 +122,17 @@ export default class MinistryPartnerInformation extends React.Component {
         let optionsContent = null;
 
         //Check if we have any options
-        if (this.props.information.options !== undefined) {
-            this.props.information.options.forEach((option, index) => {
+        if (this.information.options !== undefined) {
+            this.information.options.forEach((option, index) => {
                 //Check if it should be checked
-                let ministry = this.props.information.name;
+                let ministry = this.information.name;
 
                 console.log(option);
                 if (option.isChecked === true) {
-                    console.log(option.name + " has isChecked prop set to " + option.isChecked);
                     isChecked = option.isChecked;
                 }
                 else {
-                    console.log(option.isChecked);
+                    isChecked = false;
                 }
 
                 options.push(
@@ -165,7 +159,7 @@ export default class MinistryPartnerInformation extends React.Component {
             <div className="flex">
                 <div className="lock-width center-by-margin">
                     <h1 className="center">
-                        { Parser(this.props.information.name) }
+                        { Parser(this.information.name) }
                     </h1>
 
                     <div className="flex portable--stack align-items--flex-start">
@@ -173,7 +167,7 @@ export default class MinistryPartnerInformation extends React.Component {
                             <h2 className="no-bottom-margin">What They&rsquo;re About</h2>
                             
                             <p>
-                                { Parser(this.props.information.description) }
+                                { Parser(this.information.description) }
                             </p>
                         </div>
 
