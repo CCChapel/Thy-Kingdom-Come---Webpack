@@ -23,13 +23,11 @@ export default class MinistryPartnerInformation extends React.Component {
         this.storeCheck = this.storeCheck.bind(this);
         this.removeCheck = this.removeCheck.bind(this);
 
+        //Retrieve information stored in cookie
         this.loadCookieInformation();
     }
 
     loadCookieInformation() {
-        //Retrieve information stored in cookie
-        console.log(Cookies.getJSON('ccc'));
-
         //Define cookie, if it doesn't exist
         if (this.cookieInformation === undefined) {
             //Create an empty object

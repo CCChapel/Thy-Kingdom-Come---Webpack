@@ -23069,6 +23069,7 @@
 	        _this.storeCheck = _this.storeCheck.bind(_this);
 	        _this.removeCheck = _this.removeCheck.bind(_this);
 
+	        //Retrieve information stored in cookie
 	        _this.loadCookieInformation();
 	        return _this;
 	    }
@@ -23077,9 +23078,6 @@
 	        key: 'loadCookieInformation',
 	        value: function loadCookieInformation() {
 	            var _this2 = this;
-
-	            //Retrieve information stored in cookie
-	            console.log(_js2.default.getJSON('ccc'));
 
 	            //Define cookie, if it doesn't exist
 	            if (this.cookieInformation === undefined) {
