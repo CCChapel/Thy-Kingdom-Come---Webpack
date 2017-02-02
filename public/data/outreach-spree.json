@@ -89,8 +89,8 @@
         "options": [
             {
                 "id": 0,
-                "name": "Open House",
-                "details": "<div class='italic'>Nov. 9 from 2-7 p.m.</div>175 E Market St, Akron, OH 44308"
+                "name": "Ministry Tours",
+                "details": "<div class='italic'>Nov. 9 from 2-7 p.m.</div>175 E Market St, Akron, OH 44308<br />Contact Rose Rose, Community Relations Coordinator, to schedule a tour 330.535.1563."
             },
             {
                 "id": 1,                
@@ -253,7 +253,7 @@
             },
             {
                 "id": 2,                
-                "name": "Attend 20-Year Anniversary Celebration",
+                "name": "Attend 25-Year Anniversary Celebration",
                 "details": "<div class='italic'>Mon., Sep. 25 at Christ Community Chapel &ndash; Hudson Campus.</div>Details available soon."
             }
         ]
