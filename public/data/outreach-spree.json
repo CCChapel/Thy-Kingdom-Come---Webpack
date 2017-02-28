@@ -14,6 +14,11 @@
                 "id": 1,
                 "name": "Annual Walk/Bike Event",
                 "details": "<div class='italic'>Sat., May 13 from 10 a.m. &ndash; noon.</div>Walk or bike to support Blessings at their annual fundraiser at Stow-Munroe Falls High School. More details available in April."
+            },
+            {
+                "id": 2,
+                "name": "Drywall/Flooring",
+                "details": "Drywall and floor a room addition for a Blessings' mom and child. Her grandparent added on a room just for them and their privacy at his/her home. CCC has funds for the materials."
             }
         ]
     },
@@ -36,7 +41,7 @@
             {
                 "id": 2,                
                 "name": "Urbean Caf\u00e9 Open House",
-                "details": "<div class='italic'>Sat., Mar. 4 at 10 a.m.</div>631 S Broadway St., Metro Transit Center, Akron, OH 44311 "
+                "details": "<div class='italic'>Sat., Mar. 4 from 10 a.m. to 2 p.m.</div>631 S Broadway St., Metro Transit Center, Akron, OH 44311 "
             }
         ]
     },
@@ -54,7 +59,7 @@
             {
                 "id": 1,                
                 "name": "Visit the Clinic",
-                "details": "Check back here for dates and times available."
+                "details": "Drop off a donation of new adult and children toothbrushes and small toothpastes and take a tour of the center (Saturday mornings)."
             }
         ]
     },
@@ -78,6 +83,16 @@
                 "id": 2,
                 "name": "Ministry Building Maintenance",
                 "details": "Are you handy? Opportunities are available for a variety of skill levels and dates and times. Email <a href='mailto:bill@firstglance.org'>Bill</a>."
+            },
+            {
+                "id": 3,
+                "name": "Volunteer with Children",
+                "details": "Volunteer on a Tuesday from 4- 7 p.m. in the children's room with Tiny Glancers (children of teen/young moms) Email <a href='mailto:karen@firstglance.org'>Karen</a> for details and to let her know you are coming."
+            },
+            {
+                "id": 4,
+                "name": "Make a Meal",
+                "details": "Make a Frozen Meal  and drop it off (for Monday Student Leaders meeting, Tuesday Man Up, Ladies, or Moms meetings). Contact <a href='mailto:jessica@firstglance.org'>Jessica</a> for more information and to sign up."
             }
         ]
     },
@@ -143,8 +158,8 @@
         "options": [
             {
                 "id": 0,                
-                "name": "Tour Ministry Center",
-                "details": "<div class='italic'>Mon. &ndash; Fri. from 9 a.m. to 4:30 p.m.</div>3136 Manchester Rd, Akron, OH 44319"
+                "name": "Prayer Walk",
+                "details": "Prayer walk through the ministry center with a custom designed card that guides you through the ministry rooms and gives points on how to pray specifically.<br /><div class='italic'>Mon. &ndash; Fri. from 9 a.m. to 4:30 p.m.</div>3136 Manchester Rd, Akron, OH 44319"
             },
             {
                 "id": 1,                
@@ -155,6 +170,11 @@
                 "id": 2,                
                 "name": "Annual Walk/Bike Event",
                 "details": "This event will be held at Christ Community Chapel this summer. Details available in April."
+            },
+            {
+                "id": 3,                
+                "name": "Makeover Emma's Closet",
+                "details": "Emma’s Closet, PSS’s donation boutique, is in need of a makeover. There are three project opportunities:  painting, new flooring and new fixtures. CCC has funds to purchase materials. Group can choose to do any portion of the project."
             }
         ]
     },
@@ -232,6 +252,11 @@
                 "id": 1,                
                 "name": "Ministry Center Tour",
                 "details": "<div class='italic'>Mon., Wed., Thu. &amp; Fri. from 9:30 a.m. &ndash; 3:30 pm.</div>587 Baird St, Akron, OH 44311<br />To schedule your tour or ask a question, email <a href='mailto:sherrie@trulyreachingyou.com'>Sherrie</a>."
+            },
+            {
+                "id": 2,                
+                "name": "Renovation Projects",
+                "details": "Complete three renovation projects in a group of 4 to 6 people. You can choose which project or a portion of a project you want to complete. CCC has funds to help purchase materials needed."
             }
         ]
     },
@@ -253,6 +278,11 @@
             },
             {
                 "id": 2,                
+                "name": "Easter Candy",
+                "details": "Donate individually wrapped Easter candy for their annual Easter Egg Hunt outreach and take a tour of the ministry.   Contact <a href='mailto:regina@urbanvisionministry.org'>Regina</a> for more information."
+            },
+            {
+                "id": 3,                
                 "name": "Attend 25-Year Anniversary Celebration",
                 "details": "<div class='italic'>Mon., Sep. 25 at Christ Community Chapel &ndash; Hudson Campus.</div>Details available soon."
             }
@@ -304,6 +334,13 @@
     },
     {
         "name": "Wild Card Option",
-        "description": "As a wild card option, you can choose a second opportunity at a ministry and count it as one of your eight activities. For example, you can visit the ministry center at PSS and then participate in the bike-a-thon.  Or you could visit the Front Porch Café and then return with your community group to do a project at the Front Porch at South Street as a wild card activity."
+        "description": "As a wild card option, you can choose a second opportunity at a ministry and count it as one of your eight activities. For example, you can visit the ministry center at PSS and then participate in the bike-a-thon.  Or you could visit the Front Porch Café and then return with your community group to do a project at the Front Porch at South Street as a wild card activity.",
+        "options": [
+            {
+                "id": 0,                
+                "name": "Act II Impact",
+                "details": "Join Jim Colledge for an Act II Impact meeting at the Highland Square Campus on Mar. 20. Info at <a href='https://ccchapel.com/events'>ccchapel.com/events</a>."
+            }
+        ]
     }
 ]
