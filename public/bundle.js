@@ -24796,14 +24796,10 @@
 	                    'div',
 	                    { className: '[ lock-width ] [ center center-by-margin ]' },
 	                    _react2.default.createElement(
-	                        'h2',
-	                        null,
-	                        'Don\u2019t Miss a Moment!'
-	                    ),
-	                    _react2.default.createElement(
 	                        'p',
 	                        null,
-	                        'Get reminded everyday at 7:10 a.m. and 7:10 p.m. by texting Give10 to 797979.',
+	                        _react2.default.createElement('i', { className: 'fa fa-mobile fa-3x', style: { verticalAlign: 'middle' }, 'aria-hidden': 'true' }),
+	                        ' \xA0Get reminded everyday at 7:10 a.m. and 7:10 p.m. by texting Give10 to 797979.',
 	                        _react2.default.createElement('br', null),
 	                        _react2.default.createElement(
 	                            'span',

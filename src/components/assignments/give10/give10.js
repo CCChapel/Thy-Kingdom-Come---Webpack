@@ -40,9 +40,8 @@ export default class Give10Assignment extends React.Component {
                 </div>
 
                 <div className="[ lock-width ] [ center center-by-margin ]">
-                    <h2>Don&rsquo;t Miss a Moment!</h2>
                     <p>
-                        Get reminded everyday at 7:10 a.m. and 7:10 p.m. by texting Give10 to 797979.<br />
+                        <i className="fa fa-mobile fa-3x" style={{ verticalAlign: 'middle' }} aria-hidden="true"></i> &nbsp;Get reminded everyday at 7:10 a.m. and 7:10 p.m. by texting Give10 to 797979.<br />
                         <span className="text-smaller">Standard message and data rates may apply. Please consult your wireless provider, if you have any questions.</span>
                     </p>
                 </div>
