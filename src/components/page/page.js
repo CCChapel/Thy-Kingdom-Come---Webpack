@@ -7,6 +7,7 @@ import Section from './section';
 import CTA from './cta';
 
 import MinistryPartnersTable from '../ministryPartners/ministryPartnersTable';
+import Give10 from '../assignments/give10/give10';
 
 import Logo from '../images/logo';
 import Clock from '../images/clock';
@@ -189,15 +190,7 @@ export default class Page extends React.Component {
 
                 <Section id="assignments" className="bg-dark-blue text-white">
                     <div className="content-wrapper">
-                        <h1 className="center">Kingdom Assignments</h1>
-
-                        <p>
-                            <Clock className="center-by-margin" height="250" width="250" />
-                        </p>
-
-                        <p className="center">
-                            Keep checking back! We&rsquo;ll have more assignments for you soon.
-                        </p>
+                        <Give10 showModal={this.showModal} />
                     </div>
                 </Section>
 

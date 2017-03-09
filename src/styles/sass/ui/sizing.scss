@@ -36,6 +36,10 @@
     width: 25%;
 }
 
+.one-fifth {
+    width: 20%;
+}
+
     @include media-query("portable") {
         .portable {
             &--one-whole {
@@ -60,6 +64,10 @@
 
             &--one-quarter {
                 width: 25%;
+            }
+            
+            &--one-fifth {
+                width: 20%;
             }
         }
     }
@@ -88,6 +96,10 @@
 
             &--one-quarter {
                 width: 25%;
+            }
+            
+            &--one-fifth {
+                width: 20%;
             }
         }
     }

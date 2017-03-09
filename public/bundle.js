@@ -58,19 +58,19 @@
 
 	var _math3 = _interopRequireDefault(_math2);
 
-	var _json2 = __webpack_require__(180);
+	var _json2 = __webpack_require__(179);
 
 	var _json3 = _interopRequireDefault(_json2);
 
-	var _fetch2 = __webpack_require__(181);
+	var _fetch2 = __webpack_require__(180);
 
 	var _fetch3 = _interopRequireDefault(_fetch2);
 
-	var _scroll2 = __webpack_require__(182);
+	var _scroll2 = __webpack_require__(181);
 
 	var _scroll3 = _interopRequireDefault(_scroll2);
 
-	var _page = __webpack_require__(183);
+	var _page = __webpack_require__(182);
 
 	var _page2 = _interopRequireDefault(_page);
 
@@ -21567,8 +21567,7 @@
 	};
 
 /***/ },
-/* 179 */,
-/* 180 */
+/* 179 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -21603,7 +21602,7 @@
 	};
 
 /***/ },
-/* 181 */
+/* 180 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -22067,7 +22066,7 @@
 	})(typeof self !== 'undefined' ? self : undefined);
 
 /***/ },
-/* 182 */
+/* 181 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -22104,7 +22103,7 @@
 	});
 
 /***/ },
-/* 183 */
+/* 182 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -22119,43 +22118,47 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _modal = __webpack_require__(184);
+	var _modal = __webpack_require__(183);
 
 	var _modal2 = _interopRequireDefault(_modal);
 
-	var _navigation = __webpack_require__(185);
+	var _navigation = __webpack_require__(184);
 
 	var _navigation2 = _interopRequireDefault(_navigation);
 
-	var _section = __webpack_require__(186);
+	var _section = __webpack_require__(185);
 
 	var _section2 = _interopRequireDefault(_section);
 
-	var _cta = __webpack_require__(187);
+	var _cta = __webpack_require__(186);
 
 	var _cta2 = _interopRequireDefault(_cta);
 
-	var _ministryPartnersTable = __webpack_require__(188);
+	var _ministryPartnersTable = __webpack_require__(187);
 
 	var _ministryPartnersTable2 = _interopRequireDefault(_ministryPartnersTable);
 
-	var _logo = __webpack_require__(200);
+	var _give = __webpack_require__(203);
+
+	var _give2 = _interopRequireDefault(_give);
+
+	var _logo = __webpack_require__(199);
 
 	var _logo2 = _interopRequireDefault(_logo);
 
-	var _clock = __webpack_require__(201);
+	var _clock = __webpack_require__(200);
 
 	var _clock2 = _interopRequireDefault(_clock);
 
-	var _vimeoVideo = __webpack_require__(202);
+	var _vimeoVideo = __webpack_require__(201);
 
 	var _vimeoVideo2 = _interopRequireDefault(_vimeoVideo);
 
-	var _contact = __webpack_require__(203);
+	var _contact = __webpack_require__(202);
 
 	var _contact2 = _interopRequireDefault(_contact);
 
-	var _js = __webpack_require__(199);
+	var _js = __webpack_require__(198);
 
 	var _js2 = _interopRequireDefault(_js);
 
@@ -22398,21 +22401,7 @@
 	                    _react2.default.createElement(
 	                        'div',
 	                        { className: 'content-wrapper' },
-	                        _react2.default.createElement(
-	                            'h1',
-	                            { className: 'center' },
-	                            'Kingdom Assignments'
-	                        ),
-	                        _react2.default.createElement(
-	                            'p',
-	                            null,
-	                            _react2.default.createElement(_clock2.default, { className: 'center-by-margin', height: '250', width: '250' })
-	                        ),
-	                        _react2.default.createElement(
-	                            'p',
-	                            { className: 'center' },
-	                            'Keep checking back! We\u2019ll have more assignments for you soon.'
-	                        )
+	                        _react2.default.createElement(_give2.default, { showModal: this.showModal })
 	                    )
 	                ),
 	                _react2.default.createElement(
@@ -22439,7 +22428,7 @@
 	exports.default = Page;
 
 /***/ },
-/* 184 */
+/* 183 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -22513,7 +22502,7 @@
 	exports.default = Modal;
 
 /***/ },
-/* 185 */
+/* 184 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -22630,7 +22619,7 @@
 	exports.default = Navigation;
 
 /***/ },
-/* 186 */
+/* 185 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -22695,7 +22684,7 @@
 	exports.default = Section;
 
 /***/ },
-/* 187 */
+/* 186 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -22788,7 +22777,7 @@
 	exports.default = CTA;
 
 /***/ },
-/* 188 */
+/* 187 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -22803,7 +22792,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _ministryPartnerRow = __webpack_require__(189);
+	var _ministryPartnerRow = __webpack_require__(188);
 
 	var _ministryPartnerRow2 = _interopRequireDefault(_ministryPartnerRow);
 
@@ -22890,7 +22879,7 @@
 	exports.default = MinistryPartnersTable;
 
 /***/ },
-/* 189 */
+/* 188 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -22905,11 +22894,11 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _ministryPartnerInformation = __webpack_require__(190);
+	var _ministryPartnerInformation = __webpack_require__(189);
 
 	var _ministryPartnerInformation2 = _interopRequireDefault(_ministryPartnerInformation);
 
-	var _htmlReactParser = __webpack_require__(191);
+	var _htmlReactParser = __webpack_require__(190);
 
 	var _htmlReactParser2 = _interopRequireDefault(_htmlReactParser);
 
@@ -22966,7 +22955,7 @@
 	exports.default = MinistryPartnerRow;
 
 /***/ },
-/* 190 */
+/* 189 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -22981,19 +22970,19 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _htmlReactParser = __webpack_require__(191);
+	var _htmlReactParser = __webpack_require__(190);
 
 	var _htmlReactParser2 = _interopRequireDefault(_htmlReactParser);
 
-	var _cta = __webpack_require__(187);
+	var _cta = __webpack_require__(186);
 
 	var _cta2 = _interopRequireDefault(_cta);
 
-	var _checkbox = __webpack_require__(198);
+	var _checkbox = __webpack_require__(197);
 
 	var _checkbox2 = _interopRequireDefault(_checkbox);
 
-	var _js = __webpack_require__(199);
+	var _js = __webpack_require__(198);
 
 	var _js2 = _interopRequireDefault(_js);
 
@@ -23241,7 +23230,7 @@
 	exports.default = MinistryPartnerInformation;
 
 /***/ },
-/* 191 */
+/* 190 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -23249,8 +23238,8 @@
 	/**
 	 * Module dependencies.
 	 */
-	var domToReact = __webpack_require__(192);
-	var htmlToDOM = __webpack_require__(196);
+	var domToReact = __webpack_require__(191);
+	var htmlToDOM = __webpack_require__(195);
 
 	/**
 	 * Convert HTML string to React elements.
@@ -23274,7 +23263,7 @@
 
 
 /***/ },
-/* 192 */
+/* 191 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -23283,7 +23272,7 @@
 	 * Module dependencies.
 	 */
 	var React = __webpack_require__(1);
-	var attributesToProps = __webpack_require__(193);
+	var attributesToProps = __webpack_require__(192);
 
 	/**
 	 * Convert DOM nodes to React elements.
@@ -23381,7 +23370,7 @@
 
 
 /***/ },
-/* 193 */
+/* 192 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -23389,8 +23378,8 @@
 	/**
 	 * Module dependencies.
 	 */
-	var utilities = __webpack_require__(194);
-	var propertyConfig = __webpack_require__(195);
+	var utilities = __webpack_require__(193);
+	var propertyConfig = __webpack_require__(194);
 	var config = propertyConfig.config;
 	var isCustomAttribute = propertyConfig.HTMLDOMPropertyConfig.isCustomAttribute;
 
@@ -23485,7 +23474,7 @@
 
 
 /***/ },
-/* 194 */
+/* 193 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -23563,7 +23552,7 @@
 
 
 /***/ },
-/* 195 */
+/* 194 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -23571,7 +23560,7 @@
 	/**
 	 * Module dependencies.
 	 */
-	var utilities = __webpack_require__(194);
+	var utilities = __webpack_require__(193);
 
 	// HTML and SVG DOM Property Configs
 	var HTMLDOMPropertyConfig = __webpack_require__(78);
@@ -23633,7 +23622,7 @@
 
 
 /***/ },
-/* 196 */
+/* 195 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -23641,7 +23630,7 @@
 	/**
 	 * Module dependencies.
 	 */
-	var utilities = __webpack_require__(197);
+	var utilities = __webpack_require__(196);
 	var formatDOM = utilities.formatDOM;
 
 	/**
@@ -23739,7 +23728,7 @@
 
 
 /***/ },
-/* 197 */
+/* 196 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -23866,7 +23855,7 @@
 
 
 /***/ },
-/* 198 */
+/* 197 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -23940,7 +23929,7 @@
 	exports.default = Checkbox;
 
 /***/ },
-/* 199 */
+/* 198 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;'use strict';
@@ -24097,7 +24086,7 @@
 	});
 
 /***/ },
-/* 200 */
+/* 199 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -24215,7 +24204,7 @@
 	exports.default = Logo;
 
 /***/ },
-/* 201 */
+/* 200 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -24337,7 +24326,7 @@
 	exports.default = Clock;
 
 /***/ },
-/* 202 */
+/* 201 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -24407,7 +24396,7 @@
 	exports.default = VimeoVideo;
 
 /***/ },
-/* 203 */
+/* 202 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -24422,7 +24411,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _cta = __webpack_require__(187);
+	var _cta = __webpack_require__(186);
 
 	var _cta2 = _interopRequireDefault(_cta);
 
@@ -24717,6 +24706,275 @@
 	}(_react2.default.Component);
 
 	exports.default = ContactForm;
+
+/***/ },
+/* 203 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _week = __webpack_require__(204);
+
+	var _week2 = _interopRequireDefault(_week);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	/**
+	 * Defines a row representing a ministry partner
+	 * @partner = The partner to display
+	 * @handleClick = Method to handle the click event
+	 */
+	var Give10Assignment = function (_React$Component) {
+	    _inherits(Give10Assignment, _React$Component);
+
+	    function Give10Assignment(props) {
+	        _classCallCheck(this, Give10Assignment);
+
+	        var _this = _possibleConstructorReturn(this, (Give10Assignment.__proto__ || Object.getPrototypeOf(Give10Assignment)).call(this, props));
+
+	        _this.handleClick = _this.handleClick.bind(_this);
+	        return _this;
+	    }
+
+	    _createClass(Give10Assignment, [{
+	        key: 'handleClick',
+	        value: function handleClick(data) {
+	            this.props.showModal(data);
+	        }
+	    }, {
+	        key: 'render',
+	        value: function render() {
+	            var _this2 = this;
+
+	            return _react2.default.createElement(
+	                'div',
+	                null,
+	                _react2.default.createElement(
+	                    'div',
+	                    { className: '[ lock-width ] [ center center-by-margin ] [ add-bottom-margin ]' },
+	                    _react2.default.createElement(
+	                        'div',
+	                        { className: 'one-third center-by-margin' },
+	                        _react2.default.createElement('img', { src: 'images/give10.svg' })
+	                    ),
+	                    _react2.default.createElement(
+	                        'div',
+	                        null,
+	                        'Give10 is meant to help you know and love Jesus in a deeper way, especially as we prepare to celebrate Easter and his resurrection.'
+	                    )
+	                ),
+	                _react2.default.createElement(
+	                    'div',
+	                    { className: 'flex wrap justify-content--center' },
+	                    _react2.default.createElement(
+	                        'div',
+	                        {
+	                            className: '[ one-fifth portable--one-whole ] [ bg-medium-blue ] [ cursor-point ] [ add-bottom-margin add-padding ] [ fx-bottom-border fx-light-blue ]',
+	                            onClick: function onClick() {
+	                                return _this2.handleClick(_react2.default.createElement(_week2.default, null));
+	                            } },
+	                        'Week 1: Solitude'
+	                    )
+	                ),
+	                _react2.default.createElement(
+	                    'div',
+	                    { className: '[ lock-width ] [ center center-by-margin ]' },
+	                    _react2.default.createElement(
+	                        'h2',
+	                        null,
+	                        'Don\u2019t Miss a Moment!'
+	                    ),
+	                    _react2.default.createElement(
+	                        'p',
+	                        null,
+	                        'Get reminded everyday at 7:10 a.m. and 7:10 p.m. by texting Give10 to 797979.',
+	                        _react2.default.createElement('br', null),
+	                        _react2.default.createElement(
+	                            'span',
+	                            { className: 'text-smaller' },
+	                            'Standard message and data rates may apply. Please consult your wireless provider, if you have any questions.'
+	                        )
+	                    )
+	                )
+	            );
+	        }
+	    }]);
+
+	    return Give10Assignment;
+	}(_react2.default.Component);
+
+	exports.default = Give10Assignment;
+
+/***/ },
+/* 204 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var Give10Week1 = function (_React$Component) {
+	    _inherits(Give10Week1, _React$Component);
+
+	    function Give10Week1() {
+	        _classCallCheck(this, Give10Week1);
+
+	        return _possibleConstructorReturn(this, (Give10Week1.__proto__ || Object.getPrototypeOf(Give10Week1)).apply(this, arguments));
+	    }
+
+	    _createClass(Give10Week1, [{
+	        key: 'render',
+	        value: function render() {
+	            return _react2.default.createElement(
+	                'div',
+	                null,
+	                _react2.default.createElement(
+	                    'h1',
+	                    null,
+	                    'Week 1: Solitude'
+	                ),
+	                _react2.default.createElement(
+	                    'div',
+	                    { className: '[ text-bigger bold ]' },
+	                    'What is it?'
+	                ),
+	                _react2.default.createElement(
+	                    'p',
+	                    null,
+	                    'Solitude is all about finding a quiet, calm spot to spend time with God by yourself. There are two parts to solitude:'
+	                ),
+	                _react2.default.createElement(
+	                    'ol',
+	                    null,
+	                    _react2.default.createElement(
+	                        'li',
+	                        null,
+	                        'We remove the noise and chaos of our life, if only for a few minutes.'
+	                    ),
+	                    _react2.default.createElement(
+	                        'li',
+	                        null,
+	                        'We add in the voice of God, through his word.'
+	                    )
+	                ),
+	                _react2.default.createElement(
+	                    'div',
+	                    { className: '[ text-bigger bold ]' },
+	                    'Why take this time?'
+	                ),
+	                _react2.default.createElement(
+	                    'p',
+	                    null,
+	                    'Our lives are often filled with noise and busyness. We are often on the go and typically multi-tasking. While this isn\u2019t all bad, we are made to take a breath and simply slow down. Psalm 46:10 calls us to \u201CBe still and know that I am God.\u201D There\u2019s something very restful and profound that happens when we create a quiet, calm time to be with God. The Psalmist knew its importance for deepening our relationship with God. It\'s our desire to see you and the church experience the same thing.'
+	                ),
+	                _react2.default.createElement(
+	                    'p',
+	                    null,
+	                    'The Psalmist\u2019s relationship with God was a deep one. We hope to become more like him as we create space to listen to God more closely, hear his voice more clearly and reflect on Christ more deeply.'
+	                ),
+	                _react2.default.createElement(
+	                    'div',
+	                    { className: '[ text-bigger bold ]' },
+	                    'How will this work?'
+	                ),
+	                _react2.default.createElement(
+	                    'ol',
+	                    null,
+	                    _react2.default.createElement(
+	                        'li',
+	                        null,
+	                        'As close to 7:10 a.m. and 7:10 p.m. as possible, find a quiet place to be by yourself.'
+	                    ),
+	                    _react2.default.createElement(
+	                        'li',
+	                        null,
+	                        'Have only a Bible and a journal with you. Leave your phones and turn off all music and TV.'
+	                    ),
+	                    _react2.default.createElement(
+	                        'li',
+	                        null,
+	                        'Be still and quiet for the first half of your time.'
+	                    ),
+	                    _react2.default.createElement(
+	                        'li',
+	                        null,
+	                        'Read the passage for the day, and write down what God is saying to you from his Word and what impacts you from what you\u2019ve read.'
+	                    ),
+	                    _react2.default.createElement(
+	                        'li',
+	                        null,
+	                        'Close in prayer.',
+	                        _react2.default.createElement(
+	                            'ul',
+	                            null,
+	                            _react2.default.createElement(
+	                                'li',
+	                                null,
+	                                'Monday: Romans 5:6-11'
+	                            ),
+	                            _react2.default.createElement(
+	                                'li',
+	                                null,
+	                                'Tuesday: 1 John 4:7-12'
+	                            ),
+	                            _react2.default.createElement(
+	                                'li',
+	                                null,
+	                                'Wednesday: Matthew 26:36-46'
+	                            ),
+	                            _react2.default.createElement(
+	                                'li',
+	                                null,
+	                                'Thursday: Matthew 27:45-56'
+	                            ),
+	                            _react2.default.createElement(
+	                                'li',
+	                                null,
+	                                'Friday: Philippians 2:1-10'
+	                            )
+	                        )
+	                    )
+	                )
+	            );
+	        }
+	    }]);
+
+	    return Give10Week1;
+	}(_react2.default.Component);
+
+	exports.default = Give10Week1;
 
 /***/ }
 /******/ ]);
