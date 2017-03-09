@@ -24906,7 +24906,7 @@
 	            var startDate = new Date(this.props.weekInfo.startDate);
 
 	            //Check if this is live
-	            if (Date.parse(this.props.weekInfo.startDate) > Date.now()) {
+	            if (Date.parse(this.props.weekInfo.startDate) > Date.now() && this.props.weekInfo.week != 1) {
 	                classes += "[ bg-light-gray ] [ cursor-default ] ";
 	            } else {
 	                classes += "[ bg-medium-blue ] [ cursor-point ] [ fx-bottom-border fx-light-blue ] ";

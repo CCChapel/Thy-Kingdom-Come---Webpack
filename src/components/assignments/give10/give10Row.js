@@ -25,7 +25,7 @@ export default class Give10Row extends React.Component {
         let startDate = new Date(this.props.weekInfo.startDate);
 
         //Check if this is live
-        if (Date.parse(this.props.weekInfo.startDate) > Date.now()) {
+        if ((Date.parse(this.props.weekInfo.startDate) > Date.now()) && (this.props.weekInfo.week != 1) ) {
             classes += "[ bg-light-gray ] [ cursor-default ] ";
         }
         else {
