@@ -1,24 +1,63 @@
 import React from 'react';
 import { Component } from 'react';
 
-import Give10Week1 from './week1';
+import Give10Row from './give10Row';
 
 /**
- * Defines a row representing a ministry partner
- * @partner = The partner to display
- * @handleClick = Method to handle the click event
+ * Renders the Give10 assignment section
+ * 
+ * @showModal = Method to show the modal window
  */
 export default class Give10Assignment extends React.Component {
     constructor(props) {
         super(props);
+
+        this.state = {
+            give10Info: []
+        };
+
         this.handleClick = this.handleClick.bind(this);
     }
 
-    handleClick(data) {
-        this.props.showModal(data);
+    componentDidMount() {
+        //Load Information
+        const _this = this;       //Make this available in fetch
+        const url = "./data/give10.json";
+        const request = new Request(url, {
+                method: 'get',
+                mode: 'no-cors'
+            });
+        
+        fetch(request)
+            .then(function json(response) {  
+                return response.json()  
+            })
+            .then(function(data) {
+                _this.setState({ give10Info: data });
+                // console.log('Request succeeded with JSON response', data);
+            }).catch(function(error) {
+                // console.log('Request failed', error);
+            });
+    }
+
+    handleClick(content) {
+        this.props.showModal(content);
     }
 
     render() {
+        //Create container for rows
+        const rows = [];
+
+        //Loop through each partner to create row
+        this.state.give10Info.forEach((weekInfo, index) => {
+            rows.push(
+                <Give10Row
+                    key={index}
+                    weekInfo={weekInfo}
+                    handleClick={this.handleClick} />
+            );
+        });
+
         return (
             <div>
                 <div className="[ lock-width ] [ center center-by-margin ] [ add-bottom-margin ]">
@@ -31,12 +70,8 @@ export default class Give10Assignment extends React.Component {
                     </div>
                 </div>
 
-                <div className="flex wrap justify-content--center">
-                    <div 
-                        className="[ one-fifth portable--one-whole ] [ bg-medium-blue ] [ cursor-point ] [ add-bottom-margin add-padding ] [ fx-bottom-border fx-light-blue ]"
-                        onClick={() => this.handleClick(<Give10Week1 />)}>
-                        Week 1: Solitude
-                    </div>
+                <div className="flex portable--stack align-items--stretch justify-content--center">
+                    {rows}
                 </div>
 
                 <div className="[ lock-width ] [ center center-by-margin ]">

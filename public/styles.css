@@ -301,6 +301,10 @@ a {
   font-size: 24px;
   font-size: 1.5rem;
   line-height: 1; }
+.text-biggest {
+  font-size: 32px;
+  font-size: 2rem;
+  line-height: 1.5; }
 
 .indent {
   margin-left: 1.5em; }
@@ -316,6 +320,8 @@ a {
 
 .cursor-point {
   cursor: pointer; }
+.cursor-default {
+  cursor: default; }
 
 .cls-1,
 .cls-2,
@@ -840,6 +846,8 @@ a {
   background-color: #69a7c2; }
 .bg-dark-blue {
   background-color: #467284; }
+.bg-light-gray {
+  background-color: #888; }
 .bg-charcoal {
   background-color: #333333; }
 .bg-clouds {

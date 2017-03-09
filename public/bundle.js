@@ -24723,9 +24723,9 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _week = __webpack_require__(204);
+	var _give10Row = __webpack_require__(205);
 
-	var _week2 = _interopRequireDefault(_week);
+	var _give10Row2 = _interopRequireDefault(_give10Row);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -24736,9 +24736,9 @@
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 	/**
-	 * Defines a row representing a ministry partner
-	 * @partner = The partner to display
-	 * @handleClick = Method to handle the click event
+	 * Renders the Give10 assignment section
+	 * 
+	 * @showModal = Method to show the modal window
 	 */
 	var Give10Assignment = function (_React$Component) {
 	    _inherits(Give10Assignment, _React$Component);
@@ -24746,21 +24746,56 @@
 	    function Give10Assignment(props) {
 	        _classCallCheck(this, Give10Assignment);
 
-	        var _this = _possibleConstructorReturn(this, (Give10Assignment.__proto__ || Object.getPrototypeOf(Give10Assignment)).call(this, props));
+	        var _this2 = _possibleConstructorReturn(this, (Give10Assignment.__proto__ || Object.getPrototypeOf(Give10Assignment)).call(this, props));
 
-	        _this.handleClick = _this.handleClick.bind(_this);
-	        return _this;
+	        _this2.state = {
+	            give10Info: []
+	        };
+
+	        _this2.handleClick = _this2.handleClick.bind(_this2);
+	        return _this2;
 	    }
 
 	    _createClass(Give10Assignment, [{
+	        key: 'componentDidMount',
+	        value: function componentDidMount() {
+	            //Load Information
+	            var _this = this; //Make this available in fetch
+	            var url = "./data/give10.json";
+	            var request = new Request(url, {
+	                method: 'get',
+	                mode: 'no-cors'
+	            });
+
+	            fetch(request).then(function json(response) {
+	                return response.json();
+	            }).then(function (data) {
+	                _this.setState({ give10Info: data });
+	                // console.log('Request succeeded with JSON response', data);
+	            }).catch(function (error) {
+	                // console.log('Request failed', error);
+	            });
+	        }
+	    }, {
 	        key: 'handleClick',
-	        value: function handleClick(data) {
-	            this.props.showModal(data);
+	        value: function handleClick(content) {
+	            this.props.showModal(content);
 	        }
 	    }, {
 	        key: 'render',
 	        value: function render() {
-	            var _this2 = this;
+	            var _this3 = this;
+
+	            //Create container for rows
+	            var rows = [];
+
+	            //Loop through each partner to create row
+	            this.state.give10Info.forEach(function (weekInfo, index) {
+	                rows.push(_react2.default.createElement(_give10Row2.default, {
+	                    key: index,
+	                    weekInfo: weekInfo,
+	                    handleClick: _this3.handleClick }));
+	            });
 
 	            return _react2.default.createElement(
 	                'div',
@@ -24781,16 +24816,8 @@
 	                ),
 	                _react2.default.createElement(
 	                    'div',
-	                    { className: 'flex wrap justify-content--center' },
-	                    _react2.default.createElement(
-	                        'div',
-	                        {
-	                            className: '[ one-fifth portable--one-whole ] [ bg-medium-blue ] [ cursor-point ] [ add-bottom-margin add-padding ] [ fx-bottom-border fx-light-blue ]',
-	                            onClick: function onClick() {
-	                                return _this2.handleClick(_react2.default.createElement(_week2.default, null));
-	                            } },
-	                        'Week 1: Solitude'
-	                    )
+	                    { className: 'flex portable--stack align-items--stretch justify-content--center' },
+	                    rows
 	                ),
 	                _react2.default.createElement(
 	                    'div',
@@ -24818,7 +24845,8 @@
 	exports.default = Give10Assignment;
 
 /***/ },
-/* 204 */
+/* 204 */,
+/* 205 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -24833,6 +24861,10 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
+	var _htmlReactParser = __webpack_require__(190);
+
+	var _htmlReactParser2 = _interopRequireDefault(_htmlReactParser);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -24841,125 +24873,77 @@
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-	var Give10Week1 = function (_React$Component) {
-	    _inherits(Give10Week1, _React$Component);
+	/**
+	 * Defines a row representing a Give10 week
+	 * @weekInfo = The information of the week
+	 * @handleClick = Method to handle the click event
+	 */
+	var Give10Row = function (_React$Component) {
+	    _inherits(Give10Row, _React$Component);
 
-	    function Give10Week1() {
-	        _classCallCheck(this, Give10Week1);
+	    function Give10Row(props) {
+	        _classCallCheck(this, Give10Row);
 
-	        return _possibleConstructorReturn(this, (Give10Week1.__proto__ || Object.getPrototypeOf(Give10Week1)).apply(this, arguments));
+	        var _this = _possibleConstructorReturn(this, (Give10Row.__proto__ || Object.getPrototypeOf(Give10Row)).call(this, props));
+
+	        _this.handleClick = _this.handleClick.bind(_this);
+	        return _this;
 	    }
 
-	    _createClass(Give10Week1, [{
+	    _createClass(Give10Row, [{
+	        key: 'handleClick',
+	        value: function handleClick(data) {
+	            this.props.handleClick(data);
+	        }
+	    }, {
 	        key: 'render',
 	        value: function render() {
+	            var _this2 = this;
+
+	            //Define classes for row
+	            var classes = "";
+	            var click = null;
+	            var startDate = new Date(this.props.weekInfo.startDate);
+
+	            //Check if this is live
+	            if (Date.parse(this.props.weekInfo.startDate) > Date.now()) {
+	                classes += "[ bg-light-gray ] [ cursor-default ] ";
+	            } else {
+	                classes += "[ bg-medium-blue ] [ cursor-point ] [ fx-bottom-border fx-light-blue ] ";
+	                click = function click() {
+	                    return _this2.handleClick((0, _htmlReactParser2.default)(_this2.props.weekInfo.description));
+	                };
+	            }
+
 	            return _react2.default.createElement(
 	                'div',
-	                null,
-	                _react2.default.createElement(
-	                    'h1',
-	                    null,
-	                    'Week 1: Solitude'
-	                ),
+	                {
+	                    className: "[ one-fifth portable--one-whole ] [ add-bottom-margin add-padding ]" + classes,
+	                    onClick: click },
 	                _react2.default.createElement(
 	                    'div',
-	                    { className: '[ text-bigger bold ]' },
-	                    'What is it?'
-	                ),
-	                _react2.default.createElement(
-	                    'p',
-	                    null,
-	                    'Solitude is all about finding a quiet, calm spot to spend time with God by yourself. There are two parts to solitude:'
-	                ),
-	                _react2.default.createElement(
-	                    'ol',
-	                    null,
+	                    { className: '[ flex justify-content--flex-start ]' },
 	                    _react2.default.createElement(
-	                        'li',
-	                        null,
-	                        'We remove the noise and chaos of our life, if only for a few minutes.'
-	                    ),
-	                    _react2.default.createElement(
-	                        'li',
-	                        null,
-	                        'We add in the voice of God, through his word.'
-	                    )
-	                ),
-	                _react2.default.createElement(
-	                    'div',
-	                    { className: '[ text-bigger bold ]' },
-	                    'Why take this time?'
-	                ),
-	                _react2.default.createElement(
-	                    'p',
-	                    null,
-	                    'Our lives are often filled with noise and busyness. We are often on the go and typically multi-tasking. While this isn\u2019t all bad, we are made to take a breath and simply slow down. Psalm 46:10 calls us to \u201CBe still and know that I am God.\u201D There\u2019s something very restful and profound that happens when we create a quiet, calm time to be with God. The Psalmist knew its importance for deepening our relationship with God. It\'s our desire to see you and the church experience the same thing.'
-	                ),
-	                _react2.default.createElement(
-	                    'p',
-	                    null,
-	                    'The Psalmist\u2019s relationship with God was a deep one. We hope to become more like him as we create space to listen to God more closely, hear his voice more clearly and reflect on Christ more deeply.'
-	                ),
-	                _react2.default.createElement(
-	                    'div',
-	                    { className: '[ text-bigger bold ]' },
-	                    'How will this work?'
-	                ),
-	                _react2.default.createElement(
-	                    'ol',
-	                    null,
-	                    _react2.default.createElement(
-	                        'li',
-	                        null,
-	                        'As close to 7:10 a.m. and 7:10 p.m. as possible, find a quiet place to be by yourself.'
-	                    ),
-	                    _react2.default.createElement(
-	                        'li',
-	                        null,
-	                        'Have only a Bible and a journal with you. Leave your phones and turn off all music and TV.'
-	                    ),
-	                    _react2.default.createElement(
-	                        'li',
-	                        null,
-	                        'Be still and quiet for the first half of your time.'
-	                    ),
-	                    _react2.default.createElement(
-	                        'li',
-	                        null,
-	                        'Read the passage for the day, and write down what God is saying to you from his Word and what impacts you from what you\u2019ve read.'
-	                    ),
-	                    _react2.default.createElement(
-	                        'li',
-	                        null,
-	                        'Close in prayer.',
+	                        'div',
+	                        { className: '[ one-quarter ] [ center ]' },
 	                        _react2.default.createElement(
-	                            'ul',
-	                            null,
-	                            _react2.default.createElement(
-	                                'li',
-	                                null,
-	                                'Monday: Romans 5:6-11'
-	                            ),
-	                            _react2.default.createElement(
-	                                'li',
-	                                null,
-	                                'Tuesday: 1 John 4:7-12'
-	                            ),
-	                            _react2.default.createElement(
-	                                'li',
-	                                null,
-	                                'Wednesday: Matthew 26:36-46'
-	                            ),
-	                            _react2.default.createElement(
-	                                'li',
-	                                null,
-	                                'Thursday: Matthew 27:45-56'
-	                            ),
-	                            _react2.default.createElement(
-	                                'li',
-	                                null,
-	                                'Friday: Philippians 2:1-10'
-	                            )
+	                            'div',
+	                            { className: 'text-biggest bold' },
+	                            this.props.weekInfo.week
+	                        )
+	                    ),
+	                    _react2.default.createElement(
+	                        'div',
+	                        { className: '[ three-quarters ]' },
+	                        (0, _htmlReactParser2.default)(this.props.weekInfo.theme),
+	                        _react2.default.createElement(
+	                            'div',
+	                            { className: 'text-smaller' },
+	                            '(Starting ',
+	                            startDate.getMonth() + 1,
+	                            '.',
+	                            startDate.getDate(),
+	                            ')'
 	                        )
 	                    )
 	                )
@@ -24967,10 +24951,10 @@
 	        }
 	    }]);
 
-	    return Give10Week1;
+	    return Give10Row;
 	}(_react2.default.Component);
 
-	exports.default = Give10Week1;
+	exports.default = Give10Row;
 
 /***/ }
 /******/ ]);

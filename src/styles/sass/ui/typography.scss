@@ -72,6 +72,10 @@ a {
     &-bigger {
         @include typecsset-font-size(24px);
     }
+
+    &-biggest {
+        @include typecsset-font-size(32px);
+    }
 }
 
 .indent {
@@ -90,6 +94,12 @@ a {
     text-align: center;
 }
 
-.cursor-point {
-    cursor: pointer;
+.cursor {
+    &-point {
+        cursor: pointer;
+    }
+
+    &-default {
+        cursor: default;
+    }
 }
