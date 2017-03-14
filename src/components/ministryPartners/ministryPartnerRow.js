@@ -23,7 +23,7 @@ export default class MinistryPartnerRow extends React.Component {
     render() {
         return (
             <div 
-                className="[ one-third portable--one-whole ] [ bg-light-blue ] [ cursor-point ] [ add-bottom-margin add-padding ] [ fx-bottom-border fx-dark-blue ]"  
+                className="[ one-third portable--one-whole ] [ bg-medium-blue ] [ cursor-point ] [ add-bottom-margin add-padding ] [ fx-bottom-border fx-light-blue ]"  
                 onClick={() => this.handleClick(<MinistryPartnerInformation information={this.props.partner} />)}>
                 { Parser(this.props.partner.name) }
             </div>

@@ -29,7 +29,7 @@ export default class Give10Row extends React.Component {
             classes += "[ bg-light-gray ] [ cursor-default ] ";
         }
         else {
-            classes += "[ bg-medium-blue ] [ cursor-point ] [ fx-bottom-border fx-light-blue ] ";
+            classes += "[ bg-light-blue text-white ] [ cursor-point ] [ fx-bottom-border fx-dark-blue ] ";
             click = () => this.handleClick(Parser(this.props.weekInfo.description));
         }
 
@@ -40,7 +40,7 @@ export default class Give10Row extends React.Component {
                 <div className="[ flex justify-content--flex-start ]">
                     <div className="[ one-quarter ] [ center ]">
                         <div className="text-biggest bold">
-                            {this.props.weekInfo.week }
+                            { this.props.weekInfo.week }
                         </div>
                     </div>
 

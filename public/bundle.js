@@ -22138,23 +22138,23 @@
 
 	var _ministryPartnersTable2 = _interopRequireDefault(_ministryPartnersTable);
 
-	var _give = __webpack_require__(203);
+	var _give = __webpack_require__(199);
 
 	var _give2 = _interopRequireDefault(_give);
 
-	var _logo = __webpack_require__(199);
+	var _logo = __webpack_require__(201);
 
 	var _logo2 = _interopRequireDefault(_logo);
 
-	var _clock = __webpack_require__(200);
+	var _clock = __webpack_require__(202);
 
 	var _clock2 = _interopRequireDefault(_clock);
 
-	var _vimeoVideo = __webpack_require__(201);
+	var _vimeoVideo = __webpack_require__(203);
 
 	var _vimeoVideo2 = _interopRequireDefault(_vimeoVideo);
 
-	var _contact = __webpack_require__(202);
+	var _contact = __webpack_require__(204);
 
 	var _contact2 = _interopRequireDefault(_contact);
 
@@ -22264,7 +22264,16 @@
 	                ),
 	                _react2.default.createElement(
 	                    _section2.default,
-	                    { id: 'spree', className: 'bg-medium-blue' },
+	                    { id: 'assignments', className: 'bg-medium-blue' },
+	                    _react2.default.createElement(
+	                        'div',
+	                        { className: 'content-wrapper' },
+	                        _react2.default.createElement(_give2.default, { showModal: this.showModal })
+	                    )
+	                ),
+	                _react2.default.createElement(
+	                    _section2.default,
+	                    { id: 'spree', className: 'bg-dark-blue text-white' },
 	                    _react2.default.createElement(
 	                        'div',
 	                        { className: 'content-wrapper' },
@@ -22393,15 +22402,6 @@
 	                                    ));
 	                                } })
 	                        )
-	                    )
-	                ),
-	                _react2.default.createElement(
-	                    _section2.default,
-	                    { id: 'assignments', className: 'bg-dark-blue text-white' },
-	                    _react2.default.createElement(
-	                        'div',
-	                        { className: 'content-wrapper' },
-	                        _react2.default.createElement(_give2.default, { showModal: this.showModal })
 	                    )
 	                ),
 	                _react2.default.createElement(
@@ -22940,7 +22940,7 @@
 	            return _react2.default.createElement(
 	                'div',
 	                {
-	                    className: '[ one-third portable--one-whole ] [ bg-light-blue ] [ cursor-point ] [ add-bottom-margin add-padding ] [ fx-bottom-border fx-dark-blue ]',
+	                    className: '[ one-third portable--one-whole ] [ bg-medium-blue ] [ cursor-point ] [ add-bottom-margin add-padding ] [ fx-bottom-border fx-light-blue ]',
 	                    onClick: function onClick() {
 	                        return _this2.handleClick(_react2.default.createElement(_ministryPartnerInformation2.default, { information: _this2.props.partner }));
 	                    } },
@@ -24101,6 +24101,254 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
+	var _give10Row = __webpack_require__(200);
+
+	var _give10Row2 = _interopRequireDefault(_give10Row);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	/**
+	 * Renders the Give10 assignment section
+	 * 
+	 * @showModal = Method to show the modal window
+	 */
+	var Give10Assignment = function (_React$Component) {
+	    _inherits(Give10Assignment, _React$Component);
+
+	    function Give10Assignment(props) {
+	        _classCallCheck(this, Give10Assignment);
+
+	        var _this2 = _possibleConstructorReturn(this, (Give10Assignment.__proto__ || Object.getPrototypeOf(Give10Assignment)).call(this, props));
+
+	        _this2.state = {
+	            give10Info: []
+	        };
+
+	        _this2.handleClick = _this2.handleClick.bind(_this2);
+	        return _this2;
+	    }
+
+	    _createClass(Give10Assignment, [{
+	        key: 'componentDidMount',
+	        value: function componentDidMount() {
+	            //Load Information
+	            var _this = this; //Make this available in fetch
+	            var url = "./data/give10.json";
+	            var request = new Request(url, {
+	                method: 'get',
+	                mode: 'no-cors'
+	            });
+
+	            fetch(request).then(function json(response) {
+	                return response.json();
+	            }).then(function (data) {
+	                _this.setState({ give10Info: data });
+	                // console.log('Request succeeded with JSON response', data);
+	            }).catch(function (error) {
+	                // console.log('Request failed', error);
+	            });
+	        }
+	    }, {
+	        key: 'handleClick',
+	        value: function handleClick(content) {
+	            this.props.showModal(content);
+	        }
+	    }, {
+	        key: 'render',
+	        value: function render() {
+	            var _this3 = this;
+
+	            //Create container for rows
+	            var rows = [];
+
+	            //Loop through each partner to create row
+	            this.state.give10Info.forEach(function (weekInfo, index) {
+	                rows.push(_react2.default.createElement(_give10Row2.default, {
+	                    key: index,
+	                    weekInfo: weekInfo,
+	                    handleClick: _this3.handleClick }));
+	            });
+
+	            return _react2.default.createElement(
+	                'div',
+	                null,
+	                _react2.default.createElement(
+	                    'div',
+	                    { className: '[ lock-width ] [ center center-by-margin ] [ add-bottom-margin ]' },
+	                    _react2.default.createElement(
+	                        'div',
+	                        { className: 'one-third center-by-margin' },
+	                        _react2.default.createElement('img', { src: 'images/give10.svg' })
+	                    ),
+	                    _react2.default.createElement(
+	                        'div',
+	                        null,
+	                        'Give10 is meant to help you know and love Jesus in a deeper way, especially as we prepare to celebrate Easter and his resurrection.'
+	                    )
+	                ),
+	                _react2.default.createElement(
+	                    'div',
+	                    { className: 'flex portable--stack align-items--stretch justify-content--center' },
+	                    rows
+	                ),
+	                _react2.default.createElement(
+	                    'div',
+	                    { className: '[ lock-width ] [ center center-by-margin ]' },
+	                    _react2.default.createElement(
+	                        'p',
+	                        null,
+	                        _react2.default.createElement('i', { className: 'fa fa-mobile fa-3x', style: { verticalAlign: 'middle' }, 'aria-hidden': 'true' }),
+	                        ' \xA0Get reminded everyday at 7:10 a.m. and 7:10 p.m. by texting Give10 to 797979.',
+	                        _react2.default.createElement('br', null),
+	                        _react2.default.createElement(
+	                            'span',
+	                            { className: 'text-smaller' },
+	                            'Standard message and data rates may apply. Please consult your wireless provider, if you have any questions.'
+	                        )
+	                    )
+	                )
+	            );
+	        }
+	    }]);
+
+	    return Give10Assignment;
+	}(_react2.default.Component);
+
+	exports.default = Give10Assignment;
+
+/***/ },
+/* 200 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _htmlReactParser = __webpack_require__(190);
+
+	var _htmlReactParser2 = _interopRequireDefault(_htmlReactParser);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	/**
+	 * Defines a row representing a Give10 week
+	 * @weekInfo = The information of the week
+	 * @handleClick = Method to handle the click event
+	 */
+	var Give10Row = function (_React$Component) {
+	    _inherits(Give10Row, _React$Component);
+
+	    function Give10Row(props) {
+	        _classCallCheck(this, Give10Row);
+
+	        var _this = _possibleConstructorReturn(this, (Give10Row.__proto__ || Object.getPrototypeOf(Give10Row)).call(this, props));
+
+	        _this.handleClick = _this.handleClick.bind(_this);
+	        return _this;
+	    }
+
+	    _createClass(Give10Row, [{
+	        key: 'handleClick',
+	        value: function handleClick(data) {
+	            this.props.handleClick(data);
+	        }
+	    }, {
+	        key: 'render',
+	        value: function render() {
+	            var _this2 = this;
+
+	            //Define classes for row
+	            var classes = "";
+	            var click = null;
+	            var startDate = new Date(this.props.weekInfo.startDate);
+
+	            //Check if this is live
+	            if (Date.parse(this.props.weekInfo.startDate) > Date.now() && this.props.weekInfo.week != 1) {
+	                classes += "[ bg-light-gray ] [ cursor-default ] ";
+	            } else {
+	                classes += "[ bg-light-blue text-white ] [ cursor-point ] [ fx-bottom-border fx-dark-blue ] ";
+	                click = function click() {
+	                    return _this2.handleClick((0, _htmlReactParser2.default)(_this2.props.weekInfo.description));
+	                };
+	            }
+
+	            return _react2.default.createElement(
+	                'div',
+	                {
+	                    className: "[ one-fifth portable--one-whole ] [ add-bottom-margin add-padding ]" + classes,
+	                    onClick: click },
+	                _react2.default.createElement(
+	                    'div',
+	                    { className: '[ flex justify-content--flex-start ]' },
+	                    _react2.default.createElement(
+	                        'div',
+	                        { className: '[ one-quarter ] [ center ]' },
+	                        _react2.default.createElement(
+	                            'div',
+	                            { className: 'text-biggest bold' },
+	                            this.props.weekInfo.week
+	                        )
+	                    ),
+	                    _react2.default.createElement(
+	                        'div',
+	                        { className: '[ three-quarters ]' },
+	                        (0, _htmlReactParser2.default)(this.props.weekInfo.theme),
+	                        _react2.default.createElement(
+	                            'div',
+	                            { className: 'text-smaller' },
+	                            '(Starting ',
+	                            startDate.getMonth() + 1,
+	                            '.',
+	                            startDate.getDate(),
+	                            ')'
+	                        )
+	                    )
+	                )
+	            );
+	        }
+	    }]);
+
+	    return Give10Row;
+	}(_react2.default.Component);
+
+	exports.default = Give10Row;
+
+/***/ },
+/* 201 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -24204,7 +24452,7 @@
 	exports.default = Logo;
 
 /***/ },
-/* 200 */
+/* 202 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -24326,7 +24574,7 @@
 	exports.default = Clock;
 
 /***/ },
-/* 201 */
+/* 203 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -24396,7 +24644,7 @@
 	exports.default = VimeoVideo;
 
 /***/ },
-/* 202 */
+/* 204 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -24706,255 +24954,6 @@
 	}(_react2.default.Component);
 
 	exports.default = ContactForm;
-
-/***/ },
-/* 203 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	    value: true
-	});
-
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-	var _react = __webpack_require__(1);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _give10Row = __webpack_require__(205);
-
-	var _give10Row2 = _interopRequireDefault(_give10Row);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-	/**
-	 * Renders the Give10 assignment section
-	 * 
-	 * @showModal = Method to show the modal window
-	 */
-	var Give10Assignment = function (_React$Component) {
-	    _inherits(Give10Assignment, _React$Component);
-
-	    function Give10Assignment(props) {
-	        _classCallCheck(this, Give10Assignment);
-
-	        var _this2 = _possibleConstructorReturn(this, (Give10Assignment.__proto__ || Object.getPrototypeOf(Give10Assignment)).call(this, props));
-
-	        _this2.state = {
-	            give10Info: []
-	        };
-
-	        _this2.handleClick = _this2.handleClick.bind(_this2);
-	        return _this2;
-	    }
-
-	    _createClass(Give10Assignment, [{
-	        key: 'componentDidMount',
-	        value: function componentDidMount() {
-	            //Load Information
-	            var _this = this; //Make this available in fetch
-	            var url = "./data/give10.json";
-	            var request = new Request(url, {
-	                method: 'get',
-	                mode: 'no-cors'
-	            });
-
-	            fetch(request).then(function json(response) {
-	                return response.json();
-	            }).then(function (data) {
-	                _this.setState({ give10Info: data });
-	                // console.log('Request succeeded with JSON response', data);
-	            }).catch(function (error) {
-	                // console.log('Request failed', error);
-	            });
-	        }
-	    }, {
-	        key: 'handleClick',
-	        value: function handleClick(content) {
-	            this.props.showModal(content);
-	        }
-	    }, {
-	        key: 'render',
-	        value: function render() {
-	            var _this3 = this;
-
-	            //Create container for rows
-	            var rows = [];
-
-	            //Loop through each partner to create row
-	            this.state.give10Info.forEach(function (weekInfo, index) {
-	                rows.push(_react2.default.createElement(_give10Row2.default, {
-	                    key: index,
-	                    weekInfo: weekInfo,
-	                    handleClick: _this3.handleClick }));
-	            });
-
-	            return _react2.default.createElement(
-	                'div',
-	                null,
-	                _react2.default.createElement(
-	                    'div',
-	                    { className: '[ lock-width ] [ center center-by-margin ] [ add-bottom-margin ]' },
-	                    _react2.default.createElement(
-	                        'div',
-	                        { className: 'one-third center-by-margin' },
-	                        _react2.default.createElement('img', { src: 'images/give10.svg' })
-	                    ),
-	                    _react2.default.createElement(
-	                        'div',
-	                        null,
-	                        'Give10 is meant to help you know and love Jesus in a deeper way, especially as we prepare to celebrate Easter and his resurrection.'
-	                    )
-	                ),
-	                _react2.default.createElement(
-	                    'div',
-	                    { className: 'flex portable--stack align-items--stretch justify-content--center' },
-	                    rows
-	                ),
-	                _react2.default.createElement(
-	                    'div',
-	                    { className: '[ lock-width ] [ center center-by-margin ]' },
-	                    _react2.default.createElement(
-	                        'p',
-	                        null,
-	                        _react2.default.createElement('i', { className: 'fa fa-mobile fa-3x', style: { verticalAlign: 'middle' }, 'aria-hidden': 'true' }),
-	                        ' \xA0Get reminded everyday at 7:10 a.m. and 7:10 p.m. by texting Give10 to 797979.',
-	                        _react2.default.createElement('br', null),
-	                        _react2.default.createElement(
-	                            'span',
-	                            { className: 'text-smaller' },
-	                            'Standard message and data rates may apply. Please consult your wireless provider, if you have any questions.'
-	                        )
-	                    )
-	                )
-	            );
-	        }
-	    }]);
-
-	    return Give10Assignment;
-	}(_react2.default.Component);
-
-	exports.default = Give10Assignment;
-
-/***/ },
-/* 204 */,
-/* 205 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	    value: true
-	});
-
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-	var _react = __webpack_require__(1);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _htmlReactParser = __webpack_require__(190);
-
-	var _htmlReactParser2 = _interopRequireDefault(_htmlReactParser);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-	/**
-	 * Defines a row representing a Give10 week
-	 * @weekInfo = The information of the week
-	 * @handleClick = Method to handle the click event
-	 */
-	var Give10Row = function (_React$Component) {
-	    _inherits(Give10Row, _React$Component);
-
-	    function Give10Row(props) {
-	        _classCallCheck(this, Give10Row);
-
-	        var _this = _possibleConstructorReturn(this, (Give10Row.__proto__ || Object.getPrototypeOf(Give10Row)).call(this, props));
-
-	        _this.handleClick = _this.handleClick.bind(_this);
-	        return _this;
-	    }
-
-	    _createClass(Give10Row, [{
-	        key: 'handleClick',
-	        value: function handleClick(data) {
-	            this.props.handleClick(data);
-	        }
-	    }, {
-	        key: 'render',
-	        value: function render() {
-	            var _this2 = this;
-
-	            //Define classes for row
-	            var classes = "";
-	            var click = null;
-	            var startDate = new Date(this.props.weekInfo.startDate);
-
-	            //Check if this is live
-	            if (Date.parse(this.props.weekInfo.startDate) > Date.now() && this.props.weekInfo.week != 1) {
-	                classes += "[ bg-light-gray ] [ cursor-default ] ";
-	            } else {
-	                classes += "[ bg-medium-blue ] [ cursor-point ] [ fx-bottom-border fx-light-blue ] ";
-	                click = function click() {
-	                    return _this2.handleClick((0, _htmlReactParser2.default)(_this2.props.weekInfo.description));
-	                };
-	            }
-
-	            return _react2.default.createElement(
-	                'div',
-	                {
-	                    className: "[ one-fifth portable--one-whole ] [ add-bottom-margin add-padding ]" + classes,
-	                    onClick: click },
-	                _react2.default.createElement(
-	                    'div',
-	                    { className: '[ flex justify-content--flex-start ]' },
-	                    _react2.default.createElement(
-	                        'div',
-	                        { className: '[ one-quarter ] [ center ]' },
-	                        _react2.default.createElement(
-	                            'div',
-	                            { className: 'text-biggest bold' },
-	                            this.props.weekInfo.week
-	                        )
-	                    ),
-	                    _react2.default.createElement(
-	                        'div',
-	                        { className: '[ three-quarters ]' },
-	                        (0, _htmlReactParser2.default)(this.props.weekInfo.theme),
-	                        _react2.default.createElement(
-	                            'div',
-	                            { className: 'text-smaller' },
-	                            '(Starting ',
-	                            startDate.getMonth() + 1,
-	                            '.',
-	                            startDate.getDate(),
-	                            ')'
-	                        )
-	                    )
-	                )
-	            );
-	        }
-	    }]);
-
-	    return Give10Row;
-	}(_react2.default.Component);
-
-	exports.default = Give10Row;
 
 /***/ }
 /******/ ]);

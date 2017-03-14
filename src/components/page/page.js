@@ -90,7 +90,13 @@ export default class Page extends React.Component {
                     </div>
                 </Section>
 
-                <Section id="spree" className="bg-medium-blue">
+                <Section id="assignments" className="bg-medium-blue">
+                    <div className="content-wrapper">
+                        <Give10 showModal={this.showModal} />
+                    </div>
+                </Section>
+
+                <Section id="spree" className="bg-dark-blue text-white">
                     <div className="content-wrapper">
                         <div className="lock-width center-by-margin">
                             <h1 className="center no-bottom-margin">Local Outreach Spree</h1>
@@ -185,12 +191,6 @@ export default class Page extends React.Component {
                                         </div>
                                     )} />
                         </div>
-                    </div>
-                </Section>
-
-                <Section id="assignments" className="bg-dark-blue text-white">
-                    <div className="content-wrapper">
-                        <Give10 showModal={this.showModal} />
                     </div>
                 </Section>
 
