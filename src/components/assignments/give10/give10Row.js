@@ -48,7 +48,7 @@ export default class Give10Row extends React.Component {
                         { Parser(this.props.weekInfo.theme) }
 
                         <div className="text-smaller">
-                            (Starting { startDate.getMonth() + 1}.{startDate.getDate()})
+                            (Starting { startDate.getMonth() + 1}.{startDate.getDate() + 1})
                         </div>
                     </div>
                 </div>
