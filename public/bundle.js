@@ -24319,7 +24319,7 @@
 	                            '(Starting ',
 	                            startDate.getMonth() + 1,
 	                            '.',
-	                            startDate.getDate(),
+	                            startDate.getDate() + 1,
 	                            ')'
 	                        )
 	                    )
