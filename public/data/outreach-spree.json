@@ -7,18 +7,13 @@
         "options": [
             {
                 "id": 0,
-                "name": "Graduation",
-                "details": "Attend the annual graduation ceremony and celebration for the girls who have completed their high school degree. Details available in February."
+                "name": "Annual Walk/Bike Event",
+                "details": "<div class='italic'>Sat., May 13 from 10 a.m. &ndash; noon.</div>Walk or bike to support Blessings at their annual fundraiser at Stow-Munroe Falls High School. For more information, or to register for this event visit <a href='http://blessingsspc.com/events'>blessingsspc.com/events</a>."
             },
             {
                 "id": 1,
-                "name": "Annual Walk/Bike Event",
-                "details": "<div class='italic'>Sat., May 13 from 10 a.m. &ndash; noon.</div>Walk or bike to support Blessings at their annual fundraiser at Stow-Munroe Falls High School. More details available in April."
-            },
-            {
-                "id": 2,
                 "name": "Drywall/Flooring",
-                "details": "Drywall and floor a room addition for a Blessings' mom and child. Her grandparent added on a room just for them and their privacy at his/her home. CCC has funds for the materials."
+                "details": "An opportunity stills exists for a community group to renovate a room in the basement of a grandparent’s house for a Blessings single mom and her child. The room is now ready for drywall and flooring. For details on this project, email <a href='mailto:barbara.ammirati@ccchapel.com'>Barbara</a>. Funds are available for materials."
             }
         ]
     },
@@ -31,17 +26,12 @@
             {
                 "id": 0,                
                 "name": "Visit Urbean Caf\u00e9",
-                "details": "<div class='italic'>Mon. &ndash; Fri. from 7 a.m. &ndash; 7 p.m.<br/>Sat. from 9 a.m. &ndash; 3 p.m.</div>631 S Broadway St., Metro Transit Center, Akron, OH 44311<br />"
+                "details": "Enjoy a meal at Urbean Café and support Broken Chains and their clients at the same time.<div class='italic'>Mon. &ndash; Fri. from 7 a.m. &ndash; 7 p.m.<br/>Sat. from 9 a.m. &ndash; 3 p.m.</div>631 S Broadway St., Metro Transit Center, Akron, OH 44311<br /><a href='https://www.youtube.com/watch?v=9ZWsupfCwKs'>Urbean Cafe Video</a>"
             },
             {
                 "id": 1,                
-                "name": "Annual Bike for Mike Event",
-                "details": "Details available in April."
-            },
-            {
-                "id": 2,                
-                "name": "Urbean Caf\u00e9 Open House",
-                "details": "<div class='italic'>Sat., Mar. 4 from 10 a.m. to 2 p.m.</div>631 S Broadway St., Metro Transit Center, Akron, OH 44311 "
+                "name": "Tour Summit County Jail",
+                "details": "Take a tour of the Summit Count Jail with Dennis Shawhan, executive director of Broken Chains. The tour can accommodate a group of up to 12 people any weekday from 9 a.m. to 2 p.m. We need at least two weeks notice to gain clearance with the jail. Email <a href='mailto:dennis.shawhan@hotmail.com'>Dennis</a> to sign up or for more info."
             }
         ]
     },
@@ -58,8 +48,8 @@
             },
             {
                 "id": 1,                
-                "name": "Visit the Clinic",
-                "details": "Drop off a donation of new adult and children toothbrushes and small toothpastes and take a tour of the center (Saturday mornings)."
+                "name": "Clean the Clinic",
+                "details": "Clean the medical clinic in Tallmadge the fourth Saturday of each month and tour the facility. For more details, email <a href='mailto:kbertolini@gmail.com'>Kathi</a>."
             }
         ]
     },
@@ -75,9 +65,9 @@
                 "details": "<div class='italic'>Mon., Tue., Thu. &amp; Fri. 4-10 p.m.</div>943 Kenmore Blvd., Akron, OH 44314<br />For those looking for a more adventurous opportunity, visit and use the indoor skate park at the First Glance Ministry Center.<br />$5 fee per person. Free on Tuesdays"
             },
             {
-                "id": 1,                
-                "name": "Open House",
-                "details": "<div class='italic'>Sun., Mar. 19 from 12-2 p.m.</div>943 Kenmore Blvd. Akron, OH 44314<br />Come to meet Noelle Beck, First Glance director, and enjoy a light lunch and tour of the ministry center to find out more about First Glance&rsquo;s influence on the city of Akron. There will be donation boxes, but there is no obligation to give."
+                "id": 1,
+                "name": "Volunteer with Children",
+                "details": "Help out on a Tues. from 4-7 p.m. in First Glance’s Tiny Glancers’ classroom (children of teen/young moms.) Email <a href='mailto:karen@firstglance.org'>Karen Freeman</a> for more information and to let her know you are coming."
             },
             {
                 "id": 2,
@@ -86,11 +76,6 @@
             },
             {
                 "id": 3,
-                "name": "Volunteer with Children",
-                "details": "Volunteer on a Tuesday from 4- 7 p.m. in the children's room with Tiny Glancers (children of teen/young moms) Email <a href='mailto:karen@firstglance.org'>Karen</a> for details and to let her know you are coming."
-            },
-            {
-                "id": 4,
                 "name": "Make a Meal",
                 "details": "Make a Frozen Meal  and drop it off (for Monday Student Leaders meeting, Tuesday Man Up, Ladies, or Moms meetings). Contact <a href='mailto:jessica@firstglance.org'>Jessica</a> for more information and to sign up."
             }
@@ -105,12 +90,12 @@
             {
                 "id": 0,
                 "name": "Ministry Tours",
-                "details": "<div class='italic'>Nov. 9 from 2-7 p.m.</div>175 E Market St, Akron, OH 44308<br />Contact Rose Rose, Community Relations Coordinator, to schedule a tour 330.535.1563."
+                "details": "<div class='italic'>Nov. 9 from 2-7 p.m.</div>175 E Market St, Akron, OH 44308<br />Contact <a href='mailto:rrose@havenofrest.org'>Rose</a>, Community Relations Coordinator, to schedule a tour 330.535.1563."
             },
             {
                 "id": 1,                
                 "name": "Clothes/Food",
-                "details": "<div class='italic'>Mon. &ndash; Fri. from 8 a.m. &ndash; 6 p.m.<br />Sat. from 9 a.m. &ndash; 5 p.m.</div>207 East Market Street, Akron, OH 44308<br />Drop off food and gently used clothing to the Client Services Center at Haven of Rest."
+                "details": "<div class='italic'>Mon. &ndash; Fri. from 8 a.m. &ndash; 6 p.m.<br />Sat. from 9 a.m. &ndash; 5 p.m.</div>207 East Market Street, Akron, OH 44308<br />Collect items needed to bring to Haven of Rest. Help feed the homeless and tour Haven of Rest while you are there.  Current needs are:  shampoo, deodorant, toothbrushes, toothpaste, canned fruit and vegetables, coffee and beverage mixes, men's tennis shoes and pants (especially waist sizes 28&rdquo; to 34&rdquo;), ladies undergarments, socks for infants and toddlers, twin bed sheets and bath towels. To arrange for a tour when you drop off your donation, email <a href='mailto:rrose@havenofrest.org'>Rose</a>."
             },
             {
                 "id": 2,                
@@ -141,7 +126,7 @@
             {
                 "id": 0,                
                 "name": "Production Facility Tour Drop-In",
-                "details": "<div class='italic'>Tue. &ndash; Thu. from 9:30 a.m. &ndash; 12 p.m.</div>1445 Commerce Dr., Stow, OH 44224"
+                "details": "<div class='italic'>Tue. &ndash; Thu. from 9:30 a.m. &ndash; 12 p.m.</div>1445 Commerce Dr., Stow, OH 44224<br />Take a tour of this Stow-based ministry partner<br />For more information, email <a href='leepetno@gmail.com'>Lee Petno</a>"
             },
             {
                 "id": 1,                
@@ -159,7 +144,7 @@
             {
                 "id": 0,                
                 "name": "Prayer Walk",
-                "details": "Prayer walk through the ministry center with a custom designed card that guides you through the ministry rooms and gives points on how to pray specifically.<br /><div class='italic'>Mon. &ndash; Fri. from 9 a.m. to 4:30 p.m.</div>3136 Manchester Rd, Akron, OH 44319"
+                "details": "<div class='italic'>Mon. &ndash; Fri. from 9 a.m. to 4:30 p.m.</div>3136 Manchester Rd, Akron, OH 44319<br />Prayer walk through the ministry center with a custom card that guides you through the ministry rooms and gives specific prayer needs. This is a great opportunity to see the center and have a big impact on their fight to save lives."
             },
             {
                 "id": 1,                
@@ -169,7 +154,7 @@
             {
                 "id": 2,                
                 "name": "Annual Walk/Bike Event",
-                "details": "This event will be held at Christ Community Chapel this summer. Details available in April."
+                "details": "This event will be held at Christ Community Chapel this summer. Details available in May."
             },
             {
                 "id": 3,                
@@ -186,18 +171,23 @@
         "options": [
             {
                 "id": 0,                
-                "name": "Visit Rahab House",
-                "details": "Visit the Rahab House during weekly programming (varying hours, Mon. &ndash; Fri. between 10 a.m. &ndash; 5 p.m.). There's availability for two-four men, women and children each day. One week's notice requested. Email <a href='mailto:Leann.Embaugh@gmail.com'>Leann</a> to schedule your visit."
+                "name": "Rahab Gift Bags",
+                "details": "Put together gift bags for Rahab’s strip club outreach. Each bag could have a baked good, something encouraging (scripture) and a small personal item (nail polish, journal). For more information, email <a href='mailto:barbara.amirrati@ccchapel.com'>Barbara</a>."
             },
             {
                 "id": 1,                
-                "name": "Deliver a Donation",
-                "details": "450 Matthews Street, Akron, Ohio 44306<br />Make food or collect clothing and hygiene items to drop off at the Rahab House (450 Matthews St., Akron, OH 44306) Monday through Friday between 10 a.m. and 5 p.m. This assignment can accommodate up to six people. Email <a href='mailto:leann.embaugh@gmail.com'>Leann</a> with one week&rsquo;s notice."
+                "name": "Prepare/Serve Lunch",
+                "details": "82 S. Arlington St. Akron, OH<br />Prepare and serve lunch for registrants going to the Personal Prayer Mapping Conference Apr. 22 at Middlebury Chapel. CCC has grant money to cover the cost of food for a community group to take on this project. For details, email <a href='mailto:jacque481@aol.com'>Jacque.</a>"
             },
             {
                 "id": 2,                
                 "name": "Administrative Support",
                 "details": "<div class='italic'>Mon. &ndash; Fri. from 9 a.m. &ndash; 5 p.m.</div>Help with administrative tasks in the Rahab office for a two-hour time block. One week’s notice is requested. Email <a href='mailto:beth@rahab-ministries.org'>Beth</a> to schedule."
+            },
+            {
+                "id": 3,                
+                "name": "Open House",
+                "details": "<div class='italic'>Jun. 7 from 6 &ndash; 8 p.m. </div>Attend an open house to tour Rahab’s drop-in center for minors in Akron<div class='italic'>Jun. 12 from 6 &ndash; 8 p.m. </div>Attend an open house at Rahab’s walk-in center in Akron<br />Call Rahab to RSVP for either open house or ask questions 330.810.3326."
             }
         ]
     },
@@ -214,8 +204,13 @@
             },
             {
                 "id": 1,                
+                "name": "Make a Meal",
+                "details": "Provide a meal for 8-10 doctors and nurses volunteering at the Faithful Servants medical clinic site every Wed. at the Front Porch. For more information, email <a href='mailto:josephjtucker@gmail.com'>Joe Tucker</a>."
+            },
+            {
+                "id": 2,                
                 "name": "Annual Rails to Trails Bike Event",
-                "details": "Details available in April."
+                "details": "Details available in May."
             }
         ]
     },
@@ -232,6 +227,11 @@
             },
             {
                 "id": 1,                
+                "name": "Lead a Bible Study",
+                "details": "We need some new volunteers for the True North bible studies at the Dan Street Juvenile Detention Center in Akron. We go there once a month on the fourth Sunday. The bible studies are from 9-10 a.m., leaving plenty of time to get to the third service on those days. For more information, email <a href='mailto:duncanothen@hotmail.com'>Duncan Othen</a>."
+            },
+            {
+                "id": 2,                
                 "name": "Dusty Donkey Festival",
                 "details": "Visit the farm and get to know True North's ministry opportunities one Saturday this fall. More details to come."
             }
@@ -246,7 +246,7 @@
             {
                 "id": 0,
                 "name": "Attend Open House",
-                "details": "A spring open house is being planned that will include a tour of a few of the ministry homes used by the men and women in the reentry program. Details will be posted as they are available."
+                "details": "<div class='italic'>Apr. 20 from 2-7 p.m</div>685 Brown St Akron, OH 44311<br />Attend an open house to celebrate the opening of the first house sold to a former participant, Kelly Bolyard and her 9-year-old son. Local and state organizations (including TRY) will be recognized for their participation in rehabbing and furnishing the house and in guiding Kelly's recovery."
             },
             {
                 "id": 1,                
@@ -256,7 +256,7 @@
             {
                 "id": 2,                
                 "name": "Renovation Projects",
-                "details": "Complete three renovation projects in a group of 4 to 6 people. You can choose which project or a portion of a project you want to complete. CCC has funds to help purchase materials needed."
+                "details": "Three renovation projects (paint and repurpose) are available for groups at TRY’s Ministry Center. CCC has funds to help purchase materials needed. Email <a href='mailto:hallie.andrews@ccchapel.com'>Hallie</a> for details."
             }
         ]
     },
@@ -283,8 +283,13 @@
             },
             {
                 "id": 3,                
+                "name": "Donate for After-School Programs",
+                "details": "Donate powdered juice mixes, paper products (cups, plates, bowls, napkins) or juice boxes for Urban Vision’s after-school kids programs. When you drop off the donations, you can tour the ministry. For more information, email <a href='mailto:evie@urbanvisionministry.org'>Evie</a>."
+            },
+            {
+                "id": 4,                
                 "name": "Attend 25-Year Anniversary Celebration",
-                "details": "<div class='italic'>Mon., Sep. 25 at Christ Community Chapel &ndash; Hudson Campus.</div>Details available soon."
+                "details": "<div class='italic'>Mon., Sep. 25 at Christ Community Chapel &ndash; Hudson Campus.</div>Contact <a href='mailto:evie@urbanvisionministry.org'>Evie</a> for more information or to register."
             }
         ]
     },
@@ -318,7 +323,7 @@
             {
                 "id": 2,                
                 "name": "Heritage of Hudson",
-                "details": "<div class='italic'>3rd Friday from 10:30-11:30 a.m.</div>1212 W. Barlow Rd.<br />Hudson, OH 44236"
+                "details": "<div class='italic'>3rd Friday from 10:30-11:30 a.m.</div>1212 Barlow Rd.<br />Hudson, OH 44236"
             },
             {
                 "id": 3,                
@@ -339,7 +344,7 @@
             {
                 "id": 0,                
                 "name": "Act II Impact",
-                "details": "Join Jim Colledge for an Act II Impact meeting at the Highland Square Campus on Mar. 20. Info at <a href='https://ccchapel.com/events'>ccchapel.com/events</a>."
+                "details": "Join Pastor Jim Colledge for Act II’s next impact meeting at Mobility Worldwide in Stow where you will hear volunteers from this ministry talk about the impact they have been able to have worldwide by building mobility carts. Email <a href='mailto:kathy.grubbs@CCChapel.com'>Kathy</a> to RSVP."
             }
         ]
     }
