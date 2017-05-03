@@ -32,6 +32,11 @@
                 "id": 1,                
                 "name": "Tour Summit County Jail",
                 "details": "Take a tour of the Summit Count Jail with Dennis Shawhan, executive director of Broken Chains. The tour can accommodate a group of up to 12 people any weekday from 9 a.m. to 2 p.m. We need at least two weeks notice to gain clearance with the jail. Email <a href='mailto:dennis.shawhan@hotmail.com'>Dennis</a> to sign up or for more info."
+            },
+            {
+                "id": 2,                
+                "name": "Bike for Mike",
+                "details": "This 3-mile ride or 1-mile walk begins at Lake High School Stadium in Uniontown. <a href='https://www.eventbrite.com/e/3rd-annual-bike-for-mike-3-mile-ride-and-1-mile-walk-tickets-32790378906'>Tickets</a> are $25, with a $5 discount through May 6, and all proceeds will benefit the ministry’s Lydia’s Home Recovery program and Summit County Jail Reentry Assistance initiatives." 
             }
         ]
     },
@@ -77,7 +82,7 @@
             {
                 "id": 3,
                 "name": "Make a Meal",
-                "details": "Make a Frozen Meal  and drop it off (for Monday Student Leaders meeting, Tuesday Man Up, Ladies, or Moms meetings). Contact <a href='mailto:jessica@firstglance.org'>Jessica</a> for more information and to sign up."
+                "details": "Make a Frozen Meal  and drop it off (for Monday Student Leaders meeting, Tuesday Man Up, Ladies, or Moms meetings). Contact <a href='mailto:melnawn@gmail.com'>Melinda</a> for more information and to sign up."
             }
         ]
     },
@@ -131,7 +136,7 @@
             {
                 "id": 1,                
                 "name": "Open House",
-                "details": "<div class='italic'>Sun., May 21 from 12-4 p.m.</div>"
+                "details": "<div class='italic'>Sun., May 21 from 12-4 p.m.</div> 1445 Commerce Dr., Stow, OH 44224<br />Take a tour and enjoy light refreshments while you meet dedicated volunteers and gain insight into their day-to-day ministry. Plus, see how the gift of mobility has changed lives around the world."
             }
         ]
     },
@@ -153,8 +158,8 @@
             },
             {
                 "id": 2,                
-                "name": "Annual Walk/Bike Event",
-                "details": "This event will be held at Christ Community Chapel this summer. Details available in May."
+                "name": "Walk, Run, Bike-a-thon",
+                "details": "Save the date!<br /><div class='italic'>July 29 at 9 a.m.</div>Christ Community Chapel – Hudson Campus"
             },
             {
                 "id": 3,                
@@ -175,11 +180,6 @@
                 "details": "Put together gift bags for Rahab’s strip club outreach. Each bag could have a baked good, something encouraging (scripture) and a small personal item (nail polish, journal). Email <a href='mailto:barbara.ammirati@ccchapel.com'>Barbara</a> for more information."
             },
             {
-                "id": 1,                
-                "name": "Prepare/Serve Lunch",
-                "details": "82 S. Arlington St. Akron, OH<br />Prepare and serve lunch for registrants going to the Personal Prayer Mapping Conference Apr. 22 at Middlebury Chapel. CCC has grant money to cover the cost of food for a community group to take on this project. Email <a href='mailto:jacque481@aol.com'>Jacque</a> for details."
-            },
-            {
                 "id": 2,                
                 "name": "Administrative Support",
                 "details": "<div class='italic'>Mon. &ndash; Fri. from 9 a.m. &ndash; 5 p.m.</div>Help with administrative tasks in the Rahab office for a two-hour time block. One week’s notice is requested. Email <a href='mailto:beth@rahab-ministries.org'>Beth</a> to schedule."
@@ -188,6 +188,21 @@
                 "id": 3,                
                 "name": "Open House",
                 "details": "<div class='italic'>Jun. 7 from 6 &ndash; 8 p.m. </div>Attend an open house to tour Rahab’s drop-in center for minors in Akron<div class='italic'>Jun. 12 from 6 &ndash; 8 p.m. </div>Attend an open house at Rahab’s walk-in center in Akron<br />Call Rahab to RSVP for either open house or ask questions 330.810.3326."
+            },
+            {
+                "id": 4,                
+                "name": "Spruce Up Rahab’s Drop-in House",
+                "details": "Help with racking, sweeping, planning spring flowers and putting down mulch. This is a great project for a Community Group to do together. For details, email <a href='mailto:jacque481@aol.com'>Jacque</a>."
+            },
+            {
+                "id": 5,                
+                "name": "Serve Breakfast",
+                "details": "<div class='italic'>Sat., Jul. 15</div>Serve a continental breakfast for the attendees of Rahab’s next Essentials Training event. For details, email <a href='mailto:jacque481@aol.com'>Jacque</a>."
+            },
+            {
+                "id": 6,                
+                "name": "Watch a Video",
+                "details": "<a href='https://vimeo.com/207499874' target='_blank'>Watch the new video</a> from Rahab &ldquo;Top 10 Things Not to Do When Interacting with the Women of Rahab.&rdquo;"
             }
         ]
     },
@@ -210,7 +225,17 @@
             {
                 "id": 2,                
                 "name": "Annual Rails to Trails Bike Event",
-                "details": "Details available in May."
+                "details": "Details available coming soon."
+            },
+            {
+                "id": 3,                
+                "name": "South Street Bike Shop",
+                "details": "<div class='italic'>Mon. & Wed. from 6-8 p.m. through Aug. 6</div>130 W South Street<br />For more information, email <a href='mailto:josephtucker@gmail.com'>Joe Tucker</a>."
+            },
+            {
+                "id": 4,                
+                "name": "Summer Camp",
+                "details": "<div class='italic'>Mon.-Thu., Jun. 19 – Aug. 12 from 3-5 p.m.</div>1095 Edison Avenue<br />For more information, email <a href='mailto:[bob@southstreetministries.org'>Bob</a>."
             }
         ]
     },
@@ -244,11 +269,6 @@
         "description": "Truly Reaching You Ministries (TRY) is a relationship-based reentry organization that reaches out to men and women who have served their sentence and are returning to their communities. Through relationships, mentorships, training and education, TRY provides a healthy support system for those who have made the commitment to surrender their old lifestyle. Pointing the men and women to Christ is the number one priority for this ministry.<br /><br /><div class='italic'>We hope you will jump in and participate with this ministry to learn more about it and the people they serve. Just as we encourage new members to know and trust our church before they give financially, please do not feel any obligation to give to this ministry until you learn more and feel the Holy Spirit leading you to do so.</div>",
         "options": [
             {
-                "id": 0,
-                "name": "Attend Open House",
-                "details": "<div class='italic'>Apr. 20 from 2-7 p.m</div>685 Brown St Akron, OH 44311<br />Attend an open house to celebrate the opening of the first house sold to a former participant, Kelly Bolyard and her 9-year-old son. Local and state organizations (including TRY) will be recognized for their participation in rehabbing and furnishing the house and in guiding Kelly's recovery."
-            },
-            {
                 "id": 1,                
                 "name": "Ministry Center Tour",
                 "details": "<div class='italic'>Mon., Wed., Thu. &amp; Fri. from 9:30 a.m. &ndash; 3:30 pm.</div>587 Baird St, Akron, OH 44311<br />To schedule your tour or ask a question, email <a href='mailto:sherrie@trulyreachingyou.com'>Sherrie</a>."
@@ -256,7 +276,7 @@
             {
                 "id": 2,                
                 "name": "Renovation Projects",
-                "details": "Three renovation projects (paint and repurpose) are available for groups at TRY’s Ministry Center. CCC has funds to help purchase materials needed. Email <a href='mailto:hallie.andrews@ccchapel.com'>Hallie</a> for details."
+                "details": "Two renovation projects (paint and repurpose) are available for groups at TRY’s Ministry Center. CCC has funds to help purchase materials needed. Email <a href='mailto:hallie.andrews@ccchapel.com'>Hallie</a> for details."
             }
         ]
     },
@@ -272,14 +292,14 @@
                 "details": "Life Skills Class: Mon. from 3:30-4 p.m.<br />Jr. Achievement Class: Tue. from 3:30-4 p.m.<br /><br />Email <a href='mailto:regina@urbanvisionministry.org'>Regina</a> to let her know to you plan to attend at least 24 hours before these two classes. You will receive a quick tour of the ministry center 15 &ndash; 20 minutes before class."
             },
             {
-                "id": 1,            
-                "name": "English as a Foreign Language (EFL) Class",
-                "details": "<div class='italic'>Tue. &amp; Thu. from 6-8 p.m.</div>Classes can accommodate five visitors where refugees learn English. Email <a href='mailto:bena.paisley@ccchapel.com'>Bena</a> to reserve a spot."
+                "id": 1,                
+                "name": "Ballet & Gospel Choir Performance",
+                "details": "<div class='italic'>Sat., May 6 at 7 p.m.</div>749 Blaine Avenue, Akron"
             },
             {
-                "id": 2,                
-                "name": "Easter Candy",
-                "details": "Donate individually wrapped Easter candy for their annual Easter Egg Hunt outreach and take a tour of the ministry.   Contact <a href='mailto:regina@urbanvisionministry.org'>Regina</a> for more information."
+                "id": 2,            
+                "name": "English as a Foreign Language (EFL) Class",
+                "details": "<div class='italic'>Tue. &amp; Thu. from 6-8 p.m.</div>Classes can accommodate five visitors where refugees learn English. Email <a href='mailto:bena.paisley@ccchapel.com'>Bena</a> to reserve a spot."
             },
             {
                 "id": 3,                
@@ -290,6 +310,11 @@
                 "id": 4,                
                 "name": "Attend 25-Year Anniversary Celebration",
                 "details": "<div class='italic'>Mon., Sep. 25 at Christ Community Chapel &ndash; Hudson Campus.</div>Contact <a href='mailto:evie@urbanvisionministry.org'>Evie</a> for more information or to register."
+            },
+            {
+                "id": 5,                
+                "name": "Back-to-School Store",
+                "details": "<div class='italic'>Sat., Aug. 12</div>Empower students as they spend the dollars they’ve earned. Help with setup the week before or be guide/clerk. 200 volunteers are needed to make this event happen. For more information, email <a href='mailto:regina@urbanvisionminitry.org'>Regina</a>."
             }
         ]
     },
@@ -301,7 +326,7 @@
             {
                 "id": 0,                
                 "name": "Attend a Service",
-                "details": "<div class='italic'>Wed. from 6:30-8 p.m.</div>4321 Green Rd, Highland Hills, OH 44122<br />Men and women 18 and older are able to enter the facility as a guest. Email <a href='mailto:Richard.White@ccchapel.com'>Richard White</a> at least 24 hours in advance so he can obtain a gate pass."
+                "details": "<div class='italic'>Wed. from 6-9 p.m.</div>4321 Green Rd, Highland Hills, OH 44122<br />Men and women 18 and older are able to enter the facility as a guest.<br />If you’re entire Community Group would like to attend together, we can provide transportation from the Hudson campus along with a boxed dinner from Chick-Fil-A for you to enjoy on the drive.<br />Email <a href='mailto:barbara.ammirati@ccchapel.com'>Barbara Ammirati</a> to sign-up."
             }
         ]
     },
