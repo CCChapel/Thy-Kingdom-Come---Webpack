@@ -7,8 +7,8 @@
         "options": [
             {
                 "id": 0,
-                "name": "Annual Walk/Bike Event",
-                "details": "<div class='italic'>Sat., May 13 from 10 a.m. &ndash; noon.</div>Walk or bike to support Blessings at their annual fundraiser at Stow-Munroe Falls High School. For more information, or to register for this event visit <a href='http://blessingsspc.com/events'>blessingsspc.com/events</a>."
+                "name": "Summer Activities",
+                "details": "Blessgins would like to do 3 different fun summer activites for the Blessings' moms, their children and their Christian mentors. It can be a cookout and some fun games, a trip to the zoo, etc. If your community group would like to plan and host one of these activities, email <a href='mailto:barbara.ammirati@ccchapel.com'>Barbara</a> for more information."
             },
             {
                 "id": 1,
@@ -27,16 +27,6 @@
                 "id": 0,                
                 "name": "Visit Urbean Caf\u00e9",
                 "details": "Enjoy a meal at Urbean Café and support Broken Chains and their clients at the same time.<div class='italic'>Mon. &ndash; Fri. from 7 a.m. &ndash; 7 p.m.<br/>Sat. from 9 a.m. &ndash; 3 p.m.</div>631 S Broadway St., Metro Transit Center, Akron, OH 44311<br /><a href='https://www.youtube.com/watch?v=9ZWsupfCwKs'>Urbean Cafe Video</a>"
-            },
-            {
-                "id": 1,                
-                "name": "Tour Summit County Jail",
-                "details": "Take a tour of the Summit Count Jail with Dennis Shawhan, executive director of Broken Chains. The tour can accommodate a group of up to 12 people any weekday from 9 a.m. to 2 p.m. We need at least two weeks notice to gain clearance with the jail. Email <a href='mailto:dennis.shawhan@hotmail.com'>Dennis</a> to sign up or for more info."
-            },
-            {
-                "id": 2,                
-                "name": "Bike for Mike",
-                "details": "This 3-mile ride or 1-mile walk begins at Lake High School Stadium in Uniontown. <a href='https://www.eventbrite.com/e/3rd-annual-bike-for-mike-3-mile-ride-and-1-mile-walk-tickets-32790378906'>Tickets</a> are $25, with a $5 discount through May 6, and all proceeds will benefit the ministry’s Lydia’s Home Recovery program and Summit County Jail Reentry Assistance initiatives." 
             }
         ]
     },
@@ -48,11 +38,6 @@
         "options": [
             {
                 "id": 0,                
-                "name": "Volunteers&rsquo; Meal ",
-                "details": "Prepare and deliver a ready-to-eat meal to our eight to ten volunteer doctors and nurses before they being their shift, many of whom come straight from work to serve. To reserve an evening, email <a href='mailto:kbertolini@gmail.com'>Kathi</a>."
-            },
-            {
-                "id": 1,                
                 "name": "Clean the Clinic",
                 "details": "Clean the medical clinic in Tallmadge the fourth Saturday of each month and tour the facility. For more details, email <a href='mailto:kbertolini@gmail.com'>Kathi</a>."
             }
@@ -82,7 +67,7 @@
             {
                 "id": 3,
                 "name": "Make a Meal",
-                "details": "Make a Frozen Meal  and drop it off (for Monday Student Leaders meeting, Tuesday Man Up, Ladies, or Moms meetings). Contact <a href='mailto:melnawn@gmail.com'>Melinda</a> for more information and to sign up."
+                "details": "Make a meal and drop it off Tuesday (for middle school boys &ldquo;Man Up&rdquo;, middle school girls &ldquo;Ladies Night Out&rdquo;, or young moms meetings). Email <a href='mailto:melnawn@gmail.com'>Melinda</a> for more information and to sign up."
             }
         ]
     },
@@ -131,12 +116,7 @@
             {
                 "id": 0,                
                 "name": "Production Facility Tour Drop-In",
-                "details": "<div class='italic'>Tue. &ndash; Thu. from 9:30 a.m. &ndash; 12 p.m.</div>1445 Commerce Dr., Stow, OH 44224<br />Take a tour of this Stow-based ministry partner<br />For more information, email <a href='leepetno@gmail.com'>Lee Petno</a>"
-            },
-            {
-                "id": 1,                
-                "name": "Open House",
-                "details": "<div class='italic'>Sun., May 21 from 12-4 p.m.</div> 1445 Commerce Dr., Stow, OH 44224<br />Take a tour and enjoy light refreshments while you meet dedicated volunteers and gain insight into their day-to-day ministry. Plus, see how the gift of mobility has changed lives around the world."
+                "details": "<div class='italic'>Tue. &ndash; Thu. from 9:30 a.m. &ndash; 12 p.m.</div>1445 Commerce Dr., Stow, OH 44224<br />Stop in and take a tour of the Mobility Worldwide facility and see the amazing work they are doing.<br />Email <a href='leepetno@gmail.com'>Lee Petno</a> for more information."
             }
         ]
     },
@@ -160,11 +140,6 @@
                 "id": 2,                
                 "name": "Walk, Run, Bike-a-thon",
                 "details": "Save the date!<br /><div class='italic'>July 29 at 9 a.m.</div>Christ Community Chapel – Hudson Campus"
-            },
-            {
-                "id": 3,                
-                "name": "Makeover Emma's Closet",
-                "details": "Emma’s Closet, PSS’s donation boutique, is in need of a makeover. There are three project opportunities:  painting, new flooring and new fixtures. CCC has funds to purchase materials. Group can choose to do any portion of the project. Email <a href='mailto:barbara.ammirati@ccchapel.com'>Barbara</a> for more information."
             }
         ]
     },
@@ -176,31 +151,16 @@
         "options": [
             {
                 "id": 0,                
-                "name": "Rahab Gift Bags",
-                "details": "Put together gift bags for Rahab’s strip club outreach. Each bag could have a baked good, something encouraging (scripture) and a small personal item (nail polish, journal). Email <a href='mailto:barbara.ammirati@ccchapel.com'>Barbara</a> for more information."
+                "name": "Open House",
+                "details": "<div class='italic'>Jun. 7 from 6 &ndash; 8 p.m. </div>Attend an open house to tour Rahab’s drop-in center for minors in Akron<div class='italic'>Jun. 12 from 6 &ndash; 8 p.m. </div>Attend an open house at Rahab’s walk-in center in Akron<br />Call Rahab to RSVP for either open house or ask questions 330.810.3326.<br />If your community group would like to donate 6 dozen cookies for one of the open houses, email <a href'mailto:jaque481@aol.com'>Jacque</a>."
+            },
+            {
+                "id": 1,                
+                "name": "Serve Breakfast",
+                "details": "<div class='italic'>Sat., Jul. 15</div>Serve a continental breakfast for the attendees of Rahab’s next Essentials Training event. Email <a href='mailto:jacque481@aol.com'>Jacque</a> for more details."
             },
             {
                 "id": 2,                
-                "name": "Administrative Support",
-                "details": "<div class='italic'>Mon. &ndash; Fri. from 9 a.m. &ndash; 5 p.m.</div>Help with administrative tasks in the Rahab office for a two-hour time block. One week’s notice is requested. Email <a href='mailto:beth@rahab-ministries.org'>Beth</a> to schedule."
-            },
-            {
-                "id": 3,                
-                "name": "Open House",
-                "details": "<div class='italic'>Jun. 7 from 6 &ndash; 8 p.m. </div>Attend an open house to tour Rahab’s drop-in center for minors in Akron<div class='italic'>Jun. 12 from 6 &ndash; 8 p.m. </div>Attend an open house at Rahab’s walk-in center in Akron<br />Call Rahab to RSVP for either open house or ask questions 330.810.3326."
-            },
-            {
-                "id": 4,                
-                "name": "Spruce Up Rahab’s Drop-in House",
-                "details": "Help with racking, sweeping, planning spring flowers and putting down mulch. This is a great project for a Community Group to do together. For details, email <a href='mailto:jacque481@aol.com'>Jacque</a>."
-            },
-            {
-                "id": 5,                
-                "name": "Serve Breakfast",
-                "details": "<div class='italic'>Sat., Jul. 15</div>Serve a continental breakfast for the attendees of Rahab’s next Essentials Training event. For details, email <a href='mailto:jacque481@aol.com'>Jacque</a>."
-            },
-            {
-                "id": 6,                
                 "name": "Watch a Video",
                 "details": "<a href='https://vimeo.com/207499874' target='_blank'>Watch the new video</a> from Rahab &ldquo;Top 10 Things Not to Do When Interacting with the Women of Rahab.&rdquo;"
             }
@@ -220,22 +180,22 @@
             {
                 "id": 1,                
                 "name": "Make a Meal",
-                "details": "Provide a meal for 8-10 doctors and nurses volunteering at the Faithful Servants medical clinic site every Wed. at the Front Porch. For more information, email <a href='mailto:josephjtucker@gmail.com'>Joe Tucker</a>."
+                "details": "Provide a meal for 8-10 doctors and nurses volunteering at the Faithful Servants medical clinic site every Wed. at the Front Porch. For more information, email <a href='mailto:josephjtucker@gmail.com'>Joe</a>."
             },
             {
                 "id": 2,                
-                "name": "Annual Rails to Trails Bike Event",
-                "details": "Details available coming soon."
+                "name": "South Street Bike Shop",
+                "details": "<div class='italic'>Mon. & Wed. from 6-8 p.m. through Aug. 6</div>130 W South Street<br />For more information, email <a href='mailto:josephtucker@gmail.com'>Joe</a>."
             },
             {
                 "id": 3,                
-                "name": "South Street Bike Shop",
-                "details": "<div class='italic'>Mon. & Wed. from 6-8 p.m. through Aug. 6</div>130 W South Street<br />For more information, email <a href='mailto:josephtucker@gmail.com'>Joe Tucker</a>."
+                "name": "Summer Camp",
+                "details": "<div class='italic'>Mon.-Thu., Jun. 19 – Aug. 12 from 3-5 p.m.</div>1095 Edison Avenue<br />For more information, email <a href='mailto:[bob@southstreetministries.org'>Bob</a>."
             },
             {
                 "id": 4,                
-                "name": "Summer Camp",
-                "details": "<div class='italic'>Mon.-Thu., Jun. 19 – Aug. 12 from 3-5 p.m.</div>1095 Edison Avenue<br />For more information, email <a href='mailto:[bob@southstreetministries.org'>Bob</a>."
+                "name": "Annual Rails to Trails Bike Event",
+                "details": "Details coming soon."
             }
         ]
     },
@@ -253,10 +213,15 @@
             {
                 "id": 1,                
                 "name": "Lead a Bible Study",
-                "details": "We need some new volunteers for the True North bible studies at the Dan Street Juvenile Detention Center in Akron. We go there once a month on the fourth Sunday. The bible studies are from 9-10 a.m., leaving plenty of time to get to the third service on those days. For more information, email <a href='mailto:duncanothen@hotmail.com'>Duncan Othen</a>."
+                "details": "We need some new volunteers for the True North bible studies at the Dan Street Juvenile Detention Center in Akron. We go there once a month on the fourth Sunday. The bible studies are from 9-10 a.m., leaving plenty of time to get to the third service on those days. For more information, email <a href='mailto:duncanothen@hotmail.com'>Duncan</a>."
             },
             {
                 "id": 2,                
+                "name": "Become a Trained Volunteer",
+                "details": "Want to be trained to volunteer with True North and work with incarcerated youth? Email <a href='mailto:duncanothen@hotmail.com'>Duncan</a> for details."
+            },
+            {
+                "id": 3,                
                 "name": "Dusty Donkey Festival",
                 "details": "Visit the farm and get to know True North's ministry opportunities one Saturday this fall. More details to come."
             }
@@ -293,28 +258,18 @@
             },
             {
                 "id": 1,                
-                "name": "Ballet & Gospel Choir Performance",
-                "details": "<div class='italic'>Sat., May 6 at 7 p.m.</div>749 Blaine Avenue, Akron"
-            },
-            {
-                "id": 2,            
-                "name": "English as a Foreign Language (EFL) Class",
-                "details": "<div class='italic'>Tue. &amp; Thu. from 6-8 p.m.</div>Classes can accommodate five visitors where refugees learn English. Email <a href='mailto:bena.paisley@ccchapel.com'>Bena</a> to reserve a spot."
-            },
-            {
-                "id": 3,                
                 "name": "Donate for After-School Programs",
                 "details": "Donate powdered juice mixes, paper products (cups, plates, bowls, napkins) or juice boxes for Urban Vision’s after-school kids programs. When you drop off the donations, you can tour the ministry. For more information, email <a href='mailto:evie@urbanvisionministry.org'>Evie</a>."
             },
             {
-                "id": 4,                
-                "name": "Attend 25-Year Anniversary Celebration",
-                "details": "<div class='italic'>Mon., Sep. 25 at Christ Community Chapel &ndash; Hudson Campus.</div>Contact <a href='mailto:evie@urbanvisionministry.org'>Evie</a> for more information or to register."
-            },
-            {
-                "id": 5,                
+                "id": 2,                
                 "name": "Back-to-School Store",
                 "details": "<div class='italic'>Sat., Aug. 12</div>Empower students as they spend the dollars they’ve earned. Help with setup the week before or be guide/clerk. 200 volunteers are needed to make this event happen. For more information, email <a href='mailto:regina@urbanvisionminitry.org'>Regina</a>."
+            },
+            {
+                "id": 3,                
+                "name": "Attend 25-Year Anniversary Celebration",
+                "details": "<div class='italic'>Mon., Sep. 25 at Christ Community Chapel &ndash; Hudson Campus.</div>Contact <a href='mailto:evie@urbanvisionministry.org'>Evie</a> for more information or to register."
             }
         ]
     },
@@ -326,7 +281,7 @@
             {
                 "id": 0,                
                 "name": "Attend a Service",
-                "details": "<div class='italic'>Wed. from 6-9 p.m.</div>4321 Green Rd, Highland Hills, OH 44122<br />Men and women 18 and older are able to enter the facility as a guest.<br />If you’re entire Community Group would like to attend together, we can provide transportation from the Hudson campus along with a boxed dinner from Chick-Fil-A for you to enjoy on the drive.<br />Email <a href='mailto:barbara.ammirati@ccchapel.com'>Barbara Ammirati</a> to sign-up."
+                "details": "<div class='italic'>Wed. from 6-9 p.m.</div>4321 Green Rd, Highland Hills, OH 44122<br />Men and women 18 and older are able to enter the facility as a guest.<br />If you’re entire Community Group would like to attend together, we can provide transportation from the Hudson campus along with a boxed dinner from Chick-Fil-A for you to enjoy on the drive.<br />Email <a href='mailto:barbara.ammirati@ccchapel.com'>Barbara</a> to sign-up."
             }
         ]
     },
@@ -364,13 +319,6 @@
     },
     {
         "name": "Wild Card Option",
-        "description": "As a wild card option, you can choose a second opportunity at a ministry and count it as one of your eight activities. For example, you can visit the ministry center at PSS and then participate in the bike-a-thon.  Or you could visit the Front Porch Café and then return with your community group to do a project at the Front Porch at South Street as a wild card activity.",
-        "options": [
-            {
-                "id": 0,                
-                "name": "Act II Impact",
-                "details": "Join Pastor Jim Colledge for Act II’s next impact meeting at Mobility Worldwide in Stow where you will hear volunteers from this ministry talk about the impact they have been able to have worldwide by building mobility carts. Email <a href='mailto:kathy.grubbs@CCChapel.com'>Kathy</a> to RSVP."
-            }
-        ]
+        "description": "As a wild card option, you can choose a second opportunity at a ministry and count it as one of your eight activities. For example, you can visit the ministry center at PSS and then participate in the bike-a-thon.  Or you could visit the Front Porch Café and then return with your community group to do a project at the Front Porch at South Street as a wild card activity."
     }
 ]
