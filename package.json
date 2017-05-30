@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/CCChapel/Thy-Kingdom-Come---Webpack#readme",
   "dependencies": {
+    "axios": "^0.16.1",
     "babel-loader": "^6.2.10",
     "babel-plugin-transform-class-properties": "^6.19.0",
     "babel-plugin-transform-runtime": "^6.15.0",

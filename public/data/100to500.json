@@ -1,0 +1,126 @@
+{
+    "submissions": [
+        {
+            "id": "329630048",
+            "timestamp": "2017-05-30 10:21:44",
+            "user_agent": "Mozilla\/5.0 (Windows NT 10.0; WOW64; rv:52.0) Gecko\/20100101 Firefox\/52.0",
+            "remote_addr": "170.76.157.162",
+            "payment_status": "",
+            "latitude": null,
+            "longitude": null,
+            "read": "1",
+            "data": {
+                "53080526": {
+                    "field": "53080526",
+                    "value": "Test 1",
+                    "flat_value": "Test 1",
+                    "label": "Your Name",
+                    "type": "text"
+                },
+                "53080527": {
+                    "field": "53080527",
+                    "value": "City, State",
+                    "flat_value": "City, State",
+                    "label": "Your Location",
+                    "type": "text"
+                },
+                "53080528": {
+                    "field": "53080528",
+                    "value": "Story",
+                    "flat_value": "Story",
+                    "label": "Your Story",
+                    "type": "textarea"
+                },
+                "53080530": {
+                    "field": "53080530",
+                    "value": "True",
+                    "flat_value": "True",
+                    "label": "Published",
+                    "type": "radio"
+                }
+            }
+        },
+        {
+            "id": "329630113",
+            "timestamp": "2017-05-30 10:21:58",
+            "user_agent": "Mozilla\/5.0 (Windows NT 10.0; WOW64; rv:52.0) Gecko\/20100101 Firefox\/52.0",
+            "remote_addr": "170.76.157.162",
+            "payment_status": "",
+            "latitude": null,
+            "longitude": null,
+            "read": "1",
+            "data": {
+                "53080526": {
+                    "field": "53080526",
+                    "value": "Test 2",
+                    "flat_value": "Test 2",
+                    "label": "Your Name",
+                    "type": "text"
+                },
+                "53080527": {
+                    "field": "53080527",
+                    "value": "City, State",
+                    "flat_value": "City, State",
+                    "label": "Your Location",
+                    "type": "text"
+                },
+                "53080528": {
+                    "field": "53080528",
+                    "value": "Story 2",
+                    "flat_value": "Story 2",
+                    "label": "Your Story",
+                    "type": "textarea"
+                },
+                "53080530": {
+                    "field": "53080530",
+                    "value": "True",
+                    "flat_value": "True",
+                    "label": "Published",
+                    "type": "radio"
+                }
+            }
+        },
+        {
+            "id": "329630148",
+            "timestamp": "2017-05-30 10:22:10",
+            "user_agent": "Mozilla\/5.0 (Windows NT 10.0; WOW64; rv:52.0) Gecko\/20100101 Firefox\/52.0",
+            "remote_addr": "170.76.157.162",
+            "payment_status": "",
+            "latitude": null,
+            "longitude": null,
+            "read": "1",
+            "data": {
+                "53080526": {
+                    "field": "53080526",
+                    "value": "Test 3",
+                    "flat_value": "Test 3",
+                    "label": "Your Name",
+                    "type": "text"
+                },
+                "53080527": {
+                    "field": "53080527",
+                    "value": "City, State",
+                    "flat_value": "City, State",
+                    "label": "Your Location",
+                    "type": "text"
+                },
+                "53080528": {
+                    "field": "53080528",
+                    "value": "Story 3",
+                    "flat_value": "Story 3",
+                    "label": "Your Story",
+                    "type": "textarea"
+                },
+                "53080530": {
+                    "field": "53080530",
+                    "value": "True",
+                    "flat_value": "True",
+                    "label": "Published",
+                    "type": "radio"
+                }
+            }
+        }
+    ],
+    "total": 3,
+    "pages": 1
+}
