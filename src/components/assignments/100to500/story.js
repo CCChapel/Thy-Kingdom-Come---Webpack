@@ -28,13 +28,13 @@ export default class Story extends React.Component {
         let story = this.props.details[storyField].value;
 
         let fullStory = (
-            <div>
+            <div className="lock-width center-by-margin">
                 <div className="add-bottom-margin">
                     { story }
                 </div>
 
-                <div>
-                    &ndash; { name }<br />
+                <div className="right-justify serif">
+                    <div className="text-bigger text-white">&ndash; { name }</div>
                     { location }
                 </div>
             </div>

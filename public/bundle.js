@@ -28707,7 +28707,7 @@
 
 	            var fullStory = _react2.default.createElement(
 	                'div',
-	                null,
+	                { className: 'lock-width center-by-margin' },
 	                _react2.default.createElement(
 	                    'div',
 	                    { className: 'add-bottom-margin' },
@@ -28715,10 +28715,13 @@
 	                ),
 	                _react2.default.createElement(
 	                    'div',
-	                    null,
-	                    '\u2013 ',
-	                    name,
-	                    _react2.default.createElement('br', null),
+	                    { className: 'right-justify serif' },
+	                    _react2.default.createElement(
+	                        'div',
+	                        { className: 'text-bigger text-white' },
+	                        '\u2013 ',
+	                        name
+	                    ),
 	                    location
 	                )
 	            );
