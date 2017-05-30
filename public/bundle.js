@@ -28704,7 +28704,7 @@
 	                { className: "[ one-third portable--one-whole ] [ add-bottom-margin add-padding ] [ bg-light-blue text-white ] [ cursor-point ] [ fx-bottom-border fx-dark-blue ]" },
 	                _react2.default.createElement(
 	                    'div',
-	                    { className: 'text-biggest text-dark-blue serif' },
+	                    { className: 'text-biggest text-black serif' },
 	                    name
 	                ),
 	                _react2.default.createElement(
@@ -28715,7 +28715,7 @@
 	                ),
 	                _react2.default.createElement(
 	                    'div',
-	                    null,
+	                    { className: 'text-limit' },
 	                    story
 	                )
 	            );

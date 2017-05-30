@@ -27,13 +27,13 @@ export default class Story extends React.Component {
 
         return (
             <div className={"[ one-third portable--one-whole ] [ add-bottom-margin add-padding ] [ bg-light-blue text-white ] [ cursor-point ] [ fx-bottom-border fx-dark-blue ]"}>
-                <div className="text-biggest text-dark-blue serif">
+                <div className="text-biggest text-black serif">
                     { name }
                 </div>
                 <div className="text-bigger text-dark-blue serif">
                     From { location }
                 </div>
-                <div>
+                <div className="text-limit">
                     { story }
                 </div>
             </div>
