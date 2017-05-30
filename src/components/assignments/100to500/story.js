@@ -1,6 +1,8 @@
 import React from 'react';
 import { Component } from 'react';
 
+import Parser from 'html-react-parser';
+
 /**
  * Defines a row representing a Give10 week
  * @details = The information of the week
@@ -25,8 +27,24 @@ export default class Story extends React.Component {
         let location = this.props.details[locationField].value;
         let story = this.props.details[storyField].value;
 
+        let fullStory = (
+            <div>
+                <div className="add-bottom-margin">
+                    { story }
+                </div>
+
+                <div>
+                    &ndash; { name }<br />
+                    { location }
+                </div>
+            </div>
+        );
+
         return (
-            <div className={"[ one-third portable--one-whole ] [ add-bottom-margin add-padding ] [ bg-light-blue text-white ] [ cursor-point ] [ fx-bottom-border fx-dark-blue ]"}>
+            <div 
+                className={"[ one-third portable--one-whole ] [ add-bottom-margin add-padding ] [ bg-light-blue text-white ] [ cursor-point ] [ fx-bottom-border fx-dark-blue ]"}
+                onClick={() => this.handleClick(fullStory)}>
+
                 <div className="text-biggest text-black serif">
                     { name }
                 </div>

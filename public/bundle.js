@@ -28658,6 +28658,10 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
+	var _htmlReactParser = __webpack_require__(190);
+
+	var _htmlReactParser2 = _interopRequireDefault(_htmlReactParser);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -28691,6 +28695,8 @@
 	    }, {
 	        key: 'render',
 	        value: function render() {
+	            var _this2 = this;
+
 	            var nameField = "53080526";
 	            var locationField = "53080527";
 	            var storyField = "53080528";
@@ -28699,9 +28705,31 @@
 	            var location = this.props.details[locationField].value;
 	            var story = this.props.details[storyField].value;
 
+	            var fullStory = _react2.default.createElement(
+	                'div',
+	                null,
+	                _react2.default.createElement(
+	                    'div',
+	                    { className: 'add-bottom-margin' },
+	                    story
+	                ),
+	                _react2.default.createElement(
+	                    'div',
+	                    null,
+	                    '\u2013 ',
+	                    name,
+	                    _react2.default.createElement('br', null),
+	                    location
+	                )
+	            );
+
 	            return _react2.default.createElement(
 	                'div',
-	                { className: "[ one-third portable--one-whole ] [ add-bottom-margin add-padding ] [ bg-light-blue text-white ] [ cursor-point ] [ fx-bottom-border fx-dark-blue ]" },
+	                {
+	                    className: "[ one-third portable--one-whole ] [ add-bottom-margin add-padding ] [ bg-light-blue text-white ] [ cursor-point ] [ fx-bottom-border fx-dark-blue ]",
+	                    onClick: function onClick() {
+	                        return _this2.handleClick(fullStory);
+	                    } },
 	                _react2.default.createElement(
 	                    'div',
 	                    { className: 'text-biggest text-black serif' },
