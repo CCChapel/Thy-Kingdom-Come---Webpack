@@ -21587,7 +21587,7 @@
 	    for (var key in obj) {
 	        if (obj.hasOwnProperty(key)) {
 	            //Add property and value to str
-	            str += String.format("{0}={1}&", [key, obj[key]]);
+	            str += key + "=" + obj[key] + "&"; // String.format("{0}={1}&", [key, obj[key]]);
 	        }
 	    }
 
@@ -24979,9 +24979,17 @@
 
 	var _axios2 = _interopRequireDefault(_axios);
 
+	var _cta = __webpack_require__(186);
+
+	var _cta2 = _interopRequireDefault(_cta);
+
 	var _story = __webpack_require__(235);
 
 	var _story2 = _interopRequireDefault(_story);
+
+	var _to500Story = __webpack_require__(236);
+
+	var _to500Story2 = _interopRequireDefault(_to500Story);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -25109,6 +25117,15 @@
 	                    'div',
 	                    { className: 'flex portable--stack align-items--stretch justify-content--center' },
 	                    rows
+	                ),
+	                _react2.default.createElement(
+	                    'div',
+	                    { className: 'center' },
+	                    _react2.default.createElement(_cta2.default, { text: 'Share Your Story',
+	                        onClick: function onClick() {
+	                            return _this3.handleClick(_react2.default.createElement(_to500Story2.default, { className: 'content-wrapper lock-width center-by-margin',
+	                                onComplete: _this3.hideModal }));
+	                        } })
 	                )
 	            );
 	        }
@@ -28757,6 +28774,306 @@
 	}(_react2.default.Component);
 
 	exports.default = Story;
+
+/***/ },
+/* 236 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _cta = __webpack_require__(186);
+
+	var _cta2 = _interopRequireDefault(_cta);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	/**
+	 * Displays the Contact Form
+	 * 
+	 * @className = Class Names to apply to root form element
+	 * @onComplete = Function to call when form completes submission
+	 */
+	var OneHundredTo500Story = function (_React$Component) {
+	    _inherits(OneHundredTo500Story, _React$Component);
+
+	    function OneHundredTo500Story(props) {
+	        _classCallCheck(this, OneHundredTo500Story);
+
+	        var _this = _possibleConstructorReturn(this, (OneHundredTo500Story.__proto__ || Object.getPrototypeOf(OneHundredTo500Story)).call(this, props));
+
+	        _this.state = {
+	            showError: false,
+	            errorMessage: '',
+	            showForm: true,
+	            showConfirmation: false,
+	            data: {
+	                field_53080526: '',
+	                field_53080527: '',
+	                field_53080528: ''
+	            }
+	        };
+
+	        _this.showError = _this.showError.bind(_this);
+	        _this.hideError = _this.hideError.bind(_this);
+	        _this.showForm = _this.showForm.bind(_this);
+	        _this.hideForm = _this.hideForm.bind(_this);
+	        _this.showConfirmation = _this.showConfirmation.bind(_this);
+	        _this.hideConfirmation = _this.hideConfirmation.bind(_this);
+	        _this.onNameChange = _this.onNameChange.bind(_this);
+	        // this.onEmailChange = this.onEmailChange.bind(this);
+	        _this.onLocationChange = _this.onLocationChange.bind(_this);
+	        _this.onMessageChange = _this.onMessageChange.bind(_this);
+	        _this.handleSubmit = _this.handleSubmit.bind(_this);
+	        return _this;
+	    }
+
+	    _createClass(OneHundredTo500Story, [{
+	        key: 'showError',
+	        value: function showError(message) {
+	            this.setState({
+	                showError: true,
+	                errorMessage: message
+	            });
+	        }
+	    }, {
+	        key: 'hideError',
+	        value: function hideError() {
+	            this.setState({
+	                showError: false,
+	                errorMessage: ''
+	            });
+	        }
+	    }, {
+	        key: 'showForm',
+	        value: function showForm(e) {
+	            this.setState({
+	                showForm: true
+	            });
+	        }
+	    }, {
+	        key: 'hideForm',
+	        value: function hideForm(e) {
+	            this.setState({
+	                showForm: false
+	            });
+	        }
+	    }, {
+	        key: 'showConfirmation',
+	        value: function showConfirmation(e) {
+	            this.setState({
+	                showConfirmation: true
+	            });
+	        }
+	    }, {
+	        key: 'hideConfirmation',
+	        value: function hideConfirmation(e) {
+	            this.setState({
+	                showConfirmation: false
+	            });
+	        }
+	    }, {
+	        key: 'onNameChange',
+	        value: function onNameChange(e) {
+	            this.setState({
+	                data: {
+	                    field_53080526: e.target.value,
+	                    field_48610314: this.state.data.field_48610314,
+	                    field_53080527: this.state.data.field_53080527,
+	                    field_53080528: this.state.data.field_53080528
+	                }
+	            });
+	        }
+
+	        // onEmailChange(e) {
+	        //     this.setState({
+	        //         data: {
+	        //             field_53080526: this.state.data.field_53080526,
+	        //             field_48610314: e.target.value,
+	        //             field_53080527: this.state.data.field_53080527,
+	        //             field_53080528: this.state.data.field_53080528
+	        //         }
+	        //     });
+	        // }
+
+	    }, {
+	        key: 'onLocationChange',
+	        value: function onLocationChange(e) {
+	            this.setState({
+	                data: {
+	                    field_53080526: this.state.data.field_53080526,
+	                    field_48610314: this.state.data.field_48610314,
+	                    field_53080527: e.target.value,
+	                    field_53080528: this.state.data.field_53080528
+	                }
+	            });
+	        }
+	    }, {
+	        key: 'onMessageChange',
+	        value: function onMessageChange(e) {
+	            this.setState({
+	                data: {
+	                    field_53080526: this.state.data.field_53080526,
+	                    field_48610314: this.state.data.field_48610314,
+	                    field_53080527: this.state.data.field_53080527,
+	                    field_53080528: e.target.value
+	                }
+	            });
+	        }
+	    }, {
+	        key: 'isFormValid',
+	        value: function isFormValid() {
+	            var form = document.getElementById("storyForm");
+
+	            return form.checkValidity();
+	        }
+	    }, {
+	        key: 'handleSubmit',
+	        value: function handleSubmit(e) {
+	            var _this2 = this;
+
+	            //Hide error
+	            this.hideError();
+
+	            //Check Form Validity
+	            if (this.isFormValid()) {
+	                (function () {
+	                    //Valid Form -> Submit
+	                    var url = 'https://www.formstack.com/api/v2/form/2711017/submission.json?oauth_token=68529bb9523b67cff3c735d2e5f9176a';
+
+	                    var request = new Request(url, {
+	                        method: 'post',
+	                        mode: "no-cors",
+	                        body: JSON.toQueryString(_this2.state.data) //this.serializeData()
+	                    });
+
+	                    //Store hideForm, showConfirmation, onComplete locally because .then won't be able to access `this`
+	                    var hideForm = _this2.hideForm;
+	                    var showConfirmation = _this2.showConfirmation;
+	                    var onComplete = _this2.props.onComplete;
+	                    var showError = _this2.showError;
+
+	                    fetch(request).then(function (response) {
+	                        //Hide the form
+	                        hideForm();
+
+	                        //Show Confirmation Message
+	                        showConfirmation();
+
+	                        //Delay 5 seconds, then call onComplete
+	                        setTimeout(onComplete, 5000);
+	                    }).catch(function (err) {
+	                        //Log the error
+	                        console.log(err);
+	                        showError('Hmm\u2026 Something didn\u2019t go quite as planned. Please try again.');
+	                    });
+
+	                    //TO DO: Figure out why we're not getting event
+	                    //e.preventDefault();
+	                })();
+	            } else {
+	                //Invalid form -> Show error
+	                this.showError('Oops\u2026 Something\u2019s not quite right. Take another look.');
+	            }
+	        }
+	    }, {
+	        key: 'render',
+	        value: function render() {
+	            var _this3 = this;
+
+	            //var formId = '2569143';
+	            //var token = '68529bb9523b67cff3c735d2e5f9176a';
+	            //var url = 'package.json';
+
+	            var error = '';
+	            if (this.state.showError === true) {
+	                error = _react2.default.createElement(
+	                    'div',
+	                    { className: 'form--error add-bottom-margin' },
+	                    this.state.errorMessage
+	                );
+	            }
+
+	            if (this.state.showForm === true) {
+	                return _react2.default.createElement(
+	                    'form',
+	                    { id: 'storyForm', className: this.props.className },
+	                    _react2.default.createElement(
+	                        'div',
+	                        null,
+	                        _react2.default.createElement('input', { name: 'field_53080526',
+	                            type: 'text',
+	                            placeholder: 'Name',
+	                            required: true,
+	                            value: this.state.data.field_53080526,
+	                            onChange: this.onNameChange })
+	                    ),
+	                    _react2.default.createElement(
+	                        'div',
+	                        null,
+	                        _react2.default.createElement('input', { name: 'field_53080527',
+	                            type: 'text',
+	                            placeholder: 'Location',
+	                            required: true,
+	                            value: this.state.data.field_53080527,
+	                            onChange: this.onLocationChange })
+	                    ),
+	                    _react2.default.createElement(
+	                        'div',
+	                        null,
+	                        _react2.default.createElement('textarea', { name: 'field_53080528',
+	                            placeholder: 'Story',
+	                            height: '5em',
+	                            required: true,
+	                            value: this.state.data.field_53080528,
+	                            onChange: this.onMessageChange })
+	                    ),
+	                    error,
+	                    _react2.default.createElement(
+	                        'div',
+	                        { className: 'center' },
+	                        _react2.default.createElement(_cta2.default, { text: 'Submit', onClick: function onClick(e) {
+	                                return _this3.handleSubmit(e);
+	                            } })
+	                    )
+	                );
+	            }
+
+	            if (this.state.showConfirmation === true) {
+	                return _react2.default.createElement(
+	                    'div',
+	                    { className: this.props.className },
+	                    _react2.default.createElement(
+	                        'h1',
+	                        { className: 'center' },
+	                        'Thanks for submitting your story!'
+	                    )
+	                );
+	            }
+
+	            return null;
+	        }
+	    }]);
+
+	    return OneHundredTo500Story;
+	}(_react2.default.Component);
+
+	exports.default = OneHundredTo500Story;
 
 /***/ }
 /******/ ]);

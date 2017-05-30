@@ -3,7 +3,9 @@ import { Component } from 'react';
 
 import axios from 'axios';
 
+import CTA from '../../../components/page/cta';
 import Story from './story';
+import OneHundredTo500Story from '../../forms/100to500Story';
 
 /**
  * Renders the 100 to 500 assignment section
@@ -105,6 +107,15 @@ export default class OneHundredto500 extends React.Component {
 
                 <div className="flex portable--stack align-items--stretch justify-content--center">
                     { rows }
+                </div>
+
+                <div className="center">
+                    <CTA text="Share Your Story" 
+                        onClick={() => 
+                            this.handleClick(
+                                <OneHundredTo500Story className="content-wrapper lock-width center-by-margin"
+                                    onComplete={this.hideModal} />
+                            )} />
                 </div>
             </div>
         );

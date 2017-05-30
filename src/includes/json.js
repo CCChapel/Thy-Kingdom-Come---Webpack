@@ -13,7 +13,7 @@ JSON.toQueryString = function(obj) {
     for (var key in obj) {
         if (obj.hasOwnProperty(key)) {
             //Add property and value to str
-            str += String.format("{0}={1}&", [key, obj[key]]);
+            str += `${key}=${obj[key]}&`; // String.format("{0}={1}&", [key, obj[key]]);
         }
     }
 
