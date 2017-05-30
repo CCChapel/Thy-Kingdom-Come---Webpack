@@ -674,6 +674,8 @@ a {
     flex-wrap: wrap; }
     .flex.wrap > * {
       margin-right: 0; }
+    .flex.wrap > .one-third {
+      width: calc(33% - 20px) !important; }
   .flex.vertical {
     -webkit-flex-flow: column nowrap;
     -moz-flex-flow: column nowrap;
