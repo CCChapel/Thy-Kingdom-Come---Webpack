@@ -8,6 +8,7 @@ import CTA from './cta';
 
 import MinistryPartnersTable from '../ministryPartners/ministryPartnersTable';
 import Give10 from '../assignments/give10/give10';
+import OneHundredTo500 from '../assignments/100to500/100to500';
 
 import Logo from '../images/logo';
 import Clock from '../images/clock';
@@ -92,7 +93,7 @@ export default class Page extends React.Component {
 
                 <Section id="assignments" className="bg-medium-blue">
                     <div className="content-wrapper">
-                        <Give10 showModal={this.showModal} />
+                        <OneHundredTo500 showModal={this.showModal} />
                     </div>
                 </Section>
 
