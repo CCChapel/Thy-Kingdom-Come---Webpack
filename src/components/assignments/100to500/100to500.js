@@ -39,6 +39,10 @@ export default class OneHundredto500 extends React.Component {
     }
 
     render() {
-
+        return (
+            <div>
+                { this.state.data }
+            </div>
+        );
     }
 }
