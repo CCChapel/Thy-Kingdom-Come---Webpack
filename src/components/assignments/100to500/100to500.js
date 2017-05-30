@@ -108,7 +108,7 @@ export default class OneHundredto500 extends React.Component {
                     Give10 is meant to help you know and love Jesus in a deeper way, especially as we prepare to celebrate Easter and his resurrection. 
                 </p>
 
-                <div className="flex portable--stack align-items--stretch justify-content--center">
+                <div className="flex wrap portable--stack align-items--stretch justify-content--center">
                     { rows }
                 </div>
 

@@ -25118,7 +25118,7 @@
 	                ),
 	                _react2.default.createElement(
 	                    'div',
-	                    { className: 'flex portable--stack align-items--stretch justify-content--center' },
+	                    { className: 'flex wrap portable--stack align-items--stretch justify-content--center' },
 	                    rows
 	                ),
 	                _react2.default.createElement(
@@ -28749,7 +28749,7 @@
 	            return _react2.default.createElement(
 	                'div',
 	                {
-	                    className: "[ one-third portable--one-whole ] [ add-bottom-margin add-padding ] [ bg-light-blue text-white ] [ cursor-point ] [ fx-bottom-border fx-dark-blue ]",
+	                    className: "[ one-third portable--one-whole ] [ add-bottom-margin add-right-margin add-padding ] [ bg-light-blue text-white ] [ cursor-point ] [ fx-bottom-border fx-dark-blue ]",
 	                    onClick: function onClick() {
 	                        return _this2.handleClick(fullStory);
 	                    } },

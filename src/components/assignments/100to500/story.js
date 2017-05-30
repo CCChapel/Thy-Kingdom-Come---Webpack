@@ -42,7 +42,7 @@ export default class Story extends React.Component {
 
         return (
             <div 
-                className={"[ one-third portable--one-whole ] [ add-bottom-margin add-padding ] [ bg-light-blue text-white ] [ cursor-point ] [ fx-bottom-border fx-dark-blue ]"}
+                className={"[ one-third portable--one-whole ] [ add-bottom-margin add-right-margin add-padding ] [ bg-light-blue text-white ] [ cursor-point ] [ fx-bottom-border fx-dark-blue ]"}
                 onClick={() => this.handleClick(fullStory)}>
 
                 <div className="text-biggest text-black serif">
