@@ -24979,6 +24979,10 @@
 
 	var _axios2 = _interopRequireDefault(_axios);
 
+	var _story = __webpack_require__(235);
+
+	var _story2 = _interopRequireDefault(_story);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -25004,7 +25008,7 @@
 	            data: []
 	        };
 
-	        // this.handleClick = this.handleClick.bind(this);
+	        _this2.handleClick = _this2.handleClick.bind(_this2);
 	        return _this2;
 	    }
 
@@ -25026,9 +25030,9 @@
 	            fetch(request).then(function (response) {
 	                console.log('Response: ', response);
 
-	                return response.text();
+	                return response.json();
 	            }).then(function (data) {
-	                _this.setState({ data: data });
+	                _this.setState({ data: data["submissions"] });
 
 	                console.log('Request succeeded with JSON response', data);
 	            }).catch(function (error) {
@@ -25062,12 +25066,50 @@
 	            //     });
 	        }
 	    }, {
+	        key: 'handleClick',
+	        value: function handleClick(content) {
+	            this.props.showModal(content);
+	        }
+	    }, {
 	        key: 'render',
 	        value: function render() {
+	            var _this3 = this;
+
+	            //Create container for rows
+	            var rows = [];
+
+	            //Loop through each partner to create row
+	            console.log(this.state.data);
+	            this.state.data.forEach(function (storyDetails, index) {
+	                rows.push(_react2.default.createElement(_story2.default, {
+	                    key: index,
+	                    details: storyDetails.data,
+	                    handleClick: _this3.handleClick }));
+	            });
+
 	            return _react2.default.createElement(
 	                'div',
-	                null,
-	                this.state.data
+	                { className: 'lock-width center-by-margin' },
+	                _react2.default.createElement(
+	                    'h1',
+	                    { className: 'center no-bottom-margin' },
+	                    '$100 to 500'
+	                ),
+	                _react2.default.createElement(
+	                    'h3',
+	                    { className: 'center' },
+	                    'A Kingdom Assignment'
+	                ),
+	                _react2.default.createElement(
+	                    'p',
+	                    null,
+	                    'Give10 is meant to help you know and love Jesus in a deeper way, especially as we prepare to celebrate Easter and his resurrection.'
+	                ),
+	                _react2.default.createElement(
+	                    'div',
+	                    { className: 'flex portable--stack align-items--stretch justify-content--center' },
+	                    rows
+	                )
 	            );
 	        }
 	    }]);
@@ -28599,6 +28641,91 @@
 	  };
 	};
 
+
+/***/ },
+/* 235 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	/**
+	 * Defines a row representing a Give10 week
+	 * @details = The information of the week
+	 * @handleClick = Method to handle the click event
+	 */
+	var Story = function (_React$Component) {
+	    _inherits(Story, _React$Component);
+
+	    function Story(props) {
+	        _classCallCheck(this, Story);
+
+	        var _this = _possibleConstructorReturn(this, (Story.__proto__ || Object.getPrototypeOf(Story)).call(this, props));
+
+	        _this.handleClick = _this.handleClick.bind(_this);
+	        return _this;
+	    }
+
+	    _createClass(Story, [{
+	        key: 'handleClick',
+	        value: function handleClick(data) {
+	            this.props.handleClick(data);
+	        }
+	    }, {
+	        key: 'render',
+	        value: function render() {
+	            var nameField = "53080526";
+	            var locationField = "53080527";
+	            var storyField = "53080528";
+
+	            var name = this.props.details[nameField].value;
+	            var location = this.props.details[locationField].value;
+	            var story = this.props.details[storyField].value;
+
+	            return _react2.default.createElement(
+	                'div',
+	                { className: "[ one-third portable--one-whole ] [ add-bottom-margin add-padding ] [ bg-light-blue text-white ] [ cursor-point ] [ fx-bottom-border fx-dark-blue ]" },
+	                _react2.default.createElement(
+	                    'div',
+	                    { className: 'text-biggest text-dark-blue serif' },
+	                    name
+	                ),
+	                _react2.default.createElement(
+	                    'div',
+	                    { className: 'text-bigger text-dark-blue serif' },
+	                    'From ',
+	                    location
+	                ),
+	                _react2.default.createElement(
+	                    'div',
+	                    null,
+	                    story
+	                )
+	            );
+	        }
+	    }]);
+
+	    return Story;
+	}(_react2.default.Component);
+
+	exports.default = Story;
 
 /***/ }
 /******/ ]);

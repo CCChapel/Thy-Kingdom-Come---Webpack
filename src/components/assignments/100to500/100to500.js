@@ -3,6 +3,8 @@ import { Component } from 'react';
 
 import axios from 'axios';
 
+import Story from './story';
+
 /**
  * Renders the 100 to 500 assignment section
  * 
@@ -16,7 +18,7 @@ export default class OneHundredto500 extends React.Component {
             data: []
         };
 
-        // this.handleClick = this.handleClick.bind(this);
+        this.handleClick = this.handleClick.bind(this);
     }
 
     componentDidMount() {
@@ -36,10 +38,10 @@ export default class OneHundredto500 extends React.Component {
             .then(function(response) {  
                 console.log('Response: ', response);
 
-                return response.text();  
+                return response.json();  
             })
             .then(function(data) {
-                _this.setState({ data: data });
+                _this.setState({ data: data["submissions"] });
 
                 console.log('Request succeeded with JSON response', data);
             }).catch(function(error) {
@@ -73,10 +75,37 @@ export default class OneHundredto500 extends React.Component {
         //     });
     }
 
+    handleClick(content) {
+        this.props.showModal(content);
+    }
+
     render() {
+        //Create container for rows
+        const rows = [];
+
+        //Loop through each partner to create row
+        console.log(this.state.data);
+        this.state.data.forEach((storyDetails, index) => {
+            rows.push(
+                <Story
+                    key={index}
+                    details={storyDetails.data}
+                    handleClick={this.handleClick} />
+            );
+        });
+
         return (
-            <div>
-                { this.state.data }
+            <div className="lock-width center-by-margin">
+                <h1 className="center no-bottom-margin">$100 to 500</h1>
+                <h3 className="center">A Kingdom Assignment</h3>
+
+                <p>
+                    Give10 is meant to help you know and love Jesus in a deeper way, especially as we prepare to celebrate Easter and his resurrection. 
+                </p>
+
+                <div className="flex portable--stack align-items--stretch justify-content--center">
+                    { rows }
+                </div>
             </div>
         );
     }
