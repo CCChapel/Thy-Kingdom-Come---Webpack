@@ -322,6 +322,9 @@ a {
 .center {
   text-align: center; }
 
+.right-justify {
+  text-align: right; }
+
 .cursor-point {
   cursor: pointer; }
 .cursor-default {
