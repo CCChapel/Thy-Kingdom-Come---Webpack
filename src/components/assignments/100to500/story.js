@@ -29,7 +29,7 @@ export default class Story extends React.Component {
 
         let fullStory = (
             <div className="lock-width center-by-margin">
-                <div className="add-bottom-margin">
+                <div className="add-bottom-margin text-biggest">
                     { story }
                 </div>
 

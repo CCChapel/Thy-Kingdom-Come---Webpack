@@ -28710,7 +28710,7 @@
 	                { className: 'lock-width center-by-margin' },
 	                _react2.default.createElement(
 	                    'div',
-	                    { className: 'add-bottom-margin' },
+	                    { className: 'add-bottom-margin text-biggest' },
 	                    story
 	                ),
 	                _react2.default.createElement(
