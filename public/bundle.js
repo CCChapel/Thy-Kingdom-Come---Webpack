@@ -25089,10 +25089,13 @@
 	            //Loop through each partner to create row
 	            console.log(this.state.data);
 	            this.state.data.forEach(function (storyDetails, index) {
-	                rows.push(_react2.default.createElement(_story2.default, {
-	                    key: index,
-	                    details: storyDetails.data,
-	                    handleClick: _this3.handleClick }));
+	                //Check for empty data node
+	                if (storyDetails.data.length === undefined) {
+	                    rows.push(_react2.default.createElement(_story2.default, {
+	                        key: index,
+	                        details: storyDetails.data,
+	                        handleClick: _this3.handleClick }));
+	                }
 	            });
 
 	            return _react2.default.createElement(

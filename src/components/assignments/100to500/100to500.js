@@ -88,12 +88,15 @@ export default class OneHundredto500 extends React.Component {
         //Loop through each partner to create row
         console.log(this.state.data);
         this.state.data.forEach((storyDetails, index) => {
-            rows.push(
-                <Story
-                    key={index}
-                    details={storyDetails.data}
-                    handleClick={this.handleClick} />
-            );
+            //Check for empty data node
+            if (storyDetails.data.length === undefined) {
+                rows.push(
+                    <Story
+                        key={index}
+                        details={storyDetails.data}
+                        handleClick={this.handleClick} />
+                );
+            }
         });
 
         return (
