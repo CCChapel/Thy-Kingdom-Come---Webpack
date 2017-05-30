@@ -305,6 +305,10 @@ a {
   font-size: 32px;
   font-size: 2rem;
   line-height: 1.5; }
+.text-limit {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden; }
 
 .indent {
   margin-left: 1.5em; }

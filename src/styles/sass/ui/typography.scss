@@ -76,6 +76,12 @@ a {
     &-biggest {
         @include typecsset-font-size(32px);
     }
+
+    &-limit {
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
 }
 
 .indent {
