@@ -106,7 +106,8 @@ export default class OneHundredto500 extends React.Component {
                 <h3 className="center">A Kingdom Assignment</h3>
 
                 <p>
-                    Give10 is meant to help you know and love Jesus in a deeper way, especially as we prepare to celebrate Easter and his resurrection. 
+                    Were you the recipient of a hundred dollar bill for the $100 for 500 campaign? 
+                    Share the story of how you spent your money and the affect it had on bringing God&rsquo;s kingdom to earth here! 
                 </p>
 
                 <div className="flex wrap portable--stack align-items--stretch justify-content--center">

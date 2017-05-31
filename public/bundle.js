@@ -25115,7 +25115,7 @@
 	                _react2.default.createElement(
 	                    'p',
 	                    null,
-	                    'Give10 is meant to help you know and love Jesus in a deeper way, especially as we prepare to celebrate Easter and his resurrection.'
+	                    'Were you the recipient of a hundred dollar bill for the $100 for 500 campaign? Share the story of how you spent your money and the affect it had on bringing God\u2019s kingdom to earth here!'
 	                ),
 	                _react2.default.createElement(
 	                    'div',
