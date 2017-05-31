@@ -25026,9 +25026,10 @@
 	            //Load Information
 	            var _this = this; //Make this available in fetch
 	            // const url = 'https://www.formstack.com/api/v2/form/2711017/submission.jsonp?search_field_x=53080530&search_value_x=True&data=true&expand_data=true&oauth_token=16559620d4a936952cde88ee1070a6cc';
-	            var url = './data/100to500.json';
+	            //const url = './data/100to500.json';
+
+	            var url = 'http://cors-anywhere.herokuapp.com/https://www.formstack.com/api/v2/form/2711017/submission.json?search_field_x=53080530&search_value_x=True&data=true&expand_data=true&oauth_token=16559620d4a936952cde88ee1070a6cc';
 	            var request = new Request(url, {
-	                mode: 'no-cors',
 	                method: 'get',
 	                headers: {
 	                    Accept: 'application/json'
