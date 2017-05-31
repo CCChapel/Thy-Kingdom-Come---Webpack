@@ -39,14 +39,14 @@ export default class OneHundredto500 extends React.Component {
         
         fetch(request)
             .then(function(response) {  
-                console.log('Response: ', response);
+                // console.log('Response: ', response);
 
                 return response.json();  
             })
             .then(function(data) {
                 _this.setState({ data: data["submissions"] });
 
-                console.log('Request succeeded with JSON response', data);
+                // console.log('Request succeeded with JSON response', data);
             }).catch(function(error) {
                 console.log('Request failed', error);
             });
