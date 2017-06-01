@@ -22142,23 +22142,23 @@
 
 	var _give2 = _interopRequireDefault(_give);
 
-	var _to = __webpack_require__(205);
+	var _to = __webpack_require__(201);
 
 	var _to2 = _interopRequireDefault(_to);
 
-	var _logo = __webpack_require__(201);
+	var _logo = __webpack_require__(233);
 
 	var _logo2 = _interopRequireDefault(_logo);
 
-	var _clock = __webpack_require__(202);
+	var _clock = __webpack_require__(234);
 
 	var _clock2 = _interopRequireDefault(_clock);
 
-	var _vimeoVideo = __webpack_require__(203);
+	var _vimeoVideo = __webpack_require__(235);
 
 	var _vimeoVideo2 = _interopRequireDefault(_vimeoVideo);
 
-	var _contact = __webpack_require__(204);
+	var _contact = __webpack_require__(236);
 
 	var _contact2 = _interopRequireDefault(_contact);
 
@@ -24353,629 +24353,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-	/**
-	 * Defines the logo for Thy Kingdom Come
-	 */
-	var Logo = function (_React$Component) {
-	    _inherits(Logo, _React$Component);
-
-	    function Logo() {
-	        _classCallCheck(this, Logo);
-
-	        return _possibleConstructorReturn(this, (Logo.__proto__ || Object.getPrototypeOf(Logo)).apply(this, arguments));
-	    }
-
-	    _createClass(Logo, [{
-	        key: 'render',
-	        value: function render() {
-	            var styles = {
-	                minWidth: '800px',
-	                maxWidth: '1080px',
-	                marginLeft: '-3%'
-	            };
-
-	            return _react2.default.createElement(
-	                'svg',
-	                { id: 'Layer_1', 'data-name': 'Layer 1', xmlns: 'http://www.w3.org/2000/svg', viewBox: '0 0 1920 1080', style: styles },
-	                _react2.default.createElement(
-	                    'title',
-	                    null,
-	                    'Thy Kingdom Come'
-	                ),
-	                _react2.default.createElement(
-	                    'g',
-	                    { className: 'fx-down-up' },
-	                    _react2.default.createElement('path', { d: 'M905.81,383l-23.62,12.81L879.44,409h1l1-1.71c5.58-10.72,14.83-22.29,28.33-23.29H916v86.7c0,.88-1.84,1.91-7,2.35l-7.31.83-.41,1.12h43.45l-.44-1.12-5.76-.56c-7.63-.59-8.55-1.15-8.55-2.18V384h6.54c13.06,1,21.72,8.9,28.18,23.29l.88,1.71h.88l-4-26Z' }),
-	                    _react2.default.createElement('path', { d: 'M1029.45,414.77c-2.79-2.79-6.53-4.26-11.23-4.26-10.57,0-19.07,7.78-24.8,12.62l-.43-.29V375.72l-21.26,5.58-.06.59,3.41.88c4.84,1.32,5.91,2.5,5.91,6.46v82.06c0,1.76-1.61,1.91-6,2.2l-2.49.39-.44,1.12h31.27l-.44-1.12-2.23-.27c-6.61-.44-7.66-.86-7.66-2V425a23.8,23.8,0,0,1,15.82-6c8.66,0,13.18,3.82,13.18,12.33v37.93l12-6.88V429.3C1034,423.14,1032.83,418.15,1029.45,414.77Z' }),
-	                    _react2.default.createElement('path', { d: 'M1065.13,421.23c-2.35-5.43-1.76-7.34,3.82-7.63l2.5.07.44-.66h-32.15l.44.66,2.79,0c4.55.29,5.14,1.41,8.51,9l10.66,24.34,11.3-6.25Z' }),
-	                    _react2.default.createElement('path', { d: 'M1105.64,413.6l2.2.07.44-.66H1083l.44.66,2.05,0c9.83.88,10.86,2.59,6,16.24l-.43,1.16,2.25-1.25C1098.36,415.95,1099.16,414,1105.64,413.6Z' }),
-	                    _react2.default.createElement('path', { d: 'M783.51,541.89c26.13-26.72,26.72-29.06,38.46-30.09l1.76,0,.44-.77H787.33l.15.77,5.87.38c13.21,1,13.05,4.08-10.73,28.3l-22.62,23V514.59c0-.88,1.92-1.91,7.06-2.35l7.35-.47.45-.77H733.46l.44.77,4.22.38c7.63.59,7.89,1,7.89,2V598.7c0,.88-1.28,1.91-6.42,2.35l-5.85.83-.42,1.12h41.39l-.44-1.12-5.74-.56c-7.63-.59-8.53-1.15-8.53-2.18V565.67l13.08-13.21,19.09,32.29a84.46,84.46,0,0,1,4.55,8.67l12.57-6.93-26.51-43.72Z' }),
-	                    _react2.default.createElement('path', { d: 'M829.22,544.53l-.25.59,3.19.73c5,1,5.84,2.5,5.84,11.45v13.21l13-6.8V538.81Z' }),
-	                    _react2.default.createElement('path', { d: 'M843.11,526.33a8.26,8.26,0,0,0,8.37-8.07,8.4,8.4,0,0,0-8.37-8.37,8.3,8.3,0,0,0-8.37,8.37A8.16,8.16,0,0,0,843.11,526.33Z' }),
-	                    _react2.default.createElement('path', { d: 'M1251.41,601.49c-7.34-.59-7.41-1.17-7.41-2.06V558c0-6.17-1.25-12-4.48-15.27-2.94-2.94-6.43-4.26-11.56-4.26-10.27,0-17.16,7.19-22.59,12.92l-.14-.15a15.29,15.29,0,0,0-3.67-8.37,16.31,16.31,0,0,0-11.59-4.4c-10.57,0-17.32,7.63-22.16,12.48l-.44-.15.44-12-3.51.93-12.6,6.86c2.81,1.19,3.31,3.59,3.31,10.86v41.83c0,1.76-1.45,1.91-6,2.2l-2.56.39-.36,1.12h31.27l-.29-1.12-2-.27c-6.31-.44-7-.86-7-2V552.75a18.35,18.35,0,0,1,13.67-5.72c8.66,0,11.33,3.67,11.33,12.48v39.78c0,1.17-.63,1.91-5.62,2.2l-2.52.39-.32,1.12h31.12l-.44-1.12-2-.27c-7.34-.59-7.25-1.3-7.25-2.18V554.66l.35-1.32c1-3.23,7.76-6.31,13.63-6.31,9,0,12,3.67,12,12.48v39.78c0,1.17-1.05,1.91-6.19,2.2l-2.73.39-.53,1.12h31.27l-.47-1.12Z' }),
-	                    _react2.default.createElement('path', { d: 'M922.3,699.69c0-18.5,14.24-33.32,33.76-33.32s33.76,14.24,33.76,32.73c0,18.79-14.24,33.32-33.76,33.32S922.3,718.18,922.3,699.69Zm52.7.73c0-11.45-2.5-22.46-7.93-27.89-2.79-2.64-6.17-5-11.3-5-12.92,0-18.64,15.85-18.64,30.24,0,12,2.06,22.75,7.63,28.33,3.23,3.23,6.75,        5.14,11.45,5.14C968.25,731.25,975,716,975,700.42Z' }),
-	                    _react2.default.createElement('path', { d: 'M995,729.63l2.64-.15c4.55-.29,6.17-.44,6.17-2.2V685.45c0-9.1-1-10.57-6-11.6l-3.38-.73.15-.59,21.72-5.72-.44,12,.44.15c4.84-4.84,11.6-12.48,22.17-12.48a16.32,16.32,0,0,1,11.6,4.4,15.29,15.29,0,0,1,3.67,8.37l.15.15c5.43-5.72,12.33-12.92,22.61-12.92,5.14,0,8.66,1.32,11.6,4.26,3.23,3.23,4.55,9.1,4.55,15.27v41.39c0,.88,0,1.47,7.34,2.06l1.91.15.44.88H1071l.44-.88,2.64-.15c5.14-.29,6-1,6-2.2V687.5c0-8.81-2.94-12.48-11.89-12.48-5.87,0-12.48,3.08-13.5,6.31l-.44,1.32v44.77c0,.88,0,1.47,7.34,2.06l2.05.15.44.88H1033l.44-.88,2.64-.15c5-.29,5.87-1,5.87-2.2V687.5c0-8.81-3.08-12.48-11.74-12.48-6,0-10.28,2.5-14.09,5.72v46.83c0,1.17.88,1.47,7.19,1.91l2.2.15.29.88H994.52Z' }),
-	                    _react2.default.createElement('path', { d: 'M1118.26,696.31a71.87,71.87,0,0,1,.44-7.93l41.54.15a13.7,13.7,0,0,0,.29-2.06c0-12-8.81-20.11-23.78-20.11-18.94,0-31.85,15.56-31.85,34.5,0,9.69,3.61,18.12,9.64,23.83l11.91-6.57C1121.41,713.39,1118.26,705.86,1118.26,696.31Zm17.32-28.48c8.66,0,11.6,9.54,11.6,18.94l-28.18.29C1120.76,677.23,1127.51,667.83,1135.58,667.83Z' })
-	                ),
-	                _react2.default.createElement(
-	                    'g',
-	                    { className: 'fx-up-down' },
-	                    _react2.default.createElement('path', { d: 'M1111.12,419.08l-10,27.88-7.69-18.13-11.3,6.39L1094.67,464h.29l-5,15.11c-2.5,7.49-3.89,11.81-7.41,12.55-6.94,2-13,8.48-8.3,8.48,8.22,0,12.92-6.92,16.88-19.69l5.73-17.77,15.85-43,.65-1.82Z' }),
-	                    _react2.default.createElement('path', { d: 'M858,587.28c0,1.76-1.48,1.91-6,2.2l-2.58.39L849,591h31.41l-.44-1.12-1.85-.27c-6.46-.44-7.14-.86-7.14-2V551.71l-13,6.8Z' }),
-	                    _react2.default.createElement('path', { d: 'M892,545.45v41.83c0,1.76-1.46,1.91-6,2.2l-2.56.39-.36,1.12h31.27l-.29-1.12-2-.27c-6.31-.44-7-.86-7-2V541c3-3.38,8.64-6,15.25-6,8.81,0,12.75,3.82,12.75,12.48v39.78c0,1.17-.74,1.91-5.88,2.2l-2.65.39L924,591h31.27l-.44-1.12-2.14-.27c-7.49-.59-7.72-1.3-7.72-2.18v-42c0-6.31-.95-11.45-4.32-14.68-2.79-2.94-6.64-4.26-11.33-4.26-10.42,0-18.88,7.78-24.6,12.62l-.41-.15.23-6-12.66,6.89A52.09,52.09,0,0,1,892,545.45Z' }),
-	                    _react2.default.createElement('path', { d: 'M956.32,611.36c0-8.37,10.13-15,17.91-17.76v-.29c-9.83-1-16.44-5.43-16.44-11.3,0-7.78,9.1-13.21,16.59-14.53V567c-6.75-2.5-13.21-9.25-13.21-18.35,0-12.62,10.72-22,24.66-22a27.68,27.68,0,0,1,17,5.87l17.76-3.52-1.47,7.49-13.94-2.06-.15.44a17.78,17.78,0,0,1,5.58,12.62c0,     12-10.86,21.58-25.25,21.58a56,56,0,0,1-8.81-1c-5.14.88-8.66,3.38-8.66,7.49,0,4.7,4.26,6,12.18,6,4.11,0,11-.44,16.29-.44,14.09,0,21.58,6,21.58,16.73,0,16.44-15,28.92-37.87,28.92C965.13,626.77,956.32,621,956.32,611.36Zm54-5.73c0-7.34-5.43-12.18-19.08-12.62a109,109,0,0,         0-15.27.88c-5,1.91-9.69,7.78-9.69,13.8,0,9.69,9.39,16.29,21.87,16.29C1001.09,624,1010.34,615.47,1010.34,605.63Zm-11.89-56.37c0-12-2.64-21.43-12.77-21.43-7.19,0-11.74,7.63-11.74,19.38,0,12.77,4.4,20.7,11.89,20.7S998.45,560.42,998.45,549.26Z' }),
-	                    _react2.default.createElement('path', { d: 'M1083,491.58l-23.12,5.58-.26.59,4.68.88c4.84.88,5.7,2.5,5.7,6.46V530h-.06c-4.55-2-9.25-2.84-15.56-2.84-14.83,0-33.17,10.91-33.17,34.69,0,18.06,11.3,30.55,25.83,30.55,9.39,0,16.59-5.42,22.9-13.05l.29.15.12,11.06,12.52-6.78c-.06-.48.13-1.06.13-1.78Zm-13,85.28a18.52,18.52,0,0,1-15.3,7.63c-12.33,0-19.91-12-19.91-26.42,0-15.85,5.93-29.06,17.09-29.06,7.63,0,15.12,6.31,18.12,14.68Z' }),
-	                    _react2.default.createElement('path', { d: 'M1127.62,526.37c-19.52,0-33.76,14.83-33.76,33.32a33.21,33.21,0,0,0,3.87,15.78L1109.4,569a82,82,0,0,1-.72-11.25c0-14.39,5.73-30.24,18.64-30.24,5.14,0,8.51,2.35,11.3,5,3.57,3.57,5.87,9.57,7,16.51l11.51-6.34C1151.58,532.83,1140.87,526.37,1127.62,526.37Z' }),
-	                    _react2.default.createElement('path', { d: 'M896.06,626c9,0,16.59,2,20.4,5.09L930.12,655H931l-.44-28.57-8.66,4.36c-4.84-2.64-15.71-6.41-25.39-6.41-32,0-53.29,20.28-53.29,48.47,0,14.54,5.47,26.52,14.71,34.85l9.26-5.1c-5.33-8-8.56-18.58-8.56-30.91C858.63,647.32,871.7,626,896.06,626Z' })
-	                ),
-	                _react2.default.createElement('polyline', {
-	                    className: 'cls-4 fx-shimmer',
-	                    points: '154.18,544.72 994.37,81.4' }),
-	                _react2.default.createElement('polyline', {
-	                    className: 'cls-2 fx-shimmer medium-delay',
-	                    points: '606.03,547.87 1270.03,181.72' }),
-	                _react2.default.createElement('polyline', {
-	                    className: 'cls-5 fx-shimmer short-delay',
-	                    points: '753.18,466.73 1085.18,283.65' }),
-	                _react2.default.createElement('polyline', {
-	                    className: 'cls-2 fx-shimmer',
-	                    points: '444.68,786.5 1447.92,233.28' }),
-	                _react2.default.createElement('polyline', {
-	                    className: 'cls-2 fx-shimmer short-delay',
-	                    points: '1123.04,475.4 1486.49,274.98' }),
-	                _react2.default.createElement('polyline', {
-	                    className: 'cls-3 fx-shimmer medium-delay',
-	                    points: '624.04,836.32 1627.28,283.1' }),
-	                _react2.default.createElement('polyline', {
-	                    className: 'cls-5 fx-shimmer',
-	                    points: '771.13,755.21 1249.22,491.58' }),
-	                _react2.default.createElement('polyline', {
-	                    className: 'cls-2 fx-shimmer short-delay',
-	                    points: '614.81,920.4 851.48,789.89' }),
-	                _react2.default.createElement('polyline', {
-	                    className: 'cls-2 fx-shimmer',
-	                    points: '808.39,893.22 1555.71,481.12' }),
-	                _react2.default.createElement('polyline', {
-	                    className: 'cls-2 fx-shimmer medium-delay',
-	                    points: '1388.15,1001.06 1751.6,800.63' })
-	            );
-	        }
-	    }]);
-
-	    return Logo;
-	}(_react2.default.Component);
-
-	exports.default = Logo;
-
-/***/ },
-/* 202 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	    value: true
-	});
-
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-	var _react = __webpack_require__(1);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-	/**
-	 * Creates a running, analog clock
-	 * 
-	 * @className = class names to add to root SVG element
-	 * @height = height of the SVG element (default = 400)
-	 * @width = width of the SVG element (default = 400)
-	 **/
-	var Clock = function (_React$Component) {
-	    _inherits(Clock, _React$Component);
-
-	    function Clock() {
-	        _classCallCheck(this, Clock);
-
-	        return _possibleConstructorReturn(this, (Clock.__proto__ || Object.getPrototypeOf(Clock)).apply(this, arguments));
-	    }
-
-	    _createClass(Clock, [{
-	        key: 'pointToString',
-	        value: function pointToString(point) {
-	            return point.x + "," + point.y;
-	        }
-	    }, {
-	        key: 'formatPoints',
-	        value: function formatPoints(p1, p2) {
-	            return this.pointToString(p1) + " " + this.pointToString(p2);
-	        }
-	    }, {
-	        key: 'render',
-	        value: function render() {
-	            //Allow classes to be passed in to Component
-	            var className = "clock ";
-	            if (this.props.className !== undefined) {
-	                className += this.props.className;
-	            }
-
-	            //Setup Height & Width
-	            var height = 400;
-	            if (this.props.height !== undefined) {
-	                height = this.props.height;
-	            }
-
-	            var width = 400;
-	            if (this.props.width !== undefined) {
-	                width = this.props.width;
-	            }
-
-	            //Setup image values
-	            var cx = width / 2;
-	            var cy = height / 2;
-	            var r = Math.min(cx, cy) * .8;
-	            var origin = {
-	                x: cx,
-	                y: cy
-	            };
-
-	            //Calculate Clock Positions
-	            var date = new Date();
-	            var second = date.getSeconds();
-	            var minute = date.getMinutes() + second / 60;
-	            var hour = date.getHours() % 12 + minute / 60;
-
-	            //Calculate Hour Hand
-	            var hourA = Math.radians(hour * 30 - 90);
-	            var hourPoint = Math.pointOnCircle(cx, cy, r * .6, hourA);
-	            var hourPoints = this.formatPoints(origin, hourPoint);
-
-	            //Calculate Minutes Hand
-	            var minuteA = Math.radians(minute * 6 - 90);
-	            var minutePoint = Math.pointOnCircle(cx, cy, r * .8, minuteA);
-	            var minutePoints = this.formatPoints(origin, minutePoint);
-
-	            //Calculate Seconds Hand
-	            var secondA = Math.radians(second * 6 - 90);
-	            var secondPoint = Math.pointOnCircle(cx, cy, r * .85, secondA);
-	            var secondPoints = this.formatPoints(origin, secondPoint);
-
-	            return _react2.default.createElement(
-	                'svg',
-	                { className: className, width: width, height: height },
-	                _react2.default.createElement('circle', { className: 'clock__face',
-	                    cx: cx,
-	                    cy: cy,
-	                    r: r }),
-	                _react2.default.createElement('polyline', { className: 'clock__second-hand',
-	                    points: secondPoints }),
-	                _react2.default.createElement('polyline', { className: 'clock__hour-hand',
-	                    points: hourPoints }),
-	                _react2.default.createElement('polyline', { className: 'clock__minute-hand',
-	                    points: minutePoints })
-	            );
-	        }
-	    }]);
-
-	    return Clock;
-	}(_react2.default.Component);
-
-	exports.default = Clock;
-
-/***/ },
-/* 203 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	    value: true
-	});
-
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-	var _react = __webpack_require__(1);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-	/**
-	 * Embeds a Vimeo video
-	 * 
-	 * @vimeoId = id of the Vimeo video to embed
-	 * @className = classes to apply to iframe
-	 * @width = width of the iframe
-	 * @height = height of the iframe
-	 */
-	var VimeoVideo = function (_React$Component) {
-	    _inherits(VimeoVideo, _React$Component);
-
-	    function VimeoVideo() {
-	        _classCallCheck(this, VimeoVideo);
-
-	        return _possibleConstructorReturn(this, (VimeoVideo.__proto__ || Object.getPrototypeOf(VimeoVideo)).apply(this, arguments));
-	    }
-
-	    _createClass(VimeoVideo, [{
-	        key: 'render',
-	        value: function render() {
-	            // let src = String.format(
-	            //     "https://player.vimeo.com/video/{0}?color=28708a&title=0&byline=0&portrait=0",
-	            //     [ this.props.vimeoId ]);
-
-	            var src = 'https://player.vimeo.com/video/' + this.props.vimeoId + '?color=28708a&title=0&byline=0&portrait=0';
-
-	            return _react2.default.createElement(
-	                'div',
-	                { className: 'js-video [ vimeo, widescreen ]' },
-	                _react2.default.createElement('iframe', { src: src,
-	                    className: this.props.className,
-	                    width: this.props.width,
-	                    height: this.props.height,
-	                    frameborder: '0',
-	                    webkitallowfullscreen: true,
-	                    mozallowfullscreen: true,
-	                    allowfullscreen: true })
-	            );
-	        }
-	    }]);
-
-	    return VimeoVideo;
-	}(_react2.default.Component);
-
-	exports.default = VimeoVideo;
-
-/***/ },
-/* 204 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	    value: true
-	});
-
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-	var _react = __webpack_require__(1);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _cta = __webpack_require__(186);
-
-	var _cta2 = _interopRequireDefault(_cta);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-	/**
-	 * Displays the Contact Form
-	 * 
-	 * @className = Class Names to apply to root form element
-	 * @onComplete = Function to call when form completes submission
-	 */
-	var ContactForm = function (_React$Component) {
-	    _inherits(ContactForm, _React$Component);
-
-	    function ContactForm(props) {
-	        _classCallCheck(this, ContactForm);
-
-	        var _this = _possibleConstructorReturn(this, (ContactForm.__proto__ || Object.getPrototypeOf(ContactForm)).call(this, props));
-
-	        _this.state = {
-	            showError: false,
-	            errorMessage: '',
-	            showForm: true,
-	            showConfirmation: false,
-	            data: {
-	                field_48610311: '',
-	                field_48610314: '',
-	                field_48610320: '',
-	                field_48610323: ''
-	            }
-	        };
-
-	        _this.showError = _this.showError.bind(_this);
-	        _this.hideError = _this.hideError.bind(_this);
-	        _this.showForm = _this.showForm.bind(_this);
-	        _this.hideForm = _this.hideForm.bind(_this);
-	        _this.showConfirmation = _this.showConfirmation.bind(_this);
-	        _this.hideConfirmation = _this.hideConfirmation.bind(_this);
-	        _this.onNameChange = _this.onNameChange.bind(_this);
-	        _this.onEmailChange = _this.onEmailChange.bind(_this);
-	        _this.onSubjectChange = _this.onSubjectChange.bind(_this);
-	        _this.onMessageChange = _this.onMessageChange.bind(_this);
-	        _this.handleSubmit = _this.handleSubmit.bind(_this);
-	        return _this;
-	    }
-
-	    _createClass(ContactForm, [{
-	        key: 'showError',
-	        value: function showError(message) {
-	            this.setState({
-	                showError: true,
-	                errorMessage: message
-	            });
-	        }
-	    }, {
-	        key: 'hideError',
-	        value: function hideError() {
-	            this.setState({
-	                showError: false,
-	                errorMessage: ''
-	            });
-	        }
-	    }, {
-	        key: 'showForm',
-	        value: function showForm(e) {
-	            this.setState({
-	                showForm: true
-	            });
-	        }
-	    }, {
-	        key: 'hideForm',
-	        value: function hideForm(e) {
-	            this.setState({
-	                showForm: false
-	            });
-	        }
-	    }, {
-	        key: 'showConfirmation',
-	        value: function showConfirmation(e) {
-	            this.setState({
-	                showConfirmation: true
-	            });
-	        }
-	    }, {
-	        key: 'hideConfirmation',
-	        value: function hideConfirmation(e) {
-	            this.setState({
-	                showConfirmation: false
-	            });
-	        }
-	    }, {
-	        key: 'onNameChange',
-	        value: function onNameChange(e) {
-	            this.setState({
-	                data: {
-	                    field_48610311: e.target.value,
-	                    field_48610314: this.state.data.field_48610314,
-	                    field_48610320: this.state.data.field_48610320,
-	                    field_48610323: this.state.data.field_48610323
-	                }
-	            });
-	        }
-	    }, {
-	        key: 'onEmailChange',
-	        value: function onEmailChange(e) {
-	            this.setState({
-	                data: {
-	                    field_48610311: this.state.data.field_48610311,
-	                    field_48610314: e.target.value,
-	                    field_48610320: this.state.data.field_48610320,
-	                    field_48610323: this.state.data.field_48610323
-	                }
-	            });
-	        }
-	    }, {
-	        key: 'onSubjectChange',
-	        value: function onSubjectChange(e) {
-	            this.setState({
-	                data: {
-	                    field_48610311: this.state.data.field_48610311,
-	                    field_48610314: this.state.data.field_48610314,
-	                    field_48610320: e.target.value,
-	                    field_48610323: this.state.data.field_48610323
-	                }
-	            });
-	        }
-	    }, {
-	        key: 'onMessageChange',
-	        value: function onMessageChange(e) {
-	            this.setState({
-	                data: {
-	                    field_48610311: this.state.data.field_48610311,
-	                    field_48610314: this.state.data.field_48610314,
-	                    field_48610320: this.state.data.field_48610320,
-	                    field_48610323: e.target.value
-	                }
-	            });
-	        }
-	    }, {
-	        key: 'isFormValid',
-	        value: function isFormValid() {
-	            var form = document.getElementById("contactForm");
-
-	            return form.checkValidity();
-	        }
-	    }, {
-	        key: 'handleSubmit',
-	        value: function handleSubmit(e) {
-	            var _this2 = this;
-
-	            //Hide error
-	            this.hideError();
-
-	            //Check Form Validity
-	            if (this.isFormValid()) {
-	                (function () {
-	                    //Valid Form -> Submit
-	                    var url = 'https://www.formstack.com/api/v2/form/2569143/submission.json?oauth_token=68529bb9523b67cff3c735d2e5f9176a';
-
-	                    var request = new Request(url, {
-	                        method: 'post',
-	                        mode: "no-cors",
-	                        body: JSON.toQueryString(_this2.state.data) //this.serializeData()
-	                    });
-
-	                    //Store hideForm, showConfirmation, onComplete locally because .then won't be able to access `this`
-	                    var hideForm = _this2.hideForm;
-	                    var showConfirmation = _this2.showConfirmation;
-	                    var onComplete = _this2.props.onComplete;
-	                    var showError = _this2.showError;
-
-	                    fetch(request).then(function (response) {
-	                        //Hide the form
-	                        hideForm();
-
-	                        //Show Confirmation Message
-	                        showConfirmation();
-
-	                        //Delay 5 seconds, then call onComplete
-	                        setTimeout(onComplete, 5000);
-	                    }).catch(function (err) {
-	                        //Log the error
-	                        console.log(err);
-	                        showError('Hmm\u2026 Something didn\u2019t go quite as planned. Please try again.');
-	                    });
-
-	                    //TO DO: Figure out why we're not getting event
-	                    //e.preventDefault();
-	                })();
-	            } else {
-	                //Invalid form -> Show error
-	                this.showError('Oops\u2026 Something\u2019s not quite right. Take another look.');
-	            }
-	        }
-	    }, {
-	        key: 'render',
-	        value: function render() {
-	            var _this3 = this;
-
-	            //var formId = '2569143';
-	            //var token = '68529bb9523b67cff3c735d2e5f9176a';
-	            //var url = 'package.json';
-
-	            var error = '';
-	            if (this.state.showError === true) {
-	                error = _react2.default.createElement(
-	                    'div',
-	                    { className: 'form--error add-bottom-margin' },
-	                    this.state.errorMessage
-	                );
-	            }
-
-	            if (this.state.showForm === true) {
-	                return _react2.default.createElement(
-	                    'form',
-	                    { id: 'contactForm', className: this.props.className },
-	                    _react2.default.createElement(
-	                        'div',
-	                        null,
-	                        _react2.default.createElement('input', { name: 'field_48610311',
-	                            type: 'text',
-	                            placeholder: 'Name',
-	                            required: true,
-	                            value: this.state.data.field_48610311,
-	                            onChange: this.onNameChange })
-	                    ),
-	                    _react2.default.createElement(
-	                        'div',
-	                        null,
-	                        _react2.default.createElement('input', { name: 'field_48610314',
-	                            type: 'text',
-	                            placeholder: 'Email',
-	                            required: true,
-	                            pattern: '[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,3}$',
-	                            value: this.state.data.field_48610314,
-	                            onChange: this.onEmailChange })
-	                    ),
-	                    _react2.default.createElement(
-	                        'div',
-	                        null,
-	                        _react2.default.createElement('input', { name: 'field_48610320',
-	                            type: 'text',
-	                            placeholder: 'Subject',
-	                            required: true,
-	                            value: this.state.data.field_48610320,
-	                            onChange: this.onSubjectChange })
-	                    ),
-	                    _react2.default.createElement(
-	                        'div',
-	                        null,
-	                        _react2.default.createElement('textarea', { name: 'field_48610323',
-	                            placeholder: 'Message',
-	                            height: '5em',
-	                            required: true,
-	                            value: this.state.data.field_48610323,
-	                            onChange: this.onMessageChange })
-	                    ),
-	                    error,
-	                    _react2.default.createElement(
-	                        'div',
-	                        { className: 'center' },
-	                        _react2.default.createElement(_cta2.default, { text: 'Submit', onClick: function onClick(e) {
-	                                return _this3.handleSubmit(e);
-	                            } })
-	                    )
-	                );
-	            }
-
-	            if (this.state.showConfirmation === true) {
-	                return _react2.default.createElement(
-	                    'div',
-	                    { className: this.props.className },
-	                    _react2.default.createElement(
-	                        'h1',
-	                        { className: 'center' },
-	                        'Thanks for submitting your message! Someone will be in touch.'
-	                    )
-	                );
-	            }
-
-	            return null;
-	        }
-	    }]);
-
-	    return ContactForm;
-	}(_react2.default.Component);
-
-	exports.default = ContactForm;
-
-/***/ },
-/* 205 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	    value: true
-	});
-
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-	var _react = __webpack_require__(1);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _axios = __webpack_require__(206);
+	var _axios = __webpack_require__(202);
 
 	var _axios2 = _interopRequireDefault(_axios);
 
@@ -24983,11 +24361,11 @@
 
 	var _cta2 = _interopRequireDefault(_cta);
 
-	var _story = __webpack_require__(235);
+	var _story = __webpack_require__(231);
 
 	var _story2 = _interopRequireDefault(_story);
 
-	var _to500Story = __webpack_require__(236);
+	var _to500Story = __webpack_require__(232);
 
 	var _to500Story2 = _interopRequireDefault(_to500Story);
 
@@ -25028,7 +24406,7 @@
 	            // const url = 'https://www.formstack.com/api/v2/form/2711017/submission.jsonp?search_field_x=53080530&search_value_x=True&data=true&expand_data=true&oauth_token=16559620d4a936952cde88ee1070a6cc';
 	            //const url = './data/100to500.json';
 
-	            var url = 'http://cors-anywhere.herokuapp.com/https://www.formstack.com/api/v2/form/2711017/submission.json?search_field_x=53080530&search_value_x=True&data=true&expand_data=true&oauth_token=16559620d4a936952cde88ee1070a6cc';
+	            var url = 'http://cors-anywhere.herokuapp.com/https://www.formstack.com/api/v2/form/2711017/submission.json?search_field_0=53080530&search_value_0=True&data=true&expand_data=true&oauth_token=16559620d4a936952cde88ee1070a6cc';
 	            var request = new Request(url, {
 	                method: 'get',
 	                headers: {
@@ -25141,21 +24519,21 @@
 	exports.default = OneHundredto500;
 
 /***/ },
-/* 206 */
+/* 202 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(207);
+	module.exports = __webpack_require__(203);
 
 /***/ },
-/* 207 */
+/* 203 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var utils = __webpack_require__(208);
-	var bind = __webpack_require__(213);
-	var Axios = __webpack_require__(214);
-	var defaults = __webpack_require__(215);
+	var utils = __webpack_require__(204);
+	var bind = __webpack_require__(209);
+	var Axios = __webpack_require__(210);
+	var defaults = __webpack_require__(211);
 
 	/**
 	 * Create an instance of Axios
@@ -25188,15 +24566,15 @@
 	};
 
 	// Expose Cancel & CancelToken
-	axios.Cancel = __webpack_require__(232);
-	axios.CancelToken = __webpack_require__(233);
-	axios.isCancel = __webpack_require__(229);
+	axios.Cancel = __webpack_require__(228);
+	axios.CancelToken = __webpack_require__(229);
+	axios.isCancel = __webpack_require__(225);
 
 	// Expose all/spread
 	axios.all = function all(promises) {
 	  return Promise.all(promises);
 	};
-	axios.spread = __webpack_require__(234);
+	axios.spread = __webpack_require__(230);
 
 	module.exports = axios;
 
@@ -25205,12 +24583,12 @@
 
 
 /***/ },
-/* 208 */
+/* 204 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(Buffer) {'use strict';
 
-	var bind = __webpack_require__(213);
+	var bind = __webpack_require__(209);
 
 	/*global toString:true*/
 
@@ -25521,10 +24899,10 @@
 	  trim: trim
 	};
 
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(209).Buffer))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(205).Buffer))
 
 /***/ },
-/* 209 */
+/* 205 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(global) {/*!
@@ -25537,9 +24915,9 @@
 
 	'use strict'
 
-	var base64 = __webpack_require__(210)
-	var ieee754 = __webpack_require__(211)
-	var isArray = __webpack_require__(212)
+	var base64 = __webpack_require__(206)
+	var ieee754 = __webpack_require__(207)
+	var isArray = __webpack_require__(208)
 
 	exports.Buffer = Buffer
 	exports.SlowBuffer = SlowBuffer
@@ -27320,7 +26698,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
 /***/ },
-/* 210 */
+/* 206 */
 /***/ function(module, exports) {
 
 	'use strict'
@@ -27440,7 +26818,7 @@
 
 
 /***/ },
-/* 211 */
+/* 207 */
 /***/ function(module, exports) {
 
 	exports.read = function (buffer, offset, isLE, mLen, nBytes) {
@@ -27530,7 +26908,7 @@
 
 
 /***/ },
-/* 212 */
+/* 208 */
 /***/ function(module, exports) {
 
 	var toString = {}.toString;
@@ -27541,7 +26919,7 @@
 
 
 /***/ },
-/* 213 */
+/* 209 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -27558,17 +26936,17 @@
 
 
 /***/ },
-/* 214 */
+/* 210 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var defaults = __webpack_require__(215);
-	var utils = __webpack_require__(208);
-	var InterceptorManager = __webpack_require__(226);
-	var dispatchRequest = __webpack_require__(227);
-	var isAbsoluteURL = __webpack_require__(230);
-	var combineURLs = __webpack_require__(231);
+	var defaults = __webpack_require__(211);
+	var utils = __webpack_require__(204);
+	var InterceptorManager = __webpack_require__(222);
+	var dispatchRequest = __webpack_require__(223);
+	var isAbsoluteURL = __webpack_require__(226);
+	var combineURLs = __webpack_require__(227);
 
 	/**
 	 * Create a new instance of Axios
@@ -27649,13 +27027,13 @@
 
 
 /***/ },
-/* 215 */
+/* 211 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
 
-	var utils = __webpack_require__(208);
-	var normalizeHeaderName = __webpack_require__(216);
+	var utils = __webpack_require__(204);
+	var normalizeHeaderName = __webpack_require__(212);
 
 	var DEFAULT_CONTENT_TYPE = {
 	  'Content-Type': 'application/x-www-form-urlencoded'
@@ -27671,10 +27049,10 @@
 	  var adapter;
 	  if (typeof XMLHttpRequest !== 'undefined') {
 	    // For browsers use XHR adapter
-	    adapter = __webpack_require__(217);
+	    adapter = __webpack_require__(213);
 	  } else if (typeof process !== 'undefined') {
 	    // For node use HTTP adapter
-	    adapter = __webpack_require__(217);
+	    adapter = __webpack_require__(213);
 	  }
 	  return adapter;
 	}
@@ -27748,12 +27126,12 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
 
 /***/ },
-/* 216 */
+/* 212 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var utils = __webpack_require__(208);
+	var utils = __webpack_require__(204);
 
 	module.exports = function normalizeHeaderName(headers, normalizedName) {
 	  utils.forEach(headers, function processHeader(value, name) {
@@ -27766,18 +27144,18 @@
 
 
 /***/ },
-/* 217 */
+/* 213 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
 
-	var utils = __webpack_require__(208);
-	var settle = __webpack_require__(218);
-	var buildURL = __webpack_require__(221);
-	var parseHeaders = __webpack_require__(222);
-	var isURLSameOrigin = __webpack_require__(223);
-	var createError = __webpack_require__(219);
-	var btoa = (typeof window !== 'undefined' && window.btoa && window.btoa.bind(window)) || __webpack_require__(224);
+	var utils = __webpack_require__(204);
+	var settle = __webpack_require__(214);
+	var buildURL = __webpack_require__(217);
+	var parseHeaders = __webpack_require__(218);
+	var isURLSameOrigin = __webpack_require__(219);
+	var createError = __webpack_require__(215);
+	var btoa = (typeof window !== 'undefined' && window.btoa && window.btoa.bind(window)) || __webpack_require__(220);
 
 	module.exports = function xhrAdapter(config) {
 	  return new Promise(function dispatchXhrRequest(resolve, reject) {
@@ -27873,7 +27251,7 @@
 	    // This is only done if running in a standard browser environment.
 	    // Specifically not if we're in a web worker, or react-native.
 	    if (utils.isStandardBrowserEnv()) {
-	      var cookies = __webpack_require__(225);
+	      var cookies = __webpack_require__(221);
 
 	      // Add xsrf header
 	      var xsrfValue = (config.withCredentials || isURLSameOrigin(config.url)) && config.xsrfCookieName ?
@@ -27952,12 +27330,12 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
 
 /***/ },
-/* 218 */
+/* 214 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var createError = __webpack_require__(219);
+	var createError = __webpack_require__(215);
 
 	/**
 	 * Resolve or reject a Promise based on response status.
@@ -27983,12 +27361,12 @@
 
 
 /***/ },
-/* 219 */
+/* 215 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var enhanceError = __webpack_require__(220);
+	var enhanceError = __webpack_require__(216);
 
 	/**
 	 * Create an Error with the specified message, config, error code, and response.
@@ -28006,7 +27384,7 @@
 
 
 /***/ },
-/* 220 */
+/* 216 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -28031,12 +27409,12 @@
 
 
 /***/ },
-/* 221 */
+/* 217 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var utils = __webpack_require__(208);
+	var utils = __webpack_require__(204);
 
 	function encode(val) {
 	  return encodeURIComponent(val).
@@ -28105,12 +27483,12 @@
 
 
 /***/ },
-/* 222 */
+/* 218 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var utils = __webpack_require__(208);
+	var utils = __webpack_require__(204);
 
 	/**
 	 * Parse headers into an object
@@ -28148,12 +27526,12 @@
 
 
 /***/ },
-/* 223 */
+/* 219 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var utils = __webpack_require__(208);
+	var utils = __webpack_require__(204);
 
 	module.exports = (
 	  utils.isStandardBrowserEnv() ?
@@ -28222,7 +27600,7 @@
 
 
 /***/ },
-/* 224 */
+/* 220 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -28264,12 +27642,12 @@
 
 
 /***/ },
-/* 225 */
+/* 221 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var utils = __webpack_require__(208);
+	var utils = __webpack_require__(204);
 
 	module.exports = (
 	  utils.isStandardBrowserEnv() ?
@@ -28323,12 +27701,12 @@
 
 
 /***/ },
-/* 226 */
+/* 222 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var utils = __webpack_require__(208);
+	var utils = __webpack_require__(204);
 
 	function InterceptorManager() {
 	  this.handlers = [];
@@ -28381,15 +27759,15 @@
 
 
 /***/ },
-/* 227 */
+/* 223 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var utils = __webpack_require__(208);
-	var transformData = __webpack_require__(228);
-	var isCancel = __webpack_require__(229);
-	var defaults = __webpack_require__(215);
+	var utils = __webpack_require__(204);
+	var transformData = __webpack_require__(224);
+	var isCancel = __webpack_require__(225);
+	var defaults = __webpack_require__(211);
 
 	/**
 	 * Throws a `Cancel` if cancellation has been requested.
@@ -28466,12 +27844,12 @@
 
 
 /***/ },
-/* 228 */
+/* 224 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var utils = __webpack_require__(208);
+	var utils = __webpack_require__(204);
 
 	/**
 	 * Transform the data for a request or a response
@@ -28492,7 +27870,7 @@
 
 
 /***/ },
-/* 229 */
+/* 225 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -28503,7 +27881,7 @@
 
 
 /***/ },
-/* 230 */
+/* 226 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -28523,7 +27901,7 @@
 
 
 /***/ },
-/* 231 */
+/* 227 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -28543,7 +27921,7 @@
 
 
 /***/ },
-/* 232 */
+/* 228 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -28568,12 +27946,12 @@
 
 
 /***/ },
-/* 233 */
+/* 229 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var Cancel = __webpack_require__(232);
+	var Cancel = __webpack_require__(228);
 
 	/**
 	 * A `CancelToken` is an object that can be used to request cancellation of an operation.
@@ -28631,7 +28009,7 @@
 
 
 /***/ },
-/* 234 */
+/* 230 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -28664,7 +28042,7 @@
 
 
 /***/ },
-/* 235 */
+/* 231 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -28780,7 +28158,7 @@
 	exports.default = Story;
 
 /***/ },
-/* 236 */
+/* 232 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -29078,6 +28456,628 @@
 	}(_react2.default.Component);
 
 	exports.default = OneHundredTo500Story;
+
+/***/ },
+/* 233 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	/**
+	 * Defines the logo for Thy Kingdom Come
+	 */
+	var Logo = function (_React$Component) {
+	    _inherits(Logo, _React$Component);
+
+	    function Logo() {
+	        _classCallCheck(this, Logo);
+
+	        return _possibleConstructorReturn(this, (Logo.__proto__ || Object.getPrototypeOf(Logo)).apply(this, arguments));
+	    }
+
+	    _createClass(Logo, [{
+	        key: 'render',
+	        value: function render() {
+	            var styles = {
+	                minWidth: '800px',
+	                maxWidth: '1080px',
+	                marginLeft: '-3%'
+	            };
+
+	            return _react2.default.createElement(
+	                'svg',
+	                { id: 'Layer_1', 'data-name': 'Layer 1', xmlns: 'http://www.w3.org/2000/svg', viewBox: '0 0 1920 1080', style: styles },
+	                _react2.default.createElement(
+	                    'title',
+	                    null,
+	                    'Thy Kingdom Come'
+	                ),
+	                _react2.default.createElement(
+	                    'g',
+	                    { className: 'fx-down-up' },
+	                    _react2.default.createElement('path', { d: 'M905.81,383l-23.62,12.81L879.44,409h1l1-1.71c5.58-10.72,14.83-22.29,28.33-23.29H916v86.7c0,.88-1.84,1.91-7,2.35l-7.31.83-.41,1.12h43.45l-.44-1.12-5.76-.56c-7.63-.59-8.55-1.15-8.55-2.18V384h6.54c13.06,1,21.72,8.9,28.18,23.29l.88,1.71h.88l-4-26Z' }),
+	                    _react2.default.createElement('path', { d: 'M1029.45,414.77c-2.79-2.79-6.53-4.26-11.23-4.26-10.57,0-19.07,7.78-24.8,12.62l-.43-.29V375.72l-21.26,5.58-.06.59,3.41.88c4.84,1.32,5.91,2.5,5.91,6.46v82.06c0,1.76-1.61,1.91-6,2.2l-2.49.39-.44,1.12h31.27l-.44-1.12-2.23-.27c-6.61-.44-7.66-.86-7.66-2V425a23.8,23.8,0,0,1,15.82-6c8.66,0,13.18,3.82,13.18,12.33v37.93l12-6.88V429.3C1034,423.14,1032.83,418.15,1029.45,414.77Z' }),
+	                    _react2.default.createElement('path', { d: 'M1065.13,421.23c-2.35-5.43-1.76-7.34,3.82-7.63l2.5.07.44-.66h-32.15l.44.66,2.79,0c4.55.29,5.14,1.41,8.51,9l10.66,24.34,11.3-6.25Z' }),
+	                    _react2.default.createElement('path', { d: 'M1105.64,413.6l2.2.07.44-.66H1083l.44.66,2.05,0c9.83.88,10.86,2.59,6,16.24l-.43,1.16,2.25-1.25C1098.36,415.95,1099.16,414,1105.64,413.6Z' }),
+	                    _react2.default.createElement('path', { d: 'M783.51,541.89c26.13-26.72,26.72-29.06,38.46-30.09l1.76,0,.44-.77H787.33l.15.77,5.87.38c13.21,1,13.05,4.08-10.73,28.3l-22.62,23V514.59c0-.88,1.92-1.91,7.06-2.35l7.35-.47.45-.77H733.46l.44.77,4.22.38c7.63.59,7.89,1,7.89,2V598.7c0,.88-1.28,1.91-6.42,2.35l-5.85.83-.42,1.12h41.39l-.44-1.12-5.74-.56c-7.63-.59-8.53-1.15-8.53-2.18V565.67l13.08-13.21,19.09,32.29a84.46,84.46,0,0,1,4.55,8.67l12.57-6.93-26.51-43.72Z' }),
+	                    _react2.default.createElement('path', { d: 'M829.22,544.53l-.25.59,3.19.73c5,1,5.84,2.5,5.84,11.45v13.21l13-6.8V538.81Z' }),
+	                    _react2.default.createElement('path', { d: 'M843.11,526.33a8.26,8.26,0,0,0,8.37-8.07,8.4,8.4,0,0,0-8.37-8.37,8.3,8.3,0,0,0-8.37,8.37A8.16,8.16,0,0,0,843.11,526.33Z' }),
+	                    _react2.default.createElement('path', { d: 'M1251.41,601.49c-7.34-.59-7.41-1.17-7.41-2.06V558c0-6.17-1.25-12-4.48-15.27-2.94-2.94-6.43-4.26-11.56-4.26-10.27,0-17.16,7.19-22.59,12.92l-.14-.15a15.29,15.29,0,0,0-3.67-8.37,16.31,16.31,0,0,0-11.59-4.4c-10.57,0-17.32,7.63-22.16,12.48l-.44-.15.44-12-3.51.93-12.6,6.86c2.81,1.19,3.31,3.59,3.31,10.86v41.83c0,1.76-1.45,1.91-6,2.2l-2.56.39-.36,1.12h31.27l-.29-1.12-2-.27c-6.31-.44-7-.86-7-2V552.75a18.35,18.35,0,0,1,13.67-5.72c8.66,0,11.33,3.67,11.33,12.48v39.78c0,1.17-.63,1.91-5.62,2.2l-2.52.39-.32,1.12h31.12l-.44-1.12-2-.27c-7.34-.59-7.25-1.3-7.25-2.18V554.66l.35-1.32c1-3.23,7.76-6.31,13.63-6.31,9,0,12,3.67,12,12.48v39.78c0,1.17-1.05,1.91-6.19,2.2l-2.73.39-.53,1.12h31.27l-.47-1.12Z' }),
+	                    _react2.default.createElement('path', { d: 'M922.3,699.69c0-18.5,14.24-33.32,33.76-33.32s33.76,14.24,33.76,32.73c0,18.79-14.24,33.32-33.76,33.32S922.3,718.18,922.3,699.69Zm52.7.73c0-11.45-2.5-22.46-7.93-27.89-2.79-2.64-6.17-5-11.3-5-12.92,0-18.64,15.85-18.64,30.24,0,12,2.06,22.75,7.63,28.33,3.23,3.23,6.75,        5.14,11.45,5.14C968.25,731.25,975,716,975,700.42Z' }),
+	                    _react2.default.createElement('path', { d: 'M995,729.63l2.64-.15c4.55-.29,6.17-.44,6.17-2.2V685.45c0-9.1-1-10.57-6-11.6l-3.38-.73.15-.59,21.72-5.72-.44,12,.44.15c4.84-4.84,11.6-12.48,22.17-12.48a16.32,16.32,0,0,1,11.6,4.4,15.29,15.29,0,0,1,3.67,8.37l.15.15c5.43-5.72,12.33-12.92,22.61-12.92,5.14,0,8.66,1.32,11.6,4.26,3.23,3.23,4.55,9.1,4.55,15.27v41.39c0,.88,0,1.47,7.34,2.06l1.91.15.44.88H1071l.44-.88,2.64-.15c5.14-.29,6-1,6-2.2V687.5c0-8.81-2.94-12.48-11.89-12.48-5.87,0-12.48,3.08-13.5,6.31l-.44,1.32v44.77c0,.88,0,1.47,7.34,2.06l2.05.15.44.88H1033l.44-.88,2.64-.15c5-.29,5.87-1,5.87-2.2V687.5c0-8.81-3.08-12.48-11.74-12.48-6,0-10.28,2.5-14.09,5.72v46.83c0,1.17.88,1.47,7.19,1.91l2.2.15.29.88H994.52Z' }),
+	                    _react2.default.createElement('path', { d: 'M1118.26,696.31a71.87,71.87,0,0,1,.44-7.93l41.54.15a13.7,13.7,0,0,0,.29-2.06c0-12-8.81-20.11-23.78-20.11-18.94,0-31.85,15.56-31.85,34.5,0,9.69,3.61,18.12,9.64,23.83l11.91-6.57C1121.41,713.39,1118.26,705.86,1118.26,696.31Zm17.32-28.48c8.66,0,11.6,9.54,11.6,18.94l-28.18.29C1120.76,677.23,1127.51,667.83,1135.58,667.83Z' })
+	                ),
+	                _react2.default.createElement(
+	                    'g',
+	                    { className: 'fx-up-down' },
+	                    _react2.default.createElement('path', { d: 'M1111.12,419.08l-10,27.88-7.69-18.13-11.3,6.39L1094.67,464h.29l-5,15.11c-2.5,7.49-3.89,11.81-7.41,12.55-6.94,2-13,8.48-8.3,8.48,8.22,0,12.92-6.92,16.88-19.69l5.73-17.77,15.85-43,.65-1.82Z' }),
+	                    _react2.default.createElement('path', { d: 'M858,587.28c0,1.76-1.48,1.91-6,2.2l-2.58.39L849,591h31.41l-.44-1.12-1.85-.27c-6.46-.44-7.14-.86-7.14-2V551.71l-13,6.8Z' }),
+	                    _react2.default.createElement('path', { d: 'M892,545.45v41.83c0,1.76-1.46,1.91-6,2.2l-2.56.39-.36,1.12h31.27l-.29-1.12-2-.27c-6.31-.44-7-.86-7-2V541c3-3.38,8.64-6,15.25-6,8.81,0,12.75,3.82,12.75,12.48v39.78c0,1.17-.74,1.91-5.88,2.2l-2.65.39L924,591h31.27l-.44-1.12-2.14-.27c-7.49-.59-7.72-1.3-7.72-2.18v-42c0-6.31-.95-11.45-4.32-14.68-2.79-2.94-6.64-4.26-11.33-4.26-10.42,0-18.88,7.78-24.6,12.62l-.41-.15.23-6-12.66,6.89A52.09,52.09,0,0,1,892,545.45Z' }),
+	                    _react2.default.createElement('path', { d: 'M956.32,611.36c0-8.37,10.13-15,17.91-17.76v-.29c-9.83-1-16.44-5.43-16.44-11.3,0-7.78,9.1-13.21,16.59-14.53V567c-6.75-2.5-13.21-9.25-13.21-18.35,0-12.62,10.72-22,24.66-22a27.68,27.68,0,0,1,17,5.87l17.76-3.52-1.47,7.49-13.94-2.06-.15.44a17.78,17.78,0,0,1,5.58,12.62c0,     12-10.86,21.58-25.25,21.58a56,56,0,0,1-8.81-1c-5.14.88-8.66,3.38-8.66,7.49,0,4.7,4.26,6,12.18,6,4.11,0,11-.44,16.29-.44,14.09,0,21.58,6,21.58,16.73,0,16.44-15,28.92-37.87,28.92C965.13,626.77,956.32,621,956.32,611.36Zm54-5.73c0-7.34-5.43-12.18-19.08-12.62a109,109,0,0,         0-15.27.88c-5,1.91-9.69,7.78-9.69,13.8,0,9.69,9.39,16.29,21.87,16.29C1001.09,624,1010.34,615.47,1010.34,605.63Zm-11.89-56.37c0-12-2.64-21.43-12.77-21.43-7.19,0-11.74,7.63-11.74,19.38,0,12.77,4.4,20.7,11.89,20.7S998.45,560.42,998.45,549.26Z' }),
+	                    _react2.default.createElement('path', { d: 'M1083,491.58l-23.12,5.58-.26.59,4.68.88c4.84.88,5.7,2.5,5.7,6.46V530h-.06c-4.55-2-9.25-2.84-15.56-2.84-14.83,0-33.17,10.91-33.17,34.69,0,18.06,11.3,30.55,25.83,30.55,9.39,0,16.59-5.42,22.9-13.05l.29.15.12,11.06,12.52-6.78c-.06-.48.13-1.06.13-1.78Zm-13,85.28a18.52,18.52,0,0,1-15.3,7.63c-12.33,0-19.91-12-19.91-26.42,0-15.85,5.93-29.06,17.09-29.06,7.63,0,15.12,6.31,18.12,14.68Z' }),
+	                    _react2.default.createElement('path', { d: 'M1127.62,526.37c-19.52,0-33.76,14.83-33.76,33.32a33.21,33.21,0,0,0,3.87,15.78L1109.4,569a82,82,0,0,1-.72-11.25c0-14.39,5.73-30.24,18.64-30.24,5.14,0,8.51,2.35,11.3,5,3.57,3.57,5.87,9.57,7,16.51l11.51-6.34C1151.58,532.83,1140.87,526.37,1127.62,526.37Z' }),
+	                    _react2.default.createElement('path', { d: 'M896.06,626c9,0,16.59,2,20.4,5.09L930.12,655H931l-.44-28.57-8.66,4.36c-4.84-2.64-15.71-6.41-25.39-6.41-32,0-53.29,20.28-53.29,48.47,0,14.54,5.47,26.52,14.71,34.85l9.26-5.1c-5.33-8-8.56-18.58-8.56-30.91C858.63,647.32,871.7,626,896.06,626Z' })
+	                ),
+	                _react2.default.createElement('polyline', {
+	                    className: 'cls-4 fx-shimmer',
+	                    points: '154.18,544.72 994.37,81.4' }),
+	                _react2.default.createElement('polyline', {
+	                    className: 'cls-2 fx-shimmer medium-delay',
+	                    points: '606.03,547.87 1270.03,181.72' }),
+	                _react2.default.createElement('polyline', {
+	                    className: 'cls-5 fx-shimmer short-delay',
+	                    points: '753.18,466.73 1085.18,283.65' }),
+	                _react2.default.createElement('polyline', {
+	                    className: 'cls-2 fx-shimmer',
+	                    points: '444.68,786.5 1447.92,233.28' }),
+	                _react2.default.createElement('polyline', {
+	                    className: 'cls-2 fx-shimmer short-delay',
+	                    points: '1123.04,475.4 1486.49,274.98' }),
+	                _react2.default.createElement('polyline', {
+	                    className: 'cls-3 fx-shimmer medium-delay',
+	                    points: '624.04,836.32 1627.28,283.1' }),
+	                _react2.default.createElement('polyline', {
+	                    className: 'cls-5 fx-shimmer',
+	                    points: '771.13,755.21 1249.22,491.58' }),
+	                _react2.default.createElement('polyline', {
+	                    className: 'cls-2 fx-shimmer short-delay',
+	                    points: '614.81,920.4 851.48,789.89' }),
+	                _react2.default.createElement('polyline', {
+	                    className: 'cls-2 fx-shimmer',
+	                    points: '808.39,893.22 1555.71,481.12' }),
+	                _react2.default.createElement('polyline', {
+	                    className: 'cls-2 fx-shimmer medium-delay',
+	                    points: '1388.15,1001.06 1751.6,800.63' })
+	            );
+	        }
+	    }]);
+
+	    return Logo;
+	}(_react2.default.Component);
+
+	exports.default = Logo;
+
+/***/ },
+/* 234 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	/**
+	 * Creates a running, analog clock
+	 * 
+	 * @className = class names to add to root SVG element
+	 * @height = height of the SVG element (default = 400)
+	 * @width = width of the SVG element (default = 400)
+	 **/
+	var Clock = function (_React$Component) {
+	    _inherits(Clock, _React$Component);
+
+	    function Clock() {
+	        _classCallCheck(this, Clock);
+
+	        return _possibleConstructorReturn(this, (Clock.__proto__ || Object.getPrototypeOf(Clock)).apply(this, arguments));
+	    }
+
+	    _createClass(Clock, [{
+	        key: 'pointToString',
+	        value: function pointToString(point) {
+	            return point.x + "," + point.y;
+	        }
+	    }, {
+	        key: 'formatPoints',
+	        value: function formatPoints(p1, p2) {
+	            return this.pointToString(p1) + " " + this.pointToString(p2);
+	        }
+	    }, {
+	        key: 'render',
+	        value: function render() {
+	            //Allow classes to be passed in to Component
+	            var className = "clock ";
+	            if (this.props.className !== undefined) {
+	                className += this.props.className;
+	            }
+
+	            //Setup Height & Width
+	            var height = 400;
+	            if (this.props.height !== undefined) {
+	                height = this.props.height;
+	            }
+
+	            var width = 400;
+	            if (this.props.width !== undefined) {
+	                width = this.props.width;
+	            }
+
+	            //Setup image values
+	            var cx = width / 2;
+	            var cy = height / 2;
+	            var r = Math.min(cx, cy) * .8;
+	            var origin = {
+	                x: cx,
+	                y: cy
+	            };
+
+	            //Calculate Clock Positions
+	            var date = new Date();
+	            var second = date.getSeconds();
+	            var minute = date.getMinutes() + second / 60;
+	            var hour = date.getHours() % 12 + minute / 60;
+
+	            //Calculate Hour Hand
+	            var hourA = Math.radians(hour * 30 - 90);
+	            var hourPoint = Math.pointOnCircle(cx, cy, r * .6, hourA);
+	            var hourPoints = this.formatPoints(origin, hourPoint);
+
+	            //Calculate Minutes Hand
+	            var minuteA = Math.radians(minute * 6 - 90);
+	            var minutePoint = Math.pointOnCircle(cx, cy, r * .8, minuteA);
+	            var minutePoints = this.formatPoints(origin, minutePoint);
+
+	            //Calculate Seconds Hand
+	            var secondA = Math.radians(second * 6 - 90);
+	            var secondPoint = Math.pointOnCircle(cx, cy, r * .85, secondA);
+	            var secondPoints = this.formatPoints(origin, secondPoint);
+
+	            return _react2.default.createElement(
+	                'svg',
+	                { className: className, width: width, height: height },
+	                _react2.default.createElement('circle', { className: 'clock__face',
+	                    cx: cx,
+	                    cy: cy,
+	                    r: r }),
+	                _react2.default.createElement('polyline', { className: 'clock__second-hand',
+	                    points: secondPoints }),
+	                _react2.default.createElement('polyline', { className: 'clock__hour-hand',
+	                    points: hourPoints }),
+	                _react2.default.createElement('polyline', { className: 'clock__minute-hand',
+	                    points: minutePoints })
+	            );
+	        }
+	    }]);
+
+	    return Clock;
+	}(_react2.default.Component);
+
+	exports.default = Clock;
+
+/***/ },
+/* 235 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	/**
+	 * Embeds a Vimeo video
+	 * 
+	 * @vimeoId = id of the Vimeo video to embed
+	 * @className = classes to apply to iframe
+	 * @width = width of the iframe
+	 * @height = height of the iframe
+	 */
+	var VimeoVideo = function (_React$Component) {
+	    _inherits(VimeoVideo, _React$Component);
+
+	    function VimeoVideo() {
+	        _classCallCheck(this, VimeoVideo);
+
+	        return _possibleConstructorReturn(this, (VimeoVideo.__proto__ || Object.getPrototypeOf(VimeoVideo)).apply(this, arguments));
+	    }
+
+	    _createClass(VimeoVideo, [{
+	        key: 'render',
+	        value: function render() {
+	            // let src = String.format(
+	            //     "https://player.vimeo.com/video/{0}?color=28708a&title=0&byline=0&portrait=0",
+	            //     [ this.props.vimeoId ]);
+
+	            var src = 'https://player.vimeo.com/video/' + this.props.vimeoId + '?color=28708a&title=0&byline=0&portrait=0';
+
+	            return _react2.default.createElement(
+	                'div',
+	                { className: 'js-video [ vimeo, widescreen ]' },
+	                _react2.default.createElement('iframe', { src: src,
+	                    className: this.props.className,
+	                    width: this.props.width,
+	                    height: this.props.height,
+	                    frameborder: '0',
+	                    webkitallowfullscreen: true,
+	                    mozallowfullscreen: true,
+	                    allowfullscreen: true })
+	            );
+	        }
+	    }]);
+
+	    return VimeoVideo;
+	}(_react2.default.Component);
+
+	exports.default = VimeoVideo;
+
+/***/ },
+/* 236 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _cta = __webpack_require__(186);
+
+	var _cta2 = _interopRequireDefault(_cta);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	/**
+	 * Displays the Contact Form
+	 * 
+	 * @className = Class Names to apply to root form element
+	 * @onComplete = Function to call when form completes submission
+	 */
+	var ContactForm = function (_React$Component) {
+	    _inherits(ContactForm, _React$Component);
+
+	    function ContactForm(props) {
+	        _classCallCheck(this, ContactForm);
+
+	        var _this = _possibleConstructorReturn(this, (ContactForm.__proto__ || Object.getPrototypeOf(ContactForm)).call(this, props));
+
+	        _this.state = {
+	            showError: false,
+	            errorMessage: '',
+	            showForm: true,
+	            showConfirmation: false,
+	            data: {
+	                field_48610311: '',
+	                field_48610314: '',
+	                field_48610320: '',
+	                field_48610323: ''
+	            }
+	        };
+
+	        _this.showError = _this.showError.bind(_this);
+	        _this.hideError = _this.hideError.bind(_this);
+	        _this.showForm = _this.showForm.bind(_this);
+	        _this.hideForm = _this.hideForm.bind(_this);
+	        _this.showConfirmation = _this.showConfirmation.bind(_this);
+	        _this.hideConfirmation = _this.hideConfirmation.bind(_this);
+	        _this.onNameChange = _this.onNameChange.bind(_this);
+	        _this.onEmailChange = _this.onEmailChange.bind(_this);
+	        _this.onSubjectChange = _this.onSubjectChange.bind(_this);
+	        _this.onMessageChange = _this.onMessageChange.bind(_this);
+	        _this.handleSubmit = _this.handleSubmit.bind(_this);
+	        return _this;
+	    }
+
+	    _createClass(ContactForm, [{
+	        key: 'showError',
+	        value: function showError(message) {
+	            this.setState({
+	                showError: true,
+	                errorMessage: message
+	            });
+	        }
+	    }, {
+	        key: 'hideError',
+	        value: function hideError() {
+	            this.setState({
+	                showError: false,
+	                errorMessage: ''
+	            });
+	        }
+	    }, {
+	        key: 'showForm',
+	        value: function showForm(e) {
+	            this.setState({
+	                showForm: true
+	            });
+	        }
+	    }, {
+	        key: 'hideForm',
+	        value: function hideForm(e) {
+	            this.setState({
+	                showForm: false
+	            });
+	        }
+	    }, {
+	        key: 'showConfirmation',
+	        value: function showConfirmation(e) {
+	            this.setState({
+	                showConfirmation: true
+	            });
+	        }
+	    }, {
+	        key: 'hideConfirmation',
+	        value: function hideConfirmation(e) {
+	            this.setState({
+	                showConfirmation: false
+	            });
+	        }
+	    }, {
+	        key: 'onNameChange',
+	        value: function onNameChange(e) {
+	            this.setState({
+	                data: {
+	                    field_48610311: e.target.value,
+	                    field_48610314: this.state.data.field_48610314,
+	                    field_48610320: this.state.data.field_48610320,
+	                    field_48610323: this.state.data.field_48610323
+	                }
+	            });
+	        }
+	    }, {
+	        key: 'onEmailChange',
+	        value: function onEmailChange(e) {
+	            this.setState({
+	                data: {
+	                    field_48610311: this.state.data.field_48610311,
+	                    field_48610314: e.target.value,
+	                    field_48610320: this.state.data.field_48610320,
+	                    field_48610323: this.state.data.field_48610323
+	                }
+	            });
+	        }
+	    }, {
+	        key: 'onSubjectChange',
+	        value: function onSubjectChange(e) {
+	            this.setState({
+	                data: {
+	                    field_48610311: this.state.data.field_48610311,
+	                    field_48610314: this.state.data.field_48610314,
+	                    field_48610320: e.target.value,
+	                    field_48610323: this.state.data.field_48610323
+	                }
+	            });
+	        }
+	    }, {
+	        key: 'onMessageChange',
+	        value: function onMessageChange(e) {
+	            this.setState({
+	                data: {
+	                    field_48610311: this.state.data.field_48610311,
+	                    field_48610314: this.state.data.field_48610314,
+	                    field_48610320: this.state.data.field_48610320,
+	                    field_48610323: e.target.value
+	                }
+	            });
+	        }
+	    }, {
+	        key: 'isFormValid',
+	        value: function isFormValid() {
+	            var form = document.getElementById("contactForm");
+
+	            return form.checkValidity();
+	        }
+	    }, {
+	        key: 'handleSubmit',
+	        value: function handleSubmit(e) {
+	            var _this2 = this;
+
+	            //Hide error
+	            this.hideError();
+
+	            //Check Form Validity
+	            if (this.isFormValid()) {
+	                (function () {
+	                    //Valid Form -> Submit
+	                    var url = 'https://www.formstack.com/api/v2/form/2569143/submission.json?oauth_token=68529bb9523b67cff3c735d2e5f9176a';
+
+	                    var request = new Request(url, {
+	                        method: 'post',
+	                        mode: "no-cors",
+	                        body: JSON.toQueryString(_this2.state.data) //this.serializeData()
+	                    });
+
+	                    //Store hideForm, showConfirmation, onComplete locally because .then won't be able to access `this`
+	                    var hideForm = _this2.hideForm;
+	                    var showConfirmation = _this2.showConfirmation;
+	                    var onComplete = _this2.props.onComplete;
+	                    var showError = _this2.showError;
+
+	                    fetch(request).then(function (response) {
+	                        //Hide the form
+	                        hideForm();
+
+	                        //Show Confirmation Message
+	                        showConfirmation();
+
+	                        //Delay 5 seconds, then call onComplete
+	                        setTimeout(onComplete, 5000);
+	                    }).catch(function (err) {
+	                        //Log the error
+	                        console.log(err);
+	                        showError('Hmm\u2026 Something didn\u2019t go quite as planned. Please try again.');
+	                    });
+
+	                    //TO DO: Figure out why we're not getting event
+	                    //e.preventDefault();
+	                })();
+	            } else {
+	                //Invalid form -> Show error
+	                this.showError('Oops\u2026 Something\u2019s not quite right. Take another look.');
+	            }
+	        }
+	    }, {
+	        key: 'render',
+	        value: function render() {
+	            var _this3 = this;
+
+	            //var formId = '2569143';
+	            //var token = '68529bb9523b67cff3c735d2e5f9176a';
+	            //var url = 'package.json';
+
+	            var error = '';
+	            if (this.state.showError === true) {
+	                error = _react2.default.createElement(
+	                    'div',
+	                    { className: 'form--error add-bottom-margin' },
+	                    this.state.errorMessage
+	                );
+	            }
+
+	            if (this.state.showForm === true) {
+	                return _react2.default.createElement(
+	                    'form',
+	                    { id: 'contactForm', className: this.props.className },
+	                    _react2.default.createElement(
+	                        'div',
+	                        null,
+	                        _react2.default.createElement('input', { name: 'field_48610311',
+	                            type: 'text',
+	                            placeholder: 'Name',
+	                            required: true,
+	                            value: this.state.data.field_48610311,
+	                            onChange: this.onNameChange })
+	                    ),
+	                    _react2.default.createElement(
+	                        'div',
+	                        null,
+	                        _react2.default.createElement('input', { name: 'field_48610314',
+	                            type: 'text',
+	                            placeholder: 'Email',
+	                            required: true,
+	                            pattern: '[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,3}$',
+	                            value: this.state.data.field_48610314,
+	                            onChange: this.onEmailChange })
+	                    ),
+	                    _react2.default.createElement(
+	                        'div',
+	                        null,
+	                        _react2.default.createElement('input', { name: 'field_48610320',
+	                            type: 'text',
+	                            placeholder: 'Subject',
+	                            required: true,
+	                            value: this.state.data.field_48610320,
+	                            onChange: this.onSubjectChange })
+	                    ),
+	                    _react2.default.createElement(
+	                        'div',
+	                        null,
+	                        _react2.default.createElement('textarea', { name: 'field_48610323',
+	                            placeholder: 'Message',
+	                            height: '5em',
+	                            required: true,
+	                            value: this.state.data.field_48610323,
+	                            onChange: this.onMessageChange })
+	                    ),
+	                    error,
+	                    _react2.default.createElement(
+	                        'div',
+	                        { className: 'center' },
+	                        _react2.default.createElement(_cta2.default, { text: 'Submit', onClick: function onClick(e) {
+	                                return _this3.handleSubmit(e);
+	                            } })
+	                    )
+	                );
+	            }
+
+	            if (this.state.showConfirmation === true) {
+	                return _react2.default.createElement(
+	                    'div',
+	                    { className: this.props.className },
+	                    _react2.default.createElement(
+	                        'h1',
+	                        { className: 'center' },
+	                        'Thanks for submitting your message! Someone will be in touch.'
+	                    )
+	                );
+	            }
+
+	            return null;
+	        }
+	    }]);
+
+	    return ContactForm;
+	}(_react2.default.Component);
+
+	exports.default = ContactForm;
 
 /***/ }
 /******/ ]);
