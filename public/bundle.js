@@ -24483,7 +24483,7 @@
 	                _react2.default.createElement(
 	                    'h1',
 	                    { className: 'center no-bottom-margin' },
-	                    '$100 to 500'
+	                    'Multiplying the Kingdom'
 	                ),
 	                _react2.default.createElement(
 	                    'h3',
@@ -24493,7 +24493,7 @@
 	                _react2.default.createElement(
 	                    'p',
 	                    null,
-	                    'Were you the recipient of a hundred dollar bill for the $100 for 500 campaign? Share the story of how you spent your money and the affect it had on bringing God\u2019s kingdom to earth here!'
+	                    'Were you the recipient of a hundred dollar bill for the Multiplying the Kingdom campaign? Share the story of how you spent your money and the effect it had on bringing God\u2019s kingdom to earth!'
 	                ),
 	                _react2.default.createElement(
 	                    'div',
