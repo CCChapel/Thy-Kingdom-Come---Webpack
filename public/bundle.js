@@ -28140,7 +28140,7 @@
 	                _react2.default.createElement(
 	                    'div',
 	                    { className: 'text-bigger text-dark-blue serif' },
-	                    'From ',
+	                    'Final Investment: ',
 	                    location
 	                ),
 	                _react2.default.createElement(
@@ -28410,7 +28410,7 @@
 	                        null,
 	                        _react2.default.createElement('input', { name: 'field_53080527',
 	                            type: 'text',
-	                            placeholder: 'Location',
+	                            placeholder: 'Final Investment Amount',
 	                            required: true,
 	                            value: this.state.data.field_53080527,
 	                            onChange: this.onLocationChange })
