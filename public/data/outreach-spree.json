@@ -151,16 +151,11 @@
         "options": [
             {
                 "id": 0,                
-                "name": "Open House",
-                "details": "<div class='italic'>Jun. 7 from 6 &ndash; 8 p.m. </div>Attend an open house to tour Rahab’s drop-in center for minors in Akron<div class='italic'>Jun. 12 from 6 &ndash; 8 p.m. </div>Attend an open house at Rahab’s walk-in center in Akron<br />Call Rahab to RSVP for either open house or ask questions 330.810.3326.<br />If your community group would like to donate 6 dozen cookies for one of the open houses, email <a href'mailto:jaque481@aol.com'>Jacque</a>."
-            },
-            {
-                "id": 1,                
                 "name": "Serve Breakfast",
                 "details": "<div class='italic'>Sat., Jul. 15</div>Serve a continental breakfast for the attendees of Rahab’s next Essentials Training event. Email <a href='mailto:jacque481@aol.com'>Jacque</a> for more details."
             },
             {
-                "id": 2,                
+                "id": 1,                
                 "name": "Watch a Video",
                 "details": "<a href='https://vimeo.com/207499874' target='_blank'>Watch the new video</a> from Rahab &ldquo;Top 10 Things Not to Do When Interacting with the Women of Rahab.&rdquo;"
             }
