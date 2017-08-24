@@ -24493,7 +24493,7 @@
 	                _react2.default.createElement(
 	                    'p',
 	                    null,
-	                    'Were you the recipient of a hundred dollar bill for the Multiplying the Kingdom campaign? Share the story of how you spent your money and the effect it had on bringing God\u2019s kingdom to earth!'
+	                    'Were you the recipient of a hundred dollar bill for the Multiplying the Kingdom campaign? Share the story of how you spent your money and the affect it had on bringing God\u2019s kingdom to earth here!'
 	                ),
 	                _react2.default.createElement(
 	                    'div',
@@ -28206,6 +28206,7 @@
 	            showConfirmation: false,
 	            data: {
 	                field_53080526: '',
+	                field_55720978: '',
 	                field_53080527: '',
 	                field_53080528: ''
 	            }
@@ -28218,7 +28219,7 @@
 	        _this.showConfirmation = _this.showConfirmation.bind(_this);
 	        _this.hideConfirmation = _this.hideConfirmation.bind(_this);
 	        _this.onNameChange = _this.onNameChange.bind(_this);
-	        // this.onEmailChange = this.onEmailChange.bind(this);
+	        _this.onEmailChange = _this.onEmailChange.bind(_this);
 	        _this.onLocationChange = _this.onLocationChange.bind(_this);
 	        _this.onMessageChange = _this.onMessageChange.bind(_this);
 	        _this.handleSubmit = _this.handleSubmit.bind(_this);
@@ -28281,25 +28282,25 @@
 	                }
 	            });
 	        }
-
-	        // onEmailChange(e) {
-	        //     this.setState({
-	        //         data: {
-	        //             field_53080526: this.state.data.field_53080526,
-	        //             field_48610314: e.target.value,
-	        //             field_53080527: this.state.data.field_53080527,
-	        //             field_53080528: this.state.data.field_53080528
-	        //         }
-	        //     });
-	        // }
-
+	    }, {
+	        key: 'onEmailChange',
+	        value: function onEmailChange(e) {
+	            this.setState({
+	                data: {
+	                    field_53080526: this.state.data.field_53080526,
+	                    field_55720978: e.target.value,
+	                    field_53080527: this.state.data.field_53080527,
+	                    field_53080528: this.state.data.field_53080528
+	                }
+	            });
+	        }
 	    }, {
 	        key: 'onLocationChange',
 	        value: function onLocationChange(e) {
 	            this.setState({
 	                data: {
 	                    field_53080526: this.state.data.field_53080526,
-	                    field_48610314: this.state.data.field_48610314,
+	                    field_55720978: this.state.data.field_55720978,
 	                    field_53080527: e.target.value,
 	                    field_53080528: this.state.data.field_53080528
 	                }
@@ -28311,7 +28312,7 @@
 	            this.setState({
 	                data: {
 	                    field_53080526: this.state.data.field_53080526,
-	                    field_48610314: this.state.data.field_48610314,
+	                    field_55720978: this.state.data.field_55720978,
 	                    field_53080527: this.state.data.field_53080527,
 	                    field_53080528: e.target.value
 	                }
@@ -28404,6 +28405,17 @@
 	                            required: true,
 	                            value: this.state.data.field_53080526,
 	                            onChange: this.onNameChange })
+	                    ),
+	                    _react2.default.createElement(
+	                        'div',
+	                        null,
+	                        _react2.default.createElement('input', { name: 'field_55720978',
+	                            type: 'text',
+	                            placeholder: 'Email',
+	                            required: true,
+	                            pattern: '[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,3}$',
+	                            value: this.state.data.field_55720978,
+	                            onChange: this.onEmailChange })
 	                    ),
 	                    _react2.default.createElement(
 	                        'div',

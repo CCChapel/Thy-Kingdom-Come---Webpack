@@ -49,7 +49,7 @@ export default class Story extends React.Component {
                     { name }
                 </div>
                 <div className="text-bigger text-dark-blue serif">
-                    From { location }
+                    Final Investment: { location }
                 </div>
                 <div className="text-limit">
                     { story }

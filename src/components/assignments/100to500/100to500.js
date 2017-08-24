@@ -102,11 +102,11 @@ export default class OneHundredto500 extends React.Component {
 
         return (
             <div className="lock-width center-by-margin">
-                <h1 className="center no-bottom-margin">$100 to 500</h1>
+                <h1 className="center no-bottom-margin">Multiplying the Kingdom</h1>
                 <h3 className="center">A Kingdom Assignment</h3>
 
                 <p>
-                    Were you the recipient of a hundred dollar bill for the $100 for 500 campaign? 
+                    Were you the recipient of a hundred dollar bill for the Multiplying the Kingdom campaign? 
                     Share the story of how you spent your money and the affect it had on bringing God&rsquo;s kingdom to earth here! 
                 </p>
 

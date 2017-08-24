@@ -19,6 +19,7 @@ export default class OneHundredTo500Story extends React.Component {
             showConfirmation: false,
             data: {
                 field_53080526: '',
+                field_55720978: '',
                 field_53080527: '',
                 field_53080528: ''
             }
@@ -31,7 +32,7 @@ export default class OneHundredTo500Story extends React.Component {
         this.showConfirmation = this.showConfirmation.bind(this);
         this.hideConfirmation = this.hideConfirmation.bind(this);
         this.onNameChange = this.onNameChange.bind(this);
-        // this.onEmailChange = this.onEmailChange.bind(this);
+        this.onEmailChange = this.onEmailChange.bind(this);
         this.onLocationChange = this.onLocationChange.bind(this);
         this.onMessageChange = this.onMessageChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
@@ -83,22 +84,22 @@ export default class OneHundredTo500Story extends React.Component {
         });
     }
 
-    // onEmailChange(e) {
-    //     this.setState({
-    //         data: {
-    //             field_53080526: this.state.data.field_53080526,
-    //             field_48610314: e.target.value,
-    //             field_53080527: this.state.data.field_53080527,
-    //             field_53080528: this.state.data.field_53080528
-    //         }
-    //     });
-    // }
+    onEmailChange(e) {
+         this.setState({
+             data: {
+                 field_53080526: this.state.data.field_53080526,
+                 field_55720978: e.target.value,
+                 field_53080527: this.state.data.field_53080527,
+                 field_53080528: this.state.data.field_53080528
+             }
+         });
+     }
 
     onLocationChange(e) {
         this.setState({
             data: {
                 field_53080526: this.state.data.field_53080526,
-                field_48610314: this.state.data.field_48610314,
+                field_55720978: this.state.data.field_55720978,
                 field_53080527: e.target.value,
                 field_53080528: this.state.data.field_53080528
             }
@@ -109,7 +110,7 @@ export default class OneHundredTo500Story extends React.Component {
         this.setState({
             data: {
                 field_53080526: this.state.data.field_53080526,
-                field_48610314: this.state.data.field_48610314,
+                field_55720978: this.state.data.field_55720978,
                 field_53080527: this.state.data.field_53080527,
                 field_53080528: e.target.value
             }
@@ -192,9 +193,19 @@ export default class OneHundredTo500Story extends React.Component {
                     </div>
 
                     <div>
+                        <input name="field_55720978"
+                            type="text" 
+                            placeholder="Email"
+                            required
+                            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"
+                            value={this.state.data.field_55720978}
+                            onChange={this.onEmailChange} />
+                    </div>
+
+                    <div>
                         <input name="field_53080527"
                             type="text" 
-                            placeholder="Location"
+                            placeholder="Final Investment Amount"
                             required
                             value={this.state.data.field_53080527}
                             onChange={this.onLocationChange} />
