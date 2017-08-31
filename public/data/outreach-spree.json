@@ -5,16 +5,7 @@
         "contactEmail": "rfasnacht@gmail.com",
         "description": "Blessings provides financial assistance to young, single, pregnant women for daycare and scholastic accountability so they can graduate from high school. They are connected with a Christian mentor and participate in life skills and parenting classes and are required to attend a Christ-centered church weekly.<br /><br /><div class='italic'>We hope you will jump in and participate with this ministry to learn more about it and the people they serve. Just as we encourage new members to know and trust our church before they give financially, please do not feel any obligation to give to this ministry until you learn more and feel the Holy Spirit leading you to do so.</div>",
         "options": [
-            {
-                "id": 0,
-                "name": "Summer Activities",
-                "details": "Blessgins would like to do 3 different fun summer activites for the Blessings' moms, their children and their Christian mentors. It can be a cookout and some fun games, a trip to the zoo, etc. If your community group would like to plan and host one of these activities, email <a href='mailto:barbara.ammirati@ccchapel.com'>Barbara</a> for more information."
-            },
-            {
-                "id": 1,
-                "name": "Drywall/Flooring",
-                "details": "An opportunity stills exists for a community group to renovate a room in the basement of a grandparent’s house for a Blessings single mom and her child. The room is now ready for drywall and flooring. For details on this project, email <a href='mailto:barbara.ammirati@ccchapel.com'>Barbara</a>. Funds are available for materials."
-            }
+            
         ]
     },
     {
@@ -27,6 +18,21 @@
                 "id": 0,                
                 "name": "Visit Urbean Caf\u00e9",
                 "details": "Enjoy a meal at Urbean Café and support Broken Chains and their clients at the same time.<div class='italic'>Mon. &ndash; Fri. from 7 a.m. &ndash; 7 p.m.<br/>Sat. from 9 a.m. &ndash; 3 p.m.</div>631 S Broadway St., Metro Transit Center, Akron, OH 44311<br /><a href='https://www.youtube.com/watch?v=9ZWsupfCwKs'>Urbean Cafe Video</a>"
+            },
+            {
+                "id": 1,
+                "name": "Build a Fire Pit",
+                "details": "Come out on Saturday, September 30th from 9:00 a.m. &ndash; 1:00 p.m. to build a fire pit at Lydia's Home, their new addiction recovery home for women. Interested parties can email <a href='mailto:dennis.shawhan@hotmail.com'>Dennis</a> or call 330.472.1166"
+            },
+            {
+                "id": 2,
+                "name": "Write Cards of Encouragement",
+                "details": "Consider writing cards of encouragement to ladies at Lydia's Home. Email <a href='mailto:Tamela@brokenchainsministry.org'>Tamela</a> if you are interested."
+            },
+            {
+                "id": 3,
+                "name": "Artwork for Broken Hearts",
+                "details": "Attend the <span class='italic'>Artwork for Broken Hearts</span> event at the newly renovated Block. Saturday, September 30th from 7-9 p.m. The art sale will feature pieces from our Door #2 ministry and will benefit Broken Chain’s new Lydia’s Home &ndash; a women’s recovery home for women suffering from opiate addiction."
             }
         ]
     },
@@ -40,6 +46,16 @@
                 "id": 0,                
                 "name": "Clean the Clinic",
                 "details": "Clean the medical clinic in Tallmadge the fourth Saturday of each month and tour the facility. For more details, email <a href='mailto:kbertolini@gmail.com'>Kathi</a>."
+            },
+            {
+                "id": 1,                
+                "name": "5K &amp; 1 Mile Fun Run/Walk",
+                "details": "<div class='italic'>Mon., Sep. 4 at Faithful Servants Care Center</div>65 Community Road Tallmadge, OH  44278<br />This fund raising event will bless Faithful Servants in assisting individuals and families in our community who do not have access to medical care. This is a family friendly event that will be lots of fun for all involved. For more information, email <a href='mailto:kbertolini@gmail.com'>Kathi</a>."
+            },
+            {
+                "id": 2,                
+                "name": "5th Anniversary Gala & Auction",
+                "details": "<div class='italic'>Sat., Sep. 16 at NEOMED</div>4209 OH-44, Rootstown, OH 44272<br /> Join us for our 5th annual gala & auction benefitting the Faithful Servants Care Center. If you would like to attend, please email <a href='mailto:FSCCBarb@gmail.com'>Barb</a> or call 330.633.3680."
             }
         ]
     },
@@ -52,22 +68,17 @@
             {
                 "id": 0,                
                 "name": "Visit the Skate Park",
-                "details": "<div class='italic'>Mon., Tue., Thu. &amp; Fri. 4-10 p.m.</div>943 Kenmore Blvd., Akron, OH 44314<br />For those looking for a more adventurous opportunity, visit and use the indoor skate park at the First Glance Ministry Center.<br />$5 fee per person. Free on Tuesdays"
-            },
-            {
-                "id": 1,
-                "name": "Volunteer with Children",
-                "details": "Help out on a Tues. from 4-7 p.m. in First Glance’s Tiny Glancers’ classroom (children of teen/young moms.) Email <a href='mailto:karen@firstglance.org'>Karen Freeman</a> for more information and to let her know you are coming."
+                "details": "<div class='italic'>Mon., Tue., Thu. &amp; Fri. 4&ndash;10 p.m.</div>943 Kenmore Blvd., Akron, OH 44314<br />For those looking for a more adventurous opportunity, visit and use the indoor skate park at the First Glance Ministry Center.<br />$5 fee per person. Free on Tuesdays"
             },
             {
                 "id": 2,
-                "name": "Ministry Building Maintenance",
-                "details": "Are you handy? Opportunities are available for a variety of skill levels and dates and times. Email <a href='mailto:bill@firstglance.org'>Bill</a>."
+                "name": "Prayer Week",
+                "details": "First Glance is partnering with several ministries (including Rahab) for a week long prayer event! Join us on Sun., Sep. 10 at 6:30 p.m. for a worship and prayer night at First Glance and continue praying with us until we meet again on Sun., Sep. 17 at 6:30 p.m. Feel free to just come to the worship nights or <a href='https://docs.google.com/spreadsheets/d/12UNBZyBmaU0wKcHGmZREXAJ5u7zsM8bEOyjdLr0DB_k/edit?usp=sharing' target='_blank'>sign up</a> for a 1 hour prayer shift during the week."
             },
             {
                 "id": 3,
-                "name": "Make a Meal",
-                "details": "Make a meal and drop it off Tuesday (for middle school boys &ldquo;Man Up&rdquo;, middle school girls &ldquo;Ladies Night Out&rdquo;, or young moms meetings). Email <a href='mailto:melnawn@gmail.com'>Melinda</a> for more information and to sign up."
+                "name": "Make &amp; Serve a Meal",
+                "details": "Make a meal and help serve it on Mondays at 7 p.m. (for Young Adults) or Tuesdays at 6:30 p.m. (for Manu Up). Email <a href='mailto:jessica@firstglance.org'>Jessica</a> for more information and to sign up."
             }
         ]
     },
@@ -79,18 +90,13 @@
         "options": [
             {
                 "id": 0,
-                "name": "Ministry Tours",
-                "details": "<div class='italic'>Nov. 9 from 2-7 p.m.</div>175 E Market St, Akron, OH 44308<br />Contact <a href='mailto:rrose@havenofrest.org'>Rose</a>, Community Relations Coordinator, to schedule a tour 330.535.1563."
+                "name": "Serve a Meal",
+                "details": "207 East Market Street, Akron, OH 44308<br />Email <a href='mailto:jpluck@havenofrest.org'>Jan</a> to sign up for a date to work in the kitchen and help feed the homeless of Akron."
             },
             {
                 "id": 1,                
-                "name": "Clothes/Food",
-                "details": "<div class='italic'>Mon. &ndash; Fri. from 8 a.m. &ndash; 6 p.m.<br />Sat. from 9 a.m. &ndash; 5 p.m.</div>207 East Market Street, Akron, OH 44308<br />Collect items needed to bring to Haven of Rest. Help feed the homeless and tour Haven of Rest while you are there.  Current needs are:  shampoo, deodorant, toothbrushes, toothpaste, canned fruit and vegetables, coffee and beverage mixes, men's tennis shoes and pants (especially waist sizes 28&rdquo; to 34&rdquo;), ladies undergarments, socks for infants and toddlers, twin bed sheets and bath towels. To arrange for a tour when you drop off your donation, email <a href='mailto:rrose@havenofrest.org'>Rose</a>."
-            },
-            {
-                "id": 2,                
-                "name": "Work in the Kitchen",
-                "details": "Email <a href='mailto:jpluck@havenofrest.org'>Jan Pluck</a>, volunteer coordinator at Haven of Rest, to sign up for a date to work in the kitchen and help feed the homeless of Akron."
+                "name": "Collect Clothes/Food",
+                "details": "207 East Market Street, Akron, OH 44308<br />Collect needed items and bring to Haven of Rest. Current needs are:  shampoo, deodorant, toothbrushes, toothpaste, canned fruit and vegetables, coffee and beverage mixes, men's tennis shoes and pants (especially waist sizes 28&rdquo; to 34&rdquo;), mens &amp; ladies undergarments, socks for infants and toddlers, twin bed sheets, bath towels and baby onesies. To arrange for a tour when you drop off your donation, email <a href='mailto:rrose@havenofrest.org'>Rose</a>."
             }
         ]
     },
@@ -102,8 +108,8 @@
         "options": [
             {
                 "id": 0,                
-                "name": "Home Rehab",
-                "details": "Once the next home is purchased, opportunities to participate in the rehabilitation and restoration of the home will be posted."
+                "name": "Neighborhood Walk",
+                "details": "<div class='italic'>Mon. &ndash; Fri. | 9 a.m. &ndash; 5 p.m. (by appointment)</div>Come walk the streets of North Hill with the executive director of Legacies of Success and learn more about what God is doing in North Hill. Individuals and groups are welcome. Email <a href='mailto:brendan@legaciesofsuccess.org'>Brendan</a> for details and to sign up."
             }
         ]
     },
@@ -116,30 +122,25 @@
             {
                 "id": 0,                
                 "name": "Production Facility Tour Drop-In",
-                "details": "<div class='italic'>Tue. &ndash; Thu. from 9:30 a.m. &ndash; 12 p.m.</div>1445 Commerce Dr., Stow, OH 44224<br />Stop in and take a tour of the Mobility Worldwide facility and see the amazing work they are doing.<br />Email <a href='leepetno@gmail.com'>Lee Petno</a> for more information."
+                "details": "<div class='italic'>Tue. &ndash; Thu. from 9&ndash;11 a.m.</div>1445 Commerce Dr., Stow, OH 44224<br />Stop in and take a tour of the Mobility Worldwide facility and see the amazing work they are doing. This is a great spree opportunity for individuals, community groups or families!<br />Email <a href='leepetno@gmail.com'>Lee</a> for more information."
             }
         ]
     },
     {
-        "name": "Pregnancy Solutions &amp; Services",
-        "website": "http://pssfriends.org",
+        "name": "Pregnancy Solutions",
+        "website": "http://www.pregsolutions.org/",
         "contactEmail": "kcistone6@gmail.com",
         "description": "Pregnancy Solutions & Servies (PSS) is a pregnancy medical center that seeks to empower and educate people in pregnancy-related decisions. Through the use of free pregnancy tests, ultrasounds and options counseling, they hold out truth with the hope to save babies from abortion and lead men and women to a relationship with Jesus. They have a center in Portage Lakes and a medical mobile unit that travels throughout the community.<br /><br /><div class='italic'>We hope you will jump in and participate with this ministry to learn more about it and the people they serve. Just as we encourage new members to know and trust our church before they give financially, please do not feel any obligation to give to this ministry until you learn more and feel the Holy Spirit leading you to do so.</div>",
         "options": [
             {
                 "id": 0,                
                 "name": "Prayer Walk",
-                "details": "<div class='italic'>Mon. &ndash; Fri. from 9 a.m. to 4:30 p.m.</div>3136 Manchester Rd, Akron, OH 44319<br />Prayer walk through the ministry center with a custom card that guides you through the ministry rooms and gives specific prayer needs. This is a great opportunity to see the center and have a big impact on their fight to save lives."
+                "details": "<div class='italic'>Mon. &ndash; Fri. from 9 a.m. &ndash; 4:30 p.m.</div>3136 Manchester Rd, Akron, OH 44319<br />Prayer walk through the ministry center with a custom card that guides you through the ministry rooms and gives specific prayer needs. This is a great opportunity to see the center and have a big impact on their fight to save lives."
             },
             {
                 "id": 1,                
-                "name": "Donate an Item",
-                "details": "Provide needed items for Emma&rsquo;s closet: diapers of any size, baby clothing and toys for a child under age of two."
-            },
-            {
-                "id": 2,                
-                "name": "Walk, Run, Bike-a-thon",
-                "details": "Save the date!<br /><div class='italic'>July 29 at 9 a.m.</div>Christ Community Chapel – Hudson Campus"
+                "name": "Renovate Emma’s Closet Boutique",
+                "details": "Emma’s closet has not been remodeled since the ministry started and they would really love to have the room painted and new flooring installed. They have the funds for both the flooring and the paint so we just need a community group to come and do either project or both. Email <a href='mailto:barbara.ammirati@ccchapel.com '>Barbara</a> for details."
             }
         ]
     },
@@ -151,11 +152,16 @@
         "options": [
             {
                 "id": 0,                
-                "name": "Serve Breakfast",
-                "details": "<div class='italic'>Sat., Jul. 15</div>Serve a continental breakfast for the attendees of Rahab’s next Essentials Training event. Email <a href='mailto:jacque481@aol.com'>Jacque</a> for more details."
+                "name": "Open House for CCC",
+                "details": "<div class='italic'>Mon., Oct. 16 from 6&ndash;8 p.m.</div>Join us for an opportunity to tour the drop-in house in Akron and learn what goes on every day. This is a casual, no-commitment opportunity to get a glimpse into Rahab at a time when clients aren't present. There will be an opportunity to ask questions and light refreshments will be served. Space is limited and we don't know when we will have this opportunity again. Individuals or small groups, please consider coming! Email <a href='mailto:beth@rahab-ministries.org'>Beth</a> for details and to sign up."
             },
             {
                 "id": 1,                
+                "name": "Gift Bags",
+                "details": "Put together 20 gift bags (or more) for Rahab’s strip club outreach. Each bag could have a baked good (ex. cupcake, cookies, etc.), something encouraging (scripture), a small personal item (nail polish, journal), etc. Email <a href='mailto:barbara.ammirati@ccchapel.com'>Barbara</a> for more information."
+            },
+            {
+                "id": 2,                
                 "name": "Watch a Video",
                 "details": "<a href='https://vimeo.com/207499874' target='_blank'>Watch the new video</a> from Rahab &ldquo;Top 10 Things Not to Do When Interacting with the Women of Rahab.&rdquo;"
             }
@@ -175,22 +181,12 @@
             {
                 "id": 1,                
                 "name": "Make a Meal",
-                "details": "Provide a meal for 8-10 doctors and nurses volunteering at the Faithful Servants medical clinic site every Wed. at the Front Porch. For more information, email <a href='mailto:josephjtucker@gmail.com'>Joe</a>."
+                "details": "Provide a meal for 8-10 doctors and nurses volunteering at the Faithful Servants medical clinic site every Wed. at the Front Porch. Email <a href='mailto:josephjtucker@gmail.com'>Joe</a> for more information."
             },
             {
                 "id": 2,                
-                "name": "South Street Bike Shop",
-                "details": "<div class='italic'>Mon. & Wed. from 6-8 p.m. through Aug. 6</div>130 W South Street<br />For more information, email <a href='mailto:josephtucker@gmail.com'>Joe</a>."
-            },
-            {
-                "id": 3,                
-                "name": "Summer Camp",
-                "details": "<div class='italic'>Mon.-Thu., Jun. 19 – Aug. 12 from 3-5 p.m.</div>1095 Edison Avenue<br />For more information, email <a href='mailto:[bob@southstreetministries.org'>Bob</a>."
-            },
-            {
-                "id": 4,                
-                "name": "Annual Rails to Trails Bike Event",
-                "details": "Details coming soon."
+                "name": "Annual Trails N Rails Event",
+                "details": "<div class='italic'>Sep. 30 from 8 a.m. &ndash; 1 p.m.</div>Join us for South Street’s annual Trails N Rails event. Visit <a href='http://southstreetministries.org/trails-n-rails/' target='_blank'>southstreetministries.org</a> for more information."
             }
         ]
     },
@@ -202,23 +198,18 @@
         "options": [
             {
                 "id": 0,                
-                "name": "Visit the Farm",
-                "details": "<div class='italic'>Mon., Wed., Thu. &amp; Fri. from 10 a.m. &ndash; 4 p.m.</div>Visit six young men working on the farm and bring them lunch. Email <a href='mailto:Dave@truenorthministry.org'>Dave</a> or call 330.896.2700 to plan your visit."
-            },
-            {
-                "id": 1,                
                 "name": "Lead a Bible Study",
                 "details": "We need some new volunteers for the True North bible studies at the Dan Street Juvenile Detention Center in Akron. We go there once a month on the fourth Sunday. The bible studies are from 9-10 a.m., leaving plenty of time to get to the third service on those days. For more information, email <a href='mailto:duncanothen@hotmail.com'>Duncan</a>."
             },
             {
-                "id": 2,                
-                "name": "Become a Trained Volunteer",
-                "details": "Want to be trained to volunteer with True North and work with incarcerated youth? Email <a href='mailto:duncanothen@hotmail.com'>Duncan</a> for details."
+                "id": 1,                
+                "name": "Visit the Farm",
+                "details": "<div class='italic'>Mon., Wed., Thu. &amp; Fri. from 10 a.m. &ndash; 4 p.m.</div>Visit six young men working on the farm and bring them lunch. Email <a href='mailto:Dave@truenorthministry.org'>Dave</a> or call 330.896.2700 to plan your visit."
             },
             {
-                "id": 3,                
-                "name": "Dusty Donkey Festival",
-                "details": "Visit the farm and get to know True North's ministry opportunities one Saturday this fall. More details to come."
+                "id": 2,                
+                "name": "Become a Trained Volunteer",
+                "details": "Want to be trained to volunteer with True North and work with incarcerated youth? Email <a href='mailto:duncanothen@hotmail.com'>Duncan</a> for details. He can come to your community group or meet you at the church for training, and it takes less than an hour."
             }
         ]
     },
@@ -229,14 +220,14 @@
         "description": "Truly Reaching You Ministries (TRY) is a relationship-based reentry organization that reaches out to men and women who have served their sentence and are returning to their communities. Through relationships, mentorships, training and education, TRY provides a healthy support system for those who have made the commitment to surrender their old lifestyle. Pointing the men and women to Christ is the number one priority for this ministry.<br /><br /><div class='italic'>We hope you will jump in and participate with this ministry to learn more about it and the people they serve. Just as we encourage new members to know and trust our church before they give financially, please do not feel any obligation to give to this ministry until you learn more and feel the Holy Spirit leading you to do so.</div>",
         "options": [
             {
-                "id": 1,                
-                "name": "Ministry Center Tour",
-                "details": "<div class='italic'>Mon., Wed., Thu. &amp; Fri. from 9:30 a.m. &ndash; 3:30 pm.</div>587 Baird St, Akron, OH 44311<br />To schedule your tour or ask a question, email <a href='mailto:sherrie@trulyreachingyou.com'>Sherrie</a>."
+                "id": 0,                
+                "name": "Paint the Office",
+                "details": "Come paint TRY Ministries’ inner office area. CCC has funds to purchase the painting materials. Email <a href='mailto:Barbara.ammirati@ccchapel.com'>Barbara</a> for details."
             },
             {
-                "id": 2,                
+                "id": 1,                
                 "name": "Renovation Projects",
-                "details": "Two renovation projects (paint and repurpose) are available for groups at TRY’s Ministry Center. CCC has funds to help purchase materials needed. Email <a href='mailto:hallie.andrews@ccchapel.com'>Hallie</a> for details."
+                "details": "One last renovation project is available for groups. (Thanks so much to the groups who have be finished the other 2 projects. This has been a huge blessing for this ministry!) Email <a href='mailto:hallie.andrews@ccchapel.com'>Hallie</a> for details."
             }
         ]
     },
@@ -248,23 +239,13 @@
         "options": [
             {
                 "id": 0,                
-                "name": "Attend a Class",
+                "name": "Make Sandwiches",
                 "details": "Life Skills Class: Mon. from 3:30-4 p.m.<br />Jr. Achievement Class: Tue. from 3:30-4 p.m.<br /><br />Email <a href='mailto:regina@urbanvisionministry.org'>Regina</a> to let her know to you plan to attend at least 24 hours before these two classes. You will receive a quick tour of the ministry center 15 &ndash; 20 minutes before class."
             },
             {
                 "id": 1,                
-                "name": "Donate for After-School Programs",
-                "details": "Donate powdered juice mixes, paper products (cups, plates, bowls, napkins) or juice boxes for Urban Vision’s after-school kids programs. When you drop off the donations, you can tour the ministry. For more information, email <a href='mailto:evie@urbanvisionministry.org'>Evie</a>."
-            },
-            {
-                "id": 2,                
-                "name": "Back-to-School Store",
-                "details": "<div class='italic'>Sat., Aug. 12</div>Empower students as they spend the dollars they’ve earned. Help with setup the week before or be guide/clerk. 200 volunteers are needed to make this event happen. For more information, email <a href='mailto:regina@urbanvisionminitry.org'>Regina</a>."
-            },
-            {
-                "id": 3,                
                 "name": "Attend 25-Year Anniversary Celebration",
-                "details": "<div class='italic'>Mon., Sep. 25 at Christ Community Chapel &ndash; Hudson Campus.</div>Contact <a href='mailto:evie@urbanvisionministry.org'>Evie</a> for more information or to register."
+                "details": "Purchase, prepare and wrap 200 lunch meat and cheese sandwiches for one or both of Urban Vision’s Kids Club days (Sep. 15 &amp; Sep. 22).  Email <a href='mailto:Regina@urbanvisionministry.org'>Regina</a> for more information or to reserve a date.<div class='italic'>(Please individually wrap the sandwiches and do not put any condiments on them.)</div>"
             }
         ]
     },
@@ -314,6 +295,14 @@
     },
     {
         "name": "Wild Card Option",
-        "description": "As a wild card option, you can choose a second opportunity at a ministry and count it as one of your eight activities. For example, you can visit the ministry center at PSS and then participate in the bike-a-thon.  Or you could visit the Front Porch Café and then return with your community group to do a project at the Front Porch at South Street as a wild card activity."
+        "contactEmail": "Barbara.Ammirati@ccchapel.com",
+        "description": "As a wild card option, you can choose a second opportunity at a ministry and count it as one of your eight activities. For example, you can visit the ministry center at PSS and then participate in the bike-a-thon.  Or you could visit the Front Porch Café and then return with your community group to do a project at the Front Porch at South Street as a wild card activity.",
+        "options": [
+            {
+                "id": 0,                
+                "name": "Homemade Cookies",
+                "details": "We have some freezer bags that have hand written bible verses on them. We would love a community group or family to fill the bags with homemade cookies and then deliver them to one of our local outreach ministry partners. It would be such a great way for the kids to bless a ministry and also love on those who work so hard each day serving the Lord in the city! Email <a href='mailto:barbara.ammirati@ccchapel.com'>Barbara</a> for mroe information and to pick up the bags."
+            }
+        ]
     }
 ]
