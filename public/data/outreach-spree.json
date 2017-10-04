@@ -21,18 +21,8 @@
             },
             {
                 "id": 1,
-                "name": "Build a Fire Pit",
-                "details": "Come out on Saturday, September 30th from 9:00 a.m. &ndash; 1:00 p.m. to build a fire pit at Lydia's Home, their new addiction recovery home for women. Interested parties can email <a href='mailto:dennis.shawhan@hotmail.com'>Dennis</a> or call 330.472.1166"
-            },
-            {
-                "id": 2,
                 "name": "Write Cards of Encouragement",
                 "details": "Consider writing cards of encouragement to ladies at Lydia's Home. Email <a href='mailto:Tamela@brokenchainsministry.org'>Tamela</a> if you are interested."
-            },
-            {
-                "id": 3,
-                "name": "Artwork for Broken Hearts",
-                "details": "Attend the <span class='italic'>Artwork for Broken Hearts</span> event at the newly renovated Block. Saturday, September 30th from 7-9 p.m. The art sale will feature pieces from our Door #2 ministry and will benefit Broken Chain’s new Lydia’s Home &ndash; a women’s recovery home for women suffering from opiate addiction."
             }
         ]
     },
@@ -46,16 +36,6 @@
                 "id": 0,                
                 "name": "Clean the Clinic",
                 "details": "Clean the medical clinic in Tallmadge the fourth Saturday of each month and tour the facility. For more details, email <a href='mailto:kbertolini@gmail.com'>Kathi</a>."
-            },
-            {
-                "id": 1,                
-                "name": "5K &amp; 1 Mile Fun Run/Walk",
-                "details": "<div class='italic'>Mon., Sep. 4 at Faithful Servants Care Center</div>65 Community Road Tallmadge, OH  44278<br />This fund raising event will bless Faithful Servants in assisting individuals and families in our community who do not have access to medical care. This is a family friendly event that will be lots of fun for all involved. For more information, email <a href='mailto:kbertolini@gmail.com'>Kathi</a>."
-            },
-            {
-                "id": 2,                
-                "name": "5th Anniversary Gala & Auction",
-                "details": "<div class='italic'>Sat., Sep. 16 at NEOMED</div>4209 OH-44, Rootstown, OH 44272<br /> Join us for our 5th annual gala & auction benefitting the Faithful Servants Care Center. If you would like to attend, please email <a href='mailto:FSCCBarb@gmail.com'>Barb</a> or call 330.633.3680."
             }
         ]
     },
@@ -66,19 +46,14 @@
         "description": "First Glance is a student center in the Kenmore community of Akron that is open most evenings of the week with the mission of connecting students to Christ and the church through real, loving and non-threating avenues.<br /><br /><div class='italic'>We hope you will jump in and participate with this ministry to learn more about it and the people they serve. Just as we encourage new members to know and trust our church before they give financially, please do not feel any obligation to give to this ministry until you learn more and feel the Holy Spirit leading you to do so.</div>",
         "options": [
             {
-                "id": 0,                
-                "name": "Visit the Skate Park",
-                "details": "<div class='italic'>Mon., Tue., Thu. &amp; Fri. 4&ndash;10 p.m.</div>943 Kenmore Blvd., Akron, OH 44314<br />For those looking for a more adventurous opportunity, visit and use the indoor skate park at the First Glance Ministry Center.<br />$5 fee per person. Free on Tuesdays"
-            },
-            {
-                "id": 2,
-                "name": "Prayer Week",
-                "details": "First Glance is partnering with several ministries (including Rahab) for a week long prayer event! Join us on Sun., Sep. 10 at 6:30 p.m. for a worship and prayer night at First Glance and continue praying with us until we meet again on Sun., Sep. 17 at 6:30 p.m. Feel free to just come to the worship nights or <a href='https://docs.google.com/spreadsheets/d/12UNBZyBmaU0wKcHGmZREXAJ5u7zsM8bEOyjdLr0DB_k/edit?usp=sharing' target='_blank'>sign up</a> for a 1 hour prayer shift during the week."
-            },
-            {
-                "id": 3,
+                "id": 0,
                 "name": "Make &amp; Serve a Meal",
                 "details": "Make a meal and help serve it on Mondays at 7 p.m. (for Young Adults) or Tuesdays at 6:30 p.m. (for Manu Up). Email <a href='mailto:jessica@firstglance.org'>Jessica</a> for more information and to sign up."
+            },
+            {
+                "id": 1,                
+                "name": "Volunteers Needed",
+                "details": "For those looking to serve consistently, the Young Adult, Rec Night, and Launch Kenmore Programs are all in need of 2 or more consistent volunteers. Email <a href='mailto:jessica@firstglance.org'>Jessica</a> for more information if you are interested in volunteering."
             }
         ]
     },
@@ -162,6 +137,16 @@
             },
             {
                 "id": 2,                
+                "name": "Donate Recovery Bibles",
+                "details": "Donate Recovery Bibles for the women Rahab serves! If you would like to donate some bibles as a community group or family project, you can purchase the bibles <a href='https://www.amazon.com/Life-Recovery-Bible-Personal-Size/dp/1414316267/ref=sr_1_1?ie=UTF8&qid=1505864448&sr=8-1&keywords=recovery+bible' target='_blank'>here</a>. Consider having your group write a short note of encouragement inside the front cover of each bible. (Please do not include any personal information such as your last name, address, etc.) You can deliver the bibles to Rahab or we can deliver them for you. Email <a href='mailto:barbara.ammirati@ccchapel.com'>Barbara</a> for more information."
+            },
+            {
+                "id": 3,                
+                "name": "Spare Change Initiative",
+                "details": "The women at Rahab have hand painted small glass canning jars that we would like you to fill with spare change. This is a great way for you and your Community group or family to be reminded of all the women in crisis in our area, and provide you with a simple opportunity to give back. We will be happy to deliver the jars or you can drop them off at the Rahab office. Email <a href='mailto:barbara.ammirati@ccchapel.com'>Barbara</a> to reserve your jar, or for more information. "
+            },
+            {
+                "id": 3,                
                 "name": "Watch a Video",
                 "details": "<a href='https://vimeo.com/207499874' target='_blank'>Watch the new video</a> from Rahab &ldquo;Top 10 Things Not to Do When Interacting with the Women of Rahab.&rdquo;"
             }
@@ -182,11 +167,6 @@
                 "id": 1,                
                 "name": "Make a Meal",
                 "details": "Provide a meal for 8-10 doctors and nurses volunteering at the Faithful Servants medical clinic site every Wed. at the Front Porch. Email <a href='mailto:josephjtucker@gmail.com'>Joe</a> for more information."
-            },
-            {
-                "id": 2,                
-                "name": "Annual Trails N Rails Event",
-                "details": "<div class='italic'>Sep. 30 from 8 a.m. &ndash; 1 p.m.</div>Join us for South Street’s annual Trails N Rails event. Visit <a href='http://southstreetministries.org/trails-n-rails/' target='_blank'>southstreetministries.org</a> for more information."
             }
         ]
     },
@@ -237,16 +217,7 @@
         "contactEmail": "Barbara.Ammirati@ccchapel.com",
         "description": "Urban Vision reaches the North Akron Community by demonstrating the redemptive love of Jesus Christ through Christ-centered programs focusing on the needs of the people in their community by restoring lives one child and family at a time. ",
         "options": [
-            {
-                "id": 0,                
-                "name": "Make Sandwiches",
-                "details": "Life Skills Class: Mon. from 3:30-4 p.m.<br />Jr. Achievement Class: Tue. from 3:30-4 p.m.<br /><br />Email <a href='mailto:regina@urbanvisionministry.org'>Regina</a> to let her know to you plan to attend at least 24 hours before these two classes. You will receive a quick tour of the ministry center 15 &ndash; 20 minutes before class."
-            },
-            {
-                "id": 1,                
-                "name": "Attend 25-Year Anniversary Celebration",
-                "details": "Purchase, prepare and wrap 200 lunch meat and cheese sandwiches for one or both of Urban Vision’s Kids Club days (Sep. 15 &amp; Sep. 22).  Email <a href='mailto:Regina@urbanvisionministry.org'>Regina</a> for more information or to reserve a date.<div class='italic'>(Please individually wrap the sandwiches and do not put any condiments on them.)</div>"
-            }
+            
         ]
     },
     {
